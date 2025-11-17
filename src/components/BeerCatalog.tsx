@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { Image, Row, Col, Card, Typography, Tag, Flex, Badge, Button } from "antd";
 import { useResponsive } from "antd-style";
 import { beerData, sauceData, accessoriesData, type Product } from "../data";
@@ -11,7 +11,6 @@ const { Link, Title, Text, Paragraph } = Typography;
 const BeerCatalog = () => {
   const responsive = useResponsive();
   const categoriesRef = useRef<HTMLDivElement>(null);
-  const isFirstRender = useRef(true);
 
   const allCategories = [
     ...new Set(beerData.map(item => item.category)),
@@ -34,28 +33,30 @@ const BeerCatalog = () => {
   const handlePrevious = () => {
     if (hasPrevious) {
       setActiveCategory(allCategories[currentIndex - 1]);
+      setTimeout(() => {
+        if (categoriesRef.current) {
+          categoriesRef.current.scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+          });
+        }
+      }, 100);
     }
   };
 
   const handleNext = () => {
     if (hasNext) {
       setActiveCategory(allCategories[currentIndex + 1]);
+      setTimeout(() => {
+        if (categoriesRef.current) {
+          categoriesRef.current.scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+          });
+        }
+      }, 100);
     }
   };
-
-  useEffect(() => {
-    if (isFirstRender.current) {
-      isFirstRender.current = false;
-      return;
-    }
-
-    if (categoriesRef.current) {
-      categoriesRef.current.scrollIntoView({
-        behavior: "smooth",
-        block: "center"
-      });
-    }
-  }, [activeCategory]);
 
   const renderProductCard = (product: Product) => (
     <Col
