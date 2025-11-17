@@ -67,8 +67,11 @@ const BeerCatalog = () => {
       key={product.id}
       style={{ display: "flex" }}
     >
-      <Card style={{ height: "100%", display: "flex", flexDirection: "column", width: "100%" }}
-        styles={{ body: { flex: 1, display: "flex", flexDirection: "column", padding: responsive.md ? 16 : 12 } }}
+      <Card style={{ height: "100%", display: "flex", flexDirection: "column", width: "100%", borderRadius: 8 }}
+        styles={{
+          body: { flex: 1, display: "flex", flexDirection: "column", padding: responsive.md ? 16 : 12 },
+          cover: { marginTop: -2 }
+      }}
         cover={
           <Flex style={{ position: "relative" }}>
             {product.category === "ACCESSORIES" ? (
@@ -106,7 +109,7 @@ const BeerCatalog = () => {
                 loading="lazy"
                 src={product.imageUrl}
                 preview={false}
-                style={{ objectFit: "cover", width: "100%" }}
+                style={{ objectFit: "cover", width: "100%", borderTopLeftRadius: 8, borderTopRightRadius: 8 }}
               />
             )}
             <Flex
