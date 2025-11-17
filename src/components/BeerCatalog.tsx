@@ -87,6 +87,7 @@ const BeerCatalog = () => {
                   }}
                 >
                   <Image
+                    loading="lazy"
                     src={logoImage}
                     preview={false}
                     style={{ objectFit: "cover", width: "100%", height: 150 }}
@@ -95,6 +96,7 @@ const BeerCatalog = () => {
               </Flex>
             ) : (
               <Image
+                loading="lazy"
                 src={product.imageUrl}
                 preview={false}
                 style={{ objectFit: "cover", width: "100%" }}
@@ -126,6 +128,7 @@ const BeerCatalog = () => {
               >
                 <Image
                   preview={false}
+                  loading="lazy"
                   src={untappdImage}
                   wrapperStyle={{ position: "initial" }}
                   style={{
