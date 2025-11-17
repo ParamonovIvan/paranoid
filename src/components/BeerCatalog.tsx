@@ -11,6 +11,7 @@ const { Link, Title, Text, Paragraph } = Typography;
 const BeerCatalog = () => {
   const responsive = useResponsive();
   const categoriesRef = useRef<HTMLDivElement>(null);
+  const isFirstRender = useRef(true);
 
   const allCategories = [
     ...new Set(beerData.map(item => item.category)),
@@ -43,6 +44,11 @@ const BeerCatalog = () => {
   };
 
   useEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
+
     if (categoriesRef.current) {
       categoriesRef.current.scrollIntoView({
         behavior: "smooth",
