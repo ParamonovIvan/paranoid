@@ -25,7 +25,7 @@ function App() {
         <Image
           src={logoImage}
           preview={false}
-          style={{ objectFit: "cover", width: "100%", height: responsive.md ? 100 : 75 }}
+          style={{ objectFit: "contain", width: "100%", height: responsive.md ? 100 : 75 }}
         />
         <Title
           level={1}
