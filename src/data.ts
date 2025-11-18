@@ -180,7 +180,7 @@ export const beerData: Product[] = [
         volume: "0.33л",
         packaging: ["воск"],
         price: "330",
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: thirdWorldImage
@@ -262,7 +262,7 @@ export const beerData: Product[] = [
       {
         volume: "0.45л",
         price: "260",
-        remaining: "остаток: 26 шт."
+        remaining: "остаток: 24 шт."
       }
     ],
     imageUrl: pumpkinAleImage
@@ -282,7 +282,7 @@ export const beerData: Product[] = [
       {
         volume: "0.45л",
         price: "330",
-        remaining: "остаток: 11 шт."
+        remaining: "остаток: 9 шт."
       }
     ],
     imageUrl: fuckWorkImage
@@ -302,7 +302,7 @@ export const beerData: Product[] = [
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 17 шт."
+        remaining: "остаток: 15 шт."
       }
     ],
     imageUrl: halloweenIpaImage
@@ -322,7 +322,7 @@ export const beerData: Product[] = [
       {
         volume: "0.45л",
         price: "350",
-        remaining: "остаток: 11 шт."
+        remaining: "остаток: 9 шт."
       }
     ],
     imageUrl: mondaySucksImage
@@ -918,7 +918,7 @@ export const sauceData: Product[] = [
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: everbleedImage
