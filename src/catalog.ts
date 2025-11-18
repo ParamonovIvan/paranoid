@@ -519,7 +519,7 @@ export const beerData: Product[] = [
     id: 22,
     category: "STRONG SERIES 2025",
     name: "Strong Pear Graff (oak)",
-    style: "Apfelwein with Pear (oak edition)",
+    style: "Appliqueing with Pear (oak edition)",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-strong-pear-graff-oak-aged/6208896",
     og: "30.5%",
     abv: "14.7",

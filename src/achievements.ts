@@ -124,5 +124,11 @@ export const achievements: Achievement[] = [
     event: "V конкурс Brewcom",
     result: "участник",
     location: "г. Санкт-Петербург"
+  },
+  {
+    date: "15.11.2025",
+    event: "VI конкурс Brewcom",
+    result: "участник",
+    location: "г. Санкт-Петербург"
   }
 ];

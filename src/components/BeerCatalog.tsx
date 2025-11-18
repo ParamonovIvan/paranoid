@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { Image, Row, Col, Card, Typography, Tag, Flex, Badge, Button } from "antd";
 import { useResponsive } from "antd-style";
-import { beerData, sauceData, accessoriesData, type Product } from "../data";
+import { beerData, sauceData, accessoriesData, type Product } from "../catalog.ts";
 import untappdImage from "../images/untappd.png";
 import logoImage from "../images/logo.png";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
