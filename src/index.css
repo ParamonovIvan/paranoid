@@ -1,3 +1,23 @@
 * {
     font-family: "Inter", sans-serif;
 }
+
+/* Стили для бегунка всей страницы в Tilda */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1677FF;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #75c7f0;
+}
