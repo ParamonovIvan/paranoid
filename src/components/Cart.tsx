@@ -9,11 +9,9 @@ import {
   Tag,
   InputNumber,
   Divider,
-  Space,
-  Card,
-  notification,
+  Card
 } from "antd";
-import { DeleteOutlined, ShoppingCartOutlined, CopyOutlined, ExportOutlined } from "@ant-design/icons";
+import { DeleteOutlined, ShoppingCartOutlined, ExportOutlined } from "@ant-design/icons";
 import { useAppSelector, useAppDispatch } from "../hooks/redux";
 import { removeFromCart, updateQuantity, clearCart } from "../store/cartSlice";
 import { createStyles, useResponsive } from "antd-style";
@@ -56,18 +54,6 @@ const Cart: React.FC<CartProps> = ({ open, onClose }) => {
     }).join("\n");
 
     return `Здравствуйте! Хочу заказать:\n\n${orderLines}\n\n💰 Итого: ${total}₽`;
-  };
-
-  const copyToClipboard = async () => {
-    try {
-      await navigator.clipboard.writeText(generateOrderMessage());
-      notification.success({
-        message: "Заказ скопирован!",
-        description: "Теперь вы можете отправить его в Telegram"
-      });
-    } catch (err) {
-      console.error("Failed to copy: ", err);
-    }
   };
 
   const openTelegram = () => {
@@ -237,17 +223,6 @@ const Cart: React.FC<CartProps> = ({ open, onClose }) => {
                 {total}₽
               </Title>
             </Flex>
-
-            <Space.Compact block style={{ width: "100%" }}>
-              <Button
-                type="primary"
-                icon={<CopyOutlined/>}
-                onClick={copyToClipboard}
-                style={{ flex: 1 }}
-              >
-                Копировать заказ
-              </Button>
-            </Space.Compact>
 
             <Button
               onClick={openTelegram}
