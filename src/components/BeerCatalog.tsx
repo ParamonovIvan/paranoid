@@ -165,6 +165,20 @@ const BeerCatalog = () => {
                 src={product.imageUrl}
                 preview={false}
                 style={{ objectFit: "cover", width: "100%", borderTopLeftRadius: 8, borderTopRightRadius: 8 }}
+                placeholder={
+                  <Image
+                    preview={false}
+                    src={product.imageUrl}
+                    style={{
+                      objectFit: "cover",
+                      width: "100%",
+                      borderTopLeftRadius: 8,
+                      borderTopRightRadius: 8,
+                      filter: "blur(20px)",
+                      transform: "scale(1.1)"
+                    }}
+                  />
+                }
               />
             )}
             <Flex style={{
@@ -251,7 +265,7 @@ const BeerCatalog = () => {
                       <Button
                         size="small"
                         type="primary"
-                        style={{ width: 26 }}
+                        style={{ width: 36, height: 36 }}
                         onClick={() => {
                           if (quantity === 1) {
                             const itemToRemove = items.find(item =>
@@ -284,7 +298,7 @@ const BeerCatalog = () => {
                         size="small"
                         type="primary"
                         onClick={() => handleAddToCart(product, variant)}
-                        style={{ width: 26  }}
+                        style={{ width: 36, height: 36  }}
                       >
                         +
                       </Button>
@@ -295,7 +309,7 @@ const BeerCatalog = () => {
                       icon={<ShoppingCartOutlined/>}
                       size="small"
                       onClick={() => handleAddToCart(product, variant)}
-                      style={{ maxWidth: 124, marginTop: 6 }}
+                      style={{ maxWidth: 124, paddingInline: 14, height: 36, marginTop: 6 }}
                     >
                       В корзину
                     </Button>
