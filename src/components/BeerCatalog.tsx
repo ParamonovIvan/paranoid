@@ -405,7 +405,7 @@ const BeerCatalog = () => {
         ))}
       </Flex>
 
-      <Row gutter={[16, 16]} align="stretch">
+      <Row gutter={ responsive.md ? [16, 16] : [32, 32 ]} align="stretch">
         {getProductsByCategory(activeCategory).map(renderProductCard)}
       </Row>
 
