@@ -9,9 +9,9 @@ import {
   Tag,
   InputNumber,
   Divider,
-  Card
+  Card, notification
 } from "antd";
-import { DeleteOutlined, ShoppingCartOutlined, ExportOutlined } from "@ant-design/icons";
+import { DeleteOutlined, ShoppingCartOutlined, ExportOutlined, CopyOutlined } from "@ant-design/icons";
 import { useAppSelector, useAppDispatch } from "../hooks/redux";
 import { removeFromCart, updateQuantity, clearCart } from "../store/cartSlice";
 import { createStyles, useResponsive } from "antd-style";
@@ -61,31 +61,26 @@ const Cart: React.FC<CartProps> = ({ open, onClose }) => {
     const encodedMessage = encodeURIComponent(message);
     const telegramUrl = `https://t.me/spool_ka?text=${encodedMessage}`;
 
-    // Пробуем разные методы открытия ссылки
-    try {
-      // Метод 1: Обычное открытие в новом окне
-      const opened = window.open(telegramUrl, '_blank', 'noopener,noreferrer');
-      if (!opened) {
-        // Метод 2: Если браузер заблокировал popup, меняем location
-        window.location.href = telegramUrl;
-      }
-    } catch (error) {
-      // Метод 3: Создание и клик по ссылке
-      try {
-        const link = document.createElement('a');
-        link.href = telegramUrl;
-        link.target = '_blank';
-        link.rel = 'noopener noreferrer';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-      } catch (fallbackError) {
-        // Метод 4: Последняя попытка
-        window.location.href = telegramUrl;
-      }
-    }
+    const link = document.createElement("a");
+    link.href = telegramUrl;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
+  const copyToClipboard = async () => {
+    try {
+      await navigator.clipboard.writeText(generateOrderMessage());
+      notification.success({
+        message: "Заказ скопирован!",
+        description: "Теперь вы можете отправить его в Telegram"
+      });
+    } catch (err) {
+      console.error("Failed to copy: ", err);
+    }
+  };
 
   return (
     <Drawer
@@ -255,6 +250,15 @@ const Cart: React.FC<CartProps> = ({ open, onClose }) => {
               style={{ height: 36 }}
             >
               Отправить в Telegram
+            </Button>
+
+            <Button
+
+              icon={<CopyOutlined/>}
+              onClick={copyToClipboard}
+              style={{ height: 36 }}
+            >
+              Копировать заказ
             </Button>
           </Flex>
         </Flex>
