@@ -253,7 +253,6 @@ const Cart: React.FC<CartProps> = ({ open, onClose }) => {
             </Button>
 
             <Button
-
               icon={<CopyOutlined/>}
               onClick={copyToClipboard}
               style={{ height: 36 }}
