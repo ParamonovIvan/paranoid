@@ -60,14 +60,30 @@ const Cart: React.FC<CartProps> = ({ open, onClose }) => {
     const message = generateOrderMessage();
     const encodedMessage = encodeURIComponent(message);
     const telegramUrl = `https://t.me/spool_ka?text=${encodedMessage}`;
-    
-    const link = document.createElement("a");
-    link.href = telegramUrl;
-    link.target = "_blank";
-    link.rel = "noopener noreferrer";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+
+    // Пробуем разные методы открытия ссылки
+    try {
+      // Метод 1: Обычное открытие в новом окне
+      const opened = window.open(telegramUrl, '_blank', 'noopener,noreferrer');
+      if (!opened) {
+        // Метод 2: Если браузер заблокировал popup, меняем location
+        window.location.href = telegramUrl;
+      }
+    } catch (error) {
+      // Метод 3: Создание и клик по ссылке
+      try {
+        const link = document.createElement('a');
+        link.href = telegramUrl;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      } catch (fallbackError) {
+        // Метод 4: Последняя попытка
+        window.location.href = telegramUrl;
+      }
+    }
   };
 
 
