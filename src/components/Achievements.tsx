@@ -9,11 +9,11 @@ const Achievements = () => {
 
   const getMedalColor = (medal?: string) => {
     switch (medal) {
-      case "gold": return "#FFD700";
-      case "silver": return "#C0C0C0";
+      case "gold": return "gold";
+      case "silver": return "gray";
       case "bronze": return "#CD7F32";
-      case "special": return "#8B4513";
-      default: return undefined;
+      case "special": return "orange";
+      default: return "blue";
     }
   };
 
@@ -31,7 +31,7 @@ const Achievements = () => {
     <Flex vertical style={{ marginBottom: 16 }}>
       <Title style={{
         fontSize: responsive.lg ? 30 : 24,
-        color: "#DAA520",
+        color: "#1f1f1f",
         textAlign: "center",
         marginBottom: 30,
         textTransform: "uppercase"
@@ -56,7 +56,7 @@ const Achievements = () => {
                 }}
               >
                 <Text strong style={{
-                  color: "#F5F5F5",
+                  color: "#000000e0",
                   fontSize: responsive.md ? 18 : 16
                 }}>
                   {achievement.date}
@@ -64,9 +64,6 @@ const Achievements = () => {
                 <Tag
                   color={getMedalColor(achievement.medal)}
                   style={{
-                    color: (achievement.medal === "gold" || achievement.medal === "silver")
-                      ? "#000000e0"
-                      : undefined,
                     fontSize: responsive.md ? 14 : 12,
                     margin: 0
                   }}
@@ -75,14 +72,14 @@ const Achievements = () => {
                 </Tag>
               </Flex>
               <Text strong style={{
-                color: "#DAA520",
+                color: "#1f1f1f",
                 display: "block",
                 fontSize: responsive.md ? 16 : 14
               }}>
                 {achievement.event}
               </Text>
               <Text style={{
-                color: "#F5F5F5",
+                color: "#000000e0",
                 display: "block",
                 fontSize: responsive.md ? 14 : 13,
                 lineHeight: 1.4
@@ -91,7 +88,7 @@ const Achievements = () => {
               </Text>
               <Text type="secondary" style={{
                 display: "block",
-                color: "#A0A0A0",
+                color: "#00000073",
                 fontSize: responsive.md ? 13 : 12
               }}>
                 {achievement.location}

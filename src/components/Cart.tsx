@@ -13,7 +13,7 @@ import {
   Card,
   notification,
 } from "antd";
-import { DeleteOutlined, ShoppingCartOutlined, CopyOutlined } from "@ant-design/icons";
+import { DeleteOutlined, ShoppingCartOutlined, CopyOutlined, ExportOutlined } from "@ant-design/icons";
 import { useAppSelector, useAppDispatch } from "../hooks/redux";
 import { removeFromCart, updateQuantity, clearCart } from "../store/cartSlice";
 import { createStyles, useResponsive } from "antd-style";
@@ -29,7 +29,7 @@ interface CartProps {
 const useStyles = createStyles({
   inputNumber: {
     "& .ant-input-number-input": {
-      textAlign: "center",
+      textAlign: "center"
     }
   }
 });
@@ -63,7 +63,7 @@ const Cart: React.FC<CartProps> = ({ open, onClose }) => {
       await navigator.clipboard.writeText(generateOrderMessage());
       notification.success({
         message: "Заказ скопирован!",
-        description: "Теперь вы можете отправить его в Telegram",
+        description: "Теперь вы можете отправить его в Telegram"
       });
     } catch (err) {
       console.error("Failed to copy: ", err);
@@ -110,7 +110,7 @@ const Cart: React.FC<CartProps> = ({ open, onClose }) => {
     >
       {items.length === 0 ? (
         <Flex vertical align="center" justify="center" style={{ flex: 1 }}>
-          <ShoppingCartOutlined style={{ fontSize: 48, color: "#DAA520", marginBottom: 16 }}/>
+          <ShoppingCartOutlined style={{ fontSize: 48, color: "#1677ff", marginBottom: 16 }}/>
           <Title level={4} style={{ color: "#666", textAlign: "center" }}>
             Корзина пуста
           </Title>
@@ -163,7 +163,7 @@ const Cart: React.FC<CartProps> = ({ open, onClose }) => {
                               </Tag>
                             ))}
                           </Flex>
-                          <Text strong style={{ color: "#8B4513", fontSize: 13, marginTop: 4 }}>
+                          <Text strong style={{ color: "#00000073", fontSize: 13, marginTop: 4 }}>
                             {item.quantity} × {item.price}₽ = {(parseFloat(item.price) * item.quantity).toFixed(0)}₽
                           </Text>
                         </Flex>
@@ -238,7 +238,7 @@ const Cart: React.FC<CartProps> = ({ open, onClose }) => {
             <Space.Compact block style={{ width: "100%" }}>
               <Button
                 type="primary"
-                icon={<CopyOutlined />}
+                icon={<CopyOutlined/>}
                 onClick={copyToClipboard}
                 style={{ flex: 1 }}
               >
@@ -247,16 +247,12 @@ const Cart: React.FC<CartProps> = ({ open, onClose }) => {
             </Space.Compact>
 
             <Button
-              type="default"
               onClick={openTelegram}
               block
-              style={{
-                backgroundColor: "#0088cc",
-                borderColor: "#0088cc",
-                color: "white"
-              }}
+              icon={<ExportOutlined/>}
+              type="primary"
             >
-              📨 Отправить в Telegram
+              Отправить в Telegram
             </Button>
           </Flex>
         </Flex>

@@ -21,7 +21,6 @@ import { addToCart, removeFromCart, updateQuantity } from "../store/cartSlice.ts
 
 const {
   Link,
-  Title,
   Text,
   Paragraph
 } = Typography;
@@ -118,7 +117,14 @@ const BeerCatalog = () => {
       style={{ display: "flex" }}
     >
       <Card
-        style={{ height: "100%", display: "flex", flexDirection: "column", width: "100%", borderRadius: 8 }}
+        style={{
+          height: "100%",
+          display: "flex",
+          flexDirection: "column",
+          width: "100%",
+          borderRadius: 8,
+          boxShadow: "0px 4px 14px 0px #00000014"
+        }}
         styles={{
           body: { flex: 1, display: "flex", flexDirection: "column", padding: responsive.md ? 16 : 12 },
           cover: { marginTop: -2 }
@@ -245,7 +251,7 @@ const BeerCatalog = () => {
                       <Button
                         size="small"
                         type="primary"
-                        style={{ backgroundColor: "#8B4513", borderColor: "#8B4513", width: 26 }}
+                        style={{ width: 26 }}
                         onClick={() => {
                           if (quantity === 1) {
                             const itemToRemove = items.find(item =>
@@ -278,7 +284,7 @@ const BeerCatalog = () => {
                         size="small"
                         type="primary"
                         onClick={() => handleAddToCart(product, variant)}
-                        style={{ backgroundColor: "#8B4513", borderColor: "#8B4513", width: 26  }}
+                        style={{ width: 26  }}
                       >
                         +
                       </Button>
@@ -289,7 +295,7 @@ const BeerCatalog = () => {
                       icon={<ShoppingCartOutlined/>}
                       size="small"
                       onClick={() => handleAddToCart(product, variant)}
-                      style={{ backgroundColor: "#8B4513", borderColor: "#8B4513", maxWidth: 124, marginTop: 6 }}
+                      style={{ maxWidth: 124, marginTop: 6 }}
                     >
                       В корзину
                     </Button>
@@ -346,18 +352,28 @@ const BeerCatalog = () => {
   );
 
   return (
-    <Flex vertical style={{ marginBottom: 56, marginTop: 56 }}>
+    <Flex vertical style={{ marginBottom: responsive.md ? 64 : 56, marginTop: 16 }}>
       {contextHolder}
 
-      <Title style={{
-        fontSize: responsive.lg ? 30 : 24,
-        color: "#DAA520",
-        textAlign: "center",
-        marginBottom: responsive.md ? 48 : 24,
-        textTransform: "uppercase"
-      }}>
-        Каталог
-      </Title>
+      <Flex
+        justify="space-between"
+        align="flex-start"
+        vertical={!responsive.md}
+        gap={!responsive.md ? 16 : 0}
+        style={{ marginBottom: 24 }}
+      >
+        <Paragraph style={{ color: "#000000E0", fontSize: responsive.sm ? 16 : 14, margin: 0 }}>
+          от 28/11/2025
+        </Paragraph>
+        <Paragraph style={{
+          color: "#000000E0",
+          fontSize: responsive.sm ? 16 : 14,
+          margin: 0,
+          textAlign: responsive.md ? "right" : "left"
+        }}>
+          Наливайте в бокал, оставляя осадок в бутылке
+        </Paragraph>
+      </Flex>
 
       <Flex
         ref={categoriesRef}
@@ -374,7 +390,7 @@ const BeerCatalog = () => {
             style={{ backgroundColor: "#1677FF", borderColor: "#000000E0" }}
           >
             <Tag
-              color={activeCategory === category ? "#8B4513" : "default"}
+              color={activeCategory === category ? "#1677FF" : "default"}
               onClick={() => setActiveCategory(category)}
               style={{
                 cursor: "pointer",
@@ -405,8 +421,8 @@ const BeerCatalog = () => {
           onClick={handlePrevious}
           disabled={!hasPrevious}
           style={{
-            backgroundColor: hasPrevious ? "#8B4513" : "rgba(218, 165, 32, 0.3)",
-            borderColor: hasPrevious ? "#8B4513" : "rgba(218, 165, 32, 0.2)",
+            backgroundColor: hasPrevious ? "#1677FF" : "#91CAFF",
+            borderColor: hasPrevious ? "#1677FF" : "#91CAFF",
             minWidth: responsive.md ? 120 : 40,
             height: 40
           }}
@@ -415,7 +431,7 @@ const BeerCatalog = () => {
         </Button>
 
         <Text style={{
-          color: "#DAA520",
+          color: "#000000E0",
           fontSize: responsive.md ? 16 : 14,
           minWidth: responsive.md ? 200 : 150,
           textAlign: "center"
@@ -429,8 +445,8 @@ const BeerCatalog = () => {
           disabled={!hasNext}
           icon={responsive.md ? null : <RightOutlined/>}
           style={{
-            backgroundColor: hasNext ? "#8B4513" : "rgba(139, 69, 19, 0.4)",
-            borderColor: hasNext ? "#8B4513" : "rgba(139, 69, 19, 0.3)",
+            backgroundColor: hasNext ? "#1677FF" : "#91CAFF",
+            borderColor: hasNext ? "#1677FF" : "#91CAFF",
             minWidth: responsive.md ? 120 : 40,
             height: 40,
             gap: responsive.md ? 8 : 0

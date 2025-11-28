@@ -4,7 +4,7 @@ import { useResponsive } from "antd-style";
 import BreweryIntro from "./components/BreweryIntro";
 import BeerCatalog from "./components/BeerCatalog";
 import Achievements from "./components/Achievements";
-import logoImage from "./images/logo.png";
+import logoImage from "./images/logo_black.png";
 import { useState } from "react";
 import { useAppSelector } from "./hooks/redux.ts";
 import { ShoppingCartOutlined } from "@ant-design/icons";
@@ -19,10 +19,10 @@ function App() {
   const { itemCount } = useAppSelector((state) => state.cart);
 
   return (
-    <Layout style={{ minHeight: "100vh", backgroundColor: "#0D0D0D", color: "#F5F5F5" }}>
+    <Layout style={{ minHeight: "100vh", backgroundColor: "#F5F5F5" }}>
       <Header style={{
-        backgroundColor: "#1A1A1A",
-        borderBottom: "1px solid #8B4513",
+        backgroundColor: "#F5F5F5",
+        borderBottom: "1px solid #D5D5D5",
         textAlign: "center",
         padding: "16px 24px",
         height: "auto",
@@ -35,7 +35,7 @@ function App() {
         />
         <Title
           level={1}
-          style={{ color: "#FFF", margin: 0, fontWeight: 600, fontSize: "clamp(24px, 5vw, 32px)" }}
+          style={{ color: "rgb(51 49 44)", margin: 0, fontWeight: 600, fontSize: "clamp(24px, 5vw, 32px)" }}
         >
           Paranoid Brewery
         </Title>
@@ -48,32 +48,32 @@ function App() {
         width: "100%",
         boxSizing: "border-box"
       }}>
-        <BreweryIntro/>
         <BeerCatalog/>
+        <BreweryIntro/>
         <Achievements/>
       </Content>
 
       <Footer style={{
         textAlign: "center",
-        backgroundColor: "#1A1A1A",
-        color: "#A0A0A0",
-        borderTop: "1px solid #333",
-        padding: "16px 24px",
+        backgroundColor: "#F5F5F5",
+        color: "#000000E0",
+        borderTop: "1px solid #D5D5D5",
+        padding: "24px 24px",
         fontSize: "clamp(12px, 2vw, 14px)"
       }}>
         Paranoid Brewery ©2017-2025 — Лаборатория жидкостей с характером
       </Footer>
-
       <Flex style={{ position: "fixed", bottom: 24, right: 24, zIndex: 1000 }}>
         <Badge
           count={itemCount}
           showZero={false}
           offset={[-5, 5]}
-          style={{ boxShadow: "0 0 0 2px #0D0D0D" }}
+          color="#1677ff"
+          style={{ boxShadow: "0 0 0 2px #0D0D0D", backgroundColor: "#1677FF", borderColor: "#000000E0" }}
         >
           <Button
             type="primary"
-            icon={<ShoppingCartOutlined style={{ fontSize: 24 }}/>}
+            icon={<ShoppingCartOutlined style={{ color: "#1677FF", fontSize: 24 }}/>}
             onClick={() => setCartOpen(true)}
             style={{
               boxShadow: "0 4px 12px rgba(0, 0, 0, 0.3)",
@@ -83,8 +83,8 @@ function App() {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              backgroundColor: "#8B4513",
-              borderColor: "#8B4513"
+              backgroundColor: "#FFF",
+              borderColor: "rgb(217 217 217)"
             }}
           />
         </Badge>

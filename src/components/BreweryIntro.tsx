@@ -43,48 +43,37 @@ const BreweryIntro = () => {
   ];
 
   return (
-    <Flex vertical style={{ marginBottom: 24 }}>
-      <Flex
-        justify="space-between"
-        align="flex-start"
-        vertical={!responsive.md}
-        gap={!responsive.md ? 16 : 0}
-        style={{ marginBottom: 32 }}
-      >
-        <Paragraph style={{ color: "#A0A0A0", fontSize: responsive.sm ? 16 : 14, margin: 0 }}>
-          от 28/11/2025
-        </Paragraph>
-        <Paragraph style={{
-          color: "#A0A0A0",
-          fontSize: responsive.sm ? 16 : 14,
-          margin: 0,
-          textAlign: responsive.md ? "right" : "left"
-        }}>
-          Наливайте в бокал, оставляя осадок в бутылке
-        </Paragraph>
-      </Flex>
-
+    <Flex vertical style={{ marginBottom: responsive.md ? 64 : 56 }} >
       <Title style={{
-        color: "#FFF",
+        fontSize: responsive.lg ? 30 : 24,
+        color: "#000000E0",
         textAlign: "center",
-        fontSize: responsive.lg ? 20 : responsive.md ? 18 : 16,
+        marginBottom: responsive.md ? 36 : 24,
+        textTransform: "uppercase"
+      }}>
+        О нас
+      </Title>
+      <Text style={{
+        color: "#000000E0",
+        textAlign: "center",
+        fontSize: responsive.lg ? 18 : responsive.md ? 16 : 14,
         margin: 0,
         lineHeight: 1.4
       }}>
         На карте Ижевска есть точка, где рождаются жидкости с характером.
-      </Title>
-      <Title style={{
-        color: "#FFF",
+      </Text>
+      <Text style={{
+        color: "#000000E0",
         textAlign: "center",
-        fontSize: responsive.lg ? 20 : responsive.md ? 18 : 16,
+        fontSize: responsive.lg ? 18 : responsive.md ? 16 : 14,
         margin: 0,
         marginTop: 8
       }}>
         Это не завод, это — лаборатория, основанная в декабре 2017 года.
-      </Title>
+      </Text>
 
-      <Title level={3} style={{
-        color: "#DAA520",
+      <Title style={{
+        color: "#000000E0",
         marginTop: responsive.md ? 48 : 32,
         marginBottom: 16,
         fontSize: responsive.md ? 20 : 18
@@ -95,7 +84,7 @@ const BreweryIntro = () => {
         {features.map((item, index) => (
           <Col xs={24} md={8} key={index}>
             <Card
-              style={{ height: "100%", background: "rgba(139, 69, 19, 0.1)", border: "1px solid #8B4513" }}
+              style={{ height: "100%", background: "#e6f4ff", border: "1px solid #91caff" }}
               styles={{ body: { padding: responsive.md ? 16 : 12 } }}
             >
               <Flex align="center" gap={8} style={{ marginBottom: 8 }}>
@@ -103,7 +92,7 @@ const BreweryIntro = () => {
                   {item.icon}
                 </Text>
                 <Title level={5} style={{
-                  color: "#DAA520",
+                  color: "#000000E0",
                   margin: 0,
                   fontSize: responsive.md ? 16 : 14
                 }}>
@@ -111,7 +100,7 @@ const BreweryIntro = () => {
                 </Title>
               </Flex>
               <Paragraph style={{
-                color: "#D0D0D0",
+                color: "#000000E0",
                 margin: 0,
                 fontSize: responsive.md ? 14 : 13,
                 lineHeight: 1.5
@@ -124,7 +113,7 @@ const BreweryIntro = () => {
       </Row>
 
       <Title level={3} style={{
-        color: "#DAA520",
+        color: "#000000E0",
         marginBottom: 16,
         fontSize: responsive.md ? 20 : 18
       }}>
@@ -136,8 +125,8 @@ const BreweryIntro = () => {
             <Card
               style={{
                 height: "100%",
-                background: "rgba(218, 165, 32, 0.1)",
-                border: "1px solid #DAA520"
+                background: "#f6ffed",
+                border: "1px solid #b7eb8f"
               }}
               styles={{ body: { padding: responsive.md ? 16 : 12 } }}
             >
@@ -146,7 +135,7 @@ const BreweryIntro = () => {
                   {item.icon}
                 </Text>
                 <Title level={5} style={{
-                  color: "#DAA520",
+                  color: "#000000E0",
                   margin: 0,
                   fontSize: responsive.md ? 16 : 14
                 }}>
@@ -154,7 +143,7 @@ const BreweryIntro = () => {
                 </Title>
               </Flex>
               <Paragraph style={{
-                color: "#D0D0D0",
+                color: "#000000E0",
                 margin: 0,
                 fontSize: responsive.md ? 14 : 13,
                 lineHeight: 1.5
@@ -168,14 +157,14 @@ const BreweryIntro = () => {
 
       <Card
         style={{
-          background: "rgba(184, 115, 51, 0.1)",
-          border: "1px solid #b87333",
+          background: "#fffbe6",
+          border: "1px solid #ffe58f",
           fontStyle: "italic"
         }}
         styles={{ body: { padding: responsive.md ? 16 : 12 } }}
       >
         <Paragraph style={{
-          color: "#b87333",
+          color: "#000000E0",
           margin: 0,
           textAlign: "center",
           fontSize: responsive.md ? 14 : 13,
