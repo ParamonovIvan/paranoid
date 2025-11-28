@@ -1,16 +1,30 @@
 import { useRef, useState } from "react";
 import { Image, Row, Col, Card, Typography, Tag, Flex, Badge, Button } from "antd";
-import { useResponsive } from "antd-style";
+import { createStyles, useResponsive } from "antd-style";
+import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import { beerData, sauceData, accessoriesData, type Product } from "../catalog.ts";
 import untappdImage from "../images/untappd.png";
 import logoImage from "../images/logo.png";
-import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 
-const { Link, Title, Text, Paragraph } = Typography;
+const {
+  Link,
+  Title,
+  Text,
+  Paragraph
+} = Typography;
+
+const useStyles = createStyles({
+  untappdIcon: {
+    "&:hover": {
+      transform: "scale(1.1)"
+    }
+  }
+});
 
 const BeerCatalog = () => {
   const responsive = useResponsive();
   const categoriesRef = useRef<HTMLDivElement>(null);
+  const { styles } = useStyles();
 
   const allCategories = [
     ...new Set(beerData.map(item => item.category)),
@@ -68,148 +82,132 @@ const BeerCatalog = () => {
       style={{ display: "flex" }}
     >
       <Card style={{ height: "100%", display: "flex", flexDirection: "column", width: "100%", borderRadius: 8 }}
-        styles={{
-          body: { flex: 1, display: "flex", flexDirection: "column", padding: responsive.md ? 16 : 12 },
-          cover: { marginTop: -2 }
-      }}
-        cover={
-          <Flex style={{ position: "relative" }}>
-            {product.category === "ACCESSORIES" ? (
-              <Flex
-                style={{
-                  width: "100%",
-                  height: 278,
-                  backgroundColor: "#FFF",
-                  justifyContent: "center",
-                  alignItems: "center"
-                }}
-              >
-                <Flex
-                  style={{
-                    width: 150,
-                    height: 150,
-                    borderRadius: "50%",
-                    backgroundColor: "#000",
-                    border: "2px solid #FFF",
+            styles={{
+              body: { flex: 1, display: "flex", flexDirection: "column", padding: responsive.md ? 16 : 12 },
+              cover: { marginTop: -2 }
+            }}
+            cover={
+              <Flex style={{ position: "relative" }}>
+                {product.category === "ACCESSORIES" ? (
+                  <Flex style={{
+                    width: "100%",
+                    height: 278,
+                    backgroundColor: "#FFF",
                     justifyContent: "center",
                     alignItems: "center",
-                    color: "#FFF"
-                  }}
-                >
+                    borderTopLeftRadius: 8,
+                    borderTopRightRadius: 8
+                  }}>
+                    <Flex style={{
+                      width: 150,
+                      height: 150,
+                      borderRadius: "50%",
+                      backgroundColor: "#000",
+                      border: "2px solid #FFF",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      color: "#FFF"
+                    }}>
+                      <Image
+                        loading="lazy"
+                        src={logoImage}
+                        preview={false}
+                        style={{ objectFit: "cover", width: "100%", height: 150 }}
+                      />
+                    </Flex>
+                  </Flex>
+                ) : (
                   <Image
                     loading="lazy"
-                    src={logoImage}
+                    src={product.imageUrl}
                     preview={false}
-                    style={{ objectFit: "cover", width: "100%", height: 150 }}
+                    style={{ objectFit: "cover", width: "100%", borderTopLeftRadius: 8, borderTopRightRadius: 8 }}
                   />
+                )}
+                <Flex style={{
+                  position: "absolute",
+                  left: 8,
+                  top: 8,
+                  width: 32,
+                  height: 32,
+                  borderRadius: "50%",
+                  backgroundColor: "rgba(0, 0, 0, 0.7)",
+                  color: "#FFF",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  fontSize: 14,
+                  fontWeight: 600
+                }}>
+                  {product.id}
                 </Flex>
+                {product.untappdUrl && (
+                  <Link
+                    href={product.untappdUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      preview={false}
+                      loading="lazy"
+                      src={untappdImage}
+                      wrapperStyle={{ position: "initial" }}
+                      className={styles.untappdIcon}
+                      style={{
+                        position: "absolute",
+                        right: 8,
+                        top: 8,
+                        width: 36,
+                        height: 36,
+                        borderRadius: "50%",
+                        boxShadow: "0 2px 8px rgba(0,0,0,0.3)",
+                        transition: "transform 0.2s ease-in-out",
+                        willChange: "transform"
+                      }}
+                    />
+                  </Link>
+                )}
               </Flex>
-            ) : (
-              <Image
-                loading="lazy"
-                src={product.imageUrl}
-                preview={false}
-                style={{ objectFit: "cover", width: "100%", borderTopLeftRadius: 8, borderTopRightRadius: 8 }}
-              />
-            )}
-            <Flex
-              style={{
-                position: "absolute",
-                left: 8,
-                top: 8,
-                width: 32,
-                height: 32,
-                borderRadius: "50%",
-                backgroundColor: "rgba(0, 0, 0, 0.7)",
-                color: "white",
-                justifyContent: "center",
-                alignItems: "center",
-                fontSize: 14,
-                fontWeight: "bold"
-              }}
-            >
-              {product.id}
-            </Flex>
-            {product.untappdUrl && (
-              <Link
-                href={product.untappdUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  preview={false}
-                  loading="lazy"
-                  src={untappdImage}
-                  wrapperStyle={{ position: "initial" }}
-                  style={{
-                    position: "absolute",
-                    right: 8,
-                    top: 8,
-                    width: 36,
-                    height: 36,
-                    borderRadius: "50%",
-                    boxShadow: "0 2px 8px rgba(0,0,0,0.3)"
-                  }}
-                />
-              </Link>
-            )}
-          </Flex>
-        }
-        actions={[
-          <Flex vertical key="variants" style={{ padding: "8px 0", width: "100%" }}>
-            {product.variants.map((variant, index) => (
-              <Flex vertical key={index} style={{
-                marginBottom: index < product.variants.length - 1 ? 8 : 0,
-                padding: "0 16px"
-              }}>
-                <Flex
-                  justify={variant.packaging && variant.packaging.length > 0 ? "space-between" : "center"}
-                  align="center"
-                  style={{ marginBottom: 4 }}
-                  vertical={!responsive.sm}
-                  gap={!responsive.sm ? 4 : 0}
-                >
-                  <Text strong style={{ color: "#1677FF", fontSize: 16, textAlign: "center" }}>
-                    {variant.price} / {variant.volume}
-                  </Text>
-                  {variant.packaging && variant.packaging.length > 0 && (
-                    <Flex gap={4} justify="center">
-                      {variant.packaging.map(pack => (
-                        <Tag
-                          key={pack}
-                          color="default"
-                          style={{
-                            fontSize: 12,
-                            padding: "0 4px",
-                            lineHeight: 1.2,
-                            margin: !responsive.sm ? "2px 0" : 0
-                          }}
-                        >
-                          {pack}
-                        </Tag>
-                      ))}
-                    </Flex>
-                  )}
-                </Flex>
-                <Text type="secondary" style={{ fontSize: 13, textAlign: "center" }}>
-                  {variant.remaining}
-                </Text>
+            }
+            actions={[
+              <Flex vertical key="variants" style={{ padding: "8px 0", width: "100%" }}>
+                {product.variants.map((variant, index) => (
+                  <Flex
+                    vertical
+                    key={index}
+                    style={{
+                      marginBottom: index < product.variants.length - 1 ? 8 : 0,
+                      padding: "0 16px"
+                    }}
+                  >
+                    <Text strong style={{ color: "#1677FF", fontSize: 16, textAlign: "center", marginBottom: 4 }}>
+                      {variant.price} / {variant.volume}
+                    </Text>
+                    {variant.packaging && variant.packaging.length > 0 && (
+                      <Flex gap={4} justify="center" style={{ marginBottom: 4 }}>
+                        {variant.packaging.map(pack => (
+                          <Tag
+                            key={pack}
+                            color="default"
+                            style={{ fontSize: 12, padding: "0 6px", lineHeight: 1.4, margin: 0 }}
+                          >
+                            {pack}
+                          </Tag>
+                        ))}
+                      </Flex>
+                    )}
+                    <Text type="secondary" style={{ fontSize: 13, textAlign: "center" }}>
+                      {variant.remaining}
+                    </Text>
+                  </Flex>
+                ))}
               </Flex>
-            ))}
-          </Flex>
-        ]}
+            ]}
       >
         <Flex vertical style={{ marginBottom: 12 }}>
           <Text strong style={{ fontSize: 16, display: "block", textAlign: "center" }}>
             {product.name}
           </Text>
-          <Text style={{
-            color: "#1677FF",
-            fontSize: 15,
-            display: "block",
-            marginTop: 4,
-            textAlign: "center"
-          }}>
+          <Text style={{ color: "#1677FF", fontSize: 15, display: "block", marginTop: 4, textAlign: "center" }}>
             {product.style}
           </Text>
         </Flex>
@@ -227,20 +225,18 @@ const BeerCatalog = () => {
         </Flex>
 
         <Flex style={{ flex: 1, marginBottom: 12 }}>
-          <Paragraph
-            style={{
-              color: "#000000E0",
-              fontSize: 15,
-              lineHeight: "1.4",
-              display: "-webkit-box",
-              WebkitLineClamp: 4,
-              WebkitBoxOrient: "vertical",
-              overflow: "hidden",
-              margin: 0,
-              height: "100%",
-              textAlign: "center"
-            }}
-          >
+          <Paragraph style={{
+            color: "#000000E0",
+            fontSize: 15,
+            lineHeight: "1.4",
+            display: "-webkit-box",
+            WebkitLineClamp: 4,
+            WebkitBoxOrient: "vertical",
+            overflow: "hidden",
+            margin: 0,
+            height: "100%",
+            textAlign: "center"
+          }}>
             {product.description}
           </Paragraph>
         </Flex>

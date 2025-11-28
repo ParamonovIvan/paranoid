@@ -1,45 +1,62 @@
-import braggotSpicedImage from "./images/braggot-spiced.png";
-import blueberryStrongWildImage from "./images/blueberry-strong-wild.png";
-import cherryStrongWildImage from "./images/cherry-strong-wild.png";
-import cursedAztecGoldImage from "./images/cursed_aztec_gold.png";
-import thirdWorldImage from "./images/third_world.png";
-import raspberryWildAleImage from "./images/raspberry_wild_ale.jpeg";
-import cherryWildAleImage from "./images/cherry_wild_ale.jpeg";
-import cocoGrottoImage from "./images/choco_grotto.png";
-import pumpkinAleImage from "./images/pumpkin_ale.png";
-import fuckWorkImage from "./images/fuck_work.jpg"
-import halloweenIpaImage from "./images/halloween_ipa.png";
-import mondaySucksImage from "./images/monday_sucks.jpg";
-import citronNectarImage from "./images/citron_nectar.png";
-import sweetSpiceImage from "./images/sweet_spice.png";
-import burntBerryImage from "./images/burnt_berry.png";
-import toTheMoonImage from "./images/to_the_moon.png";
-import toTheMoonOakImage from "./images/to_the_moon_oak.png";
-import phantomSpaceImage from "./images/phantom_space.png";
-import stellarEnergyImage from "./images/stellar_energy.png";
-import cosmicHerbsImage from "./images/cosmic_herbs.png";
-import graffAppleOakImage from "./images/graff_apple_oak.png"
-import graffPearOakImage from "./images/graff_pear_oak.png"
-import graffRaspberryImage from "./images/graff_raspberry.png"
-import graffRaspberryOakImage from "./images/graff_raspberry_oak.png"
-import graffGrapeImage from "./images/graff_grape.png";
-import graffCherryImage from "./images/graff_cherry.png";
-import graffBlackCurrantImage from "./images/graff_black_currant.png";
-import graffBlackCurrantOakImage from "./images/graff_black_currant_oak.png";
-import braggotPorterImage from "./images/braggot_porter.png";
-import braggotPorterHotImage from "./images/braggot_porter_hot.png";
-import braggotPorterSmokedImage from "./images/braggot_porter_smoked.png";
-import braggotPorterSpicedImage from "./images/braggot_porter_spiced.png";
-import bsaImage from "./images/bsa.png";
-import temperanceImage from "./images/temperance.png";
-import theMoonImage from "./images/the_moon.png";
-import tropicInfernoImage from "./images/tropic_inferno.png";
-import pumpkinSparkImage from "./images/pumpkin_spark.png";
-import paradisePainImage from "./images/paradise_pain.png";
-import cadaverKetchupImage from "./images/cadaver_ketchup.png";
-import orchardsWrathImage from "./images/orchards_wrath.png";
-import purpleRevengeImage from "./images/purple_revenge.png";
-import everbleedImage from "./images/everbleed.png";
+import braggotSpicedImage from "./images/strong-series-2024/braggot-spiced.png";
+import blueberryStrongWildImage from "./images/strong-series-2024/blueberry-strong-wild.png";
+import cherryStrongWildImage from "./images/strong-series-2024/cherry-strong-wild.png";
+import cursedAztecGoldImage from "./images/strong-series-2024/cursed_aztec_gold.png";
+import defoRaspberryWildAleImage from "./images/season-beer-2025/defo_raspberry_wild_ale.jpeg";
+import defoCherryWildAleImage from "./images/season-beer-2025/defo_cherry_wild_ale.jpeg";
+import cocoGrottoImage from "./images/season-beer-2025/coco_grotto.png";
+import pumpkinAleImage from "./images/season-beer-2025/pumpkin_ale.png";
+import fuckWorkImage from "./images/season-beer-2025/fuck_work.jpg"
+import halloweenIpaImage from "./images/season-beer-2025/halloween_ipa.png";
+import mondaySucksImage from "./images/season-beer-2025/monday_sucks.jpg";
+import sweetSpiceImage from "./images/strong-series-2025/sweet_spice.png";
+import burntBerryImage from "./images/strong-series-2025/burnt_berry.png";
+import toTheMoonImage from "./images/strong-series-2025/to_the_moon.png";
+import toTheMoonOakImage from "./images/strong-series-2025/to_the_moon_oak.png";
+import stellarEnergyImage from "./images/strong-series-2025/stellar_energy.png";
+import cosmicHerbsImage from "./images/strong-series-2025/cosmic_herbs.png";
+import graffPearOakImage from "./images/strong-series-2025/graff_pear_oak.png"
+import graffRaspberryImage from "./images/strong-series-2025/graff_raspberry.png"
+import graffRaspberryOakImage from "./images/strong-series-2025/graff_raspberry_oak.png"
+import graffGrapeImage from "./images/strong-series-2025/graff_grape.png";
+import graffCherryImage from "./images/strong-series-2025/graff_cherry.png";
+import graffBlackCurrantImage from "./images/strong-series-2025/graff_black_currant.png";
+import graffBlackCurrantOakImage from "./images/strong-series-2025/graff_black_currant_oak.png";
+import braggotPorterImage from "./images/strong-series-2025/braggot_porter.png";
+import braggotPorterHotImage from "./images/strong-series-2025/braggot_porter_hot.png";
+import braggotPorterSmokedImage from "./images/strong-series-2025/braggot_porter_smoked.png";
+import braggotPorterSpicedImage from "./images/strong-series-2025/braggot_porter_spiced.png";
+import theMoonImage from "./images/strong-series-2025/the_moon.png";
+import tropicInfernoImage from "./images/pepper-sauces/tropic_inferno.png";
+import pumpkinSparkImage from "./images/pepper-sauces/pumpkin_spark.png";
+import paradisePainImage from "./images/pepper-sauces/paradise_pain.png";
+import cadaverKetchupImage from "./images/pepper-sauces/cadaver_ketchup.png";
+import orchardsWrathImage from "./images/pepper-sauces/orchards_wrath.png";
+import purpleRevengeImage from "./images/pepper-sauces/purple_revenge.png";
+import everbleedImage from "./images/pepper-sauces/everbleed.png";
+import wildCherryImage from "./images/8th-birthday/wild_cherry.png";
+import wildRaspberryImage from "./images/8th-birthday/wild_raspberry.png";
+import trippyTimberImage from "./images/8th-birthday/trippy_timber.png";
+import druidsBrewImage from "./images/8th-birthday/druids_brew.png";
+import americanBwImage from "./images/8th-birthday/american_bw.png";
+import grapeAmericanBwImage from "./images/8th-birthday/grape_american_bw.png";
+import englishBwImage from "./images/8th-birthday/english_bw.png";
+import mapleEnglishBwImage from "./images/8th-birthday/maple_english_bw.png";
+import ryeWineImage from "./images/8th-birthday/rye_wine.png";
+import grapeRyeWineImage from "./images/8th-birthday/grape_rye_wine.png";
+import oatWineImage from "./images/8th-birthday/oat_wine.png";
+import vanillaOatWineImage from "./images/8th-birthday/vanilla_oat_wine.png";
+import imperialStoutImage from "./images/8th-birthday/imperial_stout.png";
+import cumberlandImperialStoutImage from "./images/8th-birthday/cumberland_imperial_stout.png";
+import raspberryWildImage from "./images/season-beer-2025/raspberry_wild.png";
+import cherryWildAleImage from "./images/season-beer-2025/cherry_wild.png";
+import gooseberryWildImage from "./images/season-beer-2025/gooseberry_wild.png";
+import strawberryWildImage from "./images/season-beer-2025/strawberry_wild.png";
+import ryeWildImage from "./images/season-beer-2025/rye_wild.png";
+import wheatWineImage from "./images/8th-birthday/wheat_wine.png";
+import ddhWheatWineImage from "./images/8th-birthday/ddh_wheat_wine.png";
+import buckWheatWineImage from "./images/8th-birthday/buckwheat_wine.png";
+import buckWheatWineHoneyImage from "./images/8th-birthday/buckwheat_wine_honey.png";
 
 export interface ProductVariant {
   volume: string;
@@ -64,10 +81,20 @@ export interface Product {
   imageUrl?: string;
 }
 
-export const beerData: Product[] = [
+let globalIdCounter = 1;
+
+const generateIds = (data: Omit<Product, "id">[]) => {
+  return data.map((item) => ({
+    ...item,
+    id: globalIdCounter++
+  }));
+};
+
+export const beerData: Product[] = generateIds([
+
   // STRONG SERIES 2024
+
   {
-    id: 1,
     category: "STRONG SERIES 2024",
     name: "Honey Imperial Porter",
     style: "Braggot with Spiced",
@@ -88,7 +115,6 @@ export const beerData: Product[] = [
     imageUrl: braggotSpicedImage
   },
   {
-    id: 2,
     category: "STRONG SERIES 2024",
     name: "Harmony In Chaos",
     style: "Blueberry Strong Wild Ale",
@@ -103,19 +129,18 @@ export const beerData: Product[] = [
         volume: "0.33л",
         price: "450",
         packaging: ["воск", "тубус"],
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       },
       {
         volume: "0.25л",
         price: "230",
         packaging: ["воск"],
-        remaining: "остаток: 7 шт."
+        remaining: "остаток: 5 шт."
       }
     ],
     imageUrl: blueberryStrongWildImage
   },
   {
-    id: 3,
     category: "STRONG SERIES 2024",
     name: "Harmony In Chaos",
     style: "Cherry Strong Wild Ale",
@@ -136,16 +161,13 @@ export const beerData: Product[] = [
         volume: "0.25л",
         price: "230",
         packaging: ["воск"],
-        remaining: "остаток: 8 шт."
+        remaining: "остаток: 6 шт."
       }
     ],
     imageUrl: cherryStrongWildImage
   },
-
-  // STRONG PEPPER SERIES 2024
   {
-    id: 4,
-    category: "STRONG PEPPER SERIES 2024",
+    category: "STRONG SERIES 2024",
     name: "Cursed Aztec Gold",
     style: "Caribbean Imperial Stout with 7 Pot Douglah Pepper",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-cursed-aztec-gold/5730106",
@@ -159,36 +181,15 @@ export const beerData: Product[] = [
         volume: "0.33л",
         packaging: ["воск"],
         price: "330",
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: cursedAztecGoldImage
   },
-  {
-    id: 5,
-    category: "STRONG PEPPER SERIES 2024",
-    name: "Third World",
-    style: "African Imperial Stout with Malagueta Pepper",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-third-world/5730107",
-    og: "24.5%",
-    abv: "10.0",
-    ibu: "30",
-    description: "Имперский стаут, сваренный с добавлением острого африканского перца Malagueta (до 100 000) сковиллей и сухо охмеленный Simcoe, Citra и Hallertau Mittelfruh.",
-    bottlingDate: "24.02.2024",
-    variants: [
-      {
-        volume: "0.33л",
-        packaging: ["воск"],
-        price: "330",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: thirdWorldImage
-  },
 
   // SEASON BEER 2025
+
   {
-    id: 6,
     category: "SEASON BEER 2025",
     name: "Удавленный вишней",
     style: "Wild Ale with Cherry",
@@ -202,13 +203,12 @@ export const beerData: Product[] = [
       {
         volume: "0.45л",
         price: "310",
-        remaining: "остаток: 3 шт."
+        remaining: "остаток: 2 шт."
       }
     ],
-    imageUrl: cherryWildAleImage
+    imageUrl: defoCherryWildAleImage
   },
   {
-    id: 7,
     category: "SEASON BEER 2025",
     name: "Малина язычника",
     style: "Wild Ale with Raspberry",
@@ -225,10 +225,9 @@ export const beerData: Product[] = [
         remaining: "остаток: 1 шт."
       }
     ],
-    imageUrl: raspberryWildAleImage
+    imageUrl: defoRaspberryWildAleImage
   },
   {
-    id: 8,
     category: "SEASON BEER 2025",
     name: "The Coco Grotto",
     style: "Coconut Stout",
@@ -242,13 +241,12 @@ export const beerData: Product[] = [
       {
         volume: "0.45л",
         price: "300",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 2 шт."
       }
     ],
     imageUrl: cocoGrottoImage
   },
   {
-    id: 9,
     category: "SEASON BEER 2025",
     name: "Pumpkin Ale",
     style: "American Pumpkin Ale",
@@ -262,13 +260,12 @@ export const beerData: Product[] = [
       {
         volume: "0.45л",
         price: "260",
-        remaining: "остаток: 24 шт."
+        remaining: "остаток: 22 шт."
       }
     ],
     imageUrl: pumpkinAleImage
   },
   {
-    id: 10,
     category: "SEASON BEER 2025",
     name: "Freeday. Fuck Work",
     style: "Pumpkin Porter",
@@ -282,13 +279,12 @@ export const beerData: Product[] = [
       {
         volume: "0.45л",
         price: "330",
-        remaining: "остаток: 9 шт."
+        remaining: "остаток: 8 шт."
       }
     ],
     imageUrl: fuckWorkImage
   },
   {
-    id: 11,
     category: "SEASON BEER 2025",
     name: "Halloween IPA",
     style: "Brett Red IPA",
@@ -302,13 +298,12 @@ export const beerData: Product[] = [
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 15 шт."
+        remaining: "остаток: 11 шт."
       }
     ],
     imageUrl: halloweenIpaImage
   },
   {
-    id: 12,
     category: "SEASON BEER 2025",
     name: "Monday Sucks",
     style: "Brown DIPA",
@@ -322,35 +317,110 @@ export const beerData: Product[] = [
       {
         volume: "0.45л",
         price: "350",
-        remaining: "остаток: 9 шт."
+        remaining: "остаток: 7 шт."
       }
     ],
     imageUrl: mondaySucksImage
   },
-
-  // STRONG SERIES 2025
   {
-    id: 13,
-    category: "STRONG SERIES 2025",
-    name: "Citron Nectar",
-    style: "Lemongrass Saison Braggot",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-citron-nectar/6154315",
-    og: "22.0%",
-    abv: "11.6",
+    category: "SEASON BEER 2025",
+    name: "Hive",
+    style: "Raspberry Wild Ale",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-hive/6496863",
+    og: "15.5%",
+    abv: "6.9",
     ibu: "10",
-    description: "Смесь пива и местного меда (с. Кудрино, Удмуртия) смешанного брожения с добавлением тайского лемонграсса. Сухое, медовое, алкогольное пиво с терпкостью и нотами цитрусовых.",
-    bottlingDate: "09.02.2025",
+    description: "Hive — это не просто пиво с малиной. Это колония вкуса, рожденная в сотах дикого брожения. Каждая ягода — это отдельная капсула с интенсивным, терпким характером, которую дикие дрожжи и бактерии растворяют в единый, невероятно сложный букет. Яркая, живая кислинка танцует на языке, сменяясь глубоким, почти землистым послевкусием. Это пиво — симфония природы, где каждая нота знает свое место в рое.",
+    bottlingDate: "16.11.2025",
     variants: [
       {
-        volume: "0.33л",
-        price: "240",
-        remaining: "остаток: 1 шт."
+        volume: "0.45л",
+        price: "320",
+        remaining: "остаток: 28 шт."
       }
     ],
-    imageUrl: citronNectarImage
+    imageUrl: raspberryWildImage
   },
   {
-    id: 14,
+    category: "SEASON BEER 2025",
+    name: "Core",
+    style: "Cherry Wild Ale",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-core/6496864",
+    og: "15.5%",
+    abv: "6.9",
+    ibu: "10",
+    description: "Core — это не просто пиво с вишней. Это погружение в самый эпицентр вкуса, к раскаленному реактору, где дикое брожение высвобождает всю мощь ягоды. Темная, почти чернильная вишня раскрывается не сладостью, а интенсивной терпкостью и глубокой фруктовой глубиной. Живая, пикантная кислинка — как разряд энергии, пронизывающий плотное тело эля, чтобы обнажить его сложную, почти минеральную сердцевину. Это пиво — источник, чья сила остается с вами долгим, сухим и вишневым шлейфом.",
+    bottlingDate: "16.11.2025",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "320",
+        remaining: "остаток: 26 шт."
+      }
+    ],
+    imageUrl: cherryWildAleImage
+  },
+  {
+    category: "SEASON BEER 2025",
+    name: "Oculus",
+    style: "Gooseberry Wild Ale",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-oculus/6496865",
+    og: "15.5%",
+    abv: "6.9",
+    ibu: "10",
+    description: "Oculus — это пиво, которое не просто пьют, а в которое всматриваются. Полупрозрачный крыжовник, подобно зрачку, открывает портал в иное измерение вкуса. Его яркая, пронзительная кислинка — это первый проблеск света, который ослепляет и обостряет чувства. За ним проступает сложный, почти электрический профиль: землистые ноты и вкус свежего щавеля. Это пиво — всевидящее око природы, холодное, пронзительное и невероятно живое.",
+    bottlingDate: "16.11.2025",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "320",
+        remaining: "остаток: 26 шт."
+      }
+    ],
+    imageUrl: gooseberryWildImage
+  },
+  {
+    category: "SEASON BEER 2025",
+    name: "Capsule",
+    style: "Strawberry Wild Ale",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-capsule/6496866",
+    og: "15.5%",
+    abv: "6.9",
+    ibu: "10",
+    description: "Capsule — это пиво-откровение. Под обманчиво нежной плотью клубники скрываются десятки капсул, каждая — сосуд с концентрированной энергией. Дикое брожение взламывает эту защиту, высвобождая не сахарную сладость, а настоящую, земляничную эссенцию. Вкус начинается со вспышки живой, игристой кислинки, которая растворяет привычное, обнажая ядро: плотный, ягодный характер с нотами дикой земляники, древесной коры и влажной земли. Это не напиток, а биологическая капсула с генетическим кодом настоящей клубники.",
+    bottlingDate: "16.11.2025",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "320",
+        remaining: "остаток: 27 шт."
+      }
+    ],
+    imageUrl: strawberryWildImage
+  },
+  {
+    category: "SEASON BEER 2025",
+    name: "Night Grove",
+    style: "Rye Wild Ale",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-night-grove/6496868",
+    og: "17.0%",
+    abv: "7.2",
+    ibu: "20",
+    description: "Войдите в Ночную Рощу — место, где под сенью древних деревьев рождается магия. Это пиво смешанного брожения — как таинственный спутник, ведущий вас через сумрак. Его душа — рожь, могучая и земная, рождает хлебный характер и глубокую сложность. Освежающая кислинка — подобно далекому отблеску пламени в темноте — освещает путь, не обжигая. Позвольте диким дрожжам и бактериям провести вас через этот сонный лес, где каждый глоток — это история, рассказанная шепотом под мерцание звезд.",
+    bottlingDate: "05.11.2025",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "340",
+        remaining: "остаток: 13 шт."
+      }
+    ],
+    imageUrl: ryeWildImage
+  },
+
+  // STRONG SERIES 2025
+
+  {
     category: "STRONG SERIES 2025",
     name: "Sweet Spice",
     style: "Pepper Saison Braggot",
@@ -370,7 +440,6 @@ export const beerData: Product[] = [
     imageUrl: sweetSpiceImage
   },
   {
-    id: 15,
     category: "STRONG SERIES 2025",
     name: "Burnt Berry",
     style: "Raspberry Imperial Stout",
@@ -385,13 +454,12 @@ export const beerData: Product[] = [
         volume: "0.33л",
         price: "330",
         packaging: ["воск"],
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: burntBerryImage
   },
   {
-    id: 16,
     category: "STRONG SERIES 2025",
     name: "To the Moon",
     style: "Cherry Imperial Stout",
@@ -412,7 +480,6 @@ export const beerData: Product[] = [
     imageUrl: toTheMoonImage
   },
   {
-    id: 17,
     category: "STRONG SERIES 2025",
     name: "To the Moon (oak)",
     style: "Cherry Imperial Stout (oak edition)",
@@ -427,34 +494,12 @@ export const beerData: Product[] = [
         volume: "0.33л",
         price: "370",
         packaging: ["воск"],
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: toTheMoonOakImage
   },
   {
-    id: 18,
-    category: "STRONG SERIES 2025",
-    name: "Phantom Space",
-    style: "Black Currant Imperial Stout",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-phantom-space/6228374",
-    og: "30.1%",
-    abv: "10.8",
-    ibu: "30",
-    description: "Крепкий плотный имперский стаут двойного затирания, сваренный с добавлением сока черной смородины и лактозы. Насыщенный вкус молочного шоколада с кофейными и ягодными нотами.",
-    bottlingDate: "04.04.2025",
-    variants: [
-      {
-        volume: "0.33л",
-        price: "350",
-        packaging: ["воск"],
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: phantomSpaceImage
-  },
-  {
-    id: 19,
     category: "STRONG SERIES 2025",
     name: "Stellar Energy",
     style: "Coffee Imperial Stout",
@@ -475,7 +520,6 @@ export const beerData: Product[] = [
     imageUrl: stellarEnergyImage
   },
   {
-    id: 20,
     category: "STRONG SERIES 2025",
     name: "Cosmic Herbs",
     style: "Juniper and Mugwort Imperial Stout",
@@ -496,27 +540,6 @@ export const beerData: Product[] = [
     imageUrl: cosmicHerbsImage
   },
   {
-    id: 21,
-    category: "STRONG SERIES 2025",
-    name: "Strong Apple Graff (oak)",
-    style: "Apfelwein (oak edition)",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-strong-apple-graff-oak-aged/6208891",
-    og: "31.5%",
-    abv: "15.8",
-    ibu: "15",
-    description: "Пиво, сваренное в стиле Apfelwein с добавлением яблочного сока (30%). Состав солода: 50% пилсен, 50% пшеничный, хмель Cascade, вымоченная в хересе спираль сильного обжига из американского дуба.",
-    bottlingDate: "24.03.2025",
-    variants: [
-      {
-        volume: "0.33л",
-        price: "280",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: graffAppleOakImage
-  },
-  {
-    id: 22,
     category: "STRONG SERIES 2025",
     name: "Strong Pear Graff (oak)",
     style: "Appliqueing with Pear (oak edition)",
@@ -530,13 +553,12 @@ export const beerData: Product[] = [
       {
         volume: "0.33л",
         price: "260",
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: graffPearOakImage
   },
   {
-    id: 23,
     category: "STRONG SERIES 2025",
     name: "Strong Raspberry Graff",
     style: "Apfelwein with Raspberry",
@@ -550,13 +572,12 @@ export const beerData: Product[] = [
       {
         volume: "0.33л",
         price: "270",
-        remaining: "остаток: 3 шт."
+        remaining: "остаток: 2 шт."
       }
     ],
     imageUrl: graffRaspberryImage
   },
   {
-    id: 24,
     category: "STRONG SERIES 2025",
     name: "Strong Raspberry Graff (oak)",
     style: "Apfelwein with Raspberry (oak edition)",
@@ -570,13 +591,12 @@ export const beerData: Product[] = [
       {
         volume: "0.33л",
         price: "280",
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 4 шт."
       }
     ],
     imageUrl: graffRaspberryOakImage
   },
   {
-    id: 25,
     category: "STRONG SERIES 2025",
     name: "Strong Grape Graff",
     style: "Apfelwein with Grape",
@@ -590,13 +610,12 @@ export const beerData: Product[] = [
       {
         volume: "0.33л",
         price: "250",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 2 шт."
       }
     ],
     imageUrl: graffGrapeImage
   },
   {
-    id: 26,
     category: "STRONG SERIES 2025",
     name: "Strong Cherry Graff",
     style: "Apfelwein with Cherry",
@@ -610,13 +629,12 @@ export const beerData: Product[] = [
       {
         volume: "0.33л",
         price: "250",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: graffCherryImage
   },
   {
-    id: 27,
     category: "STRONG SERIES 2025",
     name: "Strong Black Currant Graff",
     style: "Apfelwein with Black Currant",
@@ -630,13 +648,12 @@ export const beerData: Product[] = [
       {
         volume: "0.33л",
         price: "270",
-        remaining: "остаток: 5 шт."
+        remaining: "остаток: 4 шт."
       }
     ],
     imageUrl: graffBlackCurrantImage
   },
   {
-    id: 28,
     category: "STRONG SERIES 2025",
     name: "Strong Black Currant Graff (oak)",
     style: "Apfelwein with Black Currant (oak edition)",
@@ -656,7 +673,6 @@ export const beerData: Product[] = [
     imageUrl: graffBlackCurrantOakImage
   },
   {
-    id: 29,
     category: "STRONG SERIES 2025",
     name: "Honey Imperial Porter",
     style: "Braggot",
@@ -671,13 +687,12 @@ export const beerData: Product[] = [
         volume: "0.33л",
         price: "290",
         packaging: ["воск"],
-        remaining: "остаток: 3 шт."
+        remaining: "остаток: 2 шт."
       }
     ],
     imageUrl: braggotPorterImage
   },
   {
-    id: 30,
     category: "STRONG SERIES 2025",
     name: "Honey Imperial Porter (hot)",
     style: "Braggot with Trinidad Scorpion Pepper",
@@ -698,7 +713,6 @@ export const beerData: Product[] = [
     imageUrl: braggotPorterHotImage
   },
   {
-    id: 31,
     category: "STRONG SERIES 2025",
     name: "Honey Imperial Porter (smoked)",
     style: "Smoked Braggot",
@@ -719,7 +733,6 @@ export const beerData: Product[] = [
     imageUrl: braggotPorterSmokedImage
   },
   {
-    id: 32,
     category: "STRONG SERIES 2025",
     name: "Honey Imperial Porter (spiced)",
     style: "Braggot with Spiced",
@@ -740,48 +753,6 @@ export const beerData: Product[] = [
     imageUrl: braggotPorterSpicedImage
   },
   {
-    id: 33,
-    category: "STRONG SERIES 2025",
-    name: "BSA",
-    style: "British Strong Ale",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-bsa-2025/6291279",
-    og: "23.5%",
-    abv: "11.2",
-    ibu: "40",
-    description: "Крепкий эль, традиционно выдержанный в бутылке, с солодовым богатством, горечью английских хмелей, фруктовыми эфирами и алкогольной теплотой. Добавление большого количества особых солодов придают напитку вкус и аромат сухофруктов и карамели, а английских хмелей - землистые и цветочные ноты.",
-    bottlingDate: "04.06.2025",
-    variants: [
-      {
-        volume: "0.33л",
-        price: "280",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: bsaImage
-  },
-  {
-    id: 34,
-    category: "STRONG SERIES 2025",
-    name: "Temperance",
-    style: "Strong Grape Ale",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-temperance-2025/6392003",
-    og: "23.0%",
-    abv: "10.5",
-    ibu: "20",
-    description: "Этот проект — эксперимент по созданию сложного напитка. За основу взята смесь пивного сусла и виноградного сока, которая прошла полное брожение на пивных дрожжах. Это позволило раскрыть фруктовый потенциал сока, придав ему те самые пивные нюансы, которые мы так любим.",
-    bottlingDate: "22.08.2025",
-    variants: [
-      {
-        volume: "0.33л",
-        price: "300",
-        packaging: ["воск"],
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: temperanceImage
-  },
-  {
-    id: 35,
     category: "STRONG SERIES 2025",
     name: "The Moon",
     style: "Strong Grape Ale with Vanilla",
@@ -796,16 +767,459 @@ export const beerData: Product[] = [
         volume: "0.33л",
         price: "310",
         packaging: ["воск"],
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: theMoonImage
   },
-];
 
-export const sauceData: Product[] = [
+  // 8TH BIRTHDAY
   {
-    id: 36,
+    category: "8TH BIRTHDAY",
+    name: "Wild Cherry",
+    style: "Wild Ale with Cherry, Cocoa and Cinnamon",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-wild-cherry/6496841",
+    og: "15.5%",
+    abv: "6.7",
+    ibu: "10",
+    description: "Пиво смешанного брожения (с добавлением культурных Brettanomyces), фруктово-пряное, с нотами скотного двора и мокрого сена, с кислинкой и характером американского дуба.",
+    bottlingDate: "27.04.2025",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "340",
+        remaining: "остаток: 16 шт."
+      }
+    ],
+    imageUrl: wildCherryImage
+  },
+  {
+    category: "8TH BIRTHDAY",
+    name: "Raspberry Dream",
+    style: "Wild Ale with Raspberry",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-raspberry-dream/6496844",
+    og: "15.5%",
+    abv: "6.7",
+    ibu: "10",
+    description: "Пиво смешанного брожения (с добавлением культурных Brettanomyces), фруктово-пряное, с нотами скотного двора и мокрого сена, с кислинкой и характером американского дуба.",
+    bottlingDate: "27.04.2025",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "340",
+        remaining: "остаток: 13 шт."
+      }
+    ],
+    imageUrl: wildRaspberryImage
+  },
+  {
+    category: "8TH BIRTHDAY",
+    name: "Trippy Timber",
+    style: "Wild Ale with Dates and Raisin",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-trippy-timber/6496846",
+    og: "19.5%",
+    abv: "7.2",
+    ibu: "20",
+    description: "Дикий эль смешанного брожения, выдержанный с натуральными финиками и изюмом, а также дубовыми палочками из американского дуба.",
+    bottlingDate: "23.06.2025",
+    variants: [
+      {
+        volume: "0.375л",
+        price: "330",
+        remaining: "остаток: 25 шт."
+      },
+      {
+        volume: "0.75л",
+        price: "660",
+        remaining: "остаток: 2 шт."
+      }
+    ],
+    imageUrl: trippyTimberImage
+  },
+  {
+    category: "8TH BIRTHDAY",
+    name: "Druid's Brew",
+    style: "Spiced Wild Ale with Dates, Raisin and Spiced",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-druid-s-brew/6496847",
+    og: "19.5%",
+    abv: "7.2",
+    ibu: "20",
+    description: "Дикий эль смешанного брожения, выдержанный с натуральными финиками и изюмом, а также дубовыми палочками из американского дуба и специй для глинтвейна.",
+    bottlingDate: "23.06.2025",
+    variants: [
+      {
+        volume: "0.375л",
+        price: "340",
+        remaining: "остаток: 30 шт."
+      },
+      {
+        volume: "0.75л",
+        price: "680",
+        remaining: "остаток: 2 шт."
+      }
+    ],
+    imageUrl: druidsBrewImage
+  },
+  {
+    category: "8TH BIRTHDAY",
+    name: "Carved Essence",
+    style: "American Barleywine",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-carved-essence/6496848",
+    og: "25.0%",
+    abv: "11.5",
+    ibu: "60",
+    description: "Этот американский барливайн — дань уважения солодовой сложности и хмелевой мощи. Семь различных солодов создают невероятно насыщенный профиль с доминирующими нотами темных сухофруктов, ириски и карамели. Мощная алкогольная теплота и фруктовая эфирность получают достойного оппонента в виде резкой, горькой атаки американских хмелей. Финальный штрих — выдержка на щепе американского дуба из-под бурбона, которая привносит ноты ванили, кокоса и пряностей, сглаживая и усложняя характер. Идеальный кандидат для выдержки, чья сущность будет раскрываться с годами.",
+    bottlingDate: "23.09.2025",
+    variants: [
+      {
+        volume: "0.375л",
+        price: "400",
+        remaining: "остаток: 29 шт."
+      },
+      {
+        volume: "0.75л",
+        price: "800",
+        remaining: "остаток: 4 шт."
+      }
+    ],
+    imageUrl: americanBwImage
+  },
+  {
+    category: "8TH BIRTHDAY",
+    name: "Hybrid Giant",
+    style: "Grape American Barleywine",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-hybrid-giant/6496849",
+    og: "28.0%",
+    abv: "11.5",
+    ibu: "60",
+    description: "Этот гибридный эль бросает вызов традициям. Крепкая, сложная солодовая основа американского барливайна, сброженная винными дрожжами, получает неожиданное измерение. Насыщенная сладость и мощная засыпь американских хмелей гармонично переплетаются с яркими виноградными нотами, подчеркнутыми хмелем Nelson Sauvin с его характерными тонами белого винограда и тропических фруктов. Выдержка на дубовых палочках, вымоченных в вине, добавляет структуры, лёгкой танинности и винной сложности, завершая и без того многогранный профиль.",
+    bottlingDate: "18.09.2025",
+    variants: [
+      {
+        volume: "0.375л",
+        price: "410",
+        remaining: "остаток: 34 шт."
+      },
+      {
+        volume: "0.75л",
+        price: "810",
+        remaining: "остаток: 4 шт."
+      }
+    ],
+    imageUrl: grapeAmericanBwImage
+  },
+  {
+    category: "8TH BIRTHDAY",
+    name: "The Calm Within",
+    style: "English Barleywine",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-the-calm-within/6496852",
+    og: "24.0%",
+    abv: "10.5",
+    ibu: "40",
+    description: "Этот крепкий эль, выдержанный в традициях английских крепких элей, предлагает путешествие в глубины вкуса. Позвольте себе затеряться в лабиринте его аромата: спелые тёмные фрукты, сочная карамель и шлейф креплёного вина порту. Благородные хмели Fuggle и East Kent Goldings мягко оттеняют насыщенную солодовую основу, даря лёгкие травянистые и цветочные акценты. Финал — это тёплое, продолжительное послевкусие с благородной дубовой нотой, которую пиву подарили палочки американского дуба, вымоченные в вине. Искусство баланса между мощью и изяществом.",
+    bottlingDate: "07.09.2025",
+    variants: [
+      {
+        volume: "0.375л",
+        price: "400",
+        remaining: "остаток: 22 шт."
+      },
+      {
+        volume: "0.75л",
+        price: "800",
+        remaining: "остаток: 4 шт."
+      }
+    ],
+    imageUrl: englishBwImage
+  },
+  {
+    category: "8TH BIRTHDAY",
+    name: "Shy Spirit",
+    style: "Maple English Barleywine",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-shy-spirit/6496853",
+    og: "25.5%",
+    abv: "11.1",
+    ibu: "40",
+    description: "Под личиной спокойствия таится могучая сила. Этот барливайн — ода солодовому богатству, где насыщенные ноты инжира и тёмного изюма встречаются с тёплой, природной сладостью кленового сиропа. Аристократичный хмель East Kent Goldings отвечает лёгким цветочным шёпотом на щедром солодовом фундаменте. Его подлинная глубина раскрывается не сразу — как и одноглазый страж на этикетке, его душа терпелива. Выдержка на щепе американского дуба, пропитанной бурбоном, дарит напитку согревающую ванильную мягкость и долгое, задумчивое послевкусие.",
+    bottlingDate: "07.09.2025",
+    variants: [
+      {
+        volume: "0.375л",
+        price: "410",
+        remaining: "остаток: 17 шт."
+      },
+      {
+        volume: "0.75л",
+        price: "810",
+        remaining: "остаток: 4 шт."
+      }
+    ],
+    imageUrl: mapleEnglishBwImage
+  },
+  {
+    category: "8TH BIRTHDAY",
+    name: "The Rye Golem",
+    style: "Ryewine",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-the-rye-golem/6496855",
+    og: "25.0%",
+    abv: "10.4",
+    ibu: "40",
+    description: "Это не просто пиво, а ожившая стихия зерна, могучий солодовый монстр, рожденный из щедрой засыпи ржаного солода. Его насыщенный коричневый цвет предвещает богатство вкуса, где мощь тёмного хлеба, пряные ноты ржи и тонкие оттенки горького шоколада сплетаются в единую мощную форму. Хмелевая горчинка — это не крик, а сдержанный приказ, возвращающий к порядку и балансу. Как и страж на этикетке, чьи глаза пылают зерновым огнем, этот эль терпелив и мудр. Его подлинная сила раскрывается не спеша, оставляя долгое, согревающее послевкусие с тёплыми тонами ржаных сухарей и лёгкой пряностью.",
+    bottlingDate: "21.10.2025",
+    variants: [
+      {
+        volume: "0.33",
+        price: "350",
+        packaging: ["воск"],
+        remaining: "остаток: 43 шт."
+      },
+      {
+        volume: "0.75л",
+        price: "800",
+        remaining: "остаток: 4 шт."
+      }
+    ],
+    imageUrl: ryeWineImage
+  },
+  {
+    category: "8TH BIRTHDAY",
+    name: "Clash of Elements",
+    style: "Grape Ryewine",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-clash-of-elements/6496856",
+    og: "26.5%",
+    abv: "10.5",
+    ibu: "25",
+    description: "Этот эль — эпическая битва двух стихий, застывшая в бокале. Из самой сердцевины зернового вихря, рождённого щедрой засыпью ржаного и ячменного солода, прорывается буйство тёмного винограда. Мощь и структура ржи встречаются с глубокими винными тонами, создавая идеально нестабильный баланс. Его финал — долгий, сложный и завораживающий, где уже невозможно отличить зерно от ягоды. Это не просто пиво, это алхимический синтез двух миров.",
+    bottlingDate: "21.10.2025",
+    variants: [
+      {
+        volume: "0.33",
+        price: "360",
+        packaging: ["воск"],
+        remaining: "остаток: 30 шт."
+      },
+      {
+        volume: "0.75л",
+        price: "810",
+        remaining: "остаток: 4 шт."
+      }
+    ],
+    imageUrl: grapeRyeWineImage
+  },
+  {
+    category: "8TH BIRTHDAY",
+    name: "Porridge, Sir!",
+    style: "Oatwine",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-porridge-sir/6496857",
+    og: "23.0%",
+    abv: "10.0",
+    ibu: "20",
+    description: "Просыпаться ради тарелки овсянки? Сэр, это скучно. Но засыпать овёс в пивоварню — это гениально. Этот Oatwine — гимн уюту и простоте. Овсяные хлопья дарят ему не вес, а невероятно шелковистую, пышную текстуру, дополняя солодовые ноты печенья и карамели. «Porridge, Sir!» — это мощный, но удивительно сбалансированный эль, который превращает детское «надо» во взрослое «хочу».",
+    bottlingDate: "11.11.2025",
+    variants: [
+      {
+        volume: "0.33",
+        price: "350",
+        packaging: ["воск"],
+        remaining: "остаток: 32 шт."
+      },
+      {
+        volume: "0.75л",
+        price: "800",
+        remaining: "остаток: 4 шт."
+      }
+    ],
+    imageUrl: oatWineImage
+  },
+  {
+    category: "8TH BIRTHDAY",
+    name: "Vanilla Oblivion",
+    style: "Vanilla Oatwine",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-vanilla-oblivion/6496858",
+    og: "23.2%",
+    abv: "10.5",
+    ibu: "20",
+    description: "Это не просто пиво. Это точка невозврата. С первой же капли вы оказываетесь в плену у ванили — не десертно-сладкой, а тёплой, элегантной и гипнотической. Она окутывает мощное тело этого Oatwine, сотканное из шелковистой овсяной текстуры и плотного солодового каркаса. «Vanilla Oblivion» — это тот самый забытый вкус, в котором хочется исчезнуть без следа. Для тех, кто не боится потерять себя в идеальном моменте.",
+    bottlingDate: "11.11.2025",
+    variants: [
+      {
+        volume: "0.33",
+        price: "360",
+        packaging: ["воск"],
+        remaining: "остаток: 24 шт."
+      },
+      {
+        volume: "0.75л",
+        price: "810",
+        remaining: "остаток: 4 шт."
+      }
+    ],
+    imageUrl: vanillaOatWineImage
+  },
+  {
+    category: "8TH BIRTHDAY",
+    name: "Gloopy Grasp",
+    style: "Imperial Stout",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-gloopy-grasp/6496860",
+    og: "23.5%",
+    abv: "9.3",
+    ibu: "40",
+    description: "«Gloopy Grasp» — это не название. Это — диагноз. Классический имперский стаут, лишенный всяких уступок в виде посторонних добавок. Его оружие — чистая, неразбавленная мощь жжёного и карамельного солода. Он густой, маслянистый и обволакивающий, как жидкий асфальт. Вкус — это концентрированная вселенная тёмного шоколада, чёрного кофе и смолы. Он не пытается вам понравиться. Он предлагает вам подчиниться. И вы согласитесь.",
+    bottlingDate: "17.11.2025",
+    variants: [
+      {
+        volume: "0.33",
+        price: "350",
+        packaging: ["воск"],
+        remaining: "остаток: 27 шт."
+      },
+      {
+        volume: "0.75л",
+        price: "800",
+        remaining: "остаток: 4 шт."
+      }
+    ],
+    imageUrl: imperialStoutImage
+  },
+  {
+    category: "8TH BIRTHDAY",
+    name: "Cumberland Imperial Stout",
+    style: "Cumberland Imperial Stout",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-cumberland-imperial-stout-2025/6496861",
+    og: "23.5%",
+    abv: "9.3",
+    ibu: "40",
+    description: "Аристократ с тёмной душой, ягодным сердцем и чемпионским титулом. Этот имперский стаут — не просто эксперимент, а проверенная временем формула успеха, завоевавшая высшую награду в категории тёмных сортов на фестивале в Санкт-Петербурге. Мы взяли основу классического стаута и призвали в союзники малину Кумберленд. Это не фруктовый десерт — это сложный диалог, где мощь жжёного солода и горького шоколада ведёт утончённую беседу с глубокими, винными нотами вяленой ягоды.",
+    bottlingDate: "17.11.2025",
+    variants: [
+      {
+        volume: "0.33",
+        price: "360",
+        packaging: ["воск"],
+        remaining: "остаток: 40 шт."
+      },
+      {
+        volume: "0.75л",
+        price: "810",
+        remaining: "остаток: 4 шт."
+      }
+    ],
+    imageUrl: cumberlandImperialStoutImage
+  },
+  {
+    category: "8TH BIRTHDAY",
+    name: "Granite Sanctum",
+    style: "Wheatwine",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-granite-sanctum/6498786",
+    og: "23.0%",
+    abv: "10.3",
+    ibu: "25",
+    description: "Если ячменные вина — это огонь и мощь, то пшеничное вино — это неприступная крепость из гранита и света. Созданное на щедрой засыпи пшеничного и ячменного солода, оно поражает не жаром, а монолитной структурой и бархатистой мягкостью. Его характер — это полнотелое тело с нотами свежеиспеченного хлеба, карамели и сухофруктов, окутанное пьянящей эфирностью. Это убежище. Нерушимый алтарь, где поклоняются чистоте пшеницы.",
+    bottlingDate: "19.11.2025",
+    variants: [
+      {
+        volume: "0.33",
+        price: "350",
+        packaging: ["воск"],
+        remaining: "остаток: 40 шт."
+      },
+      {
+        volume: "0.75л",
+        price: "800",
+        remaining: "остаток: 3 шт."
+      }
+    ],
+    imageUrl: wheatWineImage
+  },
+  {
+    category: "8TH BIRTHDAY",
+    name: "Midnight Mill",
+    style: "DDH Wheatwine",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-midnight-mill/6498787",
+    og: "23.0%",
+    abv: "10.0",
+    ibu: "40",
+    description: "Это пшеничное вино сброжено нейтральными дрожжами, что подчеркнуть яркую хмелевую составляющую. Сухое охмеление привносит в мягкое, бархатистое тело пшеничного вина тёмную, ароматную интригу. Оживают цитрусовые и тропические аккорды, которые, как лунные блики, подсвечивают солодовую мощь, добавляя ей призрачной сложности и свежести. Ночная смена на мельнице вкуса только началась.",
+    bottlingDate: "19.11.2025",
+    variants: [
+      {
+        volume: "0.33",
+        price: "370",
+        packaging: ["воск"],
+        remaining: "остаток: 38 шт."
+      },
+      {
+        volume: "0.75л",
+        price: "840",
+        remaining: "остаток: 3 шт."
+      }
+    ],
+    imageUrl: ddhWheatWineImage
+  },
+  {
+    category: "8TH BIRTHDAY",
+    name: "The Singularity",
+    style: "Buckwheat Strong Ale",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-the-singularity/6506391",
+    og: "22.0%",
+    abv: "8.7",
+    ibu: "20",
+    description: "Гречиха. Строгая, немного дикая, с душой темного леса. Мы не смешивали её характер, а очистили до состояния «точки сингулярности» — момента, когда зерно проявляет свою истинную сущность. Это гречишное вино — квинтэссенция гречихи: насыщенный, с глубокими орехово-землистыми тонами, лёгкой терпкостью и тёплым, почти хлебным послевкусием. Здесь нет ничего лишнего. Только чистая, неразбавленная мощь зерна, попавшего в цель.",
+    bottlingDate: "25.11.2025",
+    variants: [
+      {
+        volume: "0.25",
+        price: "280",
+        packaging: ["воск"],
+        remaining: "остаток: 32 шт."
+      },
+      {
+        volume: "0.45",
+        price: "480",
+        remaining: "остаток: 12 шт."
+      },
+      {
+        volume: "0.75л",
+        price: "820",
+        remaining: "остаток: 6 шт."
+      }
+    ],
+    imageUrl: buckWheatWineImage
+  },
+  {
+    category: "8TH BIRTHDAY",
+    name: "Solitude",
+    style: "Buckwheat wine with Honey",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-solitude/6506393",
+    og: "25.0%",
+    abv: "12.0",
+    ibu: "20",
+    description: "Одиночество — не значит пустота. Это состояние высшей концентрации. К мощной основе гречишного вина мы добавили не сахар, а душу — мёд, собранный в экологически чистом селе Дебесы (Удмуртия). Его тёплая, цветочная сладость не перебивает зерно, а вступает с ним в тихий диалог. Результат — невероятно сложный, согревающий эль, где земляная мощь гречихи встречает солнечное сияние мёда. Медитативное уединение в бокале.",
+    bottlingDate: "25.11.2025",
+    variants: [
+      {
+        volume: "0.25",
+        price: "300",
+        packaging: ["воск"],
+        remaining: "остаток: 32 шт."
+      },
+      {
+        volume: "0.45",
+        price: "500",
+        remaining: "остаток: 12 шт."
+      },
+      {
+        volume: "0.75л",
+        price: "840",
+        remaining: "остаток: 6 шт."
+      }
+    ],
+    imageUrl: buckWheatWineHoneyImage
+  },
+]);
+
+export const sauceData: Product[] = generateIds([
+  {
     category: "PEPPER SAUCES",
     name: "Tropic Inferno",
     style: "Caribbean Pepper Sauce",
@@ -822,7 +1236,6 @@ export const sauceData: Product[] = [
     imageUrl: tropicInfernoImage
   },
   {
-    id: 37,
     category: "PEPPER SAUCES",
     name: "Pumpkin Spark",
     style: "Pumpkin Pepper Sauce",
@@ -833,13 +1246,12 @@ export const sauceData: Product[] = [
       {
         volume: "0.2л",
         price: "500",
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 5 шт."
       }
     ],
     imageUrl: pumpkinSparkImage
   },
   {
-    id: 38,
     category: "PEPPER SAUCES",
     name: "Paradise Pain",
     style: "Strawberry Pepper Sauce",
@@ -856,7 +1268,6 @@ export const sauceData: Product[] = [
     imageUrl: paradisePainImage
   },
   {
-    id: 39,
     category: "PEPPER SAUCES",
     name: "Cadaver Ketchup",
     style: "Coffee BBQ Pepper Sauce",
@@ -873,7 +1284,6 @@ export const sauceData: Product[] = [
     imageUrl: cadaverKetchupImage
   },
   {
-    id: 40,
     category: "PEPPER SAUCES",
     name: "Orchard's Wrath",
     style: "Green Pepper Sauce",
@@ -890,7 +1300,6 @@ export const sauceData: Product[] = [
     imageUrl: orchardsWrathImage
   },
   {
-    id: 41,
     category: "PEPPER SAUCES",
     name: "Purple Revenge",
     style: "Plum Pepper Sauce",
@@ -907,7 +1316,6 @@ export const sauceData: Product[] = [
     imageUrl: purpleRevengeImage
   },
   {
-    id: 42,
     category: "PEPPER SAUCES",
     name: "Everbleed",
     style: "Lingonberries Pepper Sauce",
@@ -923,11 +1331,10 @@ export const sauceData: Product[] = [
     ],
     imageUrl: everbleedImage
   }
-];
+]);
 
-export const accessoriesData: Product[] = [
+export const accessoriesData: Product[] = generateIds([
   {
-    id: 43,
     category: "ACCESSORIES",
     name: "Значок",
     style: "⌀ 25мм",
@@ -941,4 +1348,4 @@ export const accessoriesData: Product[] = [
       }
     ]
   }
-];
+]);

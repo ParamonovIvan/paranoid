@@ -51,12 +51,8 @@ const BreweryIntro = () => {
         gap={!responsive.md ? 16 : 0}
         style={{ marginBottom: 32 }}
       >
-        <Paragraph style={{
-          color: "#A0A0A0",
-          fontSize: responsive.sm ? 16 : 14,
-          margin: 0
-        }}>
-          от 11/11/2025
+        <Paragraph style={{ color: "#A0A0A0", fontSize: responsive.sm ? 16 : 14, margin: 0 }}>
+          от 01/12/2025
         </Paragraph>
         <Paragraph style={{
           color: "#A0A0A0",
@@ -99,11 +95,7 @@ const BreweryIntro = () => {
         {features.map((item, index) => (
           <Col xs={24} md={8} key={index}>
             <Card
-              style={{
-                height: "100%",
-                background: "rgba(139, 69, 19, 0.1)",
-                border: "1px solid #8B4513"
-              }}
+              style={{ height: "100%", background: "rgba(139, 69, 19, 0.1)", border: "1px solid #8B4513" }}
               styles={{ body: { padding: responsive.md ? 16 : 12 } }}
             >
               <Flex align="center" gap={8} style={{ marginBottom: 8 }}>
