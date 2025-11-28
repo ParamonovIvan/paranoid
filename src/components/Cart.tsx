@@ -57,10 +57,7 @@ const Cart: React.FC<CartProps> = ({ open, onClose }) => {
   };
 
   const openTelegram = () => {
-    const message = generateOrderMessage();
-    const telegramUrl = `https://t.me/spool_ka?text=${encodeURIComponent(message)}`;
-
-    window.open(telegramUrl, "_blank", "noopener,noreferrer");
+    window.location.href = `https://t.me/spool_ka?text=${encodeURIComponent(generateOrderMessage())}`;
   };
 
 
