@@ -58,7 +58,7 @@ const Cart: React.FC<CartProps> = ({ open, onClose }) => {
 
   const openTelegram = () => {
     const message = generateOrderMessage();
-    const telegramUrl = `https://t.me/share?text=${encodeURIComponent(message)}`;
+    const telegramUrl = `https://t.me/share/url?text=${encodeURIComponent(message)}`;
 
     window.open(telegramUrl, "_blank", "noopener,noreferrer");
   };
@@ -229,6 +229,7 @@ const Cart: React.FC<CartProps> = ({ open, onClose }) => {
               block
               icon={<ExportOutlined/>}
               type="primary"
+              style={{ height: 36 }}
             >
               Отправить в Telegram
             </Button>
