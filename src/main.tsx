@@ -6,11 +6,15 @@ import "antd/dist/reset.css";
 import "@ant-design/v5-patch-for-react-19";
 import { ConfigProvider } from "antd";
 import { themeConfig } from "./theme/theme.ts";
+import { Provider } from "react-redux";
+import { store } from "./store";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ConfigProvider theme={themeConfig}>
-    <App/>
+      <Provider store={store}>
+        <App />
+      </Provider>
     </ConfigProvider>
   </StrictMode>
 )

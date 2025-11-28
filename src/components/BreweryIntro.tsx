@@ -52,7 +52,7 @@ const BreweryIntro = () => {
         style={{ marginBottom: 32 }}
       >
         <Paragraph style={{ color: "#A0A0A0", fontSize: responsive.sm ? 16 : 14, margin: 0 }}>
-          от 01/12/2025
+          от 28/11/2025
         </Paragraph>
         <Paragraph style={{
           color: "#A0A0A0",

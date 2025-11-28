@@ -1,10 +1,23 @@
 import { useRef, useState } from "react";
-import { Image, Row, Col, Card, Typography, Tag, Flex, Badge, Button } from "antd";
+import {
+  Image,
+  Row,
+  Col,
+  Card,
+  Typography,
+  Tag,
+  Flex,
+  Badge,
+  Button,
+  notification
+} from "antd";
 import { createStyles, useResponsive } from "antd-style";
-import { LeftOutlined, RightOutlined } from "@ant-design/icons";
-import { beerData, sauceData, accessoriesData, type Product } from "../catalog.ts";
+import { LeftOutlined, RightOutlined, ShoppingCartOutlined } from "@ant-design/icons";
+import { beerData, sauceData, accessoriesData, type Product, type ProductVariant } from "../catalog.ts";
 import untappdImage from "../images/untappd.png";
 import logoImage from "../images/logo.png";
+import { useAppDispatch, useAppSelector } from "../hooks/redux.ts";
+import { addToCart, removeFromCart, updateQuantity } from "../store/cartSlice.ts";
 
 const {
   Link,
@@ -25,6 +38,9 @@ const BeerCatalog = () => {
   const responsive = useResponsive();
   const categoriesRef = useRef<HTMLDivElement>(null);
   const { styles } = useStyles();
+  const dispatch = useAppDispatch();
+  const { items } = useAppSelector((state) => state.cart);
+  const [api, contextHolder] = notification.useNotification();
 
   const allCategories = [
     ...new Set(beerData.map(item => item.category)),
@@ -72,6 +88,26 @@ const BeerCatalog = () => {
     }
   };
 
+  const handleAddToCart = (product: Product, variant: ProductVariant) => {
+    dispatch(addToCart({
+      productId: product.id,
+      name: product.name,
+      style: product.style,
+      volume: variant.volume,
+      price: variant.price,
+      packaging: variant.packaging,
+      imageUrl: product.imageUrl,
+      category: product.category
+    }));
+
+    api.success({
+      message: "Товар добавлен в корзину!",
+      description: `${product.name} (${variant.volume})`,
+      placement: "topRight",
+      duration: 2
+    });
+  };
+
   const renderProductCard = (product: Product) => (
     <Col
       xs={24}
@@ -81,127 +117,188 @@ const BeerCatalog = () => {
       key={product.id}
       style={{ display: "flex" }}
     >
-      <Card style={{ height: "100%", display: "flex", flexDirection: "column", width: "100%", borderRadius: 8 }}
-            styles={{
-              body: { flex: 1, display: "flex", flexDirection: "column", padding: responsive.md ? 16 : 12 },
-              cover: { marginTop: -2 }
-            }}
-            cover={
-              <Flex style={{ position: "relative" }}>
-                {product.category === "ACCESSORIES" ? (
-                  <Flex style={{
-                    width: "100%",
-                    height: 278,
-                    backgroundColor: "#FFF",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    borderTopLeftRadius: 8,
-                    borderTopRightRadius: 8
-                  }}>
-                    <Flex style={{
-                      width: 150,
-                      height: 150,
-                      borderRadius: "50%",
-                      backgroundColor: "#000",
-                      border: "2px solid #FFF",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      color: "#FFF"
-                    }}>
-                      <Image
-                        loading="lazy"
-                        src={logoImage}
-                        preview={false}
-                        style={{ objectFit: "cover", width: "100%", height: 150 }}
-                      />
-                    </Flex>
-                  </Flex>
-                ) : (
-                  <Image
-                    loading="lazy"
-                    src={product.imageUrl}
-                    preview={false}
-                    style={{ objectFit: "cover", width: "100%", borderTopLeftRadius: 8, borderTopRightRadius: 8 }}
-                  />
-                )}
+      <Card
+        style={{ height: "100%", display: "flex", flexDirection: "column", width: "100%", borderRadius: 8 }}
+        styles={{
+          body: { flex: 1, display: "flex", flexDirection: "column", padding: responsive.md ? 16 : 12 },
+          cover: { marginTop: -2 }
+        }}
+        cover={
+          <Flex style={{ position: "relative" }}>
+            {product.category === "ACCESSORIES" ? (
+              <Flex style={{
+                width: "100%",
+                height: 278,
+                backgroundColor: "#FFF",
+                justifyContent: "center",
+                alignItems: "center",
+                borderTopLeftRadius: 8,
+                borderTopRightRadius: 8
+              }}>
                 <Flex style={{
-                  position: "absolute",
-                  left: 8,
-                  top: 8,
-                  width: 32,
-                  height: 32,
+                  width: 150,
+                  height: 150,
                   borderRadius: "50%",
-                  backgroundColor: "rgba(0, 0, 0, 0.7)",
-                  color: "#FFF",
+                  backgroundColor: "#000",
+                  border: "2px solid #FFF",
                   justifyContent: "center",
                   alignItems: "center",
-                  fontSize: 14,
-                  fontWeight: 600
+                  color: "#FFF"
                 }}>
-                  {product.id}
+                  <Image
+                    loading="lazy"
+                    src={logoImage}
+                    preview={false}
+                    style={{ objectFit: "cover", width: "100%", height: 150 }}
+                  />
                 </Flex>
-                {product.untappdUrl && (
-                  <Link
-                    href={product.untappdUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Image
-                      preview={false}
-                      loading="lazy"
-                      src={untappdImage}
-                      wrapperStyle={{ position: "initial" }}
-                      className={styles.untappdIcon}
-                      style={{
-                        position: "absolute",
-                        right: 8,
-                        top: 8,
-                        width: 36,
-                        height: 36,
-                        borderRadius: "50%",
-                        boxShadow: "0 2px 8px rgba(0,0,0,0.3)",
-                        transition: "transform 0.2s ease-in-out",
-                        willChange: "transform"
-                      }}
-                    />
-                  </Link>
-                )}
               </Flex>
-            }
-            actions={[
-              <Flex vertical key="variants" style={{ padding: "8px 0", width: "100%" }}>
-                {product.variants.map((variant, index) => (
-                  <Flex
-                    vertical
-                    key={index}
-                    style={{
-                      marginBottom: index < product.variants.length - 1 ? 8 : 0,
-                      padding: "0 16px"
-                    }}
-                  >
-                    <Text strong style={{ color: "#1677FF", fontSize: 16, textAlign: "center", marginBottom: 4 }}>
-                      {variant.price} / {variant.volume}
-                    </Text>
-                    {variant.packaging && variant.packaging.length > 0 && (
-                      <Flex gap={4} justify="center" style={{ marginBottom: 4 }}>
-                        {variant.packaging.map(pack => (
-                          <Tag
-                            key={pack}
-                            color="default"
-                            style={{ fontSize: 12, padding: "0 6px", lineHeight: 1.4, margin: 0 }}
-                          >
-                            {pack}
-                          </Tag>
-                        ))}
-                      </Flex>
-                    )}
-                    <Text type="secondary" style={{ fontSize: 13, textAlign: "center" }}>
-                      {variant.remaining}
-                    </Text>
-                  </Flex>
-                ))}
-              </Flex>
-            ]}
+            ) : (
+              <Image
+                loading="lazy"
+                src={product.imageUrl}
+                preview={false}
+                style={{ objectFit: "cover", width: "100%", borderTopLeftRadius: 8, borderTopRightRadius: 8 }}
+              />
+            )}
+            <Flex style={{
+              position: "absolute",
+              left: 8,
+              top: 8,
+              width: 32,
+              height: 32,
+              borderRadius: "50%",
+              backgroundColor: "rgba(0, 0, 0, 0.7)",
+              color: "#FFF",
+              justifyContent: "center",
+              alignItems: "center",
+              fontSize: 14,
+              fontWeight: 600
+            }}>
+              {product.id}
+            </Flex>
+            {product.untappdUrl && (
+              <Link
+                href={product.untappdUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  preview={false}
+                  loading="lazy"
+                  src={untappdImage}
+                  wrapperStyle={{ position: "initial" }}
+                  className={styles.untappdIcon}
+                  style={{
+                    position: "absolute",
+                    right: 8,
+                    top: 8,
+                    width: 36,
+                    height: 36,
+                    borderRadius: "50%",
+                    boxShadow: "0 2px 8px rgba(0,0,0,0.3)",
+                    transition: "transform 0.2s ease-in-out",
+                    willChange: "transform"
+                  }}
+                />
+              </Link>
+            )}
+          </Flex>
+        }
+        actions={[
+          <Flex vertical gap={12} key="variants" style={{ padding: "8px 0", width: "100%" }}>
+            {product.variants.map((variant, index) => {
+              const cartItem = items.find(item =>
+                item.productId === product.id && item.volume === variant.volume
+              );
+              const quantity = cartItem?.quantity || 0;
+
+              return (
+                <Flex
+                  vertical
+                  align="center"
+                  key={index}
+                  style={{ marginBottom: index < product.variants.length - 1 ? 8 : 0 }}
+                >
+                  <Text strong style={{ color: "#1677FF", fontSize: 16, textAlign: "center", marginBottom: 4 }}>
+                    {variant.price} / {variant.volume}
+                  </Text>
+                  {variant.packaging && variant.packaging.length > 0 && (
+                    <Flex gap={4} justify="center" style={{ marginBottom: 4 }}>
+                      {variant.packaging.map(pack => (
+                        <Tag
+                          key={pack}
+                          color="default"
+                          style={{ fontSize: 12, padding: "0 6px", lineHeight: 1.4, margin: 0 }}
+                        >
+                          {pack}
+                        </Tag>
+                      ))}
+                    </Flex>
+                  )}
+                  <Text type="secondary" style={{ fontSize: 13, textAlign: "center" }}>
+                    {variant.remaining}
+                  </Text>
+
+                  {quantity > 0 ? (
+                    <Flex align="center" justify="center" gap={8} style={{ marginTop: 6 }}>
+                      <Button
+                        size="small"
+                        type="primary"
+                        style={{ backgroundColor: "#8B4513", borderColor: "#8B4513", width: 26 }}
+                        onClick={() => {
+                          if (quantity === 1) {
+                            const itemToRemove = items.find(item =>
+                              item.productId === product.id && item.volume === variant.volume
+                            );
+                            if (itemToRemove) {
+                              dispatch(removeFromCart(itemToRemove.id));
+                            }
+                          } else {
+                            const itemToUpdate = items.find(item =>
+                              item.productId === product.id && item.volume === variant.volume
+                            );
+                            if (itemToUpdate) {
+                              dispatch(updateQuantity({
+                                id: itemToUpdate.id,
+                                quantity: quantity - 1
+                              }));
+                            }
+                          }
+                        }}
+                      >
+                       -
+                      </Button>
+
+                      <Text strong style={{ minWidth: 30, textAlign: "center" }}>
+                        {quantity}
+                      </Text>
+
+                      <Button
+                        size="small"
+                        type="primary"
+                        onClick={() => handleAddToCart(product, variant)}
+                        style={{ backgroundColor: "#8B4513", borderColor: "#8B4513", width: 26  }}
+                      >
+                        +
+                      </Button>
+                    </Flex>
+                  ) : (
+                    <Button
+                      type="primary"
+                      icon={<ShoppingCartOutlined/>}
+                      size="small"
+                      onClick={() => handleAddToCart(product, variant)}
+                      style={{ backgroundColor: "#8B4513", borderColor: "#8B4513", maxWidth: 124, marginTop: 6 }}
+                    >
+                      В корзину
+                    </Button>
+                  )}
+                </Flex>
+              );
+            })}
+          </Flex>
+        ]}
       >
         <Flex vertical style={{ marginBottom: 12 }}>
           <Text strong style={{ fontSize: 16, display: "block", textAlign: "center" }}>
@@ -250,6 +347,8 @@ const BeerCatalog = () => {
 
   return (
     <Flex vertical style={{ marginBottom: 56, marginTop: 56 }}>
+      {contextHolder}
+
       <Title style={{
         fontSize: responsive.lg ? 30 : 24,
         color: "#DAA520",

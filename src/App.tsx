@@ -1,16 +1,22 @@
-import { Image, Layout, Typography } from "antd";
+import { Badge, Button, Flex, Image, Layout, Typography } from "antd";
 import { Content } from "antd/es/layout/layout";
 import { useResponsive } from "antd-style";
 import BreweryIntro from "./components/BreweryIntro";
 import BeerCatalog from "./components/BeerCatalog";
 import Achievements from "./components/Achievements";
 import logoImage from "./images/logo.png";
+import { useState } from "react";
+import { useAppSelector } from "./hooks/redux.ts";
+import { ShoppingCartOutlined } from "@ant-design/icons";
+import Cart from "./components/Cart.tsx";
 
 const { Header, Footer } = Layout;
 const { Title } = Typography;
 
 function App() {
   const responsive = useResponsive();
+  const [cartOpen, setCartOpen] = useState(false);
+  const { itemCount } = useAppSelector((state) => state.cart);
 
   return (
     <Layout style={{ minHeight: "100vh", backgroundColor: "#0D0D0D", color: "#F5F5F5" }}>
@@ -29,12 +35,7 @@ function App() {
         />
         <Title
           level={1}
-          style={{
-            color: "#FFF",
-            margin: 0,
-            fontWeight: 600,
-            fontSize: "clamp(24px, 5vw, 32px)"
-          }}
+          style={{ color: "#FFF", margin: 0, fontWeight: 600, fontSize: "clamp(24px, 5vw, 32px)" }}
         >
           Paranoid Brewery
         </Title>
@@ -62,6 +63,34 @@ function App() {
       }}>
         Paranoid Brewery ©2017-2025 — Лаборатория жидкостей с характером
       </Footer>
+
+      <Flex style={{ position: "fixed", bottom: 24, right: 24, zIndex: 1000 }}>
+        <Badge
+          count={itemCount}
+          showZero={false}
+          offset={[-5, 5]}
+          style={{ boxShadow: "0 0 0 2px #0D0D0D" }}
+        >
+          <Button
+            type="primary"
+            icon={<ShoppingCartOutlined style={{ fontSize: 24 }}/>}
+            onClick={() => setCartOpen(true)}
+            style={{
+              boxShadow: "0 4px 12px rgba(0, 0, 0, 0.3)",
+              borderRadius: "50%",
+              width: 50,
+              height: 50,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              backgroundColor: "#8B4513",
+              borderColor: "#8B4513"
+            }}
+          />
+        </Badge>
+      </Flex>
+
+      <Cart open={cartOpen} onClose={() => setCartOpen(false)}/>
     </Layout>
   );
 }
