@@ -60,14 +60,25 @@ const Cart: React.FC<CartProps> = ({ open, onClose }) => {
     const message = generateOrderMessage();
     const encodedMessage = encodeURIComponent(message);
     const telegramUrl = `https://t.me/spool_ka?text=${encodedMessage}`;
-
-    const link = document.createElement("a");
-    link.href = telegramUrl;
-    link.target = "_blank";
-    link.rel = "noopener noreferrer";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    
+    try {
+      const opened = window.open(telegramUrl, "_blank", "noopener,noreferrer");
+      if (!opened) {
+        window.location.href = telegramUrl;
+      }
+    } catch {
+      try {
+        const link = document.createElement("a");
+        link.href = telegramUrl;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      } catch {
+        window.location.href = telegramUrl;
+      }
+    }
   };
 
   const copyToClipboard = async () => {
