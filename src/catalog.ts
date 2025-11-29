@@ -1,7 +1,6 @@
 import braggotSpicedImage from "./images/strong-series-2024/braggot-spiced.png";
 import blueberryStrongWildImage from "./images/strong-series-2024/blueberry-strong-wild.png";
 import cherryStrongWildImage from "./images/strong-series-2024/cherry-strong-wild.png";
-import cursedAztecGoldImage from "./images/strong-series-2024/cursed_aztec_gold.png";
 import defoRaspberryWildAleImage from "./images/season-beer-2025/defo_raspberry_wild_ale.jpeg";
 import defoCherryWildAleImage from "./images/season-beer-2025/defo_cherry_wild_ale.jpeg";
 import cocoGrottoImage from "./images/season-beer-2025/coco_grotto.png";
@@ -166,26 +165,6 @@ export const beerData: Product[] = generateIds([
     ],
     imageUrl: cherryStrongWildImage
   },
-  {
-    category: "STRONG SERIES 2024",
-    name: "Cursed Aztec Gold",
-    style: "Caribbean Imperial Stout with 7 Pot Douglah Pepper",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-cursed-aztec-gold/5730106",
-    og: "24.5%",
-    abv: "10.0",
-    ibu: "30",
-    description: "Имперский стаут, сваренный с добавлением острого перца 7 Pot Douglah (до 1 853 000 сковиллей). Супер острый и сильно охмеленный (Dre Hop - Cascade, Chinook, Simcoe).",
-    bottlingDate: "25.02.2024",
-    variants: [
-      {
-        volume: "0.33л",
-        packaging: ["воск"],
-        price: "330",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: cursedAztecGoldImage
-  },
 
   // SEASON BEER 2025
 
@@ -260,7 +239,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "260",
-        remaining: "остаток: 22 шт."
+        remaining: "остаток: 21 шт."
       }
     ],
     imageUrl: pumpkinAleImage
@@ -279,7 +258,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "330",
-        remaining: "остаток: 8 шт."
+        remaining: "остаток: 7 шт."
       }
     ],
     imageUrl: fuckWorkImage
@@ -298,7 +277,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 11 шт."
+        remaining: "остаток: 10 шт."
       }
     ],
     imageUrl: halloweenIpaImage
@@ -317,7 +296,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "350",
-        remaining: "остаток: 7 шт."
+        remaining: "остаток: 6 шт."
       }
     ],
     imageUrl: mondaySucksImage
@@ -336,7 +315,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 28 шт."
+        remaining: "остаток: 18 шт."
       }
     ],
     imageUrl: raspberryWildImage
@@ -355,7 +334,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 26 шт."
+        remaining: "остаток: 17 шт."
       }
     ],
     imageUrl: cherryWildAleImage
@@ -374,7 +353,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 26 шт."
+        remaining: "остаток: 17 шт."
       }
     ],
     imageUrl: gooseberryWildImage
@@ -393,7 +372,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 27 шт."
+        remaining: "остаток: 18 шт."
       }
     ],
     imageUrl: strawberryWildImage
@@ -412,7 +391,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "340",
-        remaining: "остаток: 13 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: ryeWildImage
@@ -788,7 +767,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "340",
-        remaining: "остаток: 16 шт."
+        remaining: "остаток: 11 шт."
       }
     ],
     imageUrl: wildCherryImage
@@ -807,7 +786,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "340",
-        remaining: "остаток: 13 шт."
+        remaining: "остаток: 8 шт."
       }
     ],
     imageUrl: wildRaspberryImage
@@ -826,12 +805,12 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "330",
-        remaining: "остаток: 25 шт."
+        remaining: "остаток: 19 шт."
       },
       {
         volume: "0.75л",
         price: "660",
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: trippyTimberImage
@@ -850,12 +829,12 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "340",
-        remaining: "остаток: 30 шт."
+        remaining: "остаток: 24 шт."
       },
       {
         volume: "0.75л",
         price: "680",
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: druidsBrewImage
@@ -874,12 +853,12 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "400",
-        remaining: "остаток: 29 шт."
+        remaining: "остаток: 23 шт."
       },
       {
         volume: "0.75л",
         price: "800",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: americanBwImage
@@ -898,12 +877,12 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "410",
-        remaining: "остаток: 34 шт."
+        remaining: "остаток: 28 шт."
       },
       {
         volume: "0.75л",
         price: "810",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: grapeAmericanBwImage
@@ -922,12 +901,12 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "400",
-        remaining: "остаток: 22 шт."
+        remaining: "остаток: 16 шт."
       },
       {
         volume: "0.75л",
         price: "800",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: englishBwImage
@@ -946,12 +925,12 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "410",
-        remaining: "остаток: 17 шт."
+        remaining: "остаток: 20 шт."
       },
       {
         volume: "0.75л",
         price: "810",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: mapleEnglishBwImage
@@ -971,12 +950,12 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 43 шт."
+        remaining: "остаток: 37 шт."
       },
       {
         volume: "0.75л",
         price: "800",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: ryeWineImage
@@ -996,12 +975,12 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 30 шт."
+        remaining: "остаток: 24 шт."
       },
       {
         volume: "0.75л",
         price: "810",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: grapeRyeWineImage
@@ -1021,12 +1000,12 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 32 шт."
+        remaining: "остаток: 26 шт."
       },
       {
         volume: "0.75л",
         price: "800",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: oatWineImage
@@ -1046,12 +1025,12 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 24 шт."
+        remaining: "остаток: 18 шт."
       },
       {
         volume: "0.75л",
         price: "810",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: vanillaOatWineImage
@@ -1071,12 +1050,12 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 27 шт."
+        remaining: "остаток: 21 шт."
       },
       {
         volume: "0.75л",
         price: "800",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: imperialStoutImage
@@ -1096,12 +1075,12 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 40 шт."
+        remaining: "остаток: 34 шт."
       },
       {
         volume: "0.75л",
         price: "810",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: cumberlandImperialStoutImage
@@ -1121,12 +1100,12 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 40 шт."
+        remaining: "остаток: 34 шт."
       },
       {
         volume: "0.75л",
         price: "800",
-        remaining: "остаток: 3 шт."
+        remaining: "остаток: 2 шт."
       }
     ],
     imageUrl: wheatWineImage
@@ -1146,12 +1125,12 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "370",
         packaging: ["воск"],
-        remaining: "остаток: 38 шт."
+        remaining: "остаток: 32 шт."
       },
       {
         volume: "0.75л",
         price: "840",
-        remaining: "остаток: 3 шт."
+        remaining: "остаток: 2 шт."
       }
     ],
     imageUrl: ddhWheatWineImage
@@ -1171,7 +1150,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25",
         price: "280",
         packaging: ["воск"],
-        remaining: "остаток: 32 шт."
+        remaining: "остаток: 24 шт."
       },
       {
         volume: "0.45",
@@ -1181,7 +1160,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.75л",
         price: "820",
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 5 шт."
       }
     ],
     imageUrl: buckWheatWineImage
@@ -1201,7 +1180,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25",
         price: "300",
         packaging: ["воск"],
-        remaining: "остаток: 32 шт."
+        remaining: "остаток: 24 шт."
       },
       {
         volume: "0.45",
@@ -1211,7 +1190,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.75л",
         price: "840",
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 5 шт."
       }
     ],
     imageUrl: buckWheatWineHoneyImage
