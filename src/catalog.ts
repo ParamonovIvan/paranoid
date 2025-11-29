@@ -9,12 +9,10 @@ import fuckWorkImage from "./images/season-beer-2025/fuck_work.jpg"
 import halloweenIpaImage from "./images/season-beer-2025/halloween_ipa.png";
 import mondaySucksImage from "./images/season-beer-2025/monday_sucks.jpg";
 import sweetSpiceImage from "./images/strong-series-2025/sweet_spice.png";
-import burntBerryImage from "./images/strong-series-2025/burnt_berry.png";
 import toTheMoonImage from "./images/strong-series-2025/to_the_moon.png";
 import toTheMoonOakImage from "./images/strong-series-2025/to_the_moon_oak.png";
 import stellarEnergyImage from "./images/strong-series-2025/stellar_energy.png";
 import cosmicHerbsImage from "./images/strong-series-2025/cosmic_herbs.png";
-import graffPearOakImage from "./images/strong-series-2025/graff_pear_oak.png"
 import graffRaspberryImage from "./images/strong-series-2025/graff_raspberry.png"
 import graffRaspberryOakImage from "./images/strong-series-2025/graff_raspberry_oak.png"
 import graffGrapeImage from "./images/strong-series-2025/graff_grape.png";
@@ -134,7 +132,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "230",
         packaging: ["воск"],
-        remaining: "остаток: 5 шт."
+        remaining: "остаток: 4 шт."
       }
     ],
     imageUrl: blueberryStrongWildImage
@@ -277,7 +275,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 10 шт."
+        remaining: "остаток: 9 шт."
       }
     ],
     imageUrl: halloweenIpaImage
@@ -353,7 +351,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 17 шт."
+        remaining: "остаток: 16 шт."
       }
     ],
     imageUrl: gooseberryWildImage
@@ -417,26 +415,6 @@ export const beerData: Product[] = generateIds([
       }
     ],
     imageUrl: sweetSpiceImage
-  },
-  {
-    category: "STRONG SERIES 2025",
-    name: "Burnt Berry",
-    style: "Raspberry Imperial Stout",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-burnt-berry/6183506",
-    og: "27.0%",
-    abv: "12.5",
-    ibu: "30",
-    description: "Крепкий имперский стаут двойного затирания, сваренный с добавлением овсяных хлопьев и сока малины. Насыщенный вкус с нотами шоколада, кофе и запеченной малины.",
-    bottlingDate: "01.03.2025",
-    variants: [
-      {
-        volume: "0.33л",
-        price: "330",
-        packaging: ["воск"],
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: burntBerryImage
   },
   {
     category: "STRONG SERIES 2025",
@@ -517,25 +495,6 @@ export const beerData: Product[] = generateIds([
       }
     ],
     imageUrl: cosmicHerbsImage
-  },
-  {
-    category: "STRONG SERIES 2025",
-    name: "Strong Pear Graff (oak)",
-    style: "Appliqueing with Pear (oak edition)",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-strong-pear-graff-oak-aged/6208896",
-    og: "30.5%",
-    abv: "14.7",
-    ibu: "15",
-    description: "Пиво, сваренное в стиле Apfelwein с добавлением грушевого сока (30%). Состав солода: 50% пилсен, 50% пшеничный, хмель Cascade, вымоченная в хересе спираль сильного обжига из американского дуба.",
-    bottlingDate: "16.03.2025",
-    variants: [
-      {
-        volume: "0.33л",
-        price: "260",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: graffPearOakImage
   },
   {
     category: "STRONG SERIES 2025",
@@ -746,7 +705,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "310",
         packaging: ["воск"],
-        remaining: "остаток: 3 шт."
+        remaining: "остаток: 2 шт."
       }
     ],
     imageUrl: theMoonImage
