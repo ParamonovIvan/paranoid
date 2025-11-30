@@ -49,7 +49,6 @@ import raspberryWildImage from "./images/season-beer-2025/raspberry_wild.png";
 import cherryWildAleImage from "./images/season-beer-2025/cherry_wild.png";
 import gooseberryWildImage from "./images/season-beer-2025/gooseberry_wild.png";
 import strawberryWildImage from "./images/season-beer-2025/strawberry_wild.png";
-import ryeWildImage from "./images/season-beer-2025/rye_wild.png";
 import wheatWineImage from "./images/8th-birthday/wheat_wine.png";
 import ddhWheatWineImage from "./images/8th-birthday/ddh_wheat_wine.png";
 import buckWheatWineImage from "./images/8th-birthday/buckwheat_wine.png";
@@ -313,7 +312,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 18 шт."
+        remaining: "остаток: 17 шт."
       }
     ],
     imageUrl: raspberryWildImage
@@ -332,7 +331,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 17 шт."
+        remaining: "остаток: 16 шт."
       }
     ],
     imageUrl: cherryWildAleImage
@@ -374,25 +373,6 @@ export const beerData: Product[] = generateIds([
       }
     ],
     imageUrl: strawberryWildImage
-  },
-  {
-    category: "SEASON BEER 2025",
-    name: "Night Grove",
-    style: "Rye Wild Ale",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-night-grove/6496868",
-    og: "17.0%",
-    abv: "7.2",
-    ibu: "20",
-    description: "Войдите в Ночную Рощу — место, где под сенью древних деревьев рождается магия. Это пиво смешанного брожения — как таинственный спутник, ведущий вас через сумрак. Его душа — рожь, могучая и земная, рождает хлебный характер и глубокую сложность. Освежающая кислинка — подобно далекому отблеску пламени в темноте — освещает путь, не обжигая. Позвольте диким дрожжам и бактериям провести вас через этот сонный лес, где каждый глоток — это история, рассказанная шепотом под мерцание звезд.",
-    bottlingDate: "05.11.2025",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "340",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: ryeWildImage
   },
 
   // STRONG SERIES 2025
@@ -726,7 +706,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "340",
-        remaining: "остаток: 11 шт."
+        remaining: "остаток: 10 шт."
       }
     ],
     imageUrl: wildCherryImage
@@ -745,7 +725,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "340",
-        remaining: "остаток: 8 шт."
+        remaining: "остаток: 7 шт."
       }
     ],
     imageUrl: wildRaspberryImage
@@ -812,7 +792,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "400",
-        remaining: "остаток: 23 шт."
+        remaining: "остаток: 22 шт."
       },
       {
         volume: "0.75л",
@@ -836,7 +816,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "410",
-        remaining: "остаток: 28 шт."
+        remaining: "остаток: 27 шт."
       },
       {
         volume: "0.75л",
@@ -860,7 +840,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "400",
-        remaining: "остаток: 16 шт."
+        remaining: "остаток: 15 шт."
       },
       {
         volume: "0.75л",
@@ -884,7 +864,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "410",
-        remaining: "остаток: 20 шт."
+        remaining: "остаток: 19 шт."
       },
       {
         volume: "0.75л",
@@ -909,7 +889,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 37 шт."
+        remaining: "остаток: 36 шт."
       },
       {
         volume: "0.75л",
@@ -934,7 +914,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 24 шт."
+        remaining: "остаток: 23 шт."
       },
       {
         volume: "0.75л",
@@ -959,7 +939,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 26 шт."
+        remaining: "остаток: 25 шт."
       },
       {
         volume: "0.75л",
@@ -984,7 +964,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 18 шт."
+        remaining: "остаток: 17 шт."
       },
       {
         volume: "0.75л",
@@ -1009,7 +989,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 21 шт."
+        remaining: "остаток: 19 шт."
       },
       {
         volume: "0.75л",
@@ -1034,7 +1014,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 34 шт."
+        remaining: "остаток: 32 шт."
       },
       {
         volume: "0.75л",
@@ -1059,7 +1039,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 34 шт."
+        remaining: "остаток: 33 шт."
       },
       {
         volume: "0.75л",
@@ -1084,7 +1064,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "370",
         packaging: ["воск"],
-        remaining: "остаток: 32 шт."
+        remaining: "остаток: 31 шт."
       },
       {
         volume: "0.75л",
@@ -1109,7 +1089,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25",
         price: "280",
         packaging: ["воск"],
-        remaining: "остаток: 24 шт."
+        remaining: "остаток: 23 шт."
       },
       {
         volume: "0.45",
@@ -1139,7 +1119,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25",
         price: "300",
         packaging: ["воск"],
-        remaining: "остаток: 24 шт."
+        remaining: "остаток: 23 шт."
       },
       {
         volume: "0.45",
