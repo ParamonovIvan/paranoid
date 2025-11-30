@@ -76,7 +76,7 @@ const Cart: React.FC<CartProps> = ({ open, onClose }) => {
         link.click();
         document.body.removeChild(link);
       } catch {
-        window.location.href = telegramUrl;
+        window.open(telegramUrl, "_blank", "noopener,noreferrer");
       }
     }
   };
