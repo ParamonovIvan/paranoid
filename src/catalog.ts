@@ -155,9 +155,9 @@ export const beerData: Product[] = generateIds([
     bottlingDate: "15.07.2025",
     variants: [
       {
-        volume: "0.45л",
+        volume: "0.375л",
         price: "310",
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: defoCherryWildAleImage
@@ -290,7 +290,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 17 шт."
+        remaining: "остаток: 16 шт."
       }
     ],
     imageUrl: raspberryWildImage
@@ -309,7 +309,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 16 шт."
+        remaining: "остаток: 15 шт."
       }
     ],
     imageUrl: cherryWildAleImage
@@ -328,7 +328,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 16 шт."
+        remaining: "остаток: 15 шт."
       }
     ],
     imageUrl: gooseberryWildImage
@@ -347,7 +347,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 18 шт."
+        remaining: "остаток: 17 шт."
       }
     ],
     imageUrl: strawberryWildImage
@@ -369,7 +369,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "240",
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: sweetSpiceImage
@@ -684,7 +684,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "340",
-        remaining: "остаток: 10 шт."
+        remaining: "остаток: 9 шт."
       }
     ],
     imageUrl: wildCherryImage
@@ -703,7 +703,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "340",
-        remaining: "остаток: 7 шт."
+        remaining: "остаток: 6 шт."
       }
     ],
     imageUrl: wildRaspberryImage
@@ -722,7 +722,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "330",
-        remaining: "остаток: 19 шт."
+        remaining: "остаток: 18 шт."
       },
       {
         volume: "0.75л",
@@ -746,7 +746,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "340",
-        remaining: "остаток: 24 шт."
+        remaining: "остаток: 23 шт."
       },
       {
         volume: "0.75л",
@@ -770,7 +770,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "400",
-        remaining: "остаток: 22 шт."
+        remaining: "остаток: 20 шт."
       },
       {
         volume: "0.75л",
@@ -794,7 +794,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "410",
-        remaining: "остаток: 22 шт."
+        remaining: "остаток: 21 шт."
       },
       {
         volume: "0.75л",
@@ -818,7 +818,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "400",
-        remaining: "остаток: 15 шт."
+        remaining: "остаток: 13 шт."
       },
       {
         volume: "0.75л",
@@ -842,7 +842,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "410",
-        remaining: "остаток: 19 шт."
+        remaining: "остаток: 17 шт."
       },
       {
         volume: "0.75л",
@@ -867,7 +867,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 31 шт."
+        remaining: "остаток: 30 шт."
       },
       {
         volume: "0.75л",
@@ -892,7 +892,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 23 шт."
+        remaining: "остаток: 22 шт."
       },
       {
         volume: "0.75л",
@@ -917,7 +917,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 20 шт."
+        remaining: "остаток: 18 шт."
       },
       {
         volume: "0.75л",
@@ -942,7 +942,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 17 шт."
+        remaining: "остаток: 15 шт."
       },
       {
         volume: "0.75л",
@@ -967,7 +967,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 19 шт."
+        remaining: "остаток: 17 шт."
       },
       {
         volume: "0.75л",
@@ -992,7 +992,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 28 шт."
+        remaining: "остаток: 26 шт."
       },
       {
         volume: "0.75л",
@@ -1017,7 +1017,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 28 шт."
+        remaining: "остаток: 27 шт."
       },
       {
         volume: "0.75л",
@@ -1042,7 +1042,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "370",
         packaging: ["воск"],
-        remaining: "остаток: 31 шт."
+        remaining: "остаток: 29 шт."
       },
       {
         volume: "0.75л",
@@ -1072,7 +1072,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45",
         price: "480",
-        remaining: "остаток: 12 шт."
+        remaining: "остаток: 11 шт."
       },
       {
         volume: "0.75л",
@@ -1102,7 +1102,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45",
         price: "500",
-        remaining: "остаток: 12 шт."
+        remaining: "остаток: 11 шт."
       },
       {
         volume: "0.75л",
