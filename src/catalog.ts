@@ -730,7 +730,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "400",
-        remaining: "остаток: 19 шт."
+        remaining: "остаток: 18 шт."
       },
       {
         volume: "0.75л",
@@ -754,7 +754,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "410",
-        remaining: "остаток: 20 шт."
+        remaining: "остаток: 19 шт."
       },
       {
         volume: "0.75л",
@@ -778,7 +778,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "400",
-        remaining: "остаток: 12 шт."
+        remaining: "остаток: 11 шт."
       },
       {
         volume: "0.75л",
@@ -827,7 +827,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 29 шт."
+        remaining: "остаток: 28 шт."
       },
       {
         volume: "0.75л",
@@ -877,7 +877,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 17 шт."
+        remaining: "остаток: 16 шт."
       },
       {
         volume: "0.75л",
@@ -927,7 +927,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 17 шт."
+        remaining: "остаток: 16 шт."
       },
       {
         volume: "0.75л",
@@ -952,7 +952,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 26 шт."
+        remaining: "остаток: 25 шт."
       },
       {
         volume: "0.75л",
@@ -977,7 +977,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 26 шт."
+        remaining: "остаток: 25 шт."
       },
       {
         volume: "0.75л",
