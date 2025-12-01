@@ -24,7 +24,6 @@ import braggotPorterHotImage from "./images/strong-series-2025/braggot_porter_ho
 import braggotPorterSmokedImage from "./images/strong-series-2025/braggot_porter_smoked.png";
 import braggotPorterSpicedImage from "./images/strong-series-2025/braggot_porter_spiced.png";
 import theMoonImage from "./images/strong-series-2025/the_moon.png";
-import tropicInfernoImage from "./images/pepper-sauces/tropic_inferno.png";
 import pumpkinSparkImage from "./images/pepper-sauces/pumpkin_spark.png";
 import paradisePainImage from "./images/pepper-sauces/paradise_pain.png";
 import cadaverKetchupImage from "./images/pepper-sauces/cadaver_ketchup.png";
@@ -1138,22 +1137,6 @@ export const beerData: Product[] = generateIds([
 ]);
 
 export const sauceData: Product[] = generateIds([
-  {
-    category: "PEPPER SAUCES",
-    name: "Tropic Inferno",
-    style: "Caribbean Pepper Sauce",
-    spiciness: "7/10",
-    description: "Свежий ветер с Карибских островов, несущий лёгкий огонь. Зелёный хаос перцев, приручённый фруктовой сладостью и цитрусовой кислотностью. Кинза и имбирь освежают, а горчица придает пикантную глубину. Это не жгучий шторм, а освежающий тропический ливень с теплыми всполохами остроты. Преобразит тако, курицу-гриль и бургеры. Состав: перец зеленый болгарский, перец Халапеньо, перец Призрак зеленый, перец Хабанеро зеленый, сельдерей, лук, сок ананасовый, манго, бананы, апельсины, имбирь, кинза, дижонская горчица, уксус яблочный, соль морская, сахар тростниковый, крахмал Аррорут.",
-    bottlingDate: "15.09.2025",
-    variants: [
-      {
-        volume: "0.2л",
-        price: "600",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: tropicInfernoImage
-  },
   {
     category: "PEPPER SAUCES",
     name: "Pumpkin Spark",
