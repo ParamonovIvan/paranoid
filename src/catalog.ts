@@ -53,6 +53,7 @@ import wheatWineImage from "./images/8th-birthday/wheat_wine.png";
 import ddhWheatWineImage from "./images/8th-birthday/ddh_wheat_wine.png";
 import buckWheatWineImage from "./images/8th-birthday/buckwheat_wine.png";
 import buckWheatWineHoneyImage from "./images/8th-birthday/buckwheat_wine_honey.png";
+import bhutsEmbraceImage from "./images/pepper-sauces/bhuts_embrace.png"
 
 export interface ProductVariant {
   volume: string;
@@ -1248,7 +1249,23 @@ export const sauceData: Product[] = generateIds([
       }
     ],
     imageUrl: everbleedImage
-  }
+  },
+  {
+    category: "PEPPER SAUCES",
+    name: "Bhut's Embrace",
+    style: "Guava and Tomatoes Pepper Sauce",
+    spiciness: "4/10",
+    description: "Первый глоток — это тропический обман. Нежная сладость гуавы и болгарского перца окутывает, как тёплый ветер. Томатная паста и копчёная паприка создают иллюзию уюта у костра. Наслаждение призрачно - появляются Бхут Джолокия, Скорпион Тринидад и Призрак. Их жар не кричит, а шепчет ледяным пламенем в самое ухо. Розмарин, корица и гвоздика — это не специи, а ритуальные свечи на этом сеансе. Это не соус. Это встреча с призраком вкуса. Состав: пюре гуавы, томатная паста, перец красный болгарский, перец Бхут Джолокия, перец Призрак, перец Скорпион Тринидад, лук, чеснок, розмарин, корица, черный перец, гвоздика, паприка копченая, уксус яблочный, соль морская, сахар тростниковый.",
+    bottlingDate: "30.11.2025",
+    variants: [
+      {
+        volume: "0.2л",
+        price: "600",
+        remaining: "остаток: 12 шт."
+      }
+    ],
+    imageUrl: bhutsEmbraceImage
+  },
 ]);
 
 export const accessoriesData: Product[] = generateIds([
