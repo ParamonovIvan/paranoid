@@ -53,29 +53,7 @@ import ddhWheatWineImage from "./images/8th-birthday/ddh_wheat_wine.png";
 import buckWheatWineImage from "./images/8th-birthday/buckwheat_wine.png";
 import buckWheatWineHoneyImage from "./images/8th-birthday/buckwheat_wine_honey.png";
 import bhutsEmbraceImage from "./images/pepper-sauces/bhuts_embrace.png"
-
-export interface ProductVariant {
-  volume: string;
-  price: string;
-  packaging?: string[];
-  remaining: string;
-}
-
-export interface Product {
-  id: number;
-  category: string;
-  name: string;
-  style: string;
-  untappdUrl?: string;
-  og?: string;
-  abv?: string;
-  ibu?: string;
-  spiciness?: string;
-  description: string;
-  bottlingDate: string;
-  variants: ProductVariant[];
-  imageUrl?: string;
-}
+import type { Product } from "./types/product.ts";
 
 let globalIdCounter = 1;
 
