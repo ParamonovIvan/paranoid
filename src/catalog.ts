@@ -1,8 +1,6 @@
 import braggotSpicedImage from "./images/strong-series-2024/braggot-spiced.png";
 import blueberryStrongWildImage from "./images/strong-series-2024/blueberry-strong-wild.png";
 import cherryStrongWildImage from "./images/strong-series-2024/cherry-strong-wild.png";
-import defoRaspberryWildAleImage from "./images/season-beer-2025/defo_raspberry_wild_ale.jpeg";
-import defoCherryWildAleImage from "./images/season-beer-2025/defo_cherry_wild_ale.jpeg";
 import cocoGrottoImage from "./images/season-beer-2025/coco_grotto.png";
 import pumpkinAleImage from "./images/season-beer-2025/pumpkin_ale.png";
 import fuckWorkImage from "./images/season-beer-2025/fuck_work.jpg"
@@ -145,44 +143,6 @@ export const beerData: Product[] = generateIds([
 
   {
     category: "SEASON BEER 2025",
-    name: "Удавленный вишней",
-    style: "Wild Ale with Cherry",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-udavlennyj-vishnej-2025/6342281",
-    og: "13.5%",
-    abv: "6.2",
-    ibu: "10",
-    description: "Кислый эль смешанного брожения с добавлением ягод и сока вишни и бельгийских дрожжей Brettanomysec.",
-    bottlingDate: "15.07.2025",
-    variants: [
-      {
-        volume: "0.375л",
-        price: "310",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: defoCherryWildAleImage
-  },
-  {
-    category: "SEASON BEER 2025",
-    name: "Малина язычника",
-    style: "Wild Ale with Raspberry",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-malina-yazychnika-2025/6342280",
-    og: "13.5%",
-    abv: "6.2",
-    ibu: "10",
-    description: "Кислый эль смешанного брожения с добавлением ягод и сока малины и бельгийских дрожжей Brettanomysec.",
-    bottlingDate: "16.07.2025",
-    variants: [
-      {
-        volume: "0.375л",
-        price: "310",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: defoRaspberryWildAleImage
-  },
-  {
-    category: "SEASON BEER 2025",
     name: "The Coco Grotto",
     style: "Coconut Stout",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-the-coco-grotto/6447530",
@@ -252,7 +212,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 9 шт."
+        remaining: "остаток: 8 шт."
       }
     ],
     imageUrl: halloweenIpaImage
@@ -271,7 +231,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "350",
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 5 шт."
       }
     ],
     imageUrl: mondaySucksImage
@@ -290,7 +250,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 16 шт."
+        remaining: "остаток: 15 шт."
       }
     ],
     imageUrl: raspberryWildImage
@@ -309,7 +269,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 15 шт."
+        remaining: "остаток: 14 шт."
       }
     ],
     imageUrl: cherryWildAleImage
@@ -328,7 +288,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 15 шт."
+        remaining: "остаток: 14 шт."
       }
     ],
     imageUrl: gooseberryWildImage
@@ -347,7 +307,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 17 шт."
+        remaining: "остаток: 16 шт."
       }
     ],
     imageUrl: strawberryWildImage
@@ -684,7 +644,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "340",
-        remaining: "остаток: 9 шт."
+        remaining: "остаток: 8 шт."
       }
     ],
     imageUrl: wildCherryImage
@@ -703,7 +663,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "340",
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 5 шт."
       }
     ],
     imageUrl: wildRaspberryImage
@@ -722,7 +682,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "330",
-        remaining: "остаток: 18 шт."
+        remaining: "остаток: 17 шт."
       },
       {
         volume: "0.75л",
@@ -746,7 +706,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "340",
-        remaining: "остаток: 23 шт."
+        remaining: "остаток: 22 шт."
       },
       {
         volume: "0.75л",
@@ -770,7 +730,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "400",
-        remaining: "остаток: 20 шт."
+        remaining: "остаток: 19 шт."
       },
       {
         volume: "0.75л",
@@ -794,7 +754,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "410",
-        remaining: "остаток: 21 шт."
+        remaining: "остаток: 20 шт."
       },
       {
         volume: "0.75л",
@@ -818,7 +778,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "400",
-        remaining: "остаток: 13 шт."
+        remaining: "остаток: 12 шт."
       },
       {
         volume: "0.75л",
@@ -842,7 +802,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "410",
-        remaining: "остаток: 17 шт."
+        remaining: "остаток: 16 шт."
       },
       {
         volume: "0.75л",
@@ -867,7 +827,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 30 шт."
+        remaining: "остаток: 29 шт."
       },
       {
         volume: "0.75л",
@@ -892,7 +852,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 22 шт."
+        remaining: "остаток: 21 шт."
       },
       {
         volume: "0.75л",
@@ -917,7 +877,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 18 шт."
+        remaining: "остаток: 17 шт."
       },
       {
         volume: "0.75л",
@@ -942,7 +902,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 15 шт."
+        remaining: "остаток: 14 шт."
       },
       {
         volume: "0.75л",
@@ -1017,7 +977,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 27 шт."
+        remaining: "остаток: 26 шт."
       },
       {
         volume: "0.75л",
@@ -1042,7 +1002,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "370",
         packaging: ["воск"],
-        remaining: "остаток: 29 шт."
+        remaining: "остаток: 28 шт."
       },
       {
         volume: "0.75л",
@@ -1067,7 +1027,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25",
         price: "280",
         packaging: ["воск"],
-        remaining: "остаток: 23 шт."
+        remaining: "остаток: 22 шт."
       },
       {
         volume: "0.45",
@@ -1097,7 +1057,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25",
         price: "300",
         packaging: ["воск"],
-        remaining: "остаток: 23 шт."
+        remaining: "остаток: 22 шт."
       },
       {
         volume: "0.45",
