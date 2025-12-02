@@ -7,9 +7,6 @@ import fuckWorkImage from "./images/season-beer-2025/fuck_work.jpg"
 import halloweenIpaImage from "./images/season-beer-2025/halloween_ipa.png";
 import mondaySucksImage from "./images/season-beer-2025/monday_sucks.jpg";
 import sweetSpiceImage from "./images/strong-series-2025/sweet_spice.png";
-import toTheMoonImage from "./images/strong-series-2025/to_the_moon.png";
-import toTheMoonOakImage from "./images/strong-series-2025/to_the_moon_oak.png";
-import stellarEnergyImage from "./images/strong-series-2025/stellar_energy.png";
 import cosmicHerbsImage from "./images/strong-series-2025/cosmic_herbs.png";
 import graffRaspberryImage from "./images/strong-series-2025/graff_raspberry.png"
 import graffRaspberryOakImage from "./images/strong-series-2025/graff_raspberry_oak.png"
@@ -336,66 +333,6 @@ export const beerData: Product[] = generateIds([
   },
   {
     category: "STRONG SERIES 2025",
-    name: "To the Moon",
-    style: "Cherry Imperial Stout",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-to-the-moon/6228368",
-    og: "31.0%",
-    abv: "11.0",
-    ibu: "30",
-    description: "Крепкий и плотный имперский стаут двойного затирания, сваренный с добавлением лактозы и сока вишни. Насыщенный вкус с нотами молочного шоколада и ягодной кислинки.",
-    bottlingDate: "03.04.2025",
-    variants: [
-      {
-        volume: "0.33л",
-        price: "350",
-        packaging: ["воск"],
-        remaining: "остаток: 2 шт."
-      }
-    ],
-    imageUrl: toTheMoonImage
-  },
-  {
-    category: "STRONG SERIES 2025",
-    name: "To the Moon (oak)",
-    style: "Cherry Imperial Stout (oak edition)",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-to-the-moon-oak-edition/6228372",
-    og: "31.0%",
-    abv: "11.7",
-    ibu: "30",
-    description: "Крепкий и плотный имперский стаут двойного затирания, сваренный с добавлением лактозы, сока вишни и выдержанный с вымоченными в виски чипсами из американского дуба. Насыщенный вкус с нотами молочного шоколада и ягодной кислинки, дополненный нотами американского дуба.",
-    bottlingDate: "03.04.2025",
-    variants: [
-      {
-        volume: "0.33л",
-        price: "370",
-        packaging: ["воск"],
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: toTheMoonOakImage
-  },
-  {
-    category: "STRONG SERIES 2025",
-    name: "Stellar Energy",
-    style: "Coffee Imperial Stout",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-stellar-energy/6228382",
-    og: "26.0%",
-    abv: "10.5",
-    ibu: "35",
-    description: "Имперский стаут двойного затирания, сваренный с добавлением лактозы, кофе и мяты. Насыщенный вкус с нотами кофе, шоколада и нотками мяты.",
-    bottlingDate: "14.04.2025",
-    variants: [
-      {
-        volume: "0.33л",
-        price: "330",
-        packaging: ["воск"],
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: stellarEnergyImage
-  },
-  {
-    category: "STRONG SERIES 2025",
     name: "Cosmic Herbs",
     style: "Juniper and Mugwort Imperial Stout",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-cosmic-herbs/6236309",
@@ -409,7 +346,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: cosmicHerbsImage
@@ -447,7 +384,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "280",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: graffRaspberryOakImage
@@ -563,7 +500,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "300",
         packaging: ["воск"],
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: braggotPorterHotImage
@@ -583,7 +520,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "300",
         packaging: ["воск"],
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: braggotPorterSmokedImage
@@ -730,7 +667,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "400",
-        remaining: "остаток: 17 шт."
+        remaining: "остаток: 11 шт."
       },
       {
         volume: "0.75л",
@@ -754,7 +691,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "410",
-        remaining: "остаток: 18 шт."
+        remaining: "остаток: 15 шт."
       },
       {
         volume: "0.75л",
@@ -778,7 +715,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "400",
-        remaining: "остаток: 10 шт."
+        remaining: "остаток: 3 шт."
       },
       {
         volume: "0.75л",
@@ -802,7 +739,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "410",
-        remaining: "остаток: 15 шт."
+        remaining: "остаток: 13 шт."
       },
       {
         volume: "0.75л",
@@ -827,7 +764,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 27 шт."
+        remaining: "остаток: 23 шт."
       },
       {
         volume: "0.75л",
@@ -852,7 +789,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 20 шт."
+        remaining: "остаток: 19 шт."
       },
       {
         volume: "0.75л",
@@ -877,7 +814,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 15 шт."
+        remaining: "остаток: 12 шт."
       },
       {
         volume: "0.75л",
@@ -902,7 +839,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 13 шт."
+        remaining: "остаток: 12 шт."
       },
       {
         volume: "0.75л",
@@ -927,7 +864,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 16 шт."
+        remaining: "остаток: 15 шт."
       },
       {
         volume: "0.75л",
@@ -952,7 +889,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 25 шт."
+        remaining: "остаток: 23 шт."
       },
       {
         volume: "0.75л",
@@ -977,7 +914,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 24 шт."
+        remaining: "остаток: 20 шт."
       },
       {
         volume: "0.75л",
@@ -1002,7 +939,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "370",
         packaging: ["воск"],
-        remaining: "остаток: 27 шт."
+        remaining: "остаток: 25 шт."
       },
       {
         volume: "0.75л",
@@ -1027,7 +964,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25",
         price: "280",
         packaging: ["воск"],
-        remaining: "остаток: 21 шт."
+        remaining: "остаток: 20 шт."
       },
       {
         volume: "0.45",
@@ -1057,7 +994,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25",
         price: "300",
         packaging: ["воск"],
-        remaining: "остаток: 21 шт."
+        remaining: "остаток: 20 шт."
       },
       {
         volume: "0.45",
