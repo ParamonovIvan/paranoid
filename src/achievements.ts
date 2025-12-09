@@ -101,7 +101,7 @@ export const achievements: Achievement[] = [
   {
     date: "16.09.2023",
     event: "VIII фестиваль домашнего пивоварения",
-    result: "специальный диплом Best Dark Style Beer",
+    result: "специальный диплом Best Dark Style Beer, пиво Cumberland Imperial Stout",
     location: "г. Санкт-Петербург",
     medal: "special"
   },
