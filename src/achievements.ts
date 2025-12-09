@@ -57,7 +57,7 @@ export const achievements: Achievement[] = [
     date: "01.11.2021",
     event: "V всероссийский конкурс пивоваренной продукции «РОСГЛАВПИВО»",
     result: "серебряная медаль, пиво London Porter",
-    location: "Москва",
+    location: "г. Москва",
     medal: "silver"
   },
   {
@@ -95,7 +95,7 @@ export const achievements: Achievement[] = [
     date: "15.03.2023",
     event: "VI всероссийский конкурс пивоваренной продукции «РОСГЛАВПИВО»",
     result: "бронзовая медаль, пиво Imperial Brow Stout",
-    location: "Москва",
+    location: "г. Москва",
     medal: "bronze"
   },
   {
@@ -116,7 +116,7 @@ export const achievements: Achievement[] = [
     date: "08.02.2024",
     event: "VII всероссийский конкурс пивоваренной продукции «РОСГЛАВПИВО»",
     result: "серебряная медаль, категория Imperial Stout",
-    location: "Москва",
+    location: "г. Москва",
     medal: "silver"
   },
   {
