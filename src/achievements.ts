@@ -42,7 +42,7 @@ export const achievements: Achievement[] = [
   },
   {
     date: "15.11.2020",
-    event: "I конкурс Brewcom",
+    event: "I общенациональный конкурс домашних пивоваров Brewcom",
     result: "участник",
     location: "г. Санкт-Петербург"
   },
@@ -62,7 +62,7 @@ export const achievements: Achievement[] = [
   },
   {
     date: "19.11.2021",
-    event: "II конкурс Brewcom",
+    event: "II общенациональный конкурс домашних пивоваров Brewcom",
     result: "участник",
     location: "г. Санкт-Петербург"
   },
@@ -107,7 +107,7 @@ export const achievements: Achievement[] = [
   },
   {
     date: "18.11.2023",
-    event: "IV конкурс Brewcom",
+    event: "IV общенациональный конкурс домашних пивоваров Brewcom",
     result: "3 место, категория Irish Extra Stout",
     location: "г. Санкт-Петербург",
     medal: "bronze"
@@ -121,13 +121,13 @@ export const achievements: Achievement[] = [
   },
   {
     date: "17.11.2024",
-    event: "V конкурс Brewcom",
+    event: "V общенациональный конкурс домашних пивоваров Brewcom",
     result: "участник",
     location: "г. Санкт-Петербург"
   },
   {
     date: "15.11.2025",
-    event: "VI конкурс Brewcom",
+    event: "VI общенациональный конкурс домашних пивоваров Brewcom",
     result: "участник",
     location: "г. Санкт-Петербург"
   }
