@@ -14,9 +14,7 @@ import graffBlackCurrantImage from "./images/strong-series-2025/graff_black_curr
 import graffBlackCurrantOakImage from "./images/strong-series-2025/graff_black_currant_oak.png";
 import braggotPorterImage from "./images/strong-series-2025/braggot_porter.png";
 import braggotPorterHotImage from "./images/strong-series-2025/braggot_porter_hot.png";
-import pumpkinSparkImage from "./images/pepper-sauces/pumpkin_spark.png";
 import paradisePainImage from "./images/pepper-sauces/paradise_pain.png";
-import cadaverKetchupImage from "./images/pepper-sauces/cadaver_ketchup.png";
 import orchardsWrathImage from "./images/pepper-sauces/orchards_wrath.png";
 import purpleRevengeImage from "./images/pepper-sauces/purple_revenge.png";
 import everbleedImage from "./images/pepper-sauces/everbleed.png";
@@ -166,7 +164,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "260",
-        remaining: "остаток: 20 шт."
+        remaining: "остаток: 19 шт."
       }
     ],
     imageUrl: pumpkinAleImage
@@ -204,7 +202,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 7 шт."
+        remaining: "остаток: 6 шт."
       }
     ],
     imageUrl: halloweenIpaImage
@@ -223,7 +221,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "350",
-        remaining: "остаток: 5 шт."
+        remaining: "остаток: 4 шт."
       }
     ],
     imageUrl: mondaySucksImage
@@ -630,7 +628,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "410",
-        remaining: "остаток: 9 шт."
+        remaining: "остаток: 8 шт."
       },
       {
         volume: "0.75л",
@@ -655,7 +653,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 21 шт."
+        remaining: "остаток: 20 шт."
       },
       {
         volume: "0.75л",
@@ -680,7 +678,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 13 шт."
+        remaining: "остаток: 12 шт."
       },
       {
         volume: "0.75л",
@@ -705,7 +703,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 9 шт."
+        remaining: "остаток: 8 шт."
       },
       {
         volume: "0.75л",
@@ -730,7 +728,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 8 шт."
+        remaining: "остаток: 7 шт."
       },
       {
         volume: "0.75л",
@@ -780,7 +778,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 18 шт."
+        remaining: "остаток: 17 шт."
       },
       {
         volume: "0.75л",
@@ -855,7 +853,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25",
         price: "280",
         packaging: ["воск"],
-        remaining: "остаток: 18 шт."
+        remaining: "остаток: 17 шт."
       },
       {
         volume: "0.45",
@@ -885,7 +883,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25",
         price: "300",
         packaging: ["воск"],
-        remaining: "остаток: 18 шт."
+        remaining: "остаток: 17 шт."
       },
       {
         volume: "0.45",
@@ -905,22 +903,6 @@ export const beerData: Product[] = generateIds([
 export const sauceData: Product[] = generateIds([
   {
     category: "PEPPER SAUCES",
-    name: "Pumpkin Spark",
-    style: "Pumpkin Pepper Sauce",
-    spiciness: "6/10",
-    description: "Не бархатный осенний крем, а яркая вспышка на стыке сезонов. Сладость моркови и тыквы, подхваченная тростниковым сахаром, — это лишь разбег для мощного прыжка. Острота «Дыхания Дракона» пробивается сквозь сладкую плоть, как огненная молния, но ей на смену тут же приходят согревающие специи: корица, мускатный орех, гвоздика и имбирь. Яблочный уксус добавляет свежей, игристой кислотности. Преобразит запеченную тыкву, сырные тако и свиные отбивные. Состав: перец желтый болгарский, перец Дыхание дракона, морковь, лук, чеснок, имбирь, гвоздика, мускатный орех, корица, перец черный, уксус яблочный, соль морская, сахар тростниковый.",
-    bottlingDate: "10.10.2025",
-    variants: [
-      {
-        volume: "0.2л",
-        price: "500",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: pumpkinSparkImage
-  },
-  {
-    category: "PEPPER SAUCES",
     name: "Paradise Pain",
     style: "Strawberry Pepper Sauce",
     spiciness: "8/10",
@@ -934,22 +916,6 @@ export const sauceData: Product[] = generateIds([
       }
     ],
     imageUrl: paradisePainImage
-  },
-  {
-    category: "PEPPER SAUCES",
-    name: "Cadaver Ketchup",
-    style: "Coffee BBQ Pepper Sauce",
-    spiciness: "3/10",
-    description: "Мы не стали его готовить. Мы его препарировали. Вскрыли томатную основу и пропитали её солодовым экстрактом. Вживили в неё копчёный перец Скорпион Тринидад и Хабанеро шоколадный, чей жар – как трупное окоченение для рецепторов. Чёрный кофе и жидкий дым — это финальная стадия бальзамирования, консервирующая вкус на века. Острота 3? Это не жар. Это лёгкая стадия разложения, которая и придаёт истинную пикантность. Для настоящих ценителей посмертной гастрономии. Состав: перец красный болгарский, перец Хабанеро шоколадный, перец Скорпион Тринидад смокед Бутч-Т, томатная паста, лук, чеснок, жидкий дым, солодовый экстракт, кофе, паприка сладкая, паприка копченая, черный перец, зира, уксус яблочный, соль морская.",
-    bottlingDate: "10.10.2025",
-    variants: [
-      {
-        volume: "0.2л",
-        price: "600",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: cadaverKetchupImage
   },
   {
     category: "PEPPER SAUCES",
