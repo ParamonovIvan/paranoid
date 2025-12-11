@@ -1,7 +1,6 @@
 import braggotSpicedImage from "./images/strong-series-2024/braggot-spiced.png";
 import blueberryStrongWildImage from "./images/strong-series-2024/blueberry-strong-wild.png";
 import cherryStrongWildImage from "./images/strong-series-2024/cherry-strong-wild.png";
-import cocoGrottoImage from "./images/season-beer-2025/coco_grotto.png";
 import pumpkinAleImage from "./images/season-beer-2025/pumpkin_ale.png";
 import fuckWorkImage from "./images/season-beer-2025/fuck_work.jpg"
 import halloweenIpaImage from "./images/season-beer-2025/halloween_ipa.png";
@@ -19,7 +18,6 @@ import orchardsWrathImage from "./images/pepper-sauces/orchards_wrath.png";
 import purpleRevengeImage from "./images/pepper-sauces/purple_revenge.png";
 import everbleedImage from "./images/pepper-sauces/everbleed.png";
 import wildCherryImage from "./images/8th-birthday/wild_cherry.png";
-import wildRaspberryImage from "./images/8th-birthday/wild_raspberry.png";
 import trippyTimberImage from "./images/8th-birthday/trippy_timber.png";
 import druidsBrewImage from "./images/8th-birthday/druids_brew.png";
 import americanBwImage from "./images/8th-birthday/american_bw.png";
@@ -133,25 +131,6 @@ export const beerData: Product[] = generateIds([
 
   {
     category: "SEASON BEER 2025",
-    name: "The Coco Grotto",
-    style: "Coconut Stout",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-the-coco-grotto/6447530",
-    og: "15.8%",
-    abv: "5.9",
-    ibu: "20",
-    description: "Затерянный остров вкуса. Этот стаут — ваш ключ от райской лагуны. Насыщенный, но не тяжелый, он сочетает в себе классические ноты жженого солода и щедрую порцию натурального кокоса. Лактоза создает невероятно бархатистую текстуру, превращая каждый глоток в побег от реальности.",
-    bottlingDate: "14.10.2025",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "300",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: cocoGrottoImage
-  },
-  {
-    category: "SEASON BEER 2025",
     name: "Pumpkin Ale",
     style: "American Pumpkin Ale",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-pumpkin-ale-2025/6475806",
@@ -202,7 +181,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 5 шт."
+        remaining: "остаток: 4 шт."
       }
     ],
     imageUrl: halloweenIpaImage
@@ -482,25 +461,6 @@ export const beerData: Product[] = generateIds([
   },
   {
     category: "8TH BIRTHDAY",
-    name: "Raspberry Dream",
-    style: "Wild Ale with Raspberry",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-raspberry-dream/6496844",
-    og: "15.5%",
-    abv: "6.7",
-    ibu: "10",
-    description: "Пиво смешанного брожения (с добавлением культурных Brettanomyces), фруктово-пряное, с нотами скотного двора и мокрого сена, с кислинкой и характером американского дуба.",
-    bottlingDate: "27.04.2025",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "340",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: wildRaspberryImage
-  },
-  {
-    category: "8TH BIRTHDAY",
     name: "Trippy Timber",
     style: "Wild Ale with Dates and Raisin",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-trippy-timber/6496846",
@@ -561,7 +521,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "400",
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 5 шт."
       },
       {
         volume: "0.75л",
@@ -585,7 +545,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "410",
-        remaining: "остаток: 9 шт."
+        remaining: "остаток: 8 шт."
       },
       {
         volume: "0.75л",
@@ -606,11 +566,6 @@ export const beerData: Product[] = generateIds([
     description: "Этот крепкий эль, выдержанный в традициях английских крепких элей, предлагает путешествие в глубины вкуса. Позвольте себе затеряться в лабиринте его аромата: спелые тёмные фрукты, сочная карамель и шлейф креплёного вина порту. Благородные хмели Fuggle и East Kent Goldings мягко оттеняют насыщенную солодовую основу, даря лёгкие травянистые и цветочные акценты. Финал — это тёплое, продолжительное послевкусие с благородной дубовой нотой, которую пиву подарили палочки американского дуба, вымоченные в вине. Искусство баланса между мощью и изяществом.",
     bottlingDate: "07.09.2025",
     variants: [
-      {
-        volume: "0.375л",
-        price: "400",
-        remaining: "остаток: 1 шт."
-      },
       {
         volume: "0.75л",
         price: "800",
@@ -658,7 +613,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 19 шт."
+        remaining: "остаток: 18 шт."
       },
       {
         volume: "0.75л",
@@ -683,7 +638,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 12 шт."
+        remaining: "остаток: 11 шт."
       },
       {
         volume: "0.75л",
@@ -808,7 +763,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 17 шт."
+        remaining: "остаток: 16 шт."
       },
       {
         volume: "0.75л",
@@ -858,7 +813,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25",
         price: "280",
         packaging: ["воск"],
-        remaining: "остаток: 17 шт."
+        remaining: "остаток: 16 шт."
       },
       {
         volume: "0.45",
