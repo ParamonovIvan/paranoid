@@ -607,6 +607,11 @@ export const beerData: Product[] = generateIds([
     bottlingDate: "07.09.2025",
     variants: [
       {
+        volume: "0.375л",
+        price: "400",
+        remaining: "остаток: 1 шт."
+      },
+      {
         volume: "0.75л",
         price: "800",
         remaining: "остаток: 2 шт."
