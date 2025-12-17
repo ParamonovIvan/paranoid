@@ -2,12 +2,12 @@ import braggotSpicedImage from "./images/strong-series-2024/braggot-spiced.png";
 import blueberryStrongWildImage from "./images/strong-series-2024/blueberry-strong-wild.png";
 import cherryStrongWildImage from "./images/strong-series-2024/cherry-strong-wild.png";
 import pumpkinAleImage from "./images/season-beer-2025/pumpkin_ale.png";
-import fuckWorkImage from "./images/season-beer-2025/fuck_work.jpg"
+import fuckWorkImage from "./images/season-beer-2025/fuck_work.jpg";
 import halloweenIpaImage from "./images/season-beer-2025/halloween_ipa.png";
 import mondaySucksImage from "./images/season-beer-2025/monday_sucks.jpg";
 import sweetSpiceImage from "./images/strong-series-2025/sweet_spice.png";
-import graffRaspberryImage from "./images/strong-series-2025/graff_raspberry.png"
-import graffRaspberryOakImage from "./images/strong-series-2025/graff_raspberry_oak.png"
+import graffRaspberryImage from "./images/strong-series-2025/graff_raspberry.png";
+import graffRaspberryOakImage from "./images/strong-series-2025/graff_raspberry_oak.png";
 import graffCherryImage from "./images/strong-series-2025/graff_cherry.png";
 import graffBlackCurrantImage from "./images/strong-series-2025/graff_black_currant.png";
 import graffBlackCurrantOakImage from "./images/strong-series-2025/graff_black_currant_oak.png";
@@ -37,7 +37,9 @@ import wheatWineImage from "./images/8th-birthday/wheat_wine.png";
 import ddhWheatWineImage from "./images/8th-birthday/ddh_wheat_wine.png";
 import buckWheatWineImage from "./images/8th-birthday/buckwheat_wine.png";
 import buckWheatWineHoneyImage from "./images/8th-birthday/buckwheat_wine_honey.png";
-import bhutsEmbraceImage from "./images/pepper-sauces/bhuts_embrace.png"
+import bhutsEmbraceImage from "./images/pepper-sauces/bhuts_embrace.png";
+import sunCasketImage from "./images/pepper-sauces/sun_casket.png";
+import widowsJamImage from "./images/pepper-sauces/widows_jam.png";
 import type { Product } from "./types/product.ts";
 
 let globalIdCounter = 1;
@@ -923,6 +925,38 @@ export const sauceData: Product[] = generateIds([
       }
     ],
     imageUrl: bhutsEmbraceImage
+  },
+  {
+    category: "PEPPER SAUCES",
+    name: "Sun Casket",
+    style: "Peaches and Apricots  Pepper Sauce",
+    spiciness: "5/10",
+    description: "Мы не варили соус. Мы запечатали лето в золотом ковчеге. Мякоть персиков и абрикосов, сладость моркови — это запертый внутри свет. Но в самом сердце этого солнца таится пламя — Pimenta Caixo и Scorpion Moruga Trinidad. Острота — не крик, а долгое, согревающее эхо августовского полдня. Это не соус, это шкатулка с последним лучом лета. Состав: абрикосы, персики, перец Кайшу, перец Скорпион Тринидад, лук, морковь, имбирь, корица, черный перец, уксус яблочный, соль морская.",
+    bottlingDate: "14.12.2025",
+    variants: [
+      {
+        volume: "0.2л",
+        price: "600",
+        remaining: "остаток: 17 шт."
+      }
+    ],
+    imageUrl: sunCasketImage
+  },
+  {
+    category: "PEPPER SAUCES",
+    name: "Widow's Jam",
+    style: "Berries  Pepper Sauce",
+    spiciness: "2/10",
+    description: "Бархатная кислинка облепихи и терпкость черноплодной рябины — это лишь тихая прелюдия. В самом сердце джема пробуждается 7 Pot Gravedigger — перец, который роет могилы. Его жар не обжигает, а поднимается медленно и настойчиво, как холодный туман из-под земли, подхваченный острым дыханием имбиря и горчицы. Состав: облепиха, черноплодная рябина, перец красный болгарский, перец 7 Пот Грейв Диггер, лук, морковь, имбирь, черный перец, горчица, уксус яблочный, соль морская.",
+    bottlingDate: "14.12.2025",
+    variants: [
+      {
+        volume: "0.2л",
+        price: "600",
+        remaining: "остаток: 16 шт."
+      }
+    ],
+    imageUrl: widowsJamImage
   },
 ]);
 
