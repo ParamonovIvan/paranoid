@@ -16,7 +16,6 @@ import braggotPorterHotImage from "./images/strong-series-2025/braggot_porter_ho
 import paradisePainImage from "./images/pepper-sauces/paradise_pain.png";
 import orchardsWrathImage from "./images/pepper-sauces/orchards_wrath.png";
 import purpleRevengeImage from "./images/pepper-sauces/purple_revenge.png";
-import everbleedImage from "./images/pepper-sauces/everbleed.png";
 import wildCherryImage from "./images/8th-birthday/wild_cherry.png";
 import trippyTimberImage from "./images/8th-birthday/trippy_timber.png";
 import druidsBrewImage from "./images/8th-birthday/druids_brew.png";
@@ -121,7 +120,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "230",
         packaging: ["воск"],
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: cherryStrongWildImage
@@ -336,7 +335,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "280",
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: graffRaspberryOakImage
@@ -908,22 +907,6 @@ export const sauceData: Product[] = generateIds([
       }
     ],
     imageUrl: purpleRevengeImage
-  },
-  {
-    category: "PEPPER SAUCES",
-    name: "Everbleed",
-    style: "Lingonberries Pepper Sauce",
-    spiciness: "3/10",
-    description: "Этот соус — не рана, а вечное кровотечение. Первый аккорд — это терпкая сладость брусники и клюквы, загустевшая тростниковым сахаром и тёмным нектаром варенья из сосновых шишек. Это смолистый шёпот хвойного лева, обманчивый покой заснеженного поля. Но из-под ягодного ковра медленно прорастает жар перца 7 Pot Gravedigger — его острота (3/10) не обжигает, а тлеет в глубине, как холодный огонь под слоем хвои. Еловые побеги и розмарин вонзают свои иглы, а корица завершает этот обряд, оставляя послевкусие древней, окаменевшей смолы. Это порча на самую тёплую пищу, превращающая каждую трапезу в ритуал забытого божества леса. Состав: брусника, клюква, перец красный болгарский, перец 7 Пот Грейв Диггер, еловые побеги, варенье из сосновых шишек, розмарин, корица, черный перец, уксус яблочный, соль морская, сахар тростниковый.",
-    bottlingDate: "08.11.2025",
-    variants: [
-      {
-        volume: "0.2л",
-        price: "600",
-        remaining: "остаток: 3 шт."
-      }
-    ],
-    imageUrl: everbleedImage
   },
   {
     category: "PEPPER SAUCES",
