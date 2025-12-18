@@ -5,9 +5,6 @@ import pumpkinAleImage from "./images/season-beer-2025/pumpkin_ale.png";
 import fuckWorkImage from "./images/season-beer-2025/fuck_work.jpg";
 import halloweenIpaImage from "./images/season-beer-2025/halloween_ipa.png";
 import mondaySucksImage from "./images/season-beer-2025/monday_sucks.jpg";
-import sweetSpiceImage from "./images/strong-series-2025/sweet_spice.png";
-import graffRaspberryImage from "./images/strong-series-2025/graff_raspberry.png";
-import graffRaspberryOakImage from "./images/strong-series-2025/graff_raspberry_oak.png";
 import graffCherryImage from "./images/strong-series-2025/graff_cherry.png";
 import graffBlackCurrantImage from "./images/strong-series-2025/graff_black_currant.png";
 import graffBlackCurrantOakImage from "./images/strong-series-2025/graff_black_currant_oak.png";
@@ -16,7 +13,6 @@ import braggotPorterHotImage from "./images/strong-series-2025/braggot_porter_ho
 import paradisePainImage from "./images/pepper-sauces/paradise_pain.png";
 import orchardsWrathImage from "./images/pepper-sauces/orchards_wrath.png";
 import purpleRevengeImage from "./images/pepper-sauces/purple_revenge.png";
-import wildCherryImage from "./images/8th-birthday/wild_cherry.png";
 import trippyTimberImage from "./images/8th-birthday/trippy_timber.png";
 import druidsBrewImage from "./images/8th-birthday/druids_brew.png";
 import americanBwImage from "./images/8th-birthday/american_bw.png";
@@ -144,7 +140,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "260",
-        remaining: "остаток: 12 шт."
+        remaining: "остаток: 11 шт."
       }
     ],
     imageUrl: pumpkinAleImage
@@ -287,63 +283,6 @@ export const beerData: Product[] = generateIds([
 
   {
     category: "STRONG SERIES 2025",
-    name: "Sweet Spice",
-    style: "Pepper Saison Braggot",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-sweet-spice/6154317",
-    og: "22.0%",
-    abv: "10.3",
-    ibu: "10",
-    description: "Смесь пива и местного меда (с. Кудрино, Удмуртия) смешанного брожения с добавлением 4 видов перца: розового, серого, белого и зеленого. Сухое, медовое, алкогольное пиво с терпкостью и пряностью перцев.",
-    bottlingDate: "08.02.2025",
-    variants: [
-      {
-        volume: "0.33л",
-        price: "240",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: sweetSpiceImage
-  },
-  {
-    category: "STRONG SERIES 2025",
-    name: "Strong Raspberry Graff",
-    style: "Apfelwein with Raspberry",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-strong-raspberry-graff/6208900",
-    og: "29.0%",
-    abv: "12.8",
-    ibu: "15",
-    description: "Пиво, сваренное в стиле Apfelwein с добавлением сока малины (30%). Состав солода: 50% пилсен, 50% пшеничный, хмель Cascade.",
-    bottlingDate: "15.03.2025",
-    variants: [
-      {
-        volume: "0.33л",
-        price: "270",
-        remaining: "остаток: 2 шт."
-      }
-    ],
-    imageUrl: graffRaspberryImage
-  },
-  {
-    category: "STRONG SERIES 2025",
-    name: "Strong Raspberry Graff (oak)",
-    style: "Apfelwein with Raspberry (oak edition)",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-strong-raspberry-graff-oak-aged/6208901",
-    og: "29.0%",
-    abv: "13.3",
-    ibu: "15",
-    description: "Пиво, сваренное в стиле Apfelwein с добавлением сока малины (30%). Состав солода: 50% пилсен, 50% пшеничный, хмель Cascade, вымоченная в хересе спираль сильного обжига из американского дуба.",
-    bottlingDate: "15.03.2025",
-    variants: [
-      {
-        volume: "0.33л",
-        price: "280",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: graffRaspberryOakImage
-  },
-  {
-    category: "STRONG SERIES 2025",
     name: "Strong Cherry Graff",
     style: "Apfelwein with Cherry",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-strong-cherry-graff/6208911",
@@ -414,7 +353,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "290",
         packaging: ["воск"],
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: braggotPorterImage
@@ -443,25 +382,6 @@ export const beerData: Product[] = generateIds([
   // 8TH BIRTHDAY
   {
     category: "8TH BIRTHDAY",
-    name: "Wild Cherry",
-    style: "Wild Ale with Cherry, Cocoa and Cinnamon",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-wild-cherry/6496841",
-    og: "15.5%",
-    abv: "6.7",
-    ibu: "10",
-    description: "Пиво смешанного брожения (с добавлением культурных Brettanomyces), фруктово-пряное, с нотами скотного двора и мокрого сена, с кислинкой и характером американского дуба.",
-    bottlingDate: "27.04.2025",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "340",
-        remaining: "остаток: 4 шт."
-      }
-    ],
-    imageUrl: wildCherryImage
-  },
-  {
-    category: "8TH BIRTHDAY",
     name: "Trippy Timber",
     style: "Wild Ale with Dates and Raisin",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-trippy-timber/6496846",
@@ -474,7 +394,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "330",
-        remaining: "остаток: 14 шт."
+        remaining: "остаток: 8 шт."
       },
       {
         volume: "0.75л",
@@ -498,7 +418,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "340",
-        remaining: "остаток: 17 шт."
+        remaining: "остаток: 11 шт."
       },
       {
         volume: "0.75л",
@@ -714,7 +634,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 11 шт."
+        remaining: "остаток: 7 шт."
       },
       {
         volume: "0.75л",
@@ -789,7 +709,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "370",
         packaging: ["воск"],
-        remaining: "остаток: 24 шт."
+        remaining: "остаток: 23 шт."
       },
       {
         volume: "0.75л",
@@ -844,7 +764,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25",
         price: "300",
         packaging: ["воск"],
-        remaining: "остаток: 19 шт."
+        remaining: "остаток: 18 шт."
       },
       {
         volume: "0.45",
