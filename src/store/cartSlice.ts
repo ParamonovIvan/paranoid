@@ -33,20 +33,25 @@ const cartSlice = createSlice({
   name: "cart",
   initialState,
   reducers: {
-    addToCart: (state, action: PayloadAction<Omit<CartItem, "id" | "quantity">>) => {
-      const { productId, volume } = action.payload;
+    addToCart: (state, action: PayloadAction<Omit<CartItem, "id" | "quantity" | "maxQuantity"> & { maxQuantity: number }>) => {
+      const { productId, volume, maxQuantity } = action.payload;
 
       const existingItem = state.items.find(
         item => item.productId === productId && item.volume === volume
       );
 
       if (existingItem) {
-        existingItem.quantity += 1;
+        if (existingItem.quantity < maxQuantity) {
+          existingItem.quantity += 1;
+        } else {
+          return;
+        }
       } else {
         const newItem: CartItem = {
           id: Date.now(),
           ...action.payload,
           quantity: 1,
+          maxQuantity,
         };
         state.items.push(newItem);
       }
@@ -70,7 +75,9 @@ const cartSlice = createSlice({
       const item = state.items.find(item => item.id === id);
 
       if (item) {
-        if (quantity <= 0) {
+        if (quantity > item.maxQuantity) {
+          item.quantity = item.maxQuantity;
+        } else if (quantity <= 0) {
           state.items = state.items.filter(item => item.id !== id);
         } else {
           item.quantity = quantity;

@@ -227,10 +227,20 @@ const Cart: React.FC<CartProps> = ({ open, onClose }) => {
 
                           <Button
                             size="small"
-                            onClick={() => dispatch(updateQuantity({
-                              id: item.id,
-                              quantity: item.quantity + 1
-                            }))}
+                            onClick={() => {
+                              if (item.quantity < item.maxQuantity) {
+                                dispatch(updateQuantity({
+                                  id: item.id,
+                                  quantity: item.quantity + 1
+                                }));
+                              } else {
+                                notification.warning({
+                                  message: "Достигнут лимит",
+                                  description: `Максимальное количество: ${item.maxQuantity} шт.`
+                                });
+                              }
+                            }}
+                            disabled={item.quantity >= item.maxQuantity}
                           >
                             +
                           </Button>

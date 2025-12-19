@@ -89,6 +89,35 @@ const BeerCatalog = () => {
   };
 
   const handleAddToCart = (product: Product, variant: ProductVariant) => {
+    const remainingText = variant.remaining;
+    const match = remainingText.match(/(\d+)/);
+    const maxQuantity = match ? parseInt(match[1], 10) : 0;
+
+    if (maxQuantity <= 0) {
+      api.warning({
+        message: "Товар закончился!",
+        description: `${product.name} (${variant.volume}) больше нет в наличии`,
+        placement: "topRight",
+        duration: 2
+      });
+      return;
+    }
+
+    const existingItem = items.find(item =>
+      item.productId === product.id && item.volume === variant.volume
+    );
+    const currentQuantity = existingItem?.quantity || 0;
+
+    if (currentQuantity >= maxQuantity) {
+      api.warning({
+        message: "Достигнут лимит!",
+        description: `Максимальное количество: ${maxQuantity} шт.`,
+        placement: "topRight",
+        duration: 2
+      });
+      return;
+    }
+
     dispatch(addToCart({
       productId: product.id,
       name: product.name,
@@ -97,7 +126,8 @@ const BeerCatalog = () => {
       price: variant.price,
       packaging: variant.packaging,
       imageUrl: product.imageUrl,
-      category: product.category
+      category: product.category,
+      maxQuantity: maxQuantity
     }));
 
     api.success({
@@ -229,6 +259,10 @@ const BeerCatalog = () => {
         actions={[
           <Flex vertical gap={12} key="variants" style={{ padding: "8px 0", width: "100%" }}>
             {product.variants.map((variant, index) => {
+              const remainingText = variant.remaining;
+              const match = remainingText.match(/(\d+)/);
+              const maxQuantity = match ? parseInt(match[1], 10) : 0;
+
               const cartItem = items.find(item =>
                 item.productId === product.id && item.volume === variant.volume
               );
@@ -299,7 +333,8 @@ const BeerCatalog = () => {
                         size="small"
                         type="primary"
                         onClick={() => handleAddToCart(product, variant)}
-                        style={{ width: 36, height: 36  }}
+                        disabled={cartItem && cartItem.quantity >= maxQuantity}
+                        style={{ width: 36, height: 36 }}
                       >
                         +
                       </Button>

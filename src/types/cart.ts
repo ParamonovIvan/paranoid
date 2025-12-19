@@ -9,6 +9,7 @@ export interface CartItem {
   quantity: number;
   imageUrl?: string;
   category: string;
+  maxQuantity: number;
 }
 
 export interface CartState {
