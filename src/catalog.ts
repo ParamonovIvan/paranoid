@@ -1,12 +1,9 @@
-import braggotSpicedImage from "./images/strong-series-2024/braggot-spiced.png";
 import blueberryStrongWildImage from "./images/strong-series-2024/blueberry-strong-wild.png";
 import cherryStrongWildImage from "./images/strong-series-2024/cherry-strong-wild.png";
 import pumpkinAleImage from "./images/season-beer-2025/pumpkin_ale.png";
 import fuckWorkImage from "./images/season-beer-2025/fuck_work.jpg";
 import halloweenIpaImage from "./images/season-beer-2025/halloween_ipa.png";
 import mondaySucksImage from "./images/season-beer-2025/monday_sucks.jpg";
-import graffCherryImage from "./images/strong-series-2025/graff_cherry.png";
-import graffBlackCurrantImage from "./images/strong-series-2025/graff_black_currant.png";
 import graffBlackCurrantOakImage from "./images/strong-series-2025/graff_black_currant_oak.png";
 import braggotPorterImage from "./images/strong-series-2025/braggot_porter.png";
 import braggotPorterHotImage from "./images/strong-series-2025/braggot_porter_hot.png";
@@ -53,26 +50,6 @@ export const beerData: Product[] = generateIds([
 
   {
     category: "STRONG SERIES 2024",
-    name: "Honey Imperial Porter",
-    style: "Braggot with Spiced",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-honey-imperial-porter-spiced/5812387",
-    og: "27.5%",
-    abv: "13.5",
-    ibu: "30",
-    description: "Смесь портера и местного меда (с. Кудрино, Удмуртия) с добавлением небольшого количества копченого солода для большей сложности вкуса, а также специй и трав (корица, имбирь, женьшень, цедра апельсина и лимона, кориандр, мята, анис, можжевельник, дубовая щепа).",
-    bottlingDate: "26.04.2024",
-    variants: [
-      {
-        volume: "0.33л",
-        price: "500",
-        packaging: ["воск", "тубус"],
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: braggotSpicedImage
-  },
-  {
-    category: "STRONG SERIES 2024",
     name: "Harmony In Chaos",
     style: "Blueberry Strong Wild Ale",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-harmony-in-chaos-blueberry/5976755",
@@ -112,7 +89,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "450",
         packaging: ["воск", "тубус"],
-        remaining: "остаток: 5 шт."
+        remaining: "остаток: 3 шт."
       },
       {
         volume: "0.25л",
@@ -216,7 +193,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 11 шт."
+        remaining: "остаток: 10 шт."
       }
     ],
     imageUrl: raspberryWildImage
@@ -235,7 +212,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 9 шт."
+        remaining: "остаток: 7 шт."
       }
     ],
     imageUrl: cherryWildAleImage
@@ -273,7 +250,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 10 шт."
+        remaining: "остаток: 9 шт."
       }
     ],
     imageUrl: strawberryWildImage
@@ -281,44 +258,6 @@ export const beerData: Product[] = generateIds([
 
   // STRONG SERIES 2025
 
-  {
-    category: "STRONG SERIES 2025",
-    name: "Strong Cherry Graff",
-    style: "Apfelwein with Cherry",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-strong-cherry-graff/6208911",
-    og: "25.5%",
-    abv: "10.2",
-    ibu: "15",
-    description: "Пиво, сваренное в стиле Apfelwein с добавлением сока вишни (30%). Состав солода: 50% пилсен, 50% пшеничный, хмель Cascade.",
-    bottlingDate: "26.03.2025",
-    variants: [
-      {
-        volume: "0.33л",
-        price: "250",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: graffCherryImage
-  },
-  {
-    category: "STRONG SERIES 2025",
-    name: "Strong Black Currant Graff",
-    style: "Apfelwein with Black Currant",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-strong-black-currant-graff/6208917?edit=success",
-    og: "25.5%",
-    abv: "13.0",
-    ibu: "15",
-    description: "Пиво, сваренное в стиле Apfelwein с добавлением сока черной смородины (30%). Состав солода: 50% пилсен, 50% пшеничный, хмель Cascade.",
-    bottlingDate: "29.03.2025",
-    variants: [
-      {
-        volume: "0.33л",
-        price: "270",
-        remaining: "остаток: 3 шт."
-      }
-    ],
-    imageUrl: graffBlackCurrantImage
-  },
   {
     category: "STRONG SERIES 2025",
     name: "Strong Black Currant Graff (oak)",
@@ -442,7 +381,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "400",
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 5 шт."
       },
       {
         volume: "0.75л",
@@ -509,7 +448,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "410",
-        remaining: "остаток: 9 шт."
+        remaining: "остаток: 8 шт."
       },
       {
         volume: "0.75л",
@@ -634,7 +573,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 7 шт."
+        remaining: "остаток: 6 шт."
       },
       {
         volume: "0.75л",
