@@ -117,7 +117,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "260",
-        remaining: "остаток: 11 шт."
+        remaining: "остаток: 12 шт."
       }
     ],
     imageUrl: pumpkinAleImage
@@ -136,7 +136,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "330",
-        remaining: "остаток: 7 шт."
+        remaining: "остаток: 9 шт."
       }
     ],
     imageUrl: fuckWorkImage
@@ -231,7 +231,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 12 шт."
+        remaining: "остаток: 10 шт."
       }
     ],
     imageUrl: gooseberryWildImage
@@ -648,7 +648,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "370",
         packaging: ["воск"],
-        remaining: "остаток: 22 шт."
+        remaining: "остаток: 21 шт."
       },
       {
         volume: "0.75л",
@@ -673,7 +673,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25",
         price: "280",
         packaging: ["воск"],
-        remaining: "остаток: 17 шт."
+        remaining: "остаток: 12 шт."
       },
       {
         volume: "0.45",
@@ -703,7 +703,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25",
         price: "300",
         packaging: ["воск"],
-        remaining: "остаток: 18 шт."
+        remaining: "остаток: 12 шт."
       },
       {
         volume: "0.45",
@@ -764,7 +764,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: purpleRevengeImage
@@ -780,7 +780,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 12 шт."
+        remaining: "остаток: 8 шт."
       }
     ],
     imageUrl: bhutsEmbraceImage
@@ -796,7 +796,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 17 шт."
+        remaining: "остаток: 13 шт."
       }
     ],
     imageUrl: sunCasketImage
@@ -812,7 +812,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 16 шт."
+        remaining: "остаток: 13 шт."
       }
     ],
     imageUrl: widowsJamImage
