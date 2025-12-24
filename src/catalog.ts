@@ -7,7 +7,6 @@ import mondaySucksImage from "./images/season-beer-2025/monday_sucks.jpg";
 import graffBlackCurrantOakImage from "./images/strong-series-2025/graff_black_currant_oak.png";
 import braggotPorterImage from "./images/strong-series-2025/braggot_porter.png";
 import braggotPorterHotImage from "./images/strong-series-2025/braggot_porter_hot.png";
-import paradisePainImage from "./images/pepper-sauces/paradise_pain.png";
 import orchardsWrathImage from "./images/pepper-sauces/orchards_wrath.png";
 import purpleRevengeImage from "./images/pepper-sauces/purple_revenge.png";
 import trippyTimberImage from "./images/8th-birthday/trippy_timber.png";
@@ -721,22 +720,6 @@ export const beerData: Product[] = generateIds([
 ]);
 
 export const sauceData: Product[] = generateIds([
-  {
-    category: "PEPPER SAUCES",
-    name: "Paradise Pain",
-    style: "Strawberry Pepper Sauce",
-    spiciness: "8/10",
-    description: "Нежная сладость спелой клубники и солнечного апельсина обволакивает, как тропический бриз. Но наслаждение обманчиво. В следующую секунду Каролина Рипер обрушивает на вас огненную лавину, безжалостную и очищающую. Имбирь и соевый соус добавляют пикантной глубины, превращая простой жар в сложную симфонию страдания и восторга. Это не просто соус, это экстремальный гастрономический опыт. Для тех, кто ищет адреналин в каждой капле. Состав: перец красный болгарский, перец Каролина Рипер красный, лук, морковь, сок клубники, клубника, апельсины, имбирь, чеснок, соус соевый, уксус яблочный, соль морская, крахмал Аррорут.",
-    bottlingDate: "10.10.2025",
-    variants: [
-      {
-        volume: "0.2л",
-        price: "600",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: paradisePainImage
-  },
   {
     category: "PEPPER SAUCES",
     name: "Orchard's Wrath",
