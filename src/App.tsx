@@ -61,7 +61,7 @@ function App() {
         padding: "24px 24px",
         fontSize: "clamp(12px, 2vw, 14px)"
       }}>
-        Paranoid Brewery ©2017-2025 — Лаборатория жидкостей с характером
+        Paranoid Brewery ©2017-2026 — Лаборатория жидкостей с характером
       </Footer>
       <Flex style={{ position: "fixed", bottom: 24, right: 24, zIndex: 1000 }}>
         <Badge
