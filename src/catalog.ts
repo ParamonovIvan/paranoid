@@ -5,7 +5,6 @@ import fuckWorkImage from "./images/season-beer-2025/fuck_work.jpg";
 import halloweenIpaImage from "./images/season-beer-2025/halloween_ipa.png";
 import mondaySucksImage from "./images/season-beer-2025/monday_sucks.jpg";
 import graffBlackCurrantOakImage from "./images/strong-series-2025/graff_black_currant_oak.png";
-import braggotPorterImage from "./images/strong-series-2025/braggot_porter.png";
 import braggotPorterHotImage from "./images/strong-series-2025/braggot_porter_hot.png";
 import orchardsWrathImage from "./images/pepper-sauces/orchards_wrath.png";
 import purpleRevengeImage from "./images/pepper-sauces/purple_revenge.png";
@@ -68,7 +67,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "230",
         packaging: ["воск"],
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: blueberryStrongWildImage
@@ -94,7 +93,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "230",
         packaging: ["воск"],
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: cherryStrongWildImage
@@ -116,7 +115,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "260",
-        remaining: "остаток: 5 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: pumpkinAleImage
@@ -154,7 +153,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 2 шт."
       }
     ],
     imageUrl: halloweenIpaImage
@@ -278,26 +277,6 @@ export const beerData: Product[] = generateIds([
   },
   {
     category: "STRONG SERIES 2025",
-    name: "Honey Imperial Porter",
-    style: "Braggot",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-honey-imperial-porter-braggot/6259903",
-    og: "29.0%",
-    abv: "11.1",
-    ibu: "20",
-    description: "Смесь портера и местного меда (с. Кудрино, Удмуртия) с добавлением небольшого количества копченого солода для большей сложности вкуса.",
-    bottlingDate: "10.05.2025",
-    variants: [
-      {
-        volume: "0.33л",
-        price: "290",
-        packaging: ["воск"],
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: braggotPorterImage
-  },
-  {
-    category: "STRONG SERIES 2025",
     name: "Honey Imperial Porter (hot)",
     style: "Braggot with Trinidad Scorpion Pepper",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-honey-imperial-porter-braggot-pepper-style/6259911",
@@ -356,7 +335,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "340",
-        remaining: "остаток: 7 шт."
+        remaining: "остаток: 3 шт."
       },
       {
         volume: "0.75л",
@@ -380,7 +359,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "400",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       },
       {
         volume: "0.75л",
@@ -472,7 +451,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 14 шт."
+        remaining: "остаток: 13 шт."
       },
       {
         volume: "0.75л",
@@ -497,7 +476,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 10 шт."
+        remaining: "остаток: 9 шт."
       },
       {
         volume: "0.75л",
@@ -572,7 +551,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 5 шт."
+        remaining: "остаток: 4 шт."
       },
       {
         volume: "0.75л",
@@ -597,7 +576,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 16 шт."
+        remaining: "остаток: 15 шт."
       },
       {
         volume: "0.75л",
@@ -707,7 +686,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45",
         price: "500",
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 5 шт."
       },
       {
         volume: "0.75л",
@@ -763,7 +742,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 8 шт."
+        remaining: "остаток: 7 шт."
       }
     ],
     imageUrl: bhutsEmbraceImage
