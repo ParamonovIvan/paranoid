@@ -1,11 +1,12 @@
-import blueberryStrongWildImage from "./images/strong-series-2024/blueberry-strong-wild.png";
-import cherryStrongWildImage from "./images/strong-series-2024/cherry-strong-wild.png";
-import pumpkinAleImage from "./images/season-beer-2025/pumpkin_ale.png";
-import fuckWorkImage from "./images/season-beer-2025/fuck_work.jpg";
-import halloweenIpaImage from "./images/season-beer-2025/halloween_ipa.png";
-import mondaySucksImage from "./images/season-beer-2025/monday_sucks.jpg";
-import graffBlackCurrantOakImage from "./images/strong-series-2025/graff_black_currant_oak.png";
-import braggotPorterHotImage from "./images/strong-series-2025/braggot_porter_hot.png";
+import type { Product } from "./types/product.ts";
+import blueberryStrongWildImage from "./images/strong-series/blueberry-strong-wild.png";
+import cherryStrongWildImage from "./images/strong-series/cherry-strong-wild.png";
+import pumpkinAleImage from "./images/season-beer/pumpkin_ale.png";
+import fuckWorkImage from "./images/season-beer/fuck_work.jpg";
+import halloweenIpaImage from "./images/season-beer/halloween_ipa.png";
+import mondaySucksImage from "./images/season-beer/monday_sucks.jpg";
+import graffBlackCurrantOakImage from "./images/strong-series/graff_black_currant_oak.png";
+import braggotPorterHotImage from "./images/strong-series/braggot_porter_hot.png";
 import orchardsWrathImage from "./images/pepper-sauces/orchards_wrath.png";
 import purpleRevengeImage from "./images/pepper-sauces/purple_revenge.png";
 import trippyTimberImage from "./images/8th-birthday/trippy_timber.png";
@@ -19,10 +20,10 @@ import oatWineImage from "./images/8th-birthday/oat_wine.png";
 import vanillaOatWineImage from "./images/8th-birthday/vanilla_oat_wine.png";
 import imperialStoutImage from "./images/8th-birthday/imperial_stout.png";
 import cumberlandImperialStoutImage from "./images/8th-birthday/cumberland_imperial_stout.png";
-import raspberryWildImage from "./images/season-beer-2025/raspberry_wild.png";
-import cherryWildAleImage from "./images/season-beer-2025/cherry_wild.png";
-import gooseberryWildImage from "./images/season-beer-2025/gooseberry_wild.png";
-import strawberryWildImage from "./images/season-beer-2025/strawberry_wild.png";
+import raspberryWildImage from "./images/season-beer/raspberry_wild.png";
+import cherryWildAleImage from "./images/season-beer/cherry_wild.png";
+import gooseberryWildImage from "./images/season-beer/gooseberry_wild.png";
+import strawberryWildImage from "./images/season-beer/strawberry_wild.png";
 import wheatWineImage from "./images/8th-birthday/wheat_wine.png";
 import ddhWheatWineImage from "./images/8th-birthday/ddh_wheat_wine.png";
 import buckWheatWineImage from "./images/8th-birthday/buckwheat_wine.png";
@@ -30,7 +31,11 @@ import buckWheatWineHoneyImage from "./images/8th-birthday/buckwheat_wine_honey.
 import bhutsEmbraceImage from "./images/pepper-sauces/bhuts_embrace.png";
 import sunCasketImage from "./images/pepper-sauces/sun_casket.png";
 import widowsJamImage from "./images/pepper-sauces/widows_jam.png";
-import type { Product } from "./types/product.ts";
+import abbeyAleImage from "./images/season-beer/abbey_ale.png";
+import blondeImage from "./images/season-beer/blonde.png";
+import flandersBrownImage from "./images/season-beer/flanders_brown.png";
+import spicedBlondeImage from "./images/season-beer/spiced_blonde.png";
+import verdantImage from "./images/season-beer/verdant.png";
 
 let globalIdCounter = 1;
 
@@ -43,10 +48,9 @@ const generateIds = (data: Omit<Product, "id">[]) => {
 
 export const beerData: Product[] = generateIds([
 
-  // STRONG SERIES 2024
-
+  // STRONG SERIES
   {
-    category: "STRONG SERIES 2024",
+    category: "STRONG SERIES",
     name: "Harmony In Chaos",
     style: "Blueberry Strong Wild Ale",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-harmony-in-chaos-blueberry/5976755",
@@ -72,7 +76,7 @@ export const beerData: Product[] = generateIds([
     imageUrl: blueberryStrongWildImage
   },
   {
-    category: "STRONG SERIES 2024",
+    category: "STRONG SERIES",
     name: "Harmony In Chaos",
     style: "Cherry Strong Wild Ale",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-harmony-in-chaos-cherry/5976751",
@@ -97,166 +101,8 @@ export const beerData: Product[] = generateIds([
     ],
     imageUrl: cherryStrongWildImage
   },
-
-  // SEASON BEER 2025
-
   {
-    category: "SEASON BEER 2025",
-    name: "Pumpkin Ale",
-    style: "American Pumpkin Ale",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-pumpkin-ale-2025/6475806",
-    og: "16.0%",
-    abv: "6.8",
-    ibu: "15",
-    description: "Мягкий эль в американском стиле с добавлением тыквы и специй (корица, имбирь, мускатный орех, гвоздика, ваниль).",
-    bottlingDate: "30.10.2025",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "260",
-        remaining: "остаток: 3 шт."
-      }
-    ],
-    imageUrl: pumpkinAleImage
-  },
-  {
-    category: "SEASON BEER 2025",
-    name: "Freeday. Fuck Work",
-    style: "Pumpkin Porter",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-freeday-fuck-work-2025/6475807",
-    og: "22.0%",
-    abv: "9.1",
-    ibu: "15",
-    description: "Умеренно крепкий, но при этом легкий коричневый портер с ванильным вкусом и специями тыквенного пирога. Состав: вода питьевая, солод ячменный, тыква, хмель, корица, мускатный орех, имбирь, гвоздика, ваниль, дрожжи.",
-    bottlingDate: "30.10.2025",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "330",
-        remaining: "остаток: 8 шт."
-      }
-    ],
-    imageUrl: fuckWorkImage
-  },
-  {
-    category: "SEASON BEER 2025",
-    name: "Halloween IPA",
-    style: "Brett Red IPA",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-halloween-ipa-2025/6475809",
-    og: "17.5%",
-    abv: "7.2",
-    ibu: "30",
-    description: "Мягкая горечь, насыщенный солод и согревающая крепость - отличное сочетание в последнюю погоду. Красный ИПЭ с фруктовым и цветочным ароматом, со вкусом карамели ириса, сброженный дополнительно Brettanomyces с сухим охмелением Chinook и Centennial.",
-    bottlingDate: "30.10.2025",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "280",
-        remaining: "остаток: 2 шт."
-      }
-    ],
-    imageUrl: halloweenIpaImage
-  },
-  {
-    category: "SEASON BEER 2025",
-    name: "Monday Sucks",
-    style: "Brown DIPA",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-monday-sucks-2025/6475811",
-    og: "21.0%",
-    abv: "9.4",
-    ibu: "50",
-    description: "Тёмное пиво с уклоном в хмелевую составляющую. При варке использовался хмель Centennial, Cascade и Amarillo, которые наполнили пиво ароматом и вкусом цитрусов, сосновой смолы, нотами тропических фруктов и насыщенной горечью.",
-    bottlingDate: "30.10.2025",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "350",
-        remaining: "остаток: 3 шт."
-      }
-    ],
-    imageUrl: mondaySucksImage
-  },
-  {
-    category: "SEASON BEER 2025",
-    name: "Hive",
-    style: "Raspberry Wild Ale",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-hive/6496863",
-    og: "15.5%",
-    abv: "6.9",
-    ibu: "10",
-    description: "Hive — это не просто пиво с малиной. Это колония вкуса, рожденная в сотах дикого брожения. Каждая ягода — это отдельная капсула с интенсивным, терпким характером, которую дикие дрожжи и бактерии растворяют в единый, невероятно сложный букет. Яркая, живая кислинка танцует на языке, сменяясь глубоким, почти землистым послевкусием. Это пиво — симфония природы, где каждая нота знает свое место в рое.",
-    bottlingDate: "16.11.2025",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "320",
-        remaining: "остаток: 10 шт."
-      }
-    ],
-    imageUrl: raspberryWildImage
-  },
-  {
-    category: "SEASON BEER 2025",
-    name: "Core",
-    style: "Cherry Wild Ale",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-core/6496864",
-    og: "15.5%",
-    abv: "6.9",
-    ibu: "10",
-    description: "Core — это не просто пиво с вишней. Это погружение в самый эпицентр вкуса, к раскаленному реактору, где дикое брожение высвобождает всю мощь ягоды. Темная, почти чернильная вишня раскрывается не сладостью, а интенсивной терпкостью и глубокой фруктовой глубиной. Живая, пикантная кислинка — как разряд энергии, пронизывающий плотное тело эля, чтобы обнажить его сложную, почти минеральную сердцевину. Это пиво — источник, чья сила остается с вами долгим, сухим и вишневым шлейфом.",
-    bottlingDate: "16.11.2025",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "320",
-        remaining: "остаток: 7 шт."
-      }
-    ],
-    imageUrl: cherryWildAleImage
-  },
-  {
-    category: "SEASON BEER 2025",
-    name: "Oculus",
-    style: "Gooseberry Wild Ale",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-oculus/6496865",
-    og: "15.5%",
-    abv: "6.9",
-    ibu: "10",
-    description: "Oculus — это пиво, которое не просто пьют, а в которое всматриваются. Полупрозрачный крыжовник, подобно зрачку, открывает портал в иное измерение вкуса. Его яркая, пронзительная кислинка — это первый проблеск света, который ослепляет и обостряет чувства. За ним проступает сложный, почти электрический профиль: землистые ноты и вкус свежего щавеля. Это пиво — всевидящее око природы, холодное, пронзительное и невероятно живое.",
-    bottlingDate: "16.11.2025",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "320",
-        remaining: "остаток: 10 шт."
-      }
-    ],
-    imageUrl: gooseberryWildImage
-  },
-  {
-    category: "SEASON BEER 2025",
-    name: "Capsule",
-    style: "Strawberry Wild Ale",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-capsule/6496866",
-    og: "15.5%",
-    abv: "6.9",
-    ibu: "10",
-    description: "Capsule — это пиво-откровение. Под обманчиво нежной плотью клубники скрываются десятки капсул, каждая — сосуд с концентрированной энергией. Дикое брожение взламывает эту защиту, высвобождая не сахарную сладость, а настоящую, земляничную эссенцию. Вкус начинается со вспышки живой, игристой кислинки, которая растворяет привычное, обнажая ядро: плотный, ягодный характер с нотами дикой земляники, древесной коры и влажной земли. Это не напиток, а биологическая капсула с генетическим кодом настоящей клубники.",
-    bottlingDate: "16.11.2025",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "320",
-        remaining: "остаток: 9 шт."
-      }
-    ],
-    imageUrl: strawberryWildImage
-  },
-
-  // STRONG SERIES 2025
-
-  {
-    category: "STRONG SERIES 2025",
+    category: "STRONG SERIES",
     name: "Strong Black Currant Graff (oak)",
     style: "Apfelwein with Black Currant (oak edition)",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-strong-black-currant-graff-oak-aged/6208920",
@@ -275,7 +121,7 @@ export const beerData: Product[] = generateIds([
     imageUrl: graffBlackCurrantOakImage
   },
   {
-    category: "STRONG SERIES 2025",
+    category: "STRONG SERIES",
     name: "Honey Imperial Porter (hot)",
     style: "Braggot with Trinidad Scorpion Pepper",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-honey-imperial-porter-braggot-pepper-style/6259911",
@@ -294,6 +140,261 @@ export const beerData: Product[] = generateIds([
     ],
     imageUrl: braggotPorterHotImage
   },
+
+
+  // SEASON BEER
+  {
+    category: "SEASON BEER",
+    name: "Pumpkin Ale",
+    style: "American Pumpkin Ale",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-pumpkin-ale-2025/6475806",
+    og: "16.0%",
+    abv: "6.8",
+    ibu: "15",
+    description: "Мягкий эль в американском стиле с добавлением тыквы и специй (корица, имбирь, мускатный орех, гвоздика, ваниль).",
+    bottlingDate: "30.10.2025",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "260",
+        remaining: "остаток: 3 шт."
+      }
+    ],
+    imageUrl: pumpkinAleImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Freeday. Fuck Work",
+    style: "Pumpkin Porter",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-freeday-fuck-work-2025/6475807",
+    og: "22.0%",
+    abv: "9.1",
+    ibu: "15",
+    description: "Умеренно крепкий, но при этом легкий коричневый портер с ванильным вкусом и специями тыквенного пирога. Состав: вода питьевая, солод ячменный, тыква, хмель, корица, мускатный орех, имбирь, гвоздика, ваниль, дрожжи.",
+    bottlingDate: "30.10.2025",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "330",
+        remaining: "остаток: 8 шт."
+      }
+    ],
+    imageUrl: fuckWorkImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Halloween IPA",
+    style: "Brett Red IPA",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-halloween-ipa-2025/6475809",
+    og: "17.5%",
+    abv: "7.2",
+    ibu: "30",
+    description: "Мягкая горечь, насыщенный солод и согревающая крепость - отличное сочетание в последнюю погоду. Красный ИПЭ с фруктовым и цветочным ароматом, со вкусом карамели ириса, сброженный дополнительно Brettanomyces с сухим охмелением Chinook и Centennial.",
+    bottlingDate: "30.10.2025",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "280",
+        remaining: "остаток: 2 шт."
+      }
+    ],
+    imageUrl: halloweenIpaImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Monday Sucks",
+    style: "Brown DIPA",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-monday-sucks-2025/6475811",
+    og: "21.0%",
+    abv: "9.4",
+    ibu: "50",
+    description: "Тёмное пиво с уклоном в хмелевую составляющую. При варке использовался хмель Centennial, Cascade и Amarillo, которые наполнили пиво ароматом и вкусом цитрусов, сосновой смолы, нотами тропических фруктов и насыщенной горечью.",
+    bottlingDate: "30.10.2025",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "350",
+        remaining: "остаток: 3 шт."
+      }
+    ],
+    imageUrl: mondaySucksImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Hive",
+    style: "Raspberry Wild Ale",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-hive/6496863",
+    og: "15.5%",
+    abv: "6.9",
+    ibu: "10",
+    description: "Hive — это не просто пиво с малиной. Это колония вкуса, рожденная в сотах дикого брожения. Каждая ягода — это отдельная капсула с интенсивным, терпким характером, которую дикие дрожжи и бактерии растворяют в единый, невероятно сложный букет. Яркая, живая кислинка танцует на языке, сменяясь глубоким, почти землистым послевкусием. Это пиво — симфония природы, где каждая нота знает свое место в рое.",
+    bottlingDate: "16.11.2025",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "320",
+        remaining: "остаток: 10 шт."
+      }
+    ],
+    imageUrl: raspberryWildImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Core",
+    style: "Cherry Wild Ale",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-core/6496864",
+    og: "15.5%",
+    abv: "6.9",
+    ibu: "10",
+    description: "Core — это не просто пиво с вишней. Это погружение в самый эпицентр вкуса, к раскаленному реактору, где дикое брожение высвобождает всю мощь ягоды. Темная, почти чернильная вишня раскрывается не сладостью, а интенсивной терпкостью и глубокой фруктовой глубиной. Живая, пикантная кислинка — как разряд энергии, пронизывающий плотное тело эля, чтобы обнажить его сложную, почти минеральную сердцевину. Это пиво — источник, чья сила остается с вами долгим, сухим и вишневым шлейфом.",
+    bottlingDate: "16.11.2025",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "320",
+        remaining: "остаток: 7 шт."
+      }
+    ],
+    imageUrl: cherryWildAleImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Oculus",
+    style: "Gooseberry Wild Ale",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-oculus/6496865",
+    og: "15.5%",
+    abv: "6.9",
+    ibu: "10",
+    description: "Oculus — это пиво, которое не просто пьют, а в которое всматриваются. Полупрозрачный крыжовник, подобно зрачку, открывает портал в иное измерение вкуса. Его яркая, пронзительная кислинка — это первый проблеск света, который ослепляет и обостряет чувства. За ним проступает сложный, почти электрический профиль: землистые ноты и вкус свежего щавеля. Это пиво — всевидящее око природы, холодное, пронзительное и невероятно живое.",
+    bottlingDate: "16.11.2025",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "320",
+        remaining: "остаток: 10 шт."
+      }
+    ],
+    imageUrl: gooseberryWildImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Capsule",
+    style: "Strawberry Wild Ale",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-capsule/6496866",
+    og: "15.5%",
+    abv: "6.9",
+    ibu: "10",
+    description: "Capsule — это пиво-откровение. Под обманчиво нежной плотью клубники скрываются десятки капсул, каждая — сосуд с концентрированной энергией. Дикое брожение взламывает эту защиту, высвобождая не сахарную сладость, а настоящую, земляничную эссенцию. Вкус начинается со вспышки живой, игристой кислинки, которая растворяет привычное, обнажая ядро: плотный, ягодный характер с нотами дикой земляники, древесной коры и влажной земли. Это не напиток, а биологическая капсула с генетическим кодом настоящей клубники.",
+    bottlingDate: "16.11.2025",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "320",
+        remaining: "остаток: 9 шт."
+      }
+    ],
+    imageUrl: strawberryWildImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "The Last Farmer's Path",
+    style: "Belgian Blond Ale",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-the-last-farmer-s-path/6496845",
+    og: "15.0%",
+    abv: "7.2",
+    ibu: "20",
+    description: "Тропа, ведущая домой сквозь золочёные закатные поля. Этот бельгийский эль — гимн изящной силе. Под кажущейся лёгкостью и золотистым цветом скрывается уверенная крепость, которая согревает, но не обжигает. Его душа — в пикантной игре дрожжей, дарующей элегантные фруктовые нотки спелого абрикоса и зрелой груши. Лёгкая, травянистая горчинка, словно отзвук хмеля у края поля, деликатно обрамляет вкус, ведя к сухому и удивительно чистому финалу. Мудрый, сложный, обманчиво лёгкий спутник для долгого пути.",
+    bottlingDate: "21.12.2025",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "270",
+        remaining: "остаток: 34 шт."
+      }
+    ],
+    imageUrl: blondeImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Sacred Botanicals",
+    style: "Belgian Blond Ale with Spiced",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-sacred-botanicals/6543242",
+    og: "15.4%",
+    abv: "7.3",
+    ibu: "22",
+    description: "Этот особый бельгийский блонд эль балансирует на грани традиции и таинства. Под плотной, солнечно-мутной вуалью, наброшенной плодами шиповника, скрывается сложная душа. Классические эфирные ноты груши и легкого перца от бельгийских дрожжей образуют прочный фундамент, на котором разворачивается древний ботанический ритуал. Согревающий фенхель и древесный кориандр создают гармонию одновременно земную и возвышенную. Напиток для созерцания.",
+    bottlingDate: "22.12.2025",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "280",
+        remaining: "остаток: 31 шт."
+      }
+    ],
+    imageUrl: spicedBlondeImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Secrets of a Monk",
+    style: "Abbey Special Ale",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-secrets-of-a-monk-2025/6545836",
+    og: "15.2%",
+    abv: "6.9",
+    ibu: "20",
+    description: "Тихая мудрость в золотисто-янтарной дымке. Этот особый эль балансирует между светлым блондом и тёмным дуббелем, раскрывая секрет идеального равновесия. Прочная солодовая основа с нотами жидкой карамели и свежего хлеба служит основой для благородной игры бельгийских дрожжей, дарящих оттенки спелой груши и лёгкого перца. Хмель отстранён, лишь подчёркивая чистоту и гармонию долгого, тёплого послевкусия. Эль для созерцательного познания, глоток за глотком.",
+    bottlingDate: "24.12.2025",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "270",
+        remaining: "остаток: 33 шт."
+      }
+    ],
+    imageUrl: abbeyAleImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Verdant",
+    style: "Abbey Special Ale (Dry hopped)",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-verdant/6551003",
+    og: "15.2%",
+    abv: "6.9",
+    ibu: "25",
+    description: "Это — классический аббатский эль, увиденный сквозь призму хмеля. Его основа — утончённое солодовое тело с нотами карамели и хлеба, оживлённое эфирными тонами бельгийских дрожжей.\n" +
+      "Но его душа раскрывается в сухом охмелении благородным словенским хмелем Styrian Goldings Bobek. Он приносит с собой дыхание альпийских лугов — ароматы сушёных трав, полевых цветов и лёгкой цитрусовой цедры. Мягкая, благородная горечь завершает образ, создавая идеальный баланс между тёплой монастырской традицией и освежающей хмелевой свежестью.",
+    bottlingDate: "26.12.2025",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "250",
+        remaining: "остаток: 29 шт."
+      }
+    ],
+    imageUrl: verdantImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Liquid Lore",
+    style: "Flanders Brown Ale",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-liquid-lore/6542215",
+    og: "20.0%",
+    abv: "9.1",
+    ibu: "20",
+    description: "Классика, переосмысленная в деталях. Долгое кипячение сусла позволило достичь глубокой концентрации вкуса и тёмного янтарного цвета.\n" +
+      "Визуально — идеал: искрящийся, почти игристый эль под короной белоснежной, невероятно стойкой мелкой пены.\n" +
+      "Аромат — это чернослив, чёрный хлеб и спелый инжир. Вкус начинается с насыщенной солодовой сладости сухофруктов, которая мгновенно освежается кислинкой, ведущей к сухому и долгому финишу.\n" +
+      "Высокая карбонизация — ключ к его сложной, но такой сбалансированной природе.",
+    bottlingDate: "10.06.2025",
+    variants: [
+      {
+        volume: "0.375л",
+        price: "370",
+        remaining: "остаток: 18 шт."
+      }
+    ],
+    imageUrl: flandersBrownImage
+  },
+
 
   // 8TH BIRTHDAY
   {
