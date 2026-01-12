@@ -9,7 +9,6 @@ import braggotPorterHotImage from "./images/strong-series-2025/braggot_porter_ho
 import orchardsWrathImage from "./images/pepper-sauces/orchards_wrath.png";
 import purpleRevengeImage from "./images/pepper-sauces/purple_revenge.png";
 import trippyTimberImage from "./images/8th-birthday/trippy_timber.png";
-import druidsBrewImage from "./images/8th-birthday/druids_brew.png";
 import americanBwImage from "./images/8th-birthday/american_bw.png";
 import grapeAmericanBwImage from "./images/8th-birthday/grape_american_bw.png";
 import englishBwImage from "./images/8th-birthday/english_bw.png";
@@ -320,30 +319,6 @@ export const beerData: Product[] = generateIds([
       }
     ],
     imageUrl: trippyTimberImage
-  },
-  {
-    category: "8TH BIRTHDAY",
-    name: "Druid's Brew",
-    style: "Spiced Wild Ale with Dates, Raisin and Spiced",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-druid-s-brew/6496847",
-    og: "19.5%",
-    abv: "7.2",
-    ibu: "20",
-    description: "Дикий эль смешанного брожения, выдержанный с натуральными финиками и изюмом, а также дубовыми палочками из американского дуба и специй для глинтвейна.",
-    bottlingDate: "23.06.2025",
-    variants: [
-      {
-        volume: "0.375л",
-        price: "340",
-        remaining: "остаток: 3 шт."
-      },
-      {
-        volume: "0.75л",
-        price: "680",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: druidsBrewImage
   },
   {
     category: "8TH BIRTHDAY",
