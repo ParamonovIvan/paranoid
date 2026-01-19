@@ -12,7 +12,6 @@ import purpleRevengeImage from "./images/pepper-sauces/purple_revenge.png";
 import trippyTimberImage from "./images/8th-birthday/trippy_timber.png";
 import americanBwImage from "./images/8th-birthday/american_bw.png";
 import grapeAmericanBwImage from "./images/8th-birthday/grape_american_bw.png";
-import englishBwImage from "./images/8th-birthday/english_bw.png";
 import mapleEnglishBwImage from "./images/8th-birthday/maple_english_bw.png";
 import ryeWineImage from "./images/8th-birthday/rye_wine.png";
 import grapeRyeWineImage from "./images/8th-birthday/grape_rye_wine.png";
@@ -233,7 +232,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 10 шт."
+        remaining: "остаток: 9 шт."
       }
     ],
     imageUrl: raspberryWildImage
@@ -411,7 +410,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "330",
-        remaining: "остаток: 7 шт."
+        remaining: "остаток: 6 шт."
       },
       {
         volume: "0.75л",
@@ -471,25 +470,6 @@ export const beerData: Product[] = generateIds([
   },
   {
     category: "8TH BIRTHDAY",
-    name: "The Calm Within",
-    style: "English Barleywine",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-the-calm-within/6496852",
-    og: "24.0%",
-    abv: "10.5",
-    ibu: "40",
-    description: "Этот крепкий эль, выдержанный в традициях английских крепких элей, предлагает путешествие в глубины вкуса. Позвольте себе затеряться в лабиринте его аромата: спелые тёмные фрукты, сочная карамель и шлейф креплёного вина порту. Благородные хмели Fuggle и East Kent Goldings мягко оттеняют насыщенную солодовую основу, даря лёгкие травянистые и цветочные акценты. Финал — это тёплое, продолжительное послевкусие с благородной дубовой нотой, которую пиву подарили палочки американского дуба, вымоченные в вине. Искусство баланса между мощью и изяществом.",
-    bottlingDate: "07.09.2025",
-    variants: [
-      {
-        volume: "0.75л",
-        price: "800",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: englishBwImage
-  },
-  {
-    category: "8TH BIRTHDAY",
     name: "Shy Spirit",
     style: "Maple English Barleywine",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-shy-spirit/6496853",
@@ -502,7 +482,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "410",
-        remaining: "остаток: 7 шт."
+        remaining: "остаток: 6 шт."
       },
       {
         volume: "0.75л",
@@ -552,7 +532,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 9 шт."
+        remaining: "остаток: 8 шт."
       },
       {
         volume: "0.75л",
@@ -677,7 +657,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 16 шт."
+        remaining: "остаток: 15 шт."
       },
       {
         volume: "0.75л",
@@ -702,7 +682,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "370",
         packaging: ["воск"],
-        remaining: "остаток: 21 шт."
+        remaining: "остаток: 20 шт."
       },
       {
         volume: "0.75л",
@@ -757,7 +737,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25",
         price: "300",
         packaging: ["воск"],
-        remaining: "остаток: 16 шт."
+        remaining: "остаток: 15 шт."
       },
       {
         volume: "0.45",
@@ -850,7 +830,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 13 шт."
+        remaining: "остаток: 10 шт."
       }
     ],
     imageUrl: widowsJamImage
