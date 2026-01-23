@@ -1,21 +1,21 @@
+import { useState } from "react";
+import { useAppSelector } from "./hooks/redux.ts";
 import { Badge, Button, Flex, Image, Layout, Typography } from "antd";
-import { Content } from "antd/es/layout/layout";
 import { useResponsive } from "antd-style";
+import { ShoppingCartOutlined } from "@ant-design/icons";
 import BreweryIntro from "./components/BreweryIntro";
 import BeerCatalog from "./components/BeerCatalog";
 import Achievements from "./components/Achievements";
 import logoImage from "./images/logo_black.png";
-import { useState } from "react";
-import { useAppSelector } from "./hooks/redux.ts";
-import { ShoppingCartOutlined } from "@ant-design/icons";
 import Cart from "./components/Cart.tsx";
 
-const { Header, Footer } = Layout;
+const { Content, Header, Footer } = Layout;
 const { Title } = Typography;
 
 function App() {
-  const responsive = useResponsive();
   const [cartOpen, setCartOpen] = useState(false);
+
+  const responsive = useResponsive();
   const { itemCount } = useAppSelector((state) => state.cart);
 
   return (
