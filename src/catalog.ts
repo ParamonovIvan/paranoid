@@ -3,7 +3,6 @@ import blueberryStrongWildImage from "./images/strong-series/blueberry-strong-wi
 import cherryStrongWildImage from "./images/strong-series/cherry-strong-wild.png";
 import pumpkinAleImage from "./images/season-beer/pumpkin_ale.png";
 import fuckWorkImage from "./images/season-beer/fuck_work.jpg";
-import halloweenIpaImage from "./images/season-beer/halloween_ipa.png";
 import mondaySucksImage from "./images/season-beer/monday_sucks.jpg";
 import graffBlackCurrantOakImage from "./images/strong-series/graff_black_currant_oak.png";
 import braggotPorterHotImage from "./images/strong-series/braggot_porter_hot.png";
@@ -156,7 +155,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "260",
-        remaining: "остаток: 3 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: pumpkinAleImage
@@ -175,29 +174,10 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "330",
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 5 шт."
       }
     ],
     imageUrl: fuckWorkImage
-  },
-  {
-    category: "SEASON BEER",
-    name: "Halloween IPA",
-    style: "Brett Red IPA",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-halloween-ipa-2025/6475809",
-    og: "17.5%",
-    abv: "7.2",
-    ibu: "30",
-    description: "Мягкая горечь, насыщенный солод и согревающая крепость - отличное сочетание в последнюю погоду. Красный ИПЭ с фруктовым и цветочным ароматом, со вкусом карамели ириса, сброженный дополнительно Brettanomyces с сухим охмелением Chinook и Centennial.",
-    bottlingDate: "30.10.2025",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "280",
-        remaining: "остаток: 2 шт."
-      }
-    ],
-    imageUrl: halloweenIpaImage
   },
   {
     category: "SEASON BEER",
@@ -308,7 +288,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "270",
-        remaining: "остаток: 24 шт."
+        remaining: "остаток: 22 шт."
       }
     ],
     imageUrl: blondeImage
@@ -327,7 +307,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 22 шт."
+        remaining: "остаток: 21 шт."
       }
     ],
     imageUrl: spicedBlondeImage
@@ -346,7 +326,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "270",
-        remaining: "остаток: 25 шт."
+        remaining: "остаток: 24 шт."
       }
     ],
     imageUrl: abbeyAleImage
@@ -366,7 +346,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 20 шт."
+        remaining: "остаток: 16 шт."
       }
     ],
     imageUrl: verdantImage
@@ -411,11 +391,6 @@ export const beerData: Product[] = generateIds([
         volume: "0.375л",
         price: "330",
         remaining: "остаток: 6 шт."
-      },
-      {
-        volume: "0.75л",
-        price: "660",
-        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: trippyTimberImage
@@ -798,7 +773,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 7 шт."
+        remaining: "остаток: 6 шт."
       }
     ],
     imageUrl: bhutsEmbraceImage
@@ -814,7 +789,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 13 шт."
+        remaining: "остаток: 12 шт."
       }
     ],
     imageUrl: sunCasketImage
@@ -830,7 +805,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 10 шт."
+        remaining: "остаток: 9 шт."
       }
     ],
     imageUrl: widowsJamImage
