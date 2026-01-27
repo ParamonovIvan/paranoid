@@ -236,6 +236,7 @@ const BeerCatalog = () => {
                 href={product.untappdUrl}
                 target="_blank"
                 rel="noopener noreferrer"
+                draggable={false}
               >
                 <Image
                   preview={false}
