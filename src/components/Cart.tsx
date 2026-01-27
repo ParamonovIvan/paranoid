@@ -97,7 +97,7 @@ const Cart: FC<CartProps> = ({ open, onClose }) => {
   return (
     <Drawer
       title={
-        <Flex align="center" gap={8}>
+        <Flex align="center" gap={8} style={{ cursor: "default" }}>
           <ShoppingCartOutlined/>
           <Text strong>Корзина ({itemCount})</Text>
         </Flex>
@@ -111,7 +111,8 @@ const Cart: FC<CartProps> = ({ open, onClose }) => {
           padding: responsive.md ? 16 : 12,
           display: "flex",
           flexDirection: "column",
-          height: "100%"
+          height: "100%",
+          cursor: "default"
         }
       }}
       extra={

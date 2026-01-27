@@ -43,7 +43,7 @@ const BreweryIntro = () => {
   ];
 
   return (
-    <Flex vertical style={{ marginBottom: responsive.md ? 64 : 56 }} >
+    <Flex vertical style={{ marginBottom: responsive.md ? 64 : 56, cursor: "default" }}>
       <Title style={{
         fontSize: responsive.lg ? 30 : 24,
         color: "#000000E0",

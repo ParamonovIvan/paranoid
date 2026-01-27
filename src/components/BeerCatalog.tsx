@@ -380,7 +380,7 @@ const BeerCatalog = () => {
         </Flex>
 
         <Flex
-          style={{ marginBottom: 12, cursor: "default" }}
+          style={{ marginBottom: 12 }}
           wrap="wrap"
           gap={4}
           justify="center"
@@ -416,7 +416,7 @@ const BeerCatalog = () => {
   );
 
   return (
-    <Flex vertical style={{ marginBottom: responsive.md ? 64 : 56, marginTop: 16 }}>
+    <Flex vertical style={{ marginBottom: responsive.md ? 64 : 56, marginTop: 16, cursor: "default" }}>
       {contextHolder}
       <Flex
         justify="space-between"

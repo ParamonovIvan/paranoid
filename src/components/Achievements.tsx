@@ -28,7 +28,7 @@ const Achievements = () => {
   };
 
   return (
-    <Flex vertical style={{ marginBottom: 16 }}>
+    <Flex vertical style={{ marginBottom: 16, cursor: "default" }}>
       <Title style={{
         fontSize: responsive.lg ? 30 : 24,
         color: "#1f1f1f",

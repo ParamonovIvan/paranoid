@@ -32,7 +32,8 @@ function App() {
         textAlign: "center",
         padding: "16px 24px",
         height: "auto",
-        minHeight: 80
+        minHeight: 80,
+        cursor: "default"
       }}>
         <Image
           draggable={false}
@@ -66,7 +67,8 @@ function App() {
         color: "#000000E0",
         borderTop: "1px solid #D5D5D5",
         padding: "24px 24px",
-        fontSize: "clamp(12px, 2vw, 14px)"
+        fontSize: "clamp(12px, 2vw, 14px)",
+        cursor: "default"
       }}>
         Paranoid Brewery ©2017-2026 — Лаборатория жидкостей с характером
       </Footer>
