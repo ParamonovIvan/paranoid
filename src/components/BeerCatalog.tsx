@@ -26,13 +26,22 @@ const {
   Paragraph
 } = Typography;
 
-const useStyles = createStyles({
+const useStyles = createStyles(({ token, css }) => ({
   untappdIcon: {
     "&:hover": {
       transform: "scale(1.1)"
     }
-  }
-});
+  },
+  categoryTag: css`
+    cursor: pointer;
+    transition: all 0.2s ease;
+    &:hover {
+      background-color: ${token.colorPrimaryBg} !important;
+      border-color: ${token.colorPrimaryBorder} !important;
+      color: ${token.colorPrimary} !important;
+    }
+  `
+}));
 
 const BeerCatalog = () => {
   const responsive = useResponsive();
@@ -446,8 +455,8 @@ const BeerCatalog = () => {
             <Tag
               color={activeCategory === category ? "#1677FF" : "default"}
               onClick={() => setActiveCategory(category)}
+              className={activeCategory === category ? undefined : styles.categoryTag}
               style={{
-                cursor: "pointer",
                 margin: 2,
                 padding: responsive.md ? "4px 8px" : "3px 6px",
                 fontSize: responsive.md ? 14 : 12
@@ -470,13 +479,11 @@ const BeerCatalog = () => {
         align="center"
       >
         <Button
-          type="primary"
+          type={hasPrevious ? "primary" : "default"}
           icon={responsive.md ? <LeftOutlined/> : null}
           onClick={handlePrevious}
           disabled={!hasPrevious}
           style={{
-            backgroundColor: hasPrevious ? "#1677FF" : "#91CAFF",
-            borderColor: hasPrevious ? "#1677FF" : "#91CAFF",
             minWidth: responsive.md ? 120 : 40,
             height: 40
           }}
@@ -494,13 +501,11 @@ const BeerCatalog = () => {
         </Text>
 
         <Button
-          type="primary"
+          type={hasNext ? "primary" : "default"}
           onClick={handleNext}
           disabled={!hasNext}
           icon={responsive.md ? null : <RightOutlined/>}
           style={{
-            backgroundColor: hasNext ? "#1677FF" : "#91CAFF",
-            borderColor: hasNext ? "#1677FF" : "#91CAFF",
             minWidth: responsive.md ? 120 : 40,
             height: 40,
             gap: responsive.md ? 8 : 0

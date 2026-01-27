@@ -79,7 +79,7 @@ function App() {
         >
           <Button
             type="primary"
-            icon={<ShoppingCartOutlined style={{ color: "#1677FF", fontSize: 24 }}/>}
+            icon={<ShoppingCartOutlined style={{ fontSize: 24 }}/>}
             onClick={() => setCartOpen(true)}
             style={{
               boxShadow: "0 4px 12px rgba(0, 0, 0, 0.3)",
@@ -88,9 +88,7 @@ function App() {
               height: 50,
               display: "flex",
               alignItems: "center",
-              justifyContent: "center",
-              backgroundColor: "#FFF",
-              borderColor: "rgb(217 217 217)"
+              justifyContent: "center"
             }}
           />
         </Badge>

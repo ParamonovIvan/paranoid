@@ -152,6 +152,7 @@ const Cart: React.FC<CartProps> = ({ open, onClose }) => {
                   <Flex gap={12} align="flex-start">
                       <Image
                         src={item.imageUrl || logoImage}
+                        draggable={false}
                         width={60}
                         height={60}
                         preview={false}
