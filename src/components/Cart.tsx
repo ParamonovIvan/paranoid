@@ -1,4 +1,4 @@
-import React from "react";
+import type { FC } from "react";
 import {
   Drawer,
   Button,
@@ -9,12 +9,13 @@ import {
   Tag,
   InputNumber,
   Divider,
-  Card, notification
+  Card,
+  notification
 } from "antd";
 import { DeleteOutlined, ShoppingCartOutlined, ExportOutlined, CopyOutlined } from "@ant-design/icons";
+import { createStyles, useResponsive } from "antd-style";
 import { useAppSelector, useAppDispatch } from "../hooks/redux";
 import { removeFromCart, updateQuantity, clearCart } from "../store/cartSlice";
-import { createStyles, useResponsive } from "antd-style";
 import logoImage from "../images/logo.png";
 
 const { Title, Text } = Typography;
@@ -32,7 +33,7 @@ const useStyles = createStyles({
   }
 });
 
-const Cart: React.FC<CartProps> = ({ open, onClose }) => {
+const Cart: FC<CartProps> = ({ open, onClose }) => {
   const { items, total, itemCount } = useAppSelector((state) => state.cart);
   const dispatch = useAppDispatch();
   const responsive = useResponsive();
@@ -254,7 +255,7 @@ const Cart: React.FC<CartProps> = ({ open, onClose }) => {
             )}
           />
 
-          <Divider style={{ margin: "8px 0" }} />
+          <Divider style={{ margin: "8px 0" }}/>
 
           <Flex vertical gap={12}>
             <Flex justify="space-between" align="center">
