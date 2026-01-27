@@ -147,9 +147,7 @@ const Cart: FC<CartProps> = ({ open, onClose }) => {
                 <Card
                   size="small"
                   style={{ width: "100%" }}
-                  styles={{
-                    body: { padding: 12 }
-                  }}
+                  styles={{ body: { padding: 12 } }}
                 >
                   <Flex gap={12} align="flex-start">
                       <Image
@@ -164,7 +162,6 @@ const Cart: FC<CartProps> = ({ open, onClose }) => {
                           backgroundColor: item.category === "ACCESSORIES" ? "#000" : "transparent"
                         }}
                       />
-
                     <Flex vertical style={{ flex: 1, gap: 8 }}>
                       <Flex justify="space-between" align="flex-start">
                         <Flex vertical style={{ flex: 1 }}>
@@ -188,7 +185,6 @@ const Cart: FC<CartProps> = ({ open, onClose }) => {
                             {item.quantity} × {item.price}₽ = {(parseFloat(item.price) * item.quantity).toFixed(0)}₽
                           </Text>
                         </Flex>
-
                         <Button
                           type="text"
                           danger
@@ -197,12 +193,10 @@ const Cart: FC<CartProps> = ({ open, onClose }) => {
                           onClick={() => dispatch(removeFromCart(item.id))}
                         />
                       </Flex>
-
                       <Flex justify="space-between" align="center">
                         <Text strong style={{ color: "#1677FF", fontSize: 16 }}>
                           {item.price}₽
                         </Text>
-
                         <Flex align="center" gap={8}>
                           <Button
                             size="small"
@@ -214,7 +208,6 @@ const Cart: FC<CartProps> = ({ open, onClose }) => {
                           >
                             -
                           </Button>
-
                           <InputNumber
                             size="small"
                             min={1}
@@ -227,7 +220,6 @@ const Cart: FC<CartProps> = ({ open, onClose }) => {
                             style={{ width: 60 }}
                             className={styles.inputNumber}
                           />
-
                           <Button
                             size="small"
                             onClick={() => {
@@ -255,9 +247,7 @@ const Cart: FC<CartProps> = ({ open, onClose }) => {
               </List.Item>
             )}
           />
-
           <Divider style={{ margin: "8px 0" }}/>
-
           <Flex vertical gap={12}>
             <Flex justify="space-between" align="center">
               <Text strong>Итого:</Text>
@@ -265,7 +255,6 @@ const Cart: FC<CartProps> = ({ open, onClose }) => {
                 {total}₽
               </Title>
             </Flex>
-
             <Button
               onClick={openTelegram}
               block
@@ -275,7 +264,6 @@ const Cart: FC<CartProps> = ({ open, onClose }) => {
             >
               Отправить в Telegram
             </Button>
-
             <Button
               icon={<CopyOutlined/>}
               onClick={copyToClipboard}

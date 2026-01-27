@@ -804,7 +804,7 @@ export const accessoriesData: Product[] = generateIds([
       {
         volume: "шт",
         price: "50",
-        remaining: ""
+        remaining: "остаток: 20 шт."
       }
     ]
   }
