@@ -380,7 +380,7 @@ const BeerCatalog = () => {
         </Flex>
 
         <Flex
-          style={{ marginBottom: 12 }}
+          style={{ marginBottom: 12, cursor: "default" }}
           wrap="wrap"
           gap={4}
           justify="center"
