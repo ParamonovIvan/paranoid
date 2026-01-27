@@ -1,7 +1,6 @@
 import type { Product } from "./types/product.ts";
 import blueberryStrongWildImage from "./images/strong-series/blueberry-strong-wild.png";
 import cherryStrongWildImage from "./images/strong-series/cherry-strong-wild.png";
-import pumpkinAleImage from "./images/season-beer/pumpkin_ale.png";
 import fuckWorkImage from "./images/season-beer/fuck_work.jpg";
 import mondaySucksImage from "./images/season-beer/monday_sucks.jpg";
 import graffBlackCurrantOakImage from "./images/strong-series/graff_black_currant_oak.png";
@@ -141,25 +140,7 @@ export const beerData: Product[] = generateIds([
 
 
   // SEASON BEER
-  {
-    category: "SEASON BEER",
-    name: "Pumpkin Ale",
-    style: "American Pumpkin Ale",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-pumpkin-ale-2025/6475806",
-    og: "16.0%",
-    abv: "6.8",
-    ibu: "15",
-    description: "Мягкий эль в американском стиле с добавлением тыквы и специй (корица, имбирь, мускатный орех, гвоздика, ваниль).",
-    bottlingDate: "30.10.2025",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "260",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: pumpkinAleImage
-  },
+
   {
     category: "SEASON BEER",
     name: "Freeday. Fuck Work",
