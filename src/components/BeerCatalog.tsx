@@ -271,7 +271,7 @@ const BeerCatalog = () => {
           </Flex>
         }
         actions={[
-          <Flex vertical gap={12} key="variants" style={{ padding: "8px 0", width: "100%" }}>
+          <Flex vertical gap={12} key="variants" style={{ padding: "8px 0", width: "100%", cursor: "default"  }}>
             {product.variants.map((variant, index) => {
               const remainingText = variant.remaining;
               const match = remainingText.match(/(\d+)/);
