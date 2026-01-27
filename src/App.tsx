@@ -3,19 +3,25 @@ import { useAppSelector } from "./hooks/redux.ts";
 import { Badge, Button, Flex, Image, Layout, Typography } from "antd";
 import { useResponsive } from "antd-style";
 import { ShoppingCartOutlined } from "@ant-design/icons";
+import logoImage from "./images/logo_black.png";
 import BreweryIntro from "./components/BreweryIntro";
 import BeerCatalog from "./components/BeerCatalog";
 import Achievements from "./components/Achievements";
-import logoImage from "./images/logo_black.png";
 import Cart from "./components/Cart.tsx";
 
-const { Content, Header, Footer } = Layout;
+const {
+  Content,
+  Header,
+  Footer
+} = Layout;
+
 const { Title } = Typography;
 
 function App() {
   const [cartOpen, setCartOpen] = useState(false);
 
   const responsive = useResponsive();
+
   const { itemCount } = useAppSelector((state) => state.cart);
 
   return (

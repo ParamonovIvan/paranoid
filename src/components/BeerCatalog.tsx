@@ -14,11 +14,11 @@ import {
 import { createStyles, useResponsive } from "antd-style";
 import { LeftOutlined, RightOutlined, ShoppingCartOutlined } from "@ant-design/icons";
 import { beerData, sauceData, accessoriesData } from "../catalog.ts";
-import untappdImage from "../images/untappd.png";
-import logoImage from "../images/logo.png";
 import { useAppDispatch, useAppSelector } from "../hooks/redux.ts";
 import { addToCart, removeFromCart, updateQuantity } from "../store/cartSlice.ts";
 import type { Product, ProductVariant } from "../types/product.ts";
+import untappdImage from "../images/untappd.png";
+import logoImage from "../images/logo.png";
 
 const {
   Link,
@@ -404,7 +404,6 @@ const BeerCatalog = () => {
   return (
     <Flex vertical style={{ marginBottom: responsive.md ? 64 : 56, marginTop: 16 }}>
       {contextHolder}
-
       <Flex
         justify="space-between"
         align="flex-start"
