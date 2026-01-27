@@ -35,6 +35,7 @@ function App() {
         minHeight: 80
       }}>
         <Image
+          draggable={false}
           src={logoImage}
           preview={false}
           style={{ objectFit: "contain", width: "100%", height: responsive.md ? 100 : 75 }}
