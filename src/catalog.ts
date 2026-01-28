@@ -1,11 +1,9 @@
 import type { Product } from "./types/product.ts";
 import blueberryStrongWildImage from "./images/strong-series/blueberry-strong-wild.png";
 import cherryStrongWildImage from "./images/strong-series/cherry-strong-wild.png";
-import fuckWorkImage from "./images/season-beer/fuck_work.jpg";
 import mondaySucksImage from "./images/season-beer/monday_sucks.jpg";
 import graffBlackCurrantOakImage from "./images/strong-series/graff_black_currant_oak.png";
 import braggotPorterHotImage from "./images/strong-series/braggot_porter_hot.png";
-import orchardsWrathImage from "./images/pepper-sauces/orchards_wrath.png";
 import purpleRevengeImage from "./images/pepper-sauces/purple_revenge.png";
 import trippyTimberImage from "./images/8th-birthday/trippy_timber.png";
 import americanBwImage from "./images/8th-birthday/american_bw.png";
@@ -140,26 +138,6 @@ export const beerData: Product[] = generateIds([
 
 
   // SEASON BEER
-
-  {
-    category: "SEASON BEER",
-    name: "Freeday. Fuck Work",
-    style: "Pumpkin Porter",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-freeday-fuck-work-2025/6475807",
-    og: "22.0%",
-    abv: "9.1",
-    ibu: "15",
-    description: "Умеренно крепкий, но при этом легкий коричневый портер с ванильным вкусом и специями тыквенного пирога. Состав: вода питьевая, солод ячменный, тыква, хмель, корица, мускатный орех, имбирь, гвоздика, ваниль, дрожжи.",
-    bottlingDate: "30.10.2025",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "330",
-        remaining: "остаток: 5 шт."
-      }
-    ],
-    imageUrl: fuckWorkImage
-  },
   {
     category: "SEASON BEER",
     name: "Monday Sucks",
@@ -288,7 +266,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 21 шт."
+        remaining: "остаток: 19 шт."
       }
     ],
     imageUrl: spicedBlondeImage
@@ -563,7 +541,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 2 шт."
       },
       {
         volume: "0.75л",
@@ -713,22 +691,6 @@ export const beerData: Product[] = generateIds([
 export const sauceData: Product[] = generateIds([
   {
     category: "PEPPER SAUCES",
-    name: "Orchard's Wrath",
-    style: "Green Pepper Sauce",
-    spiciness: "6/10",
-    description: "Первый аккорд — это обманчивая идиллия: кисло-судкая свежесть зелёного яблока и сока лайма, зелень болгарского перца и молодого лука. Но это затишье перед бурей. Из самой сердцевины сада поднимается яростный, травянистый жар зелёного Каролина Рипера. Это не огонь пустыни — это холодная ярость урагана, ворвавшегося в цветущий сад. Уксус лишь подстёгивает гнев, делая его ярким и пронзительным. Острота 6/10 — это не предупреждение. Это приговор вашим рецепторам от самой природы. Состав: перец зеленый болгарский, перец Каролина Рипер зеленый, перец Халапеньо, чеснок, лук, яблоки, лимоны, лук зеленый свежий, перец черный, уксус яблочный, соль морская, крахмал Аррорут.",
-    bottlingDate: "14.10.2025",
-    variants: [
-      {
-        volume: "0.2л",
-        price: "500",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: orchardsWrathImage
-  },
-  {
-    category: "PEPPER SAUCES",
     name: "Purple Revenge",
     style: "Plum Pepper Sauce",
     spiciness: "4/10",
@@ -770,7 +732,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 12 шт."
+        remaining: "остаток: 11 шт."
       }
     ],
     imageUrl: sunCasketImage
@@ -786,7 +748,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 9 шт."
+        remaining: "остаток: 8 шт."
       }
     ],
     imageUrl: widowsJamImage
