@@ -4,7 +4,6 @@ import cherryStrongWildImage from "./images/strong-series/cherry-strong-wild.png
 import mondaySucksImage from "./images/season-beer/monday_sucks.jpg";
 import graffBlackCurrantOakImage from "./images/strong-series/graff_black_currant_oak.png";
 import braggotPorterHotImage from "./images/strong-series/braggot_porter_hot.png";
-import purpleRevengeImage from "./images/pepper-sauces/purple_revenge.png";
 import trippyTimberImage from "./images/8th-birthday/trippy_timber.png";
 import americanBwImage from "./images/8th-birthday/american_bw.png";
 import grapeAmericanBwImage from "./images/8th-birthday/grape_american_bw.png";
@@ -130,7 +129,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "300",
         packaging: ["воск"],
-        remaining: "остаток: 3 шт."
+        remaining: "остаток: 2 шт."
       }
     ],
     imageUrl: braggotPorterHotImage
@@ -491,7 +490,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 5 шт."
       },
       {
         volume: "0.75л",
@@ -566,7 +565,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 15 шт."
+        remaining: "остаток: 14 шт."
       },
       {
         volume: "0.75л",
@@ -616,7 +615,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "370",
         packaging: ["воск"],
-        remaining: "остаток: 20 шт."
+        remaining: "остаток: 19 шт."
       },
       {
         volume: "0.75л",
@@ -689,22 +688,6 @@ export const beerData: Product[] = generateIds([
 ]);
 
 export const sauceData: Product[] = generateIds([
-  {
-    category: "PEPPER SAUCES",
-    name: "Purple Revenge",
-    style: "Plum Pepper Sauce",
-    spiciness: "4/10",
-    description: "Этот соус — не еда, это порча на вкуснейшие блюда. Тёмная, почти чернильная слива, заговорённая дымом паприки и сладостью, — это приманка. В её сердцевине заключена мощь перца 7 Pot Gravedigger — его жар (4/10) не обжигает, а хватает за горло холодной рукой из-под земли, оставляя послевкусие тления и свежей могильной почвы. Укроп и кинза — это травы, брошенные в ритуальный коте́ль для оттенения злого умысла. Подавайте к утке, баранине или жирным сырам, чтобы снять проклятие наслаждения. Состав: слива, перец 7 Пот Грейв Диггер, чеснок, кинза, укроп, паприка сладкая, паприка копченая, черный перец, уксус яблочный, соль морская.",
-    bottlingDate: "14.10.2025",
-    variants: [
-      {
-        volume: "0.2л",
-        price: "600",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: purpleRevengeImage
-  },
   {
     category: "PEPPER SAUCES",
     name: "Bhut's Embrace",
