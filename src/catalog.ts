@@ -30,6 +30,11 @@ import blondeImage from "./images/season-beer/blonde.png";
 import flandersBrownImage from "./images/season-beer/flanders_brown.png";
 import spicedBlondeImage from "./images/season-beer/spiced_blonde.png";
 import verdantImage from "./images/season-beer/verdant.png";
+import tripelImage from "./images/season-beer/belgian_tripel.png";
+import tripelWithHoneyImage from "./images/season-beer/belgian_tripel _with_honey.png";
+import pyroclasticFlowImage from "./images/pepper-sauces/pyroclastic_flow.png";
+import dubbelImage from "./images/season-beer/dubbel.png";
+import dubbelRaisinImage from "./images/season-beer/dubbel_raisin.png";
 
 let globalIdCounter = 1;
 
@@ -208,7 +213,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 10 шт."
+        remaining: "остаток: 9 шт."
       }
     ],
     imageUrl: gooseberryWildImage
@@ -331,7 +336,82 @@ export const beerData: Product[] = generateIds([
     ],
     imageUrl: flandersBrownImage
   },
-
+  {
+    category: "SEASON BEER",
+    name: "Belgian Tripel",
+    style: "Belgian Tripel",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-belgian-tripel-2026/6582093",
+    og: "19.5%",
+    abv: "9.8",
+    ibu: "25",
+    description: "Яркий представитель знаменитого бельгийского стиля. Аромат — сложный коктейль из фруктовых эфиров, лёгких фенолов и пряных нюансов. Во вкусе раскрывается палитра оттенков: от спелой косточковой сладости абрикоса и цитрусовой свежести лимонной цедры до пикантной, почти перечной остроты. Тело удивительно полное для светлого эля, а послевкусие — долгое, сухое и согревающее.",
+    bottlingDate: "27.01.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "280",
+        remaining: "остаток: 35 шт."
+      }
+    ],
+    imageUrl: tripelImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Abbey’s Golden Verse",
+    style: "Belgian Tripel with Honey",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-abbey-s-golden-verse/6582913",
+    og: "20.5%",
+    abv: "10.5",
+    ibu: "25",
+    description: "Этот трипель — уверенная ступень выше в мире бельгийских элей. Он крепче и полнее классической версии, сохраняя при этом изящество и сложность. Под ярким эфирно-фенольным букетом (абрикос, цедра лимона, искры перца) играет едва уловимый мед, придающий лишь дополнительную округлость и глубину. Эль для вдумчивого наслаждения.",
+    bottlingDate: "28.01.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "280",
+        remaining: "остаток: 34 шт."
+      }
+    ],
+    imageUrl: tripelWithHoneyImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Bruges Bazaar",
+    style: "Belgian Dubbel",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-bruges-bazaar/6588871",
+    og: "18.0%",
+    abv: "9.2",
+    ibu: "20",
+    description: "Благородное бельгийское пиво с превосходным сочетанием зернового вкуса и мощных эфиров, придающих вкусу и аромату оттенки изюма, чернослива и сладкого черного винограда. На фоне - хорошая пряность, возникающая благодаря фенольным соединениям и повышенному содержанию алкоголя.",
+    bottlingDate: "02.02.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "290",
+        remaining: "остаток: 33 шт."
+      }
+    ],
+    imageUrl: dubbelImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Resin Tear Serenade",
+    style: "Belgian Dubbel with Prunes and Raisin",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-resin-tear-serenade/6590437",
+    og: "18.0%",
+    abv: "9.4",
+    ibu: "20",
+    description: "Погрузитесь в ароматы монастырской трапезной. Глубокий зерновой профиль с нотами карамели и свежеиспечённого хлеба служит основой для щедрого букета спелых тёмных фруктов — изюма, чернослива и чёрного винограда. Тёплое алкогольное послевкусие с лёгким отблеском пряностей завершает этот богатый и согревающий образ.",
+    bottlingDate: "04.02.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "300",
+        remaining: "остаток: 34 шт."
+      }
+    ],
+    imageUrl: dubbelRaisinImage
+  },
 
   // 8TH BIRTHDAY
   {
@@ -367,7 +447,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "400",
-        remaining: "остаток: 3 шт."
+        remaining: "остаток: 2 шт."
       },
       {
         volume: "0.75л",
@@ -490,7 +570,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 5 шт."
+        remaining: "остаток: 4 шт."
       },
       {
         volume: "0.75л",
@@ -540,7 +620,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       },
       {
         volume: "0.75л",
@@ -590,7 +670,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 15 шт."
+        remaining: "остаток: 14 шт."
       },
       {
         volume: "0.75л",
@@ -699,7 +779,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 5 шт."
       }
     ],
     imageUrl: bhutsEmbraceImage
@@ -715,7 +795,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 11 шт."
+        remaining: "остаток: 9 шт."
       }
     ],
     imageUrl: sunCasketImage
@@ -731,10 +811,26 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 8 шт."
+        remaining: "остаток: 7 шт."
       }
     ],
     imageUrl: widowsJamImage
+  },
+  {
+    category: "PEPPER SAUCES",
+    name: "Pyroclastic Flow",
+    style: "Habanero/Chipotle Pepper Sauce",
+    spiciness: "1/10",
+    description: "Забудьте об огне. Это не извержение, а глубинный взрыв вкуса. Начало — бархатный, сладковатый дым копчёного перца Чипотле, томлёные овощи и мягкая паприка. Он обволакивает, как тёплое одеяло. А затем, вместо жгучей остроты, приходит яркая, фруктовая нота красного Хабанеро, которая не обжигает, а расчищает вкусовое небо, оставляя после себя чистое, тёплое послевкусие. Идеальная пара для пасты, ризотто, запечённых овощей или сливочного сыра. Чтобы добавить сложности, а не адреналина. Состав: томатная паста, перец Чипотле, перец Хабанеро красный, лук, морковь, чеснок, оливковое масло, паприка копченая, паприка сладкая, соль морская, орегано, жидкий дым, перец черный, порошок горчичный, уксус яблочный.",
+    bottlingDate: "30.01.2026",
+    variants: [
+      {
+        volume: "0.2л",
+        price: "500",
+        remaining: "остаток: 12 шт."
+      }
+    ],
+    imageUrl: pyroclasticFlowImage
   },
 ]);
 
