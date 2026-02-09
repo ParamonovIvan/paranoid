@@ -827,7 +827,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "500",
-        remaining: "остаток: 12 шт."
+        remaining: "остаток: 7 шт."
       }
     ],
     imageUrl: pyroclasticFlowImage
