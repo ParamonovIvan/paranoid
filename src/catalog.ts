@@ -156,7 +156,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "350",
-        remaining: "остаток: 3 шт."
+        remaining: "остаток: 2 шт."
       }
     ],
     imageUrl: mondaySucksImage
@@ -331,7 +331,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "370",
-        remaining: "остаток: 7 шт."
+        remaining: "остаток: 6 шт."
       }
     ],
     imageUrl: flandersBrownImage
@@ -350,7 +350,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 35 шт."
+        remaining: "остаток: 34 шт."
       }
     ],
     imageUrl: tripelImage
@@ -388,7 +388,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "290",
-        remaining: "остаток: 33 шт."
+        remaining: "остаток: 32 шт."
       }
     ],
     imageUrl: dubbelImage
@@ -452,7 +452,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.75л",
         price: "800",
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: americanBwImage
@@ -811,7 +811,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 7 шт."
+        remaining: "остаток: 5 шт."
       }
     ],
     imageUrl: widowsJamImage
@@ -827,7 +827,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "500",
-        remaining: "остаток: 7 шт."
+        remaining: "остаток: 6 шт."
       }
     ],
     imageUrl: pyroclasticFlowImage
