@@ -2,7 +2,6 @@ import type { Product } from "./types/product.ts";
 import blueberryStrongWildImage from "./images/strong-series/blueberry-strong-wild.png";
 import cherryStrongWildImage from "./images/strong-series/cherry-strong-wild.png";
 import mondaySucksImage from "./images/season-beer/monday_sucks.jpg";
-import graffBlackCurrantOakImage from "./images/strong-series/graff_black_currant_oak.png";
 import braggotPorterHotImage from "./images/strong-series/braggot_porter_hot.png";
 import trippyTimberImage from "./images/8th-birthday/trippy_timber.png";
 import americanBwImage from "./images/8th-birthday/american_bw.png";
@@ -64,12 +63,6 @@ export const beerData: Product[] = generateIds([
         price: "450",
         packaging: ["воск", "тубус"],
         remaining: "остаток: 1 шт."
-      },
-      {
-        volume: "0.25л",
-        price: "230",
-        packaging: ["воск"],
-        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: blueberryStrongWildImage
@@ -90,34 +83,9 @@ export const beerData: Product[] = generateIds([
         price: "450",
         packaging: ["воск", "тубус"],
         remaining: "остаток: 3 шт."
-      },
-      {
-        volume: "0.25л",
-        price: "230",
-        packaging: ["воск"],
-        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: cherryStrongWildImage
-  },
-  {
-    category: "STRONG SERIES",
-    name: "Strong Black Currant Graff (oak)",
-    style: "Apfelwein with Black Currant (oak edition)",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-strong-black-currant-graff-oak-aged/6208920",
-    og: "25.5%",
-    abv: "13.5",
-    ibu: "15",
-    description: "Пиво, сваренное в стиле Apfelwein с добавлением сока черной смородины (30%). Состав солода: 50% пилсен, 50% пшеничный, хмель Cascade, вымоченная в хересе спираль сильного обжига из американского дуба.",
-    bottlingDate: "29.03.2025",
-    variants: [
-      {
-        volume: "0.33л",
-        price: "280",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: graffBlackCurrantOakImage
   },
   {
     category: "STRONG SERIES",
@@ -213,7 +181,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 9 шт."
+        remaining: "остаток: 8 шт."
       }
     ],
     imageUrl: gooseberryWildImage
@@ -270,7 +238,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 18 шт."
+        remaining: "остаток: 17 шт."
       }
     ],
     imageUrl: spicedBlondeImage
@@ -350,7 +318,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 34 шт."
+        remaining: "остаток: 33 шт."
       }
     ],
     imageUrl: tripelImage
@@ -369,7 +337,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 34 шт."
+        remaining: "остаток: 33 шт."
       }
     ],
     imageUrl: tripelWithHoneyImage
@@ -388,7 +356,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "290",
-        remaining: "остаток: 32 шт."
+        remaining: "остаток: 31 шт."
       }
     ],
     imageUrl: dubbelImage
@@ -407,7 +375,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "300",
-        remaining: "остаток: 34 шт."
+        remaining: "остаток: 33 шт."
       }
     ],
     imageUrl: dubbelRaisinImage
@@ -447,7 +415,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "400",
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       },
       {
         volume: "0.75л",
@@ -495,7 +463,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "410",
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 5 шт."
       },
       {
         volume: "0.75л",
@@ -570,7 +538,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       },
       {
         volume: "0.75л",
@@ -595,7 +563,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 8 шт."
+        remaining: "остаток: 7 шт."
       },
       {
         volume: "0.75л",
@@ -616,12 +584,6 @@ export const beerData: Product[] = generateIds([
     description: "«Gloopy Grasp» — это не название. Это — диагноз. Классический имперский стаут, лишенный всяких уступок в виде посторонних добавок. Его оружие — чистая, неразбавленная мощь жжёного и карамельного солода. Он густой, маслянистый и обволакивающий, как жидкий асфальт. Вкус — это концентрированная вселенная тёмного шоколада, чёрного кофе и смолы. Он не пытается вам понравиться. Он предлагает вам подчиниться. И вы согласитесь.",
     bottlingDate: "17.11.2025",
     variants: [
-      {
-        volume: "0.33",
-        price: "350",
-        packaging: ["воск"],
-        remaining: "остаток: 1 шт."
-      },
       {
         volume: "0.75л",
         price: "800",
@@ -695,7 +657,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "370",
         packaging: ["воск"],
-        remaining: "остаток: 19 шт."
+        remaining: "остаток: 18 шт."
       },
       {
         volume: "0.75л",
@@ -720,7 +682,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25",
         price: "280",
         packaging: ["воск"],
-        remaining: "остаток: 15 шт."
+        remaining: "остаток: 14 шт."
       },
       {
         volume: "0.45",
