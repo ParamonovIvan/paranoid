@@ -219,7 +219,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "270",
-        remaining: "остаток: 21 шт."
+        remaining: "остаток: 17 шт."
       }
     ],
     imageUrl: blondeImage
@@ -238,7 +238,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 17 шт."
+        remaining: "остаток: 9 шт."
       }
     ],
     imageUrl: spicedBlondeImage
@@ -257,7 +257,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "270",
-        remaining: "остаток: 23 шт."
+        remaining: "остаток: 13 шт."
       }
     ],
     imageUrl: abbeyAleImage
@@ -277,7 +277,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 16 шт."
+        remaining: "остаток: 12 шт."
       }
     ],
     imageUrl: verdantImage
@@ -299,7 +299,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "370",
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 4 шт."
       }
     ],
     imageUrl: flandersBrownImage
@@ -318,7 +318,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 33 шт."
+        remaining: "остаток: 18 шт."
       }
     ],
     imageUrl: tripelImage
@@ -337,7 +337,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 33 шт."
+        remaining: "остаток: 23 шт."
       }
     ],
     imageUrl: tripelWithHoneyImage
@@ -356,7 +356,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "290",
-        remaining: "остаток: 31 шт."
+        remaining: "остаток: 17 шт."
       }
     ],
     imageUrl: dubbelImage
@@ -375,7 +375,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "300",
-        remaining: "остаток: 33 шт."
+        remaining: "остаток: 18 шт."
       }
     ],
     imageUrl: dubbelRaisinImage
@@ -687,7 +687,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45",
         price: "480",
-        remaining: "остаток: 11 шт."
+        remaining: "остаток: 5 шт."
       },
       {
         volume: "0.75л",
@@ -789,7 +789,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "500",
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 5 шт."
       }
     ],
     imageUrl: pyroclasticFlowImage
