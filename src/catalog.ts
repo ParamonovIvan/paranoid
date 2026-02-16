@@ -1,5 +1,4 @@
 import type { Product } from "./types/product.ts";
-import blueberryStrongWildImage from "./images/strong-series/blueberry-strong-wild.png";
 import cherryStrongWildImage from "./images/strong-series/cherry-strong-wild.png";
 import mondaySucksImage from "./images/season-beer/monday_sucks.jpg";
 import braggotPorterHotImage from "./images/strong-series/braggot_porter_hot.png";
@@ -47,26 +46,6 @@ const generateIds = (data: Omit<Product, "id">[]) => {
 export const beerData: Product[] = generateIds([
 
   // STRONG SERIES
-  {
-    category: "STRONG SERIES",
-    name: "Harmony In Chaos",
-    style: "Blueberry Strong Wild Ale",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-harmony-in-chaos-blueberry/5976755",
-    og: "23.5%",
-    abv: "10.8",
-    ibu: "20",
-    description: "Очень сложный, черный, насыщенный крепкий эль смешанного брожения, выдержанный долгое время с огромным количеством ягод черники, с добавлением кофе и небольшой щепотки острого перца Чили Гуахильо.",
-    bottlingDate: "06.09.2024",
-    variants: [
-      {
-        volume: "0.33л",
-        price: "450",
-        packaging: ["воск", "тубус"],
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: blueberryStrongWildImage
-  },
   {
     category: "STRONG SERIES",
     name: "Harmony In Chaos",
@@ -181,7 +160,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 8 шт."
+        remaining: "остаток: 7 шт."
       }
     ],
     imageUrl: gooseberryWildImage
@@ -238,7 +217,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 9 шт."
+        remaining: "остаток: 7 шт."
       }
     ],
     imageUrl: spicedBlondeImage
@@ -277,7 +256,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 12 шт."
+        remaining: "остаток: 11 шт."
       }
     ],
     imageUrl: verdantImage
@@ -299,7 +278,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "370",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: flandersBrownImage
@@ -439,7 +418,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "410",
-        remaining: "остаток: 10 шт."
+        remaining: "остаток: 9 шт."
       },
       {
         volume: "0.75л",
@@ -682,7 +661,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45",
         price: "480",
-        remaining: "остаток: 5 шт."
+        remaining: "остаток: 4 шт."
       },
       {
         volume: "0.75л",
