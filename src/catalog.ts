@@ -24,7 +24,6 @@ import widowsJamImage from "./images/pepper-sauces/widows_jam.png";
 import abbeyAleImage from "./images/season-beer/abbey_ale.png";
 import blondeImage from "./images/season-beer/blonde.png";
 import flandersBrownImage from "./images/season-beer/flanders_brown.png";
-import spicedBlondeImage from "./images/season-beer/spiced_blonde.png";
 import verdantImage from "./images/season-beer/verdant.png";
 import tripelImage from "./images/season-beer/belgian_tripel.png";
 import tripelWithHoneyImage from "./images/season-beer/belgian_tripel _with_honey.png";
