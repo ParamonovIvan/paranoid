@@ -60,25 +60,32 @@ const Cart: FC<CartProps> = ({ open, onClose }) => {
   const openTelegram = () => {
     const message = generateOrderMessage();
     const encodedMessage = encodeURIComponent(message);
-    const telegramUrl = `https://t.me/spool_ka?text=${encodedMessage}`;
-    
-    try {
-      const opened = window.open(telegramUrl, "_blank", "noopener,noreferrer");
-      if (!opened) {
-        window.location.href = telegramUrl;
+
+    // Определяем устройство
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      if (isIOS) {
+        // Для iOS используем универсальную ссылку
+        window.location.href = `tg://msg?text=${encodedMessage}`;
+
+        // Fallback если приложение не открылось
+        setTimeout(() => {
+          window.location.href = `https://t.me/spool_ka?text=${encodedMessage}`;
+        }, 500);
+      } else {
+        // Для Android сначала пробуем открыть в приложении
+        window.location.href = `tg://resolve?domain=spool_ka&text=${encodedMessage}`;
+
+        // Fallback через веб
+        setTimeout(() => {
+          window.open(`https://t.me/spool_ka?text=${encodedMessage}`, '_blank');
+        }, 500);
       }
-    } catch {
-      try {
-        const link = document.createElement("a");
-        link.href = telegramUrl;
-        link.target = "_blank";
-        link.rel = "noopener noreferrer";
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-      } catch {
-        window.open(telegramUrl, "_blank", "noopener,noreferrer");
-      }
+    } else {
+      // На десктопе просто открываем в новой вкладке
+      window.open(`https://t.me/spool_ka?text=${encodedMessage}`, '_blank', 'noopener,noreferrer');
     }
   };
 
