@@ -100,7 +100,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "350",
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: mondaySucksImage
@@ -138,7 +138,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 7 шт."
+        remaining: "остаток: 6 шт."
       }
     ],
     imageUrl: cherryWildAleImage
@@ -195,7 +195,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "270",
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 5 шт."
       }
     ],
     imageUrl: abbeyAleImage
@@ -256,7 +256,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 10 шт."
+        remaining: "остаток: 9 шт."
       }
     ],
     imageUrl: tripelImage
@@ -275,7 +275,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 15 шт."
+        remaining: "остаток: 14 шт."
       }
     ],
     imageUrl: tripelWithHoneyImage
@@ -294,7 +294,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "290",
-        remaining: "остаток: 10 шт."
+        remaining: "остаток: 9 шт."
       }
     ],
     imageUrl: dubbelImage
@@ -313,7 +313,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "300",
-        remaining: "остаток: 10 шт."
+        remaining: "остаток: 9 шт."
       }
     ],
     imageUrl: dubbelRaisinImage
@@ -331,11 +331,6 @@ export const beerData: Product[] = generateIds([
     description: "Этот американский барливайн — дань уважения солодовой сложности и хмелевой мощи. Семь различных солодов создают невероятно насыщенный профиль с доминирующими нотами темных сухофруктов, ириски и карамели. Мощная алкогольная теплота и фруктовая эфирность получают достойного оппонента в виде резкой, горькой атаки американских хмелей. Финальный штрих — выдержка на щепе американского дуба из-под бурбона, которая привносит ноты ванили, кокоса и пряностей, сглаживая и усложняя характер. Идеальный кандидат для выдержки, чья сущность будет раскрываться с годами.",
     bottlingDate: "23.09.2025",
     variants: [
-      {
-        volume: "0.375л",
-        price: "400",
-        remaining: "остаток: 1 шт."
-      },
       {
         volume: "0.75л",
         price: "800",
@@ -358,7 +353,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "410",
-        remaining: "остаток: 8 шт."
+        remaining: "остаток: 7 шт."
       },
       {
         volume: "0.75л",
@@ -521,7 +516,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 5 шт."
       },
       {
         volume: "0.75л",
@@ -596,7 +591,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25",
         price: "280",
         packaging: ["воск"],
-        remaining: "остаток: 14 шт."
+        remaining: "остаток: 13 шт."
       },
       {
         volume: "0.45",
@@ -626,7 +621,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25",
         price: "300",
         packaging: ["воск"],
-        remaining: "остаток: 14 шт."
+        remaining: "остаток: 13 шт."
       },
       {
         volume: "0.45",
@@ -703,7 +698,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "500",
-        remaining: "остаток: 5 шт."
+        remaining: "остаток: 4 шт."
       }
     ],
     imageUrl: pyroclasticFlowImage
