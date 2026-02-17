@@ -2,7 +2,6 @@ import type { Product } from "./types/product.ts";
 import cherryStrongWildImage from "./images/strong-series/cherry-strong-wild.png";
 import mondaySucksImage from "./images/season-beer/monday_sucks.jpg";
 import braggotPorterHotImage from "./images/strong-series/braggot_porter_hot.png";
-import trippyTimberImage from "./images/8th-birthday/trippy_timber.png";
 import americanBwImage from "./images/8th-birthday/american_bw.png";
 import grapeAmericanBwImage from "./images/8th-birthday/grape_american_bw.png";
 import mapleEnglishBwImage from "./images/8th-birthday/maple_english_bw.png";
@@ -14,7 +13,6 @@ import imperialStoutImage from "./images/8th-birthday/imperial_stout.png";
 import cumberlandImperialStoutImage from "./images/8th-birthday/cumberland_imperial_stout.png";
 import raspberryWildImage from "./images/season-beer/raspberry_wild.png";
 import cherryWildAleImage from "./images/season-beer/cherry_wild.png";
-import gooseberryWildImage from "./images/season-beer/gooseberry_wild.png";
 import strawberryWildImage from "./images/season-beer/strawberry_wild.png";
 import wheatWineImage from "./images/8th-birthday/wheat_wine.png";
 import ddhWheatWineImage from "./images/8th-birthday/ddh_wheat_wine.png";
@@ -122,7 +120,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 8 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: raspberryWildImage
@@ -145,25 +143,6 @@ export const beerData: Product[] = generateIds([
       }
     ],
     imageUrl: cherryWildAleImage
-  },
-  {
-    category: "SEASON BEER",
-    name: "Oculus",
-    style: "Gooseberry Wild Ale",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-oculus/6496865",
-    og: "15.5%",
-    abv: "6.9",
-    ibu: "10",
-    description: "Oculus — это пиво, которое не просто пьют, а в которое всматриваются. Полупрозрачный крыжовник, подобно зрачку, открывает портал в иное измерение вкуса. Его яркая, пронзительная кислинка — это первый проблеск света, который ослепляет и обостряет чувства. За ним проступает сложный, почти электрический профиль: землистые ноты и вкус свежего щавеля. Это пиво — всевидящее око природы, холодное, пронзительное и невероятно живое.",
-    bottlingDate: "16.11.2025",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "320",
-        remaining: "остаток: 6 шт."
-      }
-    ],
-    imageUrl: gooseberryWildImage
   },
   {
     category: "SEASON BEER",
@@ -198,29 +177,10 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "270",
-        remaining: "остаток: 17 шт."
+        remaining: "остаток: 10 шт."
       }
     ],
     imageUrl: blondeImage
-  },
-  {
-    category: "SEASON BEER",
-    name: "Sacred Botanicals",
-    style: "Belgian Blond Ale with Spiced",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-sacred-botanicals/6543242",
-    og: "15.4%",
-    abv: "7.3",
-    ibu: "22",
-    description: "Этот особый бельгийский блонд эль балансирует на грани традиции и таинства. Под плотной, солнечно-мутной вуалью, наброшенной плодами шиповника, скрывается сложная душа. Классические эфирные ноты груши и легкого перца от бельгийских дрожжей образуют прочный фундамент, на котором разворачивается древний ботанический ритуал. Согревающий фенхель и древесный кориандр создают гармонию одновременно земную и возвышенную. Напиток для созерцания.",
-    bottlingDate: "22.12.2025",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "280",
-        remaining: "остаток: 6 шт."
-      }
-    ],
-    imageUrl: spicedBlondeImage
   },
   {
     category: "SEASON BEER",
@@ -236,7 +196,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "270",
-        remaining: "остаток: 13 шт."
+        remaining: "остаток: 6 шт."
       }
     ],
     imageUrl: abbeyAleImage
@@ -256,7 +216,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 11 шт."
+        remaining: "остаток: 4 шт."
       }
     ],
     imageUrl: verdantImage
@@ -297,7 +257,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 17 шт."
+        remaining: "остаток: 10 шт."
       }
     ],
     imageUrl: tripelImage
@@ -316,7 +276,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 22 шт."
+        remaining: "остаток: 15 шт."
       }
     ],
     imageUrl: tripelWithHoneyImage
@@ -335,7 +295,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "290",
-        remaining: "остаток: 17 шт."
+        remaining: "остаток: 10 шт."
       }
     ],
     imageUrl: dubbelImage
@@ -354,32 +314,13 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "300",
-        remaining: "остаток: 17 шт."
+        remaining: "остаток: 10 шт."
       }
     ],
     imageUrl: dubbelRaisinImage
   },
 
   // 8TH BIRTHDAY
-  {
-    category: "8TH BIRTHDAY",
-    name: "Trippy Timber",
-    style: "Wild Ale with Dates and Raisin",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-trippy-timber/6496846",
-    og: "19.5%",
-    abv: "7.2",
-    ibu: "20",
-    description: "Дикий эль смешанного брожения, выдержанный с натуральными финиками и изюмом, а также дубовыми палочками из американского дуба.",
-    bottlingDate: "23.06.2025",
-    variants: [
-      {
-        volume: "0.375л",
-        price: "330",
-        remaining: "остаток: 6 шт."
-      }
-    ],
-    imageUrl: trippyTimberImage
-  },
   {
     category: "8TH BIRTHDAY",
     name: "Carved Essence",
@@ -581,7 +522,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 13 шт."
+        remaining: "остаток: 6 шт."
       },
       {
         volume: "0.75л",
@@ -606,7 +547,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 14 шт."
+        remaining: "остаток: 7 шт."
       },
       {
         volume: "0.75л",
@@ -631,7 +572,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "370",
         packaging: ["воск"],
-        remaining: "остаток: 17 шт."
+        remaining: "остаток: 10 шт."
       },
       {
         volume: "0.75л",
