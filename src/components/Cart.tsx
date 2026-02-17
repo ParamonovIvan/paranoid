@@ -67,24 +67,39 @@ const Cart: FC<CartProps> = ({ open, onClose }) => {
 
     if (isMobile) {
       if (isIOS) {
-        // Для iOS используем универсальную ссылку
-        window.location.href = `tg://msg?text=${encodedMessage}`;
+        // Для iOS - сначала копируем, потом открываем
+        navigator.clipboard.writeText(message).then(() => {
+          notification.success({
+            message: "Текст скопирован!",
+            description: "Сейчас откроется Telegram - вставьте сообщение (долгое нажатие в поле ввода)",
+            duration: 3
+          });
 
-        // Fallback если приложение не открылось
-        setTimeout(() => {
-          window.location.href = `https://t.me/spool_ka?text=${encodedMessage}`;
-        }, 500);
+          // Открываем Telegram без текста в URL
+          window.location.href = "tg://resolve?domain=spool_ka";
+
+          // Fallback если приложение не открылось
+          setTimeout(() => {
+            window.location.href = "https://t.me/spool_ka";
+          }, 500);
+        }).catch(() => {
+          // Если не удалось скопировать, пробуем через URL
+          window.location.href = `tg://resolve?domain=spool_ka&text=${encodedMessage}`;
+
+          setTimeout(() => {
+            window.location.href = `https://t.me/spool_ka?text=${encodedMessage}`;
+          }, 500);
+        });
       } else {
-        // Для Android сначала пробуем открыть в приложении
+        // Для Android
         window.location.href = `tg://resolve?domain=spool_ka&text=${encodedMessage}`;
 
-        // Fallback через веб
         setTimeout(() => {
           window.open(`https://t.me/spool_ka?text=${encodedMessage}`, '_blank');
         }, 500);
       }
     } else {
-      // На десктопе просто открываем в новой вкладке
+      // На десктопе
       window.open(`https://t.me/spool_ka?text=${encodedMessage}`, '_blank', 'noopener,noreferrer');
     }
   };
