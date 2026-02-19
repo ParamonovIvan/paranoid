@@ -30,6 +30,7 @@ import tripelWithHoneyImage from "./images/season-beer/belgian_tripel _with_hone
 import pyroclasticFlowImage from "./images/pepper-sauces/pyroclastic_flow.png";
 import dubbelImage from "./images/season-beer/dubbel.png";
 import dubbelRaisinImage from "./images/season-beer/dubbel_raisin.png";
+import sylvianReagentImage from "./images/pepper-sauces/sylvian_reagent.png";
 
 let globalIdCounter = 1;
 
@@ -702,6 +703,22 @@ export const sauceData: Product[] = generateIds([
       }
     ],
     imageUrl: pyroclasticFlowImage
+  },
+  {
+    category: "PEPPER SAUCES",
+    name: "Sylvian Reagent",
+    style: "Apple, Citrus, Spruce Pepper Sauce",
+    spiciness: "2/10",
+    description: "Вход в этот лес мягкий. Яблоко и апельсин манят вас по знакомой тропе, ведущей через цитрусовые сады и луковые грядки. Воздух здесь прогрет солнцем. Но чем дальше вы идёте, тем явственнее лес меняется. Пряный розмарин и чеснок переплетаются с корой, и наконец вы слышите дыхание хвои. Пихтовый экстракт и хвойный уксус не кричат, они дышат холодом где-то на периферии, создавая тень. А перцы? Они здесь не палачи. Амарилло и Тринидад — лишь слабые огоньки, освещающие этот лесной сумрак. Они не жгут, они просто показывают вам путь: ваш сад не умер, он просто стал опушкой большого леса.",
+    bottlingDate: "18.02.2026",
+    variants: [
+      {
+        volume: "0.2л",
+        price: "450",
+        remaining: "остаток: 12 шт."
+      }
+    ],
+    imageUrl: sylvianReagentImage
   },
 ]);
 
