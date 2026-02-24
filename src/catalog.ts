@@ -120,7 +120,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 1 шт."
+        remaining: "остаток: 2 шт."
       }
     ],
     imageUrl: raspberryWildImage
@@ -295,7 +295,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "290",
-        remaining: "остаток: 9 шт."
+        remaining: "остаток: 11 шт."
       }
     ],
     imageUrl: dubbelImage
@@ -715,7 +715,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "450",
-        remaining: "остаток: 12 шт."
+        remaining: "остаток: 6 шт."
       }
     ],
     imageUrl: sylvianReagentImage
