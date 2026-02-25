@@ -1,7 +1,5 @@
 import type { Product } from "./types/product.ts";
-import cherryStrongWildImage from "./images/strong-series/cherry-strong-wild.png";
 import mondaySucksImage from "./images/season-beer/monday_sucks.jpg";
-import braggotPorterHotImage from "./images/strong-series/braggot_porter_hot.png";
 import americanBwImage from "./images/8th-birthday/american_bw.png";
 import grapeAmericanBwImage from "./images/8th-birthday/grape_american_bw.png";
 import mapleEnglishBwImage from "./images/8th-birthday/maple_english_bw.png";
@@ -43,47 +41,8 @@ const generateIds = (data: Omit<Product, "id">[]) => {
 
 export const beerData: Product[] = generateIds([
 
-  // STRONG SERIES
-  {
-    category: "STRONG SERIES",
-    name: "Harmony In Chaos",
-    style: "Cherry Strong Wild Ale",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-harmony-in-chaos-cherry/5976751",
-    og: "23.5%",
-    abv: "11.0",
-    ibu: "20",
-    description: "Очень сложный, черный, насыщенный крепкий эль смешанного брожения, выдержанный долгое время с огромным количеством ягод вишни, с добавлением кофе и небольшой щепотки острого перца Чили Анчо.",
-    bottlingDate: "08.09.2024",
-    variants: [
-      {
-        volume: "0.33л",
-        price: "450",
-        packaging: ["воск", "тубус"],
-        remaining: "остаток: 3 шт."
-      }
-    ],
-    imageUrl: cherryStrongWildImage
-  },
-  {
-    category: "STRONG SERIES",
-    name: "Honey Imperial Porter (hot)",
-    style: "Braggot with Trinidad Scorpion Pepper",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-honey-imperial-porter-braggot-pepper-style/6259911",
-    og: "29.0%",
-    abv: "11.1",
-    ibu: "20",
-    description: "Смесь портера и местного меда (с. Кудрино, Удмуртия) с добавлением небольшого количества копченого солода для большей сложности вкуса, а также щедрой порции острого перца Скорпион Тринидад.",
-    bottlingDate: "10.05.2025",
-    variants: [
-      {
-        volume: "0.33л",
-        price: "300",
-        packaging: ["воск"],
-        remaining: "остаток: 2 шт."
-      }
-    ],
-    imageUrl: braggotPorterHotImage
-  },
+  // STRONG SERIES 2026
+
 
 
   // SEASON BEER
@@ -177,7 +136,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "270",
-        remaining: "остаток: 10 шт."
+        remaining: "остаток: 8 шт."
       }
     ],
     imageUrl: blondeImage
@@ -257,7 +216,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 9 шт."
+        remaining: "остаток: 5 шт."
       }
     ],
     imageUrl: tripelImage
@@ -276,7 +235,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 14 шт."
+        remaining: "остаток: 12 шт."
       }
     ],
     imageUrl: tripelWithHoneyImage
@@ -295,7 +254,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "290",
-        remaining: "остаток: 11 шт."
+        remaining: "остаток: 9 шт."
       }
     ],
     imageUrl: dubbelImage
@@ -314,7 +273,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "300",
-        remaining: "остаток: 9 шт."
+        remaining: "остаток: 7 шт."
       }
     ],
     imageUrl: dubbelRaisinImage
@@ -354,7 +313,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "410",
-        remaining: "остаток: 7 шт."
+        remaining: "остаток: 5 шт."
       },
       {
         volume: "0.75л",
@@ -542,7 +501,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 7 шт."
+        remaining: "остаток: 5 шт."
       },
       {
         volume: "0.75л",
@@ -592,7 +551,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25",
         price: "280",
         packaging: ["воск"],
-        remaining: "остаток: 13 шт."
+        remaining: "остаток: 11 шт."
       },
       {
         volume: "0.45",
@@ -622,7 +581,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25",
         price: "300",
         packaging: ["воск"],
-        remaining: "остаток: 13 шт."
+        remaining: "остаток: 11 шт."
       },
       {
         volume: "0.45",
