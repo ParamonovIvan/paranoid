@@ -1,6 +1,4 @@
 import type { Product } from "./types/product.ts";
-import mondaySucksImage from "./images/season-beer/monday_sucks.jpg";
-import americanBwImage from "./images/8th-birthday/american_bw.png";
 import grapeAmericanBwImage from "./images/8th-birthday/grape_american_bw.png";
 import mapleEnglishBwImage from "./images/8th-birthday/maple_english_bw.png";
 import ryeWineImage from "./images/8th-birthday/rye_wine.png";
@@ -29,6 +27,14 @@ import pyroclasticFlowImage from "./images/pepper-sauces/pyroclastic_flow.png";
 import dubbelImage from "./images/season-beer/dubbel.png";
 import dubbelRaisinImage from "./images/season-beer/dubbel_raisin.png";
 import sylvianReagentImage from "./images/pepper-sauces/sylvian_reagent.png";
+import polarisImage from "./images/strong-series-2026/polaris.png";
+import nightfallImage from "./images/strong-series-2026/nightfall.png";
+import gloomBrothersImage from "./images/strong-series-2026/gloom-brothers.png";
+import redCaseImage from "./images/strong-series-2026/red-case.png";
+import americanPorterImage from "./images/season-beer/american-porter.png";
+import americanPorterDDHImage from "./images/season-beer/american-porter-ddh.png";
+import cocoDropImage from "./images/season-beer/coco-drop.png";
+import coreSampleImage from "./images/pepper-sauces/core-sample.png";
 
 let globalIdCounter = 1;
 
@@ -42,29 +48,59 @@ const generateIds = (data: Omit<Product, "id">[]) => {
 export const beerData: Product[] = generateIds([
 
   // STRONG SERIES 2026
-
+  {
+    category: "STRONG SERIES 2026",
+    name: "Nightfall",
+    style: "Imperial Stout",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-nightfall/6622208",
+    og: "25.5%",
+    abv: "10.0",
+    ibu: "40",
+    description: "Черный, как обсидиан. Прозрачный только в том смысле, что в нем нет лишнего. Классический имперский стаут без украшательств: горький шоколад, свежеобжаренный кофе и ровная, спокойная горечь в финале. Тело достаточно плотное, чтобы чувствовать вес, но достаточно лёгкое, чтобы не утомлять. Никакой сладости, никакой ванили. Только тёмная глубина и чистота стиля.",
+    bottlingDate: "21.02.2026",
+    variants: [
+      {
+        volume: "0.33л",
+        price: "390",
+        packaging: ["бугель"],
+        remaining: "остаток: 23 шт."
+      },
+      {
+        volume: "0.75л",
+        price: "800",
+        remaining: "остаток: 4 шт."
+      },
+    ],
+    imageUrl: nightfallImage
+  },
+  {
+    category: "STRONG SERIES 2026",
+    name: "Polaris",
+    style: "Imperial Stout",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-polaris/6622210",
+    og: "25.5%",
+    abv: "10.0",
+    ibu: "40",
+    description: "Черный, как ночь, с золотым отблеском цедры. Классический имперский стаут с чистым вкусом горького шоколада и свежего апельсина. Никакой сладости — только темная глубина какао и яркий, чуть терпкий цитрусовый акцент, который разрезает плотность и оставляет долгое, сухое послевкусие. Тело уверенное, но не тяжелое. Апельсин не маскирует — он мерцает.",
+    bottlingDate: "22.02.2026",
+    variants: [
+      {
+        volume: "0.33л",
+        price: "400",
+        packaging: ["бугель"],
+        remaining: "остаток: 23 шт."
+      },
+      {
+        volume: "0.75л",
+        price: "810",
+        remaining: "остаток: 4 шт."
+      },
+    ],
+    imageUrl: polarisImage
+  },
 
 
   // SEASON BEER
-  {
-    category: "SEASON BEER",
-    name: "Monday Sucks",
-    style: "Brown DIPA",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-monday-sucks-2025/6475811",
-    og: "21.0%",
-    abv: "9.4",
-    ibu: "50",
-    description: "Тёмное пиво с уклоном в хмелевую составляющую. При варке использовался хмель Centennial, Cascade и Amarillo, которые наполнили пиво ароматом и вкусом цитрусов, сосновой смолы, нотами тропических фруктов и насыщенной горечью.",
-    bottlingDate: "30.10.2025",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "350",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: mondaySucksImage
-  },
   {
     category: "SEASON BEER",
     name: "Hive",
@@ -98,7 +134,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 5 шт."
       }
     ],
     imageUrl: cherryWildAleImage
@@ -136,7 +172,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "270",
-        remaining: "остаток: 8 шт."
+        remaining: "остаток: 5 шт."
       }
     ],
     imageUrl: blondeImage
@@ -155,7 +191,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "270",
-        remaining: "остаток: 5 шт."
+        remaining: "остаток: 2 шт."
       }
     ],
     imageUrl: abbeyAleImage
@@ -175,7 +211,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: verdantImage
@@ -216,7 +252,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 5 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: tripelImage
@@ -278,27 +314,114 @@ export const beerData: Product[] = generateIds([
     ],
     imageUrl: dubbelRaisinImage
   },
-
-  // 8TH BIRTHDAY
   {
-    category: "8TH BIRTHDAY",
-    name: "Carved Essence",
-    style: "American Barleywine",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-carved-essence/6496848",
-    og: "25.0%",
-    abv: "11.5",
-    ibu: "60",
-    description: "Этот американский барливайн — дань уважения солодовой сложности и хмелевой мощи. Семь различных солодов создают невероятно насыщенный профиль с доминирующими нотами темных сухофруктов, ириски и карамели. Мощная алкогольная теплота и фруктовая эфирность получают достойного оппонента в виде резкой, горькой атаки американских хмелей. Финальный штрих — выдержка на щепе американского дуба из-под бурбона, которая привносит ноты ванили, кокоса и пряностей, сглаживая и усложняя характер. Идеальный кандидат для выдержки, чья сущность будет раскрываться с годами.",
-    bottlingDate: "23.09.2025",
+    category: "SEASON BEER",
+    name: "Gloom Brothers",
+    style: "Quadrupel",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-gloom-brothers/6622213",
+    og: "23.2%",
+    abv: "11.2",
+    ibu: "25",
+    description: "Изысканный и глубокий эль в лучших традициях бельгийского аббатства. В основе вкуса — насыщенная солодовая сердцевина с оттенками карамели, тёмного сахара и грецкого ореха, которая служит идеальной основой для богатого фруктового букета. Пряность проявляется в деликатных фенольных нотках гвоздики и перца, которые уравновешивают сладость и ведут к долгому, элегантно-горьковатому финалу.",
+    bottlingDate: "20.02.2026",
     variants: [
       {
+        volume: "0.33л",
+        price: "280",
+        remaining: "остаток: 49 шт."
+      },
+      {
         volume: "0.75л",
-        price: "800",
+        price: "650",
+        remaining: "остаток: 2 шт."
+      }
+    ],
+    imageUrl: gloomBrothersImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Red Case",
+    style: "Quadrupel with Cherry and Vanilla",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-red-case/6622215",
+    og: "24.0%",
+    abv: "12.0",
+    ibu: "20",
+    description: "Традиционная мощь бельгийского квадрюпеля переплетается с оттенками вишни и ванили. Плотная солодовая основа с нотами тёмной карамели и инжира обрамлена тонкой кислинкой благородной вишни, которая лишь слегка мерцает на заднем плане, не нарушая монастырского спокойствия. Мягкие ванильные нюансы окутывают вкус бархатистой дымкой, смягчая алкогольную теплоту и оставляя послевкусие, полное уюта и легкой фруктовой задумчивости.",
+    bottlingDate: "23.02.2026",
+    variants: [
+      {
+        volume: "0.33л",
+        price: "300",
+        remaining: "остаток: 40 шт."
+      },
+      {
+        volume: "0.75л",
+        price: "680",
         remaining: "остаток: 1 шт."
       }
     ],
-    imageUrl: americanBwImage
+    imageUrl: redCaseImage
   },
+  {
+    category: "SEASON BEER",
+    name: "American Porter",
+    style: "American Porter",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-american-porter-2026/6622216",
+    og: "16.7%",
+    abv: "6.8",
+    ibu: "22",
+    description: "Насыщенный портер с ярким вкусом кофе и шоколада с изюмом, с оттенками цитрусовых и сочетанием жженой и хмелевой горечи. Во многом похож на английский портер, но обладает более выраженным хмелевым характером и большим содержанием алкоголя.",
+    bottlingDate: "22.02.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "270",
+        remaining: "остаток: 40 шт."
+      }
+    ],
+    imageUrl: americanPorterImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "American Porter",
+    style: "DDH American Porter",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-american-porter-ddh-2026/6622217",
+    og: "16.7%",
+    abv: "6.8",
+    ibu: "40",
+    description: "Насыщенный портер с ярким вкусом кофе и шоколада с изюмом, с оттенками цитрусовых и сочетанием жженой и хмелевой горечи. Во многом похож на английский портер, но обладает более выраженным хмелевым характером и большим содержанием алкоголя. Для дополнительного аромата на вторичное брожения добавлен американский хмель Cascade.",
+    bottlingDate: "22.02.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "280",
+        remaining: "остаток: 40 шт."
+      }
+    ],
+    imageUrl: americanPorterDDHImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Coco Drop",
+    style: "English Coconut Stout",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-coco-drop/6622219",
+    og: "13.5%",
+    abv: "5.5",
+    ibu: "20",
+    description: "Тропическая ночь упала в бокал. Этот стаут вдохновлён моментом, когда кокос срывается с пальмы в тёмную воду — неожиданно, легко, с тихим плеском. Вкус такой же: мягкий, обволакивающий, с кокосовой нотой, которая мерцает на фоне классической стаутовой гладкости. И никакой игры пузырьков — только тишина, только плотная, бархатистая гладь. Как вода в ночной лагуне. 5% — ровно столько, чтобы чувствовать себя невесомым, как падающий орех.",
+    bottlingDate: "21.02.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "270",
+        remaining: "остаток: 11 шт."
+      }
+    ],
+    imageUrl: cocoDropImage
+  },
+
+
+  // 8TH BIRTHDAY
   {
     category: "8TH BIRTHDAY",
     name: "Hybrid Giant",
@@ -314,11 +437,6 @@ export const beerData: Product[] = generateIds([
         volume: "0.375л",
         price: "410",
         remaining: "остаток: 5 шт."
-      },
-      {
-        volume: "0.75л",
-        price: "810",
-        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: grapeAmericanBwImage
@@ -337,7 +455,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.75л",
         price: "810",
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: mapleEnglishBwImage
@@ -357,7 +475,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 13 шт."
+        remaining: "остаток: 12 шт."
       },
       {
         volume: "0.75л",
@@ -412,7 +530,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.75л",
         price: "800",
-        remaining: "остаток: 3 шт."
+        remaining: "остаток: 2 шт."
       }
     ],
     imageUrl: oatWineImage
@@ -551,7 +669,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25",
         price: "280",
         packaging: ["воск"],
-        remaining: "остаток: 13 шт."
+        remaining: "остаток: 12 шт."
       },
       {
         volume: "0.45",
@@ -610,7 +728,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: bhutsEmbraceImage
@@ -658,7 +776,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "500",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: pyroclasticFlowImage
@@ -668,7 +786,7 @@ export const sauceData: Product[] = generateIds([
     name: "Sylvian Reagent",
     style: "Apple, Citrus, Spruce Pepper Sauce",
     spiciness: "2/10",
-    description: "Вход в этот лес мягкий. Яблоко и апельсин манят вас по знакомой тропе, ведущей через цитрусовые сады и луковые грядки. Воздух здесь прогрет солнцем. Но чем дальше вы идёте, тем явственнее лес меняется. Пряный розмарин и чеснок переплетаются с корой, и наконец вы слышите дыхание хвои. Пихтовый экстракт и хвойный уксус не кричат, они дышат холодом где-то на периферии, создавая тень. А перцы? Они здесь не палачи. Амарилло и Тринидад — лишь слабые огоньки, освещающие этот лесной сумрак. Они не жгут, они просто показывают вам путь: ваш сад не умер, он просто стал опушкой большого леса.",
+    description: "Вход в этот лес мягкий. Яблоко и апельсин манят вас по знакомой тропе, ведущей через цитрусовые сады и луковые грядки. Воздух здесь прогрет солнцем. Но чем дальше вы идёте, тем явственнее лес меняется. Пряный розмарин и чеснок переплетаются с корой, и наконец вы слышите дыхание хвои. Пихтовый экстракт и хвойный уксус не кричат, они дышат холодом где-то на периферии, создавая тень. А перцы? Они здесь не палачи. Амарилло и Тринидад — лишь слабые огоньки, освещающие этот лесной сумрак. Они не жгут, они просто показывают вам путь: ваш сад не умер, он просто стал опушкой большого леса. Состав: пюре яблочное, перец Ахи Амарилло, перец Скорпион Тринидад, апельсины, лук, чеснок, розмарин, перец черный, соль морская, мед, уксус хвойный, экстракт пихтовый, масло оливковое.",
     bottlingDate: "18.02.2026",
     variants: [
       {
@@ -678,6 +796,22 @@ export const sauceData: Product[] = generateIds([
       }
     ],
     imageUrl: sylvianReagentImage
+  },
+  {
+    category: "PEPPER SAUCES",
+    name: "Core Sample",
+    style: "Miso Carolina Reaper Pepper Sauce",
+    spiciness: "7/10",
+    description: "Анализировать его бесполезно. Его нужно пережить. Первый контакт — это не вкус, а геология: вы чувствуете слоистость. Сладковатая горечь тлена (чернослив, томаты), солёно-грибной удар мисо, кислотность уксуса, как грунтовая вода. И только когда ваш язык составил карту этой пустоши, происходит тектонический сдвиг. Из самой глубины образца прорывается Рипер. Его острота — не пламя. Это радиация, оставшаяся после взрыва. Она не жжёт, она пронизывает, заставляя каждый предыдущий слой светиться в темноте мутировавшим, невероятно сложным светом. Состав: чернослив, кофе, томаты вяленные, паста мисо, перец Каролина Рипер Смокед, пиво темное (портер), паприка копченая, дым жидкий, соль морская, уксус виноградный, экстракт свеклы.",
+    bottlingDate: "03.03.2026",
+    variants: [
+      {
+        volume: "0.2л",
+        price: "600",
+        remaining: "остаток: 12 шт."
+      }
+    ],
+    imageUrl: coreSampleImage
   },
 ]);
 

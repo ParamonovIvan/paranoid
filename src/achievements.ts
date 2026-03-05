@@ -29,7 +29,7 @@ export const achievements: Achievement[] = [
   {
     date: "29.02.2020",
     event: "V фестиваль домашнего пивоварения",
-    result: "1 место – Лучшая этикетка фестиваля",
+    result: "1 место, лучшая этикетка фестиваля",
     location: "г. Екатеринбург",
     medal: "gold"
   },
@@ -75,7 +75,7 @@ export const achievements: Achievement[] = [
   {
     date: "12.03.2022",
     event: "VI фестиваль домашнего пивоварения",
-    result: "1 место – Лучшая этикетка фестиваля",
+    result: "1 место, лучшая этикетка фестиваля",
     location: "г. Екатеринбург",
     medal: "gold"
   },
@@ -130,5 +130,40 @@ export const achievements: Achievement[] = [
     event: "VI общенациональный конкурс домашних пивоваров Brewcom",
     result: "участник",
     location: "г. Санкт-Петербург"
-  }
+  },
+  {
+    date: "06.02.2026",
+    event: "IX всероссийский конкурс пивоваренной продукции «РОСГЛАВПИВО»",
+    result: "серебряная медаль, категория Wee Heavy",
+    location: "г. Москва",
+    medal: "silver"
+  },
+  {
+    date: "06.02.2026",
+    event: "IX всероссийский конкурс пивоваренной продукции «РОСГЛАВПИВО»",
+    result: "золотая медаль, категория American Barleywine",
+    location: "г. Москва",
+    medal: "gold"
+  },
+  {
+    date: "28.02.2026",
+    event: "VIII фестиваль домашнего пивоварения",
+    result: "II место, лучшее в стиле пиво, категория Imperial Stout",
+    location: "г. Екатеринбург",
+    medal: "silver"
+  },
+  {
+    date: "28.02.2026",
+    event: "VIII фестиваль домашнего пивоварения",
+    result: "I место, лучшее гостевое пиво",
+    location: "г. Екатеринбург",
+    medal: "gold"
+  },
+  {
+    date: "28.02.2026",
+    event: "VIII фестиваль домашнего пивоварения",
+    result: "I место, лучший напиток фестиваля, пиво English Barleywine",
+    location: "г. Екатеринбург",
+    medal: "gold"
+  },
 ];
