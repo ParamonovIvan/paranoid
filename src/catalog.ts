@@ -376,7 +376,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "270",
-        remaining: "остаток: 40 шт."
+        remaining: "остаток: 33 шт."
       }
     ],
     imageUrl: americanPorterImage
@@ -395,7 +395,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 40 шт."
+        remaining: "остаток: 33 шт."
       }
     ],
     imageUrl: americanPorterDDHImage
@@ -414,7 +414,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "270",
-        remaining: "остаток: 11 шт."
+        remaining: "остаток: 5 шт."
       }
     ],
     imageUrl: cocoDropImage
