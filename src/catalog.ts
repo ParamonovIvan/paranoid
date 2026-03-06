@@ -87,7 +87,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "400",
         packaging: ["бугель"],
-        remaining: "остаток: 23 шт."
+        remaining: "остаток: 22 шт."
       },
       {
         volume: "0.75л",
@@ -308,7 +308,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "300",
-        remaining: "остаток: 7 шт."
+        remaining: "остаток: 6 шт."
       }
     ],
     imageUrl: dubbelRaisinImage
@@ -327,7 +327,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "280",
-        remaining: "остаток: 49 шт."
+        remaining: "остаток: 48 шт."
       },
       {
         volume: "0.75л",
@@ -351,7 +351,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "300",
-        remaining: "остаток: 40 шт."
+        remaining: "остаток: 39 шт."
       },
       {
         volume: "0.75л",
@@ -788,7 +788,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 12 шт."
+        remaining: "остаток: 11 шт."
       }
     ],
     imageUrl: coreSampleImage
