@@ -1,6 +1,5 @@
 import type { Product } from "./types/product.ts";
 import grapeAmericanBwImage from "./images/8th-birthday/grape_american_bw.png";
-import mapleEnglishBwImage from "./images/8th-birthday/maple_english_bw.png";
 import ryeWineImage from "./images/8th-birthday/rye_wine.png";
 import grapeRyeWineImage from "./images/8th-birthday/grape_rye_wine.png";
 import oatWineImage from "./images/8th-birthday/oat_wine.png";
@@ -68,7 +67,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.75л",
         price: "800",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       },
     ],
     imageUrl: nightfallImage
@@ -443,25 +442,6 @@ export const beerData: Product[] = generateIds([
   },
   {
     category: "8TH BIRTHDAY",
-    name: "Shy Spirit",
-    style: "Maple English Barleywine",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-shy-spirit/6496853",
-    og: "25.5%",
-    abv: "11.1",
-    ibu: "40",
-    description: "Под личиной спокойствия таится могучая сила. Этот барливайн — ода солодовому богатству, где насыщенные ноты инжира и тёмного изюма встречаются с тёплой, природной сладостью кленового сиропа. Аристократичный хмель East Kent Goldings отвечает лёгким цветочным шёпотом на щедром солодовом фундаменте. Его подлинная глубина раскрывается не сразу — как и одноглазый страж на этикетке, его душа терпелива. Выдержка на щепе американского дуба, пропитанной бурбоном, дарит напитку согревающую ванильную мягкость и долгое, задумчивое послевкусие.",
-    bottlingDate: "07.09.2025",
-    variants: [
-      {
-        volume: "0.75л",
-        price: "810",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: mapleEnglishBwImage
-  },
-  {
-    category: "8TH BIRTHDAY",
     name: "The Rye Golem",
     style: "Ryewine",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-the-rye-golem/6496855",
@@ -574,7 +554,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.75л",
         price: "800",
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: imperialStoutImage
