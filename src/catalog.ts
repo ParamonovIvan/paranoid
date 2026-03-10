@@ -31,7 +31,6 @@ import gloomBrothersImage from "./images/strong-series-2026/gloom-brothers.png";
 import redCaseImage from "./images/strong-series-2026/red-case.png";
 import americanPorterImage from "./images/season-beer/american-porter.png";
 import americanPorterDDHImage from "./images/season-beer/american-porter-ddh.png";
-import cocoDropImage from "./images/season-beer/coco-drop.png";
 import coreSampleImage from "./images/pepper-sauces/core-sample.png";
 
 let globalIdCounter = 1;
@@ -61,7 +60,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "390",
         packaging: ["бугель"],
-        remaining: "остаток: 20 шт."
+        remaining: "остаток: 18 шт."
       },
       {
         volume: "0.75л",
@@ -86,7 +85,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "400",
         packaging: ["бугель"],
-        remaining: "остаток: 17 шт."
+        remaining: "остаток: 15 шт."
       },
       {
         volume: "0.75л",
@@ -306,7 +305,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "280",
-        remaining: "остаток: 44 шт."
+        remaining: "остаток: 42 шт."
       },
       {
         volume: "0.75л",
@@ -330,7 +329,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "300",
-        remaining: "остаток: 38 шт."
+        remaining: "остаток: 36 шт."
       }
     ],
     imageUrl: redCaseImage
@@ -349,7 +348,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "270",
-        remaining: "остаток: 25 шт."
+        remaining: "остаток: 23 шт."
       }
     ],
     imageUrl: americanPorterImage
@@ -368,29 +367,10 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 28 шт."
+        remaining: "остаток: 26 шт."
       }
     ],
     imageUrl: americanPorterDDHImage
-  },
-  {
-    category: "SEASON BEER",
-    name: "Coco Drop",
-    style: "English Coconut Stout",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-coco-drop/6622219",
-    og: "13.5%",
-    abv: "5.5",
-    ibu: "20",
-    description: "Тропическая ночь упала в бокал. Этот стаут вдохновлён моментом, когда кокос срывается с пальмы в тёмную воду — неожиданно, легко, с тихим плеском. Вкус такой же: мягкий, обволакивающий, с кокосовой нотой, которая мерцает на фоне классической стаутовой гладкости. И никакой игры пузырьков — только тишина, только плотная, бархатистая гладь. Как вода в ночной лагуне. 5% — ровно столько, чтобы чувствовать себя невесомым, как падающий орех.",
-    bottlingDate: "21.02.2026",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "270",
-        remaining: "остаток: 2 шт."
-      }
-    ],
-    imageUrl: cocoDropImage
   },
 
 
