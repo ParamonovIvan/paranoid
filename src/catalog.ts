@@ -19,7 +19,6 @@ import widowsJamImage from "./images/pepper-sauces/widows_jam.png";
 import abbeyAleImage from "./images/season-beer/abbey_ale.png";
 import blondeImage from "./images/season-beer/blonde.png";
 import flandersBrownImage from "./images/season-beer/flanders_brown.png";
-import verdantImage from "./images/season-beer/verdant.png";
 import tripelImage from "./images/season-beer/belgian_tripel.png";
 import tripelWithHoneyImage from "./images/season-beer/belgian_tripel _with_honey.png";
 import pyroclasticFlowImage from "./images/pepper-sauces/pyroclastic_flow.png";
@@ -62,12 +61,12 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "390",
         packaging: ["бугель"],
-        remaining: "остаток: 23 шт."
+        remaining: "остаток: 20 шт."
       },
       {
         volume: "0.75л",
         price: "800",
-        remaining: "остаток: 3 шт."
+        remaining: "остаток: 1 шт."
       },
     ],
     imageUrl: nightfallImage
@@ -87,12 +86,12 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "400",
         packaging: ["бугель"],
-        remaining: "остаток: 22 шт."
+        remaining: "остаток: 17 шт."
       },
       {
         volume: "0.75л",
         price: "810",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       },
     ],
     imageUrl: polarisImage
@@ -171,7 +170,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "270",
-        remaining: "остаток: 5 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: blondeImage
@@ -197,26 +196,6 @@ export const beerData: Product[] = generateIds([
   },
   {
     category: "SEASON BEER",
-    name: "Verdant",
-    style: "Abbey Special Ale (Dry hopped)",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-verdant/6551003",
-    og: "15.2%",
-    abv: "6.9",
-    ibu: "25",
-    description: "Это — классический аббатский эль, увиденный сквозь призму хмеля. Его основа — утончённое солодовое тело с нотами карамели и хлеба, оживлённое эфирными тонами бельгийских дрожжей.\n" +
-      "Но его душа раскрывается в сухом охмелении благородным словенским хмелем Styrian Goldings Bobek. Он приносит с собой дыхание альпийских лугов — ароматы сушёных трав, полевых цветов и лёгкой цитрусовой цедры. Мягкая, благородная горечь завершает образ, создавая идеальный баланс между тёплой монастырской традицией и освежающей хмелевой свежестью.",
-    bottlingDate: "26.12.2025",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "280",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: verdantImage
-  },
-  {
-    category: "SEASON BEER",
     name: "Liquid Lore",
     style: "Flanders Brown Ale",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-liquid-lore/6542215",
@@ -232,7 +211,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "370",
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: flandersBrownImage
@@ -251,7 +230,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 3 шт."
+        remaining: "остаток: 2 шт."
       }
     ],
     imageUrl: tripelImage
@@ -270,7 +249,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 12 шт."
+        remaining: "остаток: 11 шт."
       }
     ],
     imageUrl: tripelWithHoneyImage
@@ -289,7 +268,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "290",
-        remaining: "остаток: 9 шт."
+        remaining: "остаток: 7 шт."
       }
     ],
     imageUrl: dubbelImage
@@ -308,7 +287,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "300",
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 4 шт."
       }
     ],
     imageUrl: dubbelRaisinImage
@@ -327,12 +306,12 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "280",
-        remaining: "остаток: 48 шт."
+        remaining: "остаток: 44 шт."
       },
       {
         volume: "0.75л",
         price: "650",
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: gloomBrothersImage
@@ -351,12 +330,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "300",
-        remaining: "остаток: 39 шт."
-      },
-      {
-        volume: "0.75л",
-        price: "680",
-        remaining: "остаток: 1 шт."
+        remaining: "остаток: 38 шт."
       }
     ],
     imageUrl: redCaseImage
@@ -375,7 +349,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "270",
-        remaining: "остаток: 33 шт."
+        remaining: "остаток: 25 шт."
       }
     ],
     imageUrl: americanPorterImage
@@ -394,7 +368,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 33 шт."
+        remaining: "остаток: 28 шт."
       }
     ],
     imageUrl: americanPorterDDHImage
@@ -413,7 +387,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "270",
-        remaining: "остаток: 5 шт."
+        remaining: "остаток: 2 шт."
       }
     ],
     imageUrl: cocoDropImage
@@ -659,7 +633,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.75л",
         price: "820",
-        remaining: "остаток: 5 шт."
+        remaining: "остаток: 4 шт."
       }
     ],
     imageUrl: buckWheatWineImage
@@ -679,7 +653,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25",
         price: "300",
         packaging: ["воск"],
-        remaining: "остаток: 13 шт."
+        remaining: "остаток: 12 шт."
       },
       {
         volume: "0.45",
@@ -756,7 +730,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "500",
-        remaining: "остаток: 3 шт."
+        remaining: "остаток: 2 шт."
       }
     ],
     imageUrl: pyroclasticFlowImage
@@ -772,7 +746,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "450",
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 5 шт."
       }
     ],
     imageUrl: sylvianReagentImage
@@ -788,7 +762,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 11 шт."
+        remaining: "остаток: 8 шт."
       }
     ],
     imageUrl: coreSampleImage
