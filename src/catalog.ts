@@ -60,7 +60,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "390",
         packaging: ["бугель"],
-        remaining: "остаток: 18 шт."
+        remaining: "остаток: 15 шт."
       },
       {
         volume: "0.75л",
@@ -85,7 +85,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "400",
         packaging: ["бугель"],
-        remaining: "остаток: 15 шт."
+        remaining: "остаток: 12 шт."
       },
       {
         volume: "0.75л",
@@ -305,7 +305,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "280",
-        remaining: "остаток: 42 шт."
+        remaining: "остаток: 39 шт."
       },
       {
         volume: "0.75л",
@@ -329,7 +329,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "300",
-        remaining: "остаток: 36 шт."
+        remaining: "остаток: 33 шт."
       }
     ],
     imageUrl: redCaseImage
@@ -348,7 +348,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "270",
-        remaining: "остаток: 23 шт."
+        remaining: "остаток: 20 шт."
       }
     ],
     imageUrl: americanPorterImage
@@ -367,7 +367,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 26 шт."
+        remaining: "остаток: 23 шт."
       }
     ],
     imageUrl: americanPorterDDHImage
