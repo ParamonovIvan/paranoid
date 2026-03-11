@@ -4,7 +4,6 @@ import ryeWineImage from "./images/8th-birthday/rye_wine.png";
 import grapeRyeWineImage from "./images/8th-birthday/grape_rye_wine.png";
 import oatWineImage from "./images/8th-birthday/oat_wine.png";
 import vanillaOatWineImage from "./images/8th-birthday/vanilla_oat_wine.png";
-import imperialStoutImage from "./images/8th-birthday/imperial_stout.png";
 import cumberlandImperialStoutImage from "./images/8th-birthday/cumberland_imperial_stout.png";
 import raspberryWildImage from "./images/season-beer/raspberry_wild.png";
 import cherryWildAleImage from "./images/season-beer/cherry_wild.png";
@@ -16,9 +15,7 @@ import buckWheatWineHoneyImage from "./images/8th-birthday/buckwheat_wine_honey.
 import bhutsEmbraceImage from "./images/pepper-sauces/bhuts_embrace.png";
 import sunCasketImage from "./images/pepper-sauces/sun_casket.png";
 import widowsJamImage from "./images/pepper-sauces/widows_jam.png";
-import abbeyAleImage from "./images/season-beer/abbey_ale.png";
 import blondeImage from "./images/season-beer/blonde.png";
-import flandersBrownImage from "./images/season-beer/flanders_brown.png";
 import tripelImage from "./images/season-beer/belgian_tripel.png";
 import tripelWithHoneyImage from "./images/season-beer/belgian_tripel _with_honey.png";
 import pyroclasticFlowImage from "./images/pepper-sauces/pyroclastic_flow.png";
@@ -60,7 +57,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "390",
         packaging: ["бугель"],
-        remaining: "остаток: 15 шт."
+        remaining: "остаток: 11 шт."
       },
       {
         volume: "0.75л",
@@ -85,7 +82,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "400",
         packaging: ["бугель"],
-        remaining: "остаток: 12 шт."
+        remaining: "остаток: 8 шт."
       },
       {
         volume: "0.75л",
@@ -112,7 +109,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: raspberryWildImage
@@ -131,7 +128,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 5 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: cherryWildAleImage
@@ -150,7 +147,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: strawberryWildImage
@@ -169,51 +166,10 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "270",
-        remaining: "остаток: 3 шт."
-      }
-    ],
-    imageUrl: blondeImage
-  },
-  {
-    category: "SEASON BEER",
-    name: "Secrets of a Monk",
-    style: "Abbey Special Ale",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-secrets-of-a-monk-2025/6545836",
-    og: "15.2%",
-    abv: "6.9",
-    ibu: "20",
-    description: "Тихая мудрость в золотисто-янтарной дымке. Этот особый эль балансирует между светлым блондом и тёмным дуббелем, раскрывая секрет идеального равновесия. Прочная солодовая основа с нотами жидкой карамели и свежего хлеба служит основой для благородной игры бельгийских дрожжей, дарящих оттенки спелой груши и лёгкого перца. Хмель отстранён, лишь подчёркивая чистоту и гармонию долгого, тёплого послевкусия. Эль для созерцательного познания, глоток за глотком.",
-    bottlingDate: "24.12.2025",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "270",
         remaining: "остаток: 2 шт."
       }
     ],
-    imageUrl: abbeyAleImage
-  },
-  {
-    category: "SEASON BEER",
-    name: "Liquid Lore",
-    style: "Flanders Brown Ale",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-liquid-lore/6542215",
-    og: "20.0%",
-    abv: "9.1",
-    ibu: "20",
-    description: "Классика, переосмысленная в деталях. Долгое кипячение сусла позволило достичь глубокой концентрации вкуса и тёмного янтарного цвета.\n" +
-      "Визуально — идеал: искрящийся, почти игристый эль под короной белоснежной, невероятно стойкой мелкой пены.\n" +
-      "Аромат — это чернослив, чёрный хлеб и спелый инжир. Вкус начинается с насыщенной солодовой сладости сухофруктов, которая мгновенно освежается кислинкой, ведущей к сухому и долгому финишу.\n" +
-      "Высокая карбонизация — ключ к его сложной, но такой сбалансированной природе.",
-    bottlingDate: "10.06.2025",
-    variants: [
-      {
-        volume: "0.375л",
-        price: "370",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: flandersBrownImage
+    imageUrl: blondeImage
   },
   {
     category: "SEASON BEER",
@@ -229,7 +185,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: tripelImage
@@ -248,7 +204,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 11 шт."
+        remaining: "остаток: 10 шт."
       }
     ],
     imageUrl: tripelWithHoneyImage
@@ -267,7 +223,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "290",
-        remaining: "остаток: 7 шт."
+        remaining: "остаток: 6 шт."
       }
     ],
     imageUrl: dubbelImage
@@ -286,7 +242,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "300",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: dubbelRaisinImage
@@ -305,7 +261,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "280",
-        remaining: "остаток: 39 шт."
+        remaining: "остаток: 36 шт."
       },
       {
         volume: "0.75л",
@@ -329,7 +285,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "300",
-        remaining: "остаток: 33 шт."
+        remaining: "остаток: 29 шт."
       }
     ],
     imageUrl: redCaseImage
@@ -389,7 +345,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "410",
-        remaining: "остаток: 5 шт."
+        remaining: "остаток: 4 шт."
       }
     ],
     imageUrl: grapeAmericanBwImage
@@ -409,7 +365,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 12 шт."
+        remaining: "остаток: 11 шт."
       },
       {
         volume: "0.75л",
@@ -434,7 +390,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 7 шт."
+        remaining: "остаток: 6 шт."
       },
       {
         volume: "0.75л",
@@ -459,7 +415,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 3 шт."
+        remaining: "остаток: 2 шт."
       },
       {
         volume: "0.75л",
@@ -484,7 +440,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 7 шт."
+        remaining: "остаток: 6 шт."
       },
       {
         volume: "0.75л",
@@ -493,25 +449,6 @@ export const beerData: Product[] = generateIds([
       }
     ],
     imageUrl: vanillaOatWineImage
-  },
-  {
-    category: "8TH BIRTHDAY",
-    name: "Gloopy Grasp",
-    style: "Imperial Stout",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-gloopy-grasp/6496860",
-    og: "23.5%",
-    abv: "9.3",
-    ibu: "40",
-    description: "«Gloopy Grasp» — это не название. Это — диагноз. Классический имперский стаут, лишенный всяких уступок в виде посторонних добавок. Его оружие — чистая, неразбавленная мощь жжёного и карамельного солода. Он густой, маслянистый и обволакивающий, как жидкий асфальт. Вкус — это концентрированная вселенная тёмного шоколада, чёрного кофе и смолы. Он не пытается вам понравиться. Он предлагает вам подчиниться. И вы согласитесь.",
-    bottlingDate: "17.11.2025",
-    variants: [
-      {
-        volume: "0.75л",
-        price: "800",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: imperialStoutImage
   },
   {
     category: "8TH BIRTHDAY",
@@ -528,7 +465,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 5 шт."
+        remaining: "остаток: 4 шт."
       },
       {
         volume: "0.75л",
@@ -553,7 +490,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 5 шт."
+        remaining: "остаток: 4 шт."
       },
       {
         volume: "0.75л",
@@ -578,7 +515,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "370",
         packaging: ["воск"],
-        remaining: "остаток: 10 шт."
+        remaining: "остаток: 9 шт."
       },
       {
         volume: "0.75л",
@@ -603,7 +540,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25",
         price: "280",
         packaging: ["воск"],
-        remaining: "остаток: 12 шт."
+        remaining: "остаток: 11 шт."
       },
       {
         volume: "0.45",
@@ -633,7 +570,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25",
         price: "300",
         packaging: ["воск"],
-        remaining: "остаток: 12 шт."
+        remaining: "остаток: 11 шт."
       },
       {
         volume: "0.45",
@@ -662,7 +599,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 3 шт."
+        remaining: "остаток: 2 шт."
       }
     ],
     imageUrl: bhutsEmbraceImage
@@ -678,7 +615,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 7 шт."
+        remaining: "остаток: 5 шт."
       }
     ],
     imageUrl: sunCasketImage
@@ -694,7 +631,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 5 шт."
+        remaining: "остаток: 4 шт."
       }
     ],
     imageUrl: widowsJamImage
@@ -742,7 +679,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 8 шт."
+        remaining: "остаток: 6 шт."
       }
     ],
     imageUrl: coreSampleImage
