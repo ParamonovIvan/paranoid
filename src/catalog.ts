@@ -17,7 +17,6 @@ import sunCasketImage from "./images/pepper-sauces/sun_casket.png";
 import widowsJamImage from "./images/pepper-sauces/widows_jam.png";
 import blondeImage from "./images/season-beer/blonde.png";
 import tripelWithHoneyImage from "./images/season-beer/belgian_tripel _with_honey.png";
-import pyroclasticFlowImage from "./images/pepper-sauces/pyroclastic_flow.png";
 import dubbelImage from "./images/season-beer/dubbel.png";
 import dubbelRaisinImage from "./images/season-beer/dubbel_raisin.png";
 import sylvianReagentImage from "./images/pepper-sauces/sylvian_reagent.png";
@@ -605,22 +604,6 @@ export const sauceData: Product[] = generateIds([
       }
     ],
     imageUrl: widowsJamImage
-  },
-  {
-    category: "PEPPER SAUCES",
-    name: "Pyroclastic Flow",
-    style: "Habanero/Chipotle Pepper Sauce",
-    spiciness: "2/10",
-    description: "Забудьте об огне. Это не извержение, а глубинный взрыв вкуса. Начало — бархатный, сладковатый дым копчёного перца Чипотле, томлёные овощи и мягкая паприка. Он обволакивает, как тёплое одеяло. А затем, вместо жгучей остроты, приходит яркая, фруктовая нота красного Хабанеро, которая не обжигает, а расчищает вкусовое небо, оставляя после себя чистое, тёплое послевкусие. Идеальная пара для пасты, ризотто, запечённых овощей или сливочного сыра. Чтобы добавить сложности, а не адреналина. Состав: томатная паста, перец Чипотле, перец Хабанеро красный, лук, морковь, чеснок, оливковое масло, паприка копченая, паприка сладкая, соль морская, орегано, жидкий дым, перец черный, порошок горчичный, уксус яблочный.",
-    bottlingDate: "30.01.2026",
-    variants: [
-      {
-        volume: "0.2л",
-        price: "500",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: pyroclasticFlowImage
   },
   {
     category: "PEPPER SAUCES",
