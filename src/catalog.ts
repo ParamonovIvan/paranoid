@@ -16,7 +16,6 @@ import bhutsEmbraceImage from "./images/pepper-sauces/bhuts_embrace.png";
 import sunCasketImage from "./images/pepper-sauces/sun_casket.png";
 import widowsJamImage from "./images/pepper-sauces/widows_jam.png";
 import blondeImage from "./images/season-beer/blonde.png";
-import tripelImage from "./images/season-beer/belgian_tripel.png";
 import tripelWithHoneyImage from "./images/season-beer/belgian_tripel _with_honey.png";
 import pyroclasticFlowImage from "./images/pepper-sauces/pyroclastic_flow.png";
 import dubbelImage from "./images/season-beer/dubbel.png";
@@ -58,12 +57,7 @@ export const beerData: Product[] = generateIds([
         price: "390",
         packaging: ["бугель"],
         remaining: "остаток: 10 шт."
-      },
-      {
-        volume: "0.75л",
-        price: "800",
-        remaining: "остаток: 1 шт."
-      },
+      }
     ],
     imageUrl: nightfallImage
   },
@@ -87,7 +81,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.75л",
         price: "810",
-        remaining: "остаток: 3 шт."
+        remaining: "остаток: 2 шт."
       },
     ],
     imageUrl: polarisImage
@@ -173,25 +167,6 @@ export const beerData: Product[] = generateIds([
   },
   {
     category: "SEASON BEER",
-    name: "Belgian Tripel",
-    style: "Belgian Tripel",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-belgian-tripel-2026/6582093",
-    og: "19.5%",
-    abv: "9.8",
-    ibu: "25",
-    description: "Яркий представитель знаменитого бельгийского стиля. Аромат — сложный коктейль из фруктовых эфиров, лёгких фенолов и пряных нюансов. Во вкусе раскрывается палитра оттенков: от спелой косточковой сладости абрикоса и цитрусовой свежести лимонной цедры до пикантной, почти перечной остроты. Тело удивительно полное для светлого эля, а послевкусие — долгое, сухое и согревающее.",
-    bottlingDate: "27.01.2026",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "280",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: tripelImage
-  },
-  {
-    category: "SEASON BEER",
     name: "Abbey’s Golden Verse",
     style: "Belgian Tripel with Honey",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-abbey-s-golden-verse/6582913",
@@ -204,7 +179,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 9 шт."
+        remaining: "остаток: 8 шт."
       }
     ],
     imageUrl: tripelWithHoneyImage
@@ -223,7 +198,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "290",
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 5 шт."
       }
     ],
     imageUrl: dubbelImage
@@ -262,11 +237,6 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "280",
         remaining: "остаток: 36 шт."
-      },
-      {
-        volume: "0.75л",
-        price: "650",
-        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: gloomBrothersImage
@@ -285,7 +255,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "300",
-        remaining: "остаток: 28 шт."
+        remaining: "остаток: 27 шт."
       }
     ],
     imageUrl: redCaseImage
@@ -647,7 +617,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "500",
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: pyroclasticFlowImage
