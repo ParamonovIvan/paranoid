@@ -12,21 +12,23 @@ import wheatWineImage from "./images/8th-birthday/wheat_wine.png";
 import ddhWheatWineImage from "./images/8th-birthday/ddh_wheat_wine.png";
 import buckWheatWineImage from "./images/8th-birthday/buckwheat_wine.png";
 import buckWheatWineHoneyImage from "./images/8th-birthday/buckwheat_wine_honey.png";
-import bhutsEmbraceImage from "./images/pepper-sauces/bhuts_embrace.png";
 import sunCasketImage from "./images/pepper-sauces/sun_casket.png";
 import widowsJamImage from "./images/pepper-sauces/widows_jam.png";
 import blondeImage from "./images/season-beer/blonde.png";
 import tripelWithHoneyImage from "./images/season-beer/belgian_tripel _with_honey.png";
 import dubbelImage from "./images/season-beer/dubbel.png";
 import dubbelRaisinImage from "./images/season-beer/dubbel_raisin.png";
-import sylvianReagentImage from "./images/pepper-sauces/sylvian_reagent.png";
 import polarisImage from "./images/strong-series-2026/polaris.png";
 import nightfallImage from "./images/strong-series-2026/nightfall.png";
 import gloomBrothersImage from "./images/strong-series-2026/gloom-brothers.png";
 import redCaseImage from "./images/strong-series-2026/red-case.png";
 import americanPorterImage from "./images/season-beer/american-porter.png";
 import americanPorterDDHImage from "./images/season-beer/american-porter-ddh.png";
-import coreSampleImage from "./images/pepper-sauces/core-sample.png";
+import peatBloodImage from "./images/pepper-sauces/peat-blood.png";
+import weizenbockImage from "./images/season-beer/weizenbock.png";
+import weizendoppelbockImage from "./images/season-beer/doppelbock.png";
+import americanHazyImage from "./images/season-beer/american-hazy.jpg";
+import englishHazyImage from "./images/season-beer/english-hazy.jpg";
 
 let globalIdCounter = 1;
 
@@ -297,7 +299,82 @@ export const beerData: Product[] = generateIds([
     ],
     imageUrl: americanPorterDDHImage
   },
-
+  {
+    category: "SEASON BEER",
+    name: "Goldrush",
+    style: "Weizenbock",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-goldrush/6638614",
+    og: "18.0%",
+    abv: "7.6",
+    ibu: "20",
+    description: "Этот вайценбок — настоящее золото для ценителей плотных сортов пива. В бокале оно разливается глубоким янтарным цветом, обещая богатство вкуса под шапкой плотной, муссовой пены. Его крепость искусно скрыта за сладостью спелых бананов, пряной гвоздикой и мягкими ванильными нотами, создавая сложный и притягательный букет. Пшеничная основа дарит телу невероятную полноту и шелковистую, округлую текстуру, а легкая алкогольная теплота на финише лишь подчеркивает глубину солода.",
+    bottlingDate: "10.03.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "300",
+        remaining: "остаток: 39 шт."
+      }
+    ],
+    imageUrl: weizenbockImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Steamhaze",
+    style: "Weizendoppelbock",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-steamhaze/6638616",
+    og: "22.5%",
+    abv: "10.3",
+    ibu: "20",
+    description: "Представь раннее утро в Баварии: над золотыми полями пшеницы поднимается легкий пар, смешиваясь с утренней дымкой. Это дыхание земли, которое мы поймали и закупорили в бутылку. Вайцендоппельбок, где нет ничего лишнего. Традиционный европейский хмель, отборный пшеничный солод, благородные дрожжи и время. Тело плотное, шелковистое. Легкая алкогольная теплота в финише согревает, как первый луч солнца сквозь туман.",
+    bottlingDate: "11.03.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "320",
+        remaining: "остаток: 35 шт."
+      }
+    ],
+    imageUrl: weizendoppelbockImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Барная Одиссея",
+    style: "English Hazy IPA",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-barnaya-odisseya-2026/6638617",
+    og: "14.0%",
+    abv: "6.8",
+    ibu: "25",
+    description: "Hazy IPA — это бархатистый шторм в мире хмеля. Плотный, мутный, с уютной шапкой пены, он переворачивает представления о пивной прозрачности. Европейские хмели дарят ему не агрессию, а сложную симфонию: здесь и сочное манго, и нежная мякоть абрикоса, и влажный лесной мох с оттенками белых цветов и луговых трав.",
+    bottlingDate: "12.03.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "300",
+        remaining: "остаток: 28 шт."
+      }
+    ],
+    imageUrl: englishHazyImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Лжец",
+    style: "American Hazy IPA",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-lzhec-2026/6638618",
+    og: "14.0%",
+    abv: "6.8",
+    ibu: "25",
+    description: "Hazy IPA — это взрывная волна в мире хмеля. Мутное, как утренний туман над тропическим лесом, с плотной пеной и обволакивающе-мягким телом. Американские хмели создают здесь совершенно иной портрет: это не сдержанность, а ядерный коктейль из сока маракуйи, манго и грейпфрута. Смолистые ноты, сочная цитрусовая цедра, оттенок хвои и сосновой шишки — всё звучит мощно, громко и невероятно сочно.",
+    bottlingDate: "13.03.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "320",
+        remaining: "остаток: 24 шт."
+      }
+    ],
+    imageUrl: americanHazyImage
+  },
 
   // 8TH BIRTHDAY
   {
@@ -559,22 +636,6 @@ export const beerData: Product[] = generateIds([
 export const sauceData: Product[] = generateIds([
   {
     category: "PEPPER SAUCES",
-    name: "Bhut's Embrace",
-    style: "Guava and Tomatoes Pepper Sauce",
-    spiciness: "4/10",
-    description: "Первый глоток — это тропический обман. Нежная сладость гуавы и болгарского перца окутывает, как тёплый ветер. Томатная паста и копчёная паприка создают иллюзию уюта у костра. Наслаждение призрачно - появляются Бхут Джолокия, Скорпион Тринидад и Призрак. Их жар не кричит, а шепчет ледяным пламенем в самое ухо. Розмарин, корица и гвоздика — это не специи, а ритуальные свечи на этом сеансе. Это не соус. Это встреча с призраком вкуса. Состав: пюре гуавы, томатная паста, перец красный болгарский, перец Бхут Джолокия, перец Призрак, перец Скорпион Тринидад, лук, чеснок, розмарин, корица, черный перец, гвоздика, паприка копченая, уксус яблочный, соль морская, сахар тростниковый.",
-    bottlingDate: "30.11.2025",
-    variants: [
-      {
-        volume: "0.2л",
-        price: "600",
-        remaining: "остаток: 2 шт."
-      }
-    ],
-    imageUrl: bhutsEmbraceImage
-  },
-  {
-    category: "PEPPER SAUCES",
     name: "Sun Casket",
     style: "Peaches and Apricots  Pepper Sauce",
     spiciness: "5/10",
@@ -584,7 +645,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 5 шт."
+        remaining: "остаток: 2 шт."
       }
     ],
     imageUrl: sunCasketImage
@@ -600,42 +661,26 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 2 шт."
       }
     ],
     imageUrl: widowsJamImage
   },
   {
     category: "PEPPER SAUCES",
-    name: "Sylvian Reagent",
-    style: "Apple, Citrus, Spruce Pepper Sauce",
-    spiciness: "2/10",
-    description: "Вход в этот лес мягкий. Яблоко и апельсин манят вас по знакомой тропе, ведущей через цитрусовые сады и луковые грядки. Воздух здесь прогрет солнцем. Но чем дальше вы идёте, тем явственнее лес меняется. Пряный розмарин и чеснок переплетаются с корой, и наконец вы слышите дыхание хвои. Пихтовый экстракт и хвойный уксус не кричат, они дышат холодом где-то на периферии, создавая тень. А перцы? Они здесь не палачи. Амарилло и Тринидад — лишь слабые огоньки, освещающие этот лесной сумрак. Они не жгут, они просто показывают вам путь: ваш сад не умер, он просто стал опушкой большого леса. Состав: пюре яблочное, перец Ахи Амарилло, перец Скорпион Тринидад, апельсины, лук, чеснок, розмарин, перец черный, соль морская, мед, уксус хвойный, экстракт пихтовый, масло оливковое.",
-    bottlingDate: "18.02.2026",
-    variants: [
-      {
-        volume: "0.2л",
-        price: "450",
-        remaining: "остаток: 5 шт."
-      }
-    ],
-    imageUrl: sylvianReagentImage
-  },
-  {
-    category: "PEPPER SAUCES",
-    name: "Core Sample",
-    style: "Miso Carolina Reaper Pepper Sauce",
-    spiciness: "7/10",
-    description: "Анализировать его бесполезно. Его нужно пережить. Первый контакт — это не вкус, а геология: вы чувствуете слоистость. Сладковатая горечь тлена (чернослив, томаты), солёно-грибной удар мисо, кислотность уксуса, как грунтовая вода. И только когда ваш язык составил карту этой пустоши, происходит тектонический сдвиг. Из самой глубины образца прорывается Рипер. Его острота — не пламя. Это радиация, оставшаяся после взрыва. Она не жжёт, она пронизывает, заставляя каждый предыдущий слой светиться в темноте мутировавшим, невероятно сложным светом. Состав: чернослив, кофе, томаты вяленные, паста мисо, перец Каролина Рипер Смокед, пиво темное (портер), паприка копченая, дым жидкий, соль морская, уксус виноградный, экстракт свеклы.",
-    bottlingDate: "03.03.2026",
+    name: "Peat Blood",
+    style: "Beet, Pear and Lentils Pepper Sauce",
+    spiciness: "3/10",
+    description: "Это не соус для мяса. Это кровь для земли. Первый вкус — бархатная, обволакивающая тяжесть тёмного солода и свёклы. Вкус влажного верхового торфа, сладковатого и душного. Затем проступает минеральный скелет: пыльность чечевицы и терпкая, смолистая нота можжевельника, холодная и пряная, как дыхание северного леса. Острота Пекина возникает не жаром, а резким контрастом, как луч фонаря в пещере, освещающий древние напластования. Это не приправа. Это палеонтологическая находка. Гастрономический керн. Состав: свекла, груша, чечевица, перец Пекин, пиво темное, лук красный, чеснок, паприка копченая, мало оливковое, ягоды можжевельника, гвоздика, экстракт свеклы, соль морская, мед, уксус хвойный.",
+    bottlingDate: "17.03.2026",
     variants: [
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 5 шт."
       }
     ],
-    imageUrl: coreSampleImage
+    imageUrl: peatBloodImage
   },
 ]);
 
