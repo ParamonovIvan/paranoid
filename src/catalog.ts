@@ -7,7 +7,6 @@ import vanillaOatWineImage from "./images/8th-birthday/vanilla_oat_wine.png";
 import cumberlandImperialStoutImage from "./images/8th-birthday/cumberland_imperial_stout.png";
 import raspberryWildImage from "./images/season-beer/raspberry_wild.png";
 import cherryWildAleImage from "./images/season-beer/cherry_wild.png";
-import strawberryWildImage from "./images/season-beer/strawberry_wild.png";
 import wheatWineImage from "./images/8th-birthday/wheat_wine.png";
 import ddhWheatWineImage from "./images/8th-birthday/ddh_wheat_wine.png";
 import buckWheatWineImage from "./images/8th-birthday/buckwheat_wine.png";
@@ -57,7 +56,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "390",
         packaging: ["бугель"],
-        remaining: "остаток: 10 шт."
+        remaining: "остаток: 9 шт."
       }
     ],
     imageUrl: nightfallImage
@@ -77,7 +76,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "400",
         packaging: ["бугель"],
-        remaining: "остаток: 7 шт."
+        remaining: "остаток: 6 шт."
       },
       {
         volume: "0.75л",
@@ -123,29 +122,10 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 3 шт."
+        remaining: "остаток: 2 шт."
       }
     ],
     imageUrl: cherryWildAleImage
-  },
-  {
-    category: "SEASON BEER",
-    name: "Capsule",
-    style: "Strawberry Wild Ale",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-capsule/6496866",
-    og: "15.5%",
-    abv: "6.9",
-    ibu: "10",
-    description: "Capsule — это пиво-откровение. Под обманчиво нежной плотью клубники скрываются десятки капсул, каждая — сосуд с концентрированной энергией. Дикое брожение взламывает эту защиту, высвобождая не сахарную сладость, а настоящую, земляничную эссенцию. Вкус начинается со вспышки живой, игристой кислинки, которая растворяет привычное, обнажая ядро: плотный, ягодный характер с нотами дикой земляники, древесной коры и влажной земли. Это не напиток, а биологическая капсула с генетическим кодом настоящей клубники.",
-    bottlingDate: "16.11.2025",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "320",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: strawberryWildImage
   },
   {
     category: "SEASON BEER",
@@ -237,7 +217,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "280",
-        remaining: "остаток: 36 шт."
+        remaining: "остаток: 35 шт."
       }
     ],
     imageUrl: gloomBrothersImage
@@ -275,7 +255,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "270",
-        remaining: "остаток: 15 шт."
+        remaining: "остаток: 13 шт."
       }
     ],
     imageUrl: americanPorterImage
@@ -294,7 +274,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 21 шт."
+        remaining: "остаток: 18 шт."
       }
     ],
     imageUrl: americanPorterDDHImage
@@ -313,7 +293,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "300",
-        remaining: "остаток: 38 шт."
+        remaining: "остаток: 35 шт."
       }
     ],
     imageUrl: weizenbockImage
@@ -332,7 +312,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 35 шт."
+        remaining: "остаток: 32 шт."
       }
     ],
     imageUrl: weizendoppelbockImage
@@ -351,7 +331,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "300",
-        remaining: "остаток: 28 шт."
+        remaining: "остаток: 26 шт."
       }
     ],
     imageUrl: englishHazyImage
@@ -370,7 +350,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 24 шт."
+        remaining: "остаток: 21 шт."
       }
     ],
     imageUrl: americanHazyImage
@@ -391,7 +371,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "410",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: grapeAmericanBwImage
@@ -411,7 +391,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 11 шт."
+        remaining: "остаток: 10 шт."
       },
       {
         volume: "0.75л",
@@ -461,7 +441,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       },
       {
         volume: "0.75л",
