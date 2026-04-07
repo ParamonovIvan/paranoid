@@ -354,7 +354,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "350",
-        remaining: "остаток: 14 шт."
+        remaining: "остаток: 12 шт."
       }
     ],
     imageUrl: herbaticaImage
@@ -373,7 +373,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "350",
-        remaining: "остаток: 11 шт."
+        remaining: "остаток: 9 шт."
       }
     ],
     imageUrl: mentholisImage
@@ -392,7 +392,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "360",
-        remaining: "остаток: 12 шт."
+        remaining: "остаток: 10 шт."
       }
     ],
     imageUrl: auratusImage
@@ -411,7 +411,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "360",
-        remaining: "остаток: 16 шт."
+        remaining: "остаток: 14 шт."
       }
     ],
     imageUrl: pinasterImage
@@ -734,7 +734,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "700",
-        remaining: "остаток: 10 шт."
+        remaining: "остаток: 9 шт."
       }
     ],
     imageUrl: warmSlagImage
