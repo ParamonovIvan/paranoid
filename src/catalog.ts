@@ -21,13 +21,17 @@ import polarisImage from "./images/strong-series-2026/polaris.png";
 import nightfallImage from "./images/strong-series-2026/nightfall.png";
 import gloomBrothersImage from "./images/strong-series-2026/gloom-brothers.png";
 import redCaseImage from "./images/strong-series-2026/red-case.png";
-import americanPorterImage from "./images/season-beer/american-porter.png";
 import americanPorterDDHImage from "./images/season-beer/american-porter-ddh.png";
 import peatBloodImage from "./images/pepper-sauces/peat-blood.png";
 import weizenbockImage from "./images/season-beer/weizenbock.png";
 import weizendoppelbockImage from "./images/season-beer/doppelbock.png";
 import americanHazyImage from "./images/season-beer/american-hazy.jpg";
 import englishHazyImage from "./images/season-beer/english-hazy.jpg";
+import herbaticaImage from "./images/season-beer/herbatica.png";
+import mentholisImage from "./images/season-beer/mentholis.png";
+import auratusImage from "./images/season-beer/auratus.png";
+import pinasterImage from  "./images/season-beer/pinaster.png";
+import warmSlagImage from "./images/pepper-sauces/warm-slag.png";
 
 let globalIdCounter = 1;
 
@@ -244,25 +248,6 @@ export const beerData: Product[] = generateIds([
   {
     category: "SEASON BEER",
     name: "American Porter",
-    style: "American Porter",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-american-porter-2026/6622216",
-    og: "16.7%",
-    abv: "6.8",
-    ibu: "22",
-    description: "Насыщенный портер с ярким вкусом кофе и шоколада с изюмом, с оттенками цитрусовых и сочетанием жженой и хмелевой горечи. Во многом похож на английский портер, но обладает более выраженным хмелевым характером и большим содержанием алкоголя.",
-    bottlingDate: "22.02.2026",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "270",
-        remaining: "остаток: 13 шт."
-      }
-    ],
-    imageUrl: americanPorterImage
-  },
-  {
-    category: "SEASON BEER",
-    name: "American Porter",
     style: "DDH American Porter",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-american-porter-ddh-2026/6622217",
     og: "16.7%",
@@ -274,7 +259,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 18 шт."
+        remaining: "остаток: 12 шт."
       }
     ],
     imageUrl: americanPorterDDHImage
@@ -331,7 +316,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "300",
-        remaining: "остаток: 26 шт."
+        remaining: "остаток: 20 шт."
       }
     ],
     imageUrl: englishHazyImage
@@ -350,10 +335,86 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 21 шт."
+        remaining: "остаток: 19 шт."
       }
     ],
     imageUrl: americanHazyImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Herbatica",
+    style: "Imperial Gruit",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-lzhec-2026/6638618",
+    og: "20.0%",
+    abv: "8.4",
+    ibu: "50",
+    description: "Herbatica — это травяной гримуар в мире пива. Без хмеля, но с характером древних эликсиров. Полынь задаёт тон сухой, продолжительной горечью, тысячелистник добавляет землистой глубины, лаванда — прохлады, а шиповник привносит ягодную кислинку и лёгкую терпкость, словно след от дикого леса. Тело плотное, согревающее, финал — сложный, слоёный: горчит, кислит и медленно уходит в травянистое послевкусие. Это пиво не пьют — его читают как старую рукопись, страница за страницей.",
+    bottlingDate: "29.03.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "350",
+        remaining: "остаток: 14 шт."
+      }
+    ],
+    imageUrl: herbaticaImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Mentholis",
+    style: "Mint Imperial Gruit",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-mentholis/6655510",
+    og: "20.0%",
+    abv: "8.4",
+    ibu: "50",
+    description: "Mentholis — это ледяное дыхание в мире пива. Полынь и тысячелистник задают структуру — сухую, горькую, слегка землистую. Лаванда добавляет цветочной прохлады, шиповник — ягодной кислинки и мягкой терпкости. Но главные голоса здесь — мята и эвкалипт. Они врываются холодным ветром, обжигающе свежим, ментоловым, оставляя послевкусие, которое стынет на губах. Алкоголь согревает изнутри, создавая контраст — лёд и пламя в одном бокале. Пейте очень холодным. И не спешите — пусть этот холодный огонь пройдёт по всем рецепторам.",
+    bottlingDate: "29.03.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "350",
+        remaining: "остаток: 11 шт."
+      }
+    ],
+    imageUrl: mentholisImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Auratus",
+    style: "Honey Imperial Gruit",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-auratus/6655513",
+    og: "22.5%",
+    abv: "9.8",
+    ibu: "50",
+    description: "Auratus — это золотая тяжесть в мире пива. Здесь нет хмеля, но есть всё, чтобы выдержать характер. Полынь и тысячелистник задают тон сухой, землистой горечью. Лаванта охлаждает, шиповник добавляет ягодной кислинки и терпкости. А мёд вступает в диалог с этой мощью: он приносит плотную, почти медовую сладость, которая не конфликтует с горечью, а сплетается с ней в сложный, многослойный танец. Финал — долгий, тёплый, с травянистым шлейфом и едва уловимой цветочно-медовой нотой.",
+    bottlingDate: "31.03.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "360",
+        remaining: "остаток: 12 шт."
+      }
+    ],
+    imageUrl: auratusImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Pinaster",
+    style: "Spruce Imperial Gruit",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-pinaster/6655514",
+    og: "22.5%",
+    abv: "9.8",
+    ibu: "70",
+    description: "Pinaster — это смолистое сердце леса в мире пива. Полынь и тысячелистник задают землистую, терпкую основу, лаванда добавляет цветочной прохлады, шиповник — ягодной кислинки. А экстракт пихты входит главным голосом: он приносит плотную, смолистую вязкость, которая обволакивает нёбо и хвойную горечь, которая не отпускает. Мёд смягчает этот дикий напор, добавляя тягучей золотистой сладости, но остаётся на втором плане. Финал — долгий, смолистый, с хвойным шлейфом, который остаётся на языке, как память о прогулке по зимнему бору. Пейте, закрыв глаза. И представьте, что вы в лесу.",
+    bottlingDate: "31.03.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "360",
+        remaining: "остаток: 16 шт."
+      }
+    ],
+    imageUrl: pinasterImage
   },
 
   // 8TH BIRTHDAY
@@ -661,6 +722,22 @@ export const sauceData: Product[] = generateIds([
       }
     ],
     imageUrl: peatBloodImage
+  },
+  {
+    category: "PEPPER SAUCES",
+    name: "Warm Slag",
+    style: "Cherry Chocolate Pepper Sauce",
+    spiciness: "2/10",
+    description: "Это не жидкость. Это вязкий, зернистый шлак — тяжёлый, как дробь. Первое, что вы чувствуете — не остроту. Плотная, обволакивающая масса ореховой и бобовой крошки берёт язык в плен. А следом вступает главное: сладость. Глубокая, тёмная — от шоколада и чернослива. И только затем сквозь неё пробиваются кисловатые жилы — вишня, гранат и лёгкий хвойный отзвук уксуса. Red Savina здесь есть, но не ждите удара молотом. Это остаточное, фоновое тепло. Оно не жжёт — оно просто греет край горла, напоминая, что перец действительно был.",
+    bottlingDate: "06.04.2026",
+    variants: [
+      {
+        volume: "0.2л",
+        price: "700",
+        remaining: "остаток: 10 шт."
+      }
+    ],
+    imageUrl: warmSlagImage
   },
 ]);
 
