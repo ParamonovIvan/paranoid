@@ -5,7 +5,6 @@ import grapeRyeWineImage from "./images/8th-birthday/grape_rye_wine.png";
 import oatWineImage from "./images/8th-birthday/oat_wine.png";
 import vanillaOatWineImage from "./images/8th-birthday/vanilla_oat_wine.png";
 import cumberlandImperialStoutImage from "./images/8th-birthday/cumberland_imperial_stout.png";
-import raspberryWildImage from "./images/season-beer/raspberry_wild.png";
 import cherryWildAleImage from "./images/season-beer/cherry_wild.png";
 import wheatWineImage from "./images/8th-birthday/wheat_wine.png";
 import ddhWheatWineImage from "./images/8th-birthday/ddh_wheat_wine.png";
@@ -13,7 +12,6 @@ import buckWheatWineImage from "./images/8th-birthday/buckwheat_wine.png";
 import buckWheatWineHoneyImage from "./images/8th-birthday/buckwheat_wine_honey.png";
 import sunCasketImage from "./images/pepper-sauces/sun_casket.png";
 import widowsJamImage from "./images/pepper-sauces/widows_jam.png";
-import blondeImage from "./images/season-beer/blonde.png";
 import tripelWithHoneyImage from "./images/season-beer/belgian_tripel _with_honey.png";
 import dubbelImage from "./images/season-beer/dubbel.png";
 import dubbelRaisinImage from "./images/season-beer/dubbel_raisin.png";
@@ -95,25 +93,6 @@ export const beerData: Product[] = generateIds([
   // SEASON BEER
   {
     category: "SEASON BEER",
-    name: "Hive",
-    style: "Raspberry Wild Ale",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-hive/6496863",
-    og: "15.5%",
-    abv: "6.9",
-    ibu: "10",
-    description: "Hive — это не просто пиво с малиной. Это колония вкуса, рожденная в сотах дикого брожения. Каждая ягода — это отдельная капсула с интенсивным, терпким характером, которую дикие дрожжи и бактерии растворяют в единый, невероятно сложный букет. Яркая, живая кислинка танцует на языке, сменяясь глубоким, почти землистым послевкусием. Это пиво — симфония природы, где каждая нота знает свое место в рое.",
-    bottlingDate: "16.11.2025",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "320",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: raspberryWildImage
-  },
-  {
-    category: "SEASON BEER",
     name: "Core",
     style: "Cherry Wild Ale",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-core/6496864",
@@ -133,25 +112,6 @@ export const beerData: Product[] = generateIds([
   },
   {
     category: "SEASON BEER",
-    name: "The Last Farmer's Path",
-    style: "Belgian Blond Ale",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-the-last-farmer-s-path/6496845",
-    og: "15.0%",
-    abv: "7.2",
-    ibu: "20",
-    description: "Тропа, ведущая домой сквозь золочёные закатные поля. Этот бельгийский эль — гимн изящной силе. Под кажущейся лёгкостью и золотистым цветом скрывается уверенная крепость, которая согревает, но не обжигает. Его душа — в пикантной игре дрожжей, дарующей элегантные фруктовые нотки спелого абрикоса и зрелой груши. Лёгкая, травянистая горчинка, словно отзвук хмеля у края поля, деликатно обрамляет вкус, ведя к сухому и удивительно чистому финалу. Мудрый, сложный, обманчиво лёгкий спутник для долгого пути.",
-    bottlingDate: "21.12.2025",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "270",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: blondeImage
-  },
-  {
-    category: "SEASON BEER",
     name: "Abbey’s Golden Verse",
     style: "Belgian Tripel with Honey",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-abbey-s-golden-verse/6582913",
@@ -164,7 +124,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 8 шт."
+        remaining: "остаток: 7 шт."
       }
     ],
     imageUrl: tripelWithHoneyImage
@@ -202,7 +162,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "300",
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: dubbelRaisinImage
@@ -221,7 +181,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "280",
-        remaining: "остаток: 34 шт."
+        remaining: "остаток: 33 шт."
       }
     ],
     imageUrl: gloomBrothersImage
@@ -240,7 +200,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "300",
-        remaining: "остаток: 26 шт."
+        remaining: "остаток: 25 шт."
       }
     ],
     imageUrl: redCaseImage
@@ -259,7 +219,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 11 шт."
+        remaining: "остаток: 10 шт."
       }
     ],
     imageUrl: americanPorterDDHImage
@@ -657,7 +617,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25",
         price: "300",
         packaging: ["воск"],
-        remaining: "остаток: 11 шт."
+        remaining: "остаток: 10 шт."
       },
       {
         volume: "0.45",
