@@ -14,7 +14,6 @@ import sunCasketImage from "./images/pepper-sauces/sun_casket.png";
 import widowsJamImage from "./images/pepper-sauces/widows_jam.png";
 import tripelWithHoneyImage from "./images/season-beer/belgian_tripel _with_honey.png";
 import dubbelImage from "./images/season-beer/dubbel.png";
-import dubbelRaisinImage from "./images/season-beer/dubbel_raisin.png";
 import polarisImage from "./images/strong-series-2026/polaris.png";
 import nightfallImage from "./images/strong-series-2026/nightfall.png";
 import gloomBrothersImage from "./images/strong-series-2026/gloom-brothers.png";
@@ -147,25 +146,6 @@ export const beerData: Product[] = generateIds([
       }
     ],
     imageUrl: dubbelImage
-  },
-  {
-    category: "SEASON BEER",
-    name: "Resin Tear Serenade",
-    style: "Belgian Dubbel with Prunes and Raisin",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-resin-tear-serenade/6590437",
-    og: "18.0%",
-    abv: "9.4",
-    ibu: "20",
-    description: "Погрузитесь в ароматы монастырской трапезной. Глубокий зерновой профиль с нотами карамели и свежеиспечённого хлеба служит основой для щедрого букета спелых тёмных фруктов — изюма, чернослива и чёрного винограда. Тёплое алкогольное послевкусие с лёгким отблеском пряностей завершает этот богатый и согревающий образ.",
-    bottlingDate: "04.02.2026",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "300",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: dubbelRaisinImage
   },
   {
     category: "SEASON BEER",
