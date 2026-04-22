@@ -22,8 +22,6 @@ import americanPorterDDHImage from "./images/season-beer/american-porter-ddh.png
 import peatBloodImage from "./images/pepper-sauces/peat-blood.png";
 import weizenbockImage from "./images/season-beer/weizenbock.png";
 import weizendoppelbockImage from "./images/season-beer/doppelbock.png";
-import americanHazyImage from "./images/season-beer/american-hazy.jpg";
-import englishHazyImage from "./images/season-beer/english-hazy.jpg";
 import herbaticaImage from "./images/season-beer/herbatica.png";
 import mentholisImage from "./images/season-beer/mentholis.png";
 import auratusImage from "./images/season-beer/auratus.png";
@@ -241,44 +239,6 @@ export const beerData: Product[] = generateIds([
       }
     ],
     imageUrl: weizendoppelbockImage
-  },
-  {
-    category: "SEASON BEER",
-    name: "Барная Одиссея",
-    style: "English Hazy IPA",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-barnaya-odisseya-2026/6638617",
-    og: "14.0%",
-    abv: "6.8",
-    ibu: "25",
-    description: "Hazy IPA — это бархатистый шторм в мире хмеля. Плотный, мутный, с уютной шапкой пены, он переворачивает представления о пивной прозрачности. Европейские хмели дарят ему не агрессию, а сложную симфонию: здесь и сочное манго, и нежная мякоть абрикоса, и влажный лесной мох с оттенками белых цветов и луговых трав.",
-    bottlingDate: "12.03.2026",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "300",
-        remaining: "остаток: 16 шт."
-      }
-    ],
-    imageUrl: englishHazyImage
-  },
-  {
-    category: "SEASON BEER",
-    name: "Лжец",
-    style: "American Hazy IPA",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-lzhec-2026/6638618",
-    og: "14.0%",
-    abv: "6.8",
-    ibu: "25",
-    description: "Hazy IPA — это взрывная волна в мире хмеля. Мутное, как утренний туман над тропическим лесом, с плотной пеной и обволакивающе-мягким телом. Американские хмели создают здесь совершенно иной портрет: это не сдержанность, а ядерный коктейль из сока маракуйи, манго и грейпфрута. Смолистые ноты, сочная цитрусовая цедра, оттенок хвои и сосновой шишки — всё звучит мощно, громко и невероятно сочно.",
-    bottlingDate: "13.03.2026",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "320",
-        remaining: "остаток: 14 шт."
-      }
-    ],
-    imageUrl: americanHazyImage
   },
   {
     category: "SEASON BEER",
