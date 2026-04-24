@@ -55,7 +55,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "390",
         packaging: ["бугель"],
-        remaining: "остаток: 8 шт."
+        remaining: "остаток: 5 шт."
       }
     ],
     imageUrl: nightfallImage
@@ -75,7 +75,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "400",
         packaging: ["бугель"],
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 5 шт."
       },
       {
         volume: "0.75л",
@@ -102,7 +102,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: cherryWildAleImage
@@ -197,7 +197,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 10 шт."
+        remaining: "остаток: 5 шт."
       }
     ],
     imageUrl: americanPorterDDHImage
