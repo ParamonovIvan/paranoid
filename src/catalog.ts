@@ -75,7 +75,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "400",
         packaging: ["бугель"],
-        remaining: "остаток: 5 шт."
+        remaining: "остаток: 6 шт."
       },
       {
         volume: "0.75л",
