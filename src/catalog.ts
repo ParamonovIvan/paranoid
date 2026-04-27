@@ -18,7 +18,6 @@ import polarisImage from "./images/strong-series-2026/polaris.png";
 import nightfallImage from "./images/strong-series-2026/nightfall.png";
 import gloomBrothersImage from "./images/strong-series-2026/gloom-brothers.png";
 import redCaseImage from "./images/strong-series-2026/red-case.png";
-import americanPorterDDHImage from "./images/season-beer/american-porter-ddh.png";
 import peatBloodImage from "./images/pepper-sauces/peat-blood.png";
 import weizenbockImage from "./images/season-beer/weizenbock.png";
 import weizendoppelbockImage from "./images/season-beer/doppelbock.png";
@@ -75,7 +74,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "400",
         packaging: ["бугель"],
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 5 шт."
       },
       {
         volume: "0.75л",
@@ -182,25 +181,6 @@ export const beerData: Product[] = generateIds([
       }
     ],
     imageUrl: redCaseImage
-  },
-  {
-    category: "SEASON BEER",
-    name: "American Porter",
-    style: "DDH American Porter",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-american-porter-ddh-2026/6622217",
-    og: "16.7%",
-    abv: "6.8",
-    ibu: "40",
-    description: "Насыщенный портер с ярким вкусом кофе и шоколада с изюмом, с оттенками цитрусовых и сочетанием жженой и хмелевой горечи. Во многом похож на английский портер, но обладает более выраженным хмелевым характером и большим содержанием алкоголя. Для дополнительного аромата на вторичное брожения добавлен американский хмель Cascade.",
-    bottlingDate: "22.02.2026",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "280",
-        remaining: "остаток: 5 шт."
-      }
-    ],
-    imageUrl: americanPorterDDHImage
   },
   {
     category: "SEASON BEER",
@@ -382,7 +362,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.75л",
         price: "810",
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: grapeRyeWineImage
@@ -432,7 +412,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.75л",
         price: "810",
-        remaining: "остаток: 3 шт."
+        remaining: "остаток: 2 шт."
       }
     ],
     imageUrl: vanillaOatWineImage
@@ -457,7 +437,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.75л",
         price: "810",
-        remaining: "остаток: 3 шт."
+        remaining: "остаток: 2 шт."
       }
     ],
     imageUrl: cumberlandImperialStoutImage
@@ -479,11 +459,6 @@ export const beerData: Product[] = generateIds([
         packaging: ["воск"],
         remaining: "остаток: 4 шт."
       },
-      {
-        volume: "0.75л",
-        price: "800",
-        remaining: "остаток: 1 шт."
-      }
     ],
     imageUrl: wheatWineImage
   },
@@ -567,7 +542,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.75л",
         price: "840",
-        remaining: "остаток: 5 шт."
+        remaining: "остаток: 4 шт."
       }
     ],
     imageUrl: buckWheatWineHoneyImage
