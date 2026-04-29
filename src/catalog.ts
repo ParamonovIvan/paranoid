@@ -5,7 +5,6 @@ import grapeRyeWineImage from "./images/8th-birthday/grape_rye_wine.png";
 import oatWineImage from "./images/8th-birthday/oat_wine.png";
 import vanillaOatWineImage from "./images/8th-birthday/vanilla_oat_wine.png";
 import cumberlandImperialStoutImage from "./images/8th-birthday/cumberland_imperial_stout.png";
-import cherryWildAleImage from "./images/season-beer/cherry_wild.png";
 import wheatWineImage from "./images/8th-birthday/wheat_wine.png";
 import ddhWheatWineImage from "./images/8th-birthday/ddh_wheat_wine.png";
 import buckWheatWineImage from "./images/8th-birthday/buckwheat_wine.png";
@@ -87,25 +86,6 @@ export const beerData: Product[] = generateIds([
 
 
   // SEASON BEER
-  {
-    category: "SEASON BEER",
-    name: "Core",
-    style: "Cherry Wild Ale",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-core/6496864",
-    og: "15.5%",
-    abv: "6.9",
-    ibu: "10",
-    description: "Core — это не просто пиво с вишней. Это погружение в самый эпицентр вкуса, к раскаленному реактору, где дикое брожение высвобождает всю мощь ягоды. Темная, почти чернильная вишня раскрывается не сладостью, а интенсивной терпкостью и глубокой фруктовой глубиной. Живая, пикантная кислинка — как разряд энергии, пронизывающий плотное тело эля, чтобы обнажить его сложную, почти минеральную сердцевину. Это пиво — источник, чья сила остается с вами долгим, сухим и вишневым шлейфом.",
-    bottlingDate: "16.11.2025",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "320",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: cherryWildAleImage
-  },
   {
     category: "SEASON BEER",
     name: "Abbey’s Golden Verse",
@@ -196,7 +176,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "300",
-        remaining: "остаток: 31 шт."
+        remaining: "остаток: 30 шт."
       }
     ],
     imageUrl: weizenbockImage
@@ -234,7 +214,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "350",
-        remaining: "остаток: 5 шт."
+        remaining: "остаток: 4 шт."
       }
     ],
     imageUrl: herbaticaImage
@@ -253,7 +233,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "350",
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: mentholisImage
@@ -272,7 +252,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "360",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: auratusImage
@@ -291,7 +271,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "360",
-        remaining: "остаток: 8 шт."
+        remaining: "остаток: 6 шт."
       }
     ],
     imageUrl: pinasterImage
