@@ -21,8 +21,6 @@ import peatBloodImage from "./images/pepper-sauces/peat-blood.png";
 import weizenbockImage from "./images/season-beer/weizenbock.png";
 import weizendoppelbockImage from "./images/season-beer/doppelbock.png";
 import herbaticaImage from "./images/season-beer/herbatica.png";
-import mentholisImage from "./images/season-beer/mentholis.png";
-import auratusImage from "./images/season-beer/auratus.png";
 import pinasterImage from  "./images/season-beer/pinaster.png";
 import warmSlagImage from "./images/pepper-sauces/warm-slag.png";
 
@@ -73,7 +71,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "400",
         packaging: ["бугель"],
-        remaining: "остаток: 5 шт."
+        remaining: "остаток: 4 шт."
       },
       {
         volume: "0.75л",
@@ -100,7 +98,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 7 шт."
+        remaining: "остаток: 6 шт."
       }
     ],
     imageUrl: tripelWithHoneyImage
@@ -119,7 +117,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "290",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: dubbelImage
@@ -138,7 +136,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "280",
-        remaining: "остаток: 33 шт."
+        remaining: "остаток: 25 шт."
       }
     ],
     imageUrl: gloomBrothersImage
@@ -157,7 +155,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "300",
-        remaining: "остаток: 25 шт."
+        remaining: "остаток: 15 шт."
       }
     ],
     imageUrl: redCaseImage
@@ -176,7 +174,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "300",
-        remaining: "остаток: 30 шт."
+        remaining: "остаток: 26 шт."
       }
     ],
     imageUrl: weizenbockImage
@@ -195,7 +193,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 27 шт."
+        remaining: "остаток: 25 шт."
       }
     ],
     imageUrl: weizendoppelbockImage
@@ -214,48 +212,10 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "350",
-        remaining: "остаток: 4 шт."
-      }
-    ],
-    imageUrl: herbaticaImage
-  },
-  {
-    category: "SEASON BEER",
-    name: "Mentholis",
-    style: "Mint Imperial Gruit",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-mentholis/6655510",
-    og: "20.0%",
-    abv: "8.4",
-    ibu: "50",
-    description: "Mentholis — это ледяное дыхание в мире пива. Полынь и тысячелистник задают структуру — сухую, горькую, слегка землистую. Лаванда добавляет цветочной прохлады, шиповник — ягодной кислинки и мягкой терпкости. Но главные голоса здесь — мята и эвкалипт. Они врываются холодным ветром, обжигающе свежим, ментоловым, оставляя послевкусие, которое стынет на губах. Алкоголь согревает изнутри, создавая контраст — лёд и пламя в одном бокале. Пейте очень холодным. И не спешите — пусть этот холодный огонь пройдёт по всем рецепторам.",
-    bottlingDate: "29.03.2026",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "350",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: mentholisImage
-  },
-  {
-    category: "SEASON BEER",
-    name: "Auratus",
-    style: "Honey Imperial Gruit",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-auratus/6655513",
-    og: "22.5%",
-    abv: "9.8",
-    ibu: "50",
-    description: "Auratus — это золотая тяжесть в мире пива. Здесь нет хмеля, но есть всё, чтобы выдержать характер. Полынь и тысячелистник задают тон сухой, землистой горечью. Лаванта охлаждает, шиповник добавляет ягодной кислинки и терпкости. А мёд вступает в диалог с этой мощью: он приносит плотную, почти медовую сладость, которая не конфликтует с горечью, а сплетается с ней в сложный, многослойный танец. Финал — долгий, тёплый, с травянистым шлейфом и едва уловимой цветочно-медовой нотой.",
-    bottlingDate: "31.03.2026",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "360",
         remaining: "остаток: 3 шт."
       }
     ],
-    imageUrl: auratusImage
+    imageUrl: herbaticaImage
   },
   {
     category: "SEASON BEER",
@@ -271,7 +231,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "360",
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: pinasterImage
@@ -412,7 +372,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 2 шт."
       },
       {
         volume: "0.75л",
