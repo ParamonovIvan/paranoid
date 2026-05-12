@@ -17,7 +17,6 @@ import polarisImage from "./images/strong-series-2026/polaris.png";
 import nightfallImage from "./images/strong-series-2026/nightfall.png";
 import gloomBrothersImage from "./images/strong-series-2026/gloom-brothers.png";
 import redCaseImage from "./images/strong-series-2026/red-case.png";
-import peatBloodImage from "./images/pepper-sauces/peat-blood.png";
 import weizenbockImage from "./images/season-beer/weizenbock.png";
 import weizendoppelbockImage from "./images/season-beer/doppelbock.png";
 import herbaticaImage from "./images/season-beer/herbatica.png";
@@ -71,7 +70,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "400",
         packaging: ["бугель"],
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       },
       {
         volume: "0.75л",
@@ -98,7 +97,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 5 шт."
       }
     ],
     imageUrl: tripelWithHoneyImage
@@ -117,7 +116,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "290",
-        remaining: "остаток: 3 шт."
+        remaining: "остаток: 2 шт."
       }
     ],
     imageUrl: dubbelImage
@@ -136,7 +135,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "280",
-        remaining: "остаток: 25 шт."
+        remaining: "остаток: 24 шт."
       }
     ],
     imageUrl: gloomBrothersImage
@@ -174,7 +173,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "300",
-        remaining: "остаток: 26 шт."
+        remaining: "остаток: 27 шт."
       }
     ],
     imageUrl: weizenbockImage
@@ -193,7 +192,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 25 шт."
+        remaining: "остаток: 23 шт."
       }
     ],
     imageUrl: weizendoppelbockImage
@@ -212,7 +211,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "350",
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: herbaticaImage
@@ -231,7 +230,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "360",
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: pinasterImage
@@ -524,22 +523,6 @@ export const sauceData: Product[] = generateIds([
   },
   {
     category: "PEPPER SAUCES",
-    name: "Peat Blood",
-    style: "Beet, Pear and Lentils Pepper Sauce",
-    spiciness: "3/10",
-    description: "Это не соус для мяса. Это кровь для земли. Первый вкус — бархатная, обволакивающая тяжесть тёмного солода и свёклы. Вкус влажного верхового торфа, сладковатого и душного. Затем проступает минеральный скелет: пыльность чечевицы и терпкая, смолистая нота можжевельника, холодная и пряная, как дыхание северного леса. Острота Пекина возникает не жаром, а резким контрастом, как луч фонаря в пещере, освещающий древние напластования. Это не приправа. Это палеонтологическая находка. Гастрономический керн. Состав: свекла, груша, чечевица, перец Пекин, пиво темное, лук красный, чеснок, паприка копченая, мало оливковое, ягоды можжевельника, гвоздика, экстракт свеклы, соль морская, мед, уксус хвойный.",
-    bottlingDate: "17.03.2026",
-    variants: [
-      {
-        volume: "0.2л",
-        price: "600",
-        remaining: "остаток: 4 шт."
-      }
-    ],
-    imageUrl: peatBloodImage
-  },
-  {
-    category: "PEPPER SAUCES",
     name: "Warm Slag",
     style: "Cherry Chocolate Pepper Sauce",
     spiciness: "2/10",
@@ -549,7 +532,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "700",
-        remaining: "остаток: 7 шт."
+        remaining: "остаток: 5 шт."
       }
     ],
     imageUrl: warmSlagImage
