@@ -9,19 +9,17 @@ import wheatWineImage from "./images/8th-birthday/wheat_wine.png";
 import ddhWheatWineImage from "./images/8th-birthday/ddh_wheat_wine.png";
 import buckWheatWineImage from "./images/8th-birthday/buckwheat_wine.png";
 import buckWheatWineHoneyImage from "./images/8th-birthday/buckwheat_wine_honey.png";
-import sunCasketImage from "./images/pepper-sauces/sun_casket.png";
 import widowsJamImage from "./images/pepper-sauces/widows_jam.png";
 import tripelWithHoneyImage from "./images/season-beer/belgian_tripel _with_honey.png";
-import dubbelImage from "./images/season-beer/dubbel.png";
 import polarisImage from "./images/strong-series-2026/polaris.png";
 import nightfallImage from "./images/strong-series-2026/nightfall.png";
 import gloomBrothersImage from "./images/strong-series-2026/gloom-brothers.png";
 import redCaseImage from "./images/strong-series-2026/red-case.png";
 import weizenbockImage from "./images/season-beer/weizenbock.png";
 import weizendoppelbockImage from "./images/season-beer/doppelbock.png";
-import herbaticaImage from "./images/season-beer/herbatica.png";
-import pinasterImage from  "./images/season-beer/pinaster.png";
+import eveningFluffImage from "./images/season-beer/evening_fluff.png";
 import warmSlagImage from "./images/pepper-sauces/warm-slag.png";
+import vagabondsImage from "./images/season-beer/vagabonds.png";
 
 let globalIdCounter = 1;
 
@@ -97,29 +95,10 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 5 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: tripelWithHoneyImage
-  },
-  {
-    category: "SEASON BEER",
-    name: "Bruges Bazaar",
-    style: "Belgian Dubbel",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-bruges-bazaar/6588871",
-    og: "18.0%",
-    abv: "9.2",
-    ibu: "20",
-    description: "Благородное бельгийское пиво с превосходным сочетанием зернового вкуса и мощных эфиров, придающих вкусу и аромату оттенки изюма, чернослива и сладкого черного винограда. На фоне - хорошая пряность, возникающая благодаря фенольным соединениям и повышенному содержанию алкоголя.",
-    bottlingDate: "02.02.2026",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "290",
-        remaining: "остаток: 2 шт."
-      }
-    ],
-    imageUrl: dubbelImage
   },
   {
     category: "SEASON BEER",
@@ -154,7 +133,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "300",
-        remaining: "остаток: 15 шт."
+        remaining: "остаток: 13 шт."
       }
     ],
     imageUrl: redCaseImage
@@ -192,48 +171,48 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 23 шт."
+        remaining: "остаток: 21 шт."
       }
     ],
     imageUrl: weizendoppelbockImage
   },
   {
     category: "SEASON BEER",
-    name: "Herbatica",
-    style: "Imperial Gruit",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-lzhec-2026/6638618",
-    og: "20.0%",
-    abv: "8.4",
+    name: "Vagabonds",
+    style: "Saigan Dailya Gruit",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-vagabonds/6698836",
+    og: "18.0%",
+    abv: "8.6",
     ibu: "50",
-    description: "Herbatica — это травяной гримуар в мире пива. Без хмеля, но с характером древних эликсиров. Полынь задаёт тон сухой, продолжительной горечью, тысячелистник добавляет землистой глубины, лаванда — прохлады, а шиповник привносит ягодную кислинку и лёгкую терпкость, словно след от дикого леса. Тело плотное, согревающее, финал — сложный, слоёный: горчит, кислит и медленно уходит в травянистое послевкусие. Это пиво не пьют — его читают как старую рукопись, страница за страницей.",
-    bottlingDate: "29.03.2026",
+    description: "Грюйт — это пиво, каким его знали до эпохи хмеля, и наш новый рецепт уводит вас далеко за пределы европейской традиции — в самое сердце Сибири. В данной версии мы используем саган-дайля — траву, продлевающую жизнь, как говорят легенды. Во вкусе терпкая пикантность тысячелистника и благородная горечь полыни сплетаются с хвойно-цитрусовой свежестью саган-дайля, а лаванда добавляет цветочный бриз. Дерзко, дико, свежо.",
+    bottlingDate: "04.05.2026",
     variants: [
       {
         volume: "0.45л",
         price: "350",
-        remaining: "остаток: 1 шт."
+        remaining: "остаток: 16 шт."
       }
     ],
-    imageUrl: herbaticaImage
+    imageUrl: vagabondsImage
   },
   {
     category: "SEASON BEER",
-    name: "Pinaster",
-    style: "Spruce Imperial Gruit",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-pinaster/6655514",
-    og: "22.5%",
-    abv: "9.8",
-    ibu: "70",
-    description: "Pinaster — это смолистое сердце леса в мире пива. Полынь и тысячелистник задают землистую, терпкую основу, лаванда добавляет цветочной прохлады, шиповник — ягодной кислинки. А экстракт пихты входит главным голосом: он приносит плотную, смолистую вязкость, которая обволакивает нёбо и хвойную горечь, которая не отпускает. Мёд смягчает этот дикий напор, добавляя тягучей золотистой сладости, но остаётся на втором плане. Финал — долгий, смолистый, с хвойным шлейфом, который остаётся на языке, как память о прогулке по зимнему бору. Пейте, закрыв глаза. И представьте, что вы в лесу.",
-    bottlingDate: "31.03.2026",
+    name: "Evening Fluff",
+    style: "Dandelion Gruit",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-evening-fluff/6698837",
+    og: "18.0%",
+    abv: "8.6",
+    ibu: "60",
+    description: "Грюйт — это пиво, каким его знали до эпохи хмеля. Мы собрали воедино дикие травы и коренья, чтобы создать глубокий, многогранный профиль. Во вкусе доминирует терпкая пикантность тысячелистника и горчинка одуванчика, которые сплетаются с благородной горечью полыни. Лаванда добавляет неожиданный цветочный бриз в послевкусии, унося прочь тяжесть. Идеально для тех, кто устал от IPA и ищет связь с природой.",
+    bottlingDate: "04.05.2026",
     variants: [
       {
         volume: "0.45л",
-        price: "360",
-        remaining: "остаток: 1 шт."
+        price: "350",
+        remaining: "остаток: 15 шт."
       }
     ],
-    imageUrl: pinasterImage
+    imageUrl: eveningFluffImage
   },
 
   // 8TH BIRTHDAY
@@ -251,7 +230,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "410",
-        remaining: "остаток: 3 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: grapeAmericanBwImage
@@ -474,11 +453,6 @@ export const beerData: Product[] = generateIds([
         remaining: "остаток: 10 шт."
       },
       {
-        volume: "0.45",
-        price: "500",
-        remaining: "остаток: 2 шт."
-      },
-      {
         volume: "0.75л",
         price: "840",
         remaining: "остаток: 4 шт."
@@ -489,22 +463,6 @@ export const beerData: Product[] = generateIds([
 ]);
 
 export const sauceData: Product[] = generateIds([
-  {
-    category: "PEPPER SAUCES",
-    name: "Sun Casket",
-    style: "Peaches and Apricots  Pepper Sauce",
-    spiciness: "5/10",
-    description: "Мы не варили соус. Мы запечатали лето в золотом ковчеге. Мякоть персиков и абрикосов, сладость моркови — это запертый внутри свет. Но в самом сердце этого солнца таится пламя — Pimenta Caixo и Scorpion Moruga Trinidad. Острота — не крик, а долгое, согревающее эхо августовского полдня. Это не соус, это шкатулка с последним лучом лета. Состав: абрикосы, персики, перец Кайшу, перец Скорпион Тринидад, лук, морковь, имбирь, корица, черный перец, уксус яблочный, соль морская.",
-    bottlingDate: "14.12.2025",
-    variants: [
-      {
-        volume: "0.2л",
-        price: "600",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: sunCasketImage
-  },
   {
     category: "PEPPER SAUCES",
     name: "Widow's Jam",
