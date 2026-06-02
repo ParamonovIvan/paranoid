@@ -152,7 +152,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "300",
-        remaining: "остаток: 12 шт."
+        remaining: "остаток: 8 шт."
       }
     ],
     imageUrl: weizenbockImage
@@ -275,7 +275,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 4 шт."
       }
     ],
     imageUrl: grapeRyeWineImage
@@ -320,7 +320,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 4 шт."
       },
       {
         volume: "0.75л",
@@ -341,12 +341,6 @@ export const beerData: Product[] = generateIds([
     description: "Аристократ с тёмной душой, ягодным сердцем и чемпионским титулом. Этот имперский стаут — не просто эксперимент, а проверенная временем формула успеха, завоевавшая высшую награду в категории тёмных сортов на фестивале в Санкт-Петербурге. Мы взяли основу классического стаута и призвали в союзники малину Кумберленд. Это не фруктовый десерт — это сложный диалог, где мощь жжёного солода и горького шоколада ведёт утончённую беседу с глубокими, винными нотами вяленой ягоды.",
     bottlingDate: "17.11.2025",
     variants: [
-      {
-        volume: "0.33",
-        price: "360",
-        packaging: ["воск"],
-        remaining: "остаток: 2 шт."
-      },
       {
         volume: "0.75л",
         price: "810",
@@ -370,7 +364,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 2 шт."
       },
     ],
     imageUrl: wheatWineImage
