@@ -4,7 +4,6 @@ import ryeWineImage from "./images/8th-birthday/rye_wine.png";
 import grapeRyeWineImage from "./images/8th-birthday/grape_rye_wine.png";
 import oatWineImage from "./images/8th-birthday/oat_wine.png";
 import vanillaOatWineImage from "./images/8th-birthday/vanilla_oat_wine.png";
-import cumberlandImperialStoutImage from "./images/8th-birthday/cumberland_imperial_stout.png";
 import wheatWineImage from "./images/8th-birthday/wheat_wine.png";
 import ddhWheatWineImage from "./images/8th-birthday/ddh_wheat_wine.png";
 import buckWheatWineImage from "./images/8th-birthday/buckwheat_wine.png";
@@ -20,6 +19,7 @@ import weizendoppelbockImage from "./images/season-beer/doppelbock.png";
 import eveningFluffImage from "./images/season-beer/evening_fluff.png";
 import warmSlagImage from "./images/pepper-sauces/warm-slag.png";
 import vagabondsImage from "./images/season-beer/vagabonds.png";
+import bootsImage from "./images/collaboration/boots.png";
 
 let globalIdCounter = 1;
 
@@ -77,6 +77,28 @@ export const beerData: Product[] = generateIds([
       },
     ],
     imageUrl: polarisImage
+  },
+
+
+  // COLLABORATION
+  {
+    category: "COLLABORATION",
+    name: "The Boots",
+    style: "Double Stout",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-the-boots/6698834",
+    og: "24.0%",
+    abv: "9.0",
+    ibu: "30",
+    description: "Темный фруктовый эль с добавлением сока малины. Обладает приятным малиновым вкусом, с легкой горчинкой. Сочетание жженого солода с сочностью малины и тонкой ягодной кислинкой придает элю неповторимый вкус и аромат. Сварено на экспериментальной пивоварне Грейнрус (Alchemist Brew Lab) в г. Москва.",
+    bottlingDate: "04.05.2026",
+    variants: [
+      {
+        volume: "0.5л",
+        price: "500",
+        remaining: "остаток: 40 шт."
+      }
+    ],
+    imageUrl: bootsImage
   },
 
 
@@ -329,25 +351,6 @@ export const beerData: Product[] = generateIds([
       }
     ],
     imageUrl: vanillaOatWineImage
-  },
-  {
-    category: "8TH BIRTHDAY",
-    name: "Cumberland Imperial Stout",
-    style: "Cumberland Imperial Stout",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-cumberland-imperial-stout-2025/6496861",
-    og: "23.5%",
-    abv: "9.3",
-    ibu: "40",
-    description: "Аристократ с тёмной душой, ягодным сердцем и чемпионским титулом. Этот имперский стаут — не просто эксперимент, а проверенная временем формула успеха, завоевавшая высшую награду в категории тёмных сортов на фестивале в Санкт-Петербурге. Мы взяли основу классического стаута и призвали в союзники малину Кумберленд. Это не фруктовый десерт — это сложный диалог, где мощь жжёного солода и горького шоколада ведёт утончённую беседу с глубокими, винными нотами вяленой ягоды.",
-    bottlingDate: "17.11.2025",
-    variants: [
-      {
-        volume: "0.75л",
-        price: "810",
-        remaining: "остаток: 2 шт."
-      }
-    ],
-    imageUrl: cumberlandImperialStoutImage
   },
   {
     category: "8TH BIRTHDAY",
