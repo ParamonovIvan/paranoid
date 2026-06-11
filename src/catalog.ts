@@ -20,6 +20,9 @@ import eveningFluffImage from "./images/season-beer/evening_fluff.png";
 import warmSlagImage from "./images/pepper-sauces/warm-slag.png";
 import vagabondsImage from "./images/season-beer/vagabonds.png";
 import bootsImage from "./images/collaboration/boots.png";
+import cucumberGoseImage from "./images/season-beer/cucumber.png";
+import cucumberGoseMintImage from "./images/season-beer/cucumber_mint.png";
+import paleBiteImage from "./images/pepper-sauces/pale_bite.png";
 
 let globalIdCounter = 1;
 
@@ -95,7 +98,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.5л",
         price: "500",
-        remaining: "остаток: 40 шт."
+        remaining: "остаток: 23 шт."
       }
     ],
     imageUrl: bootsImage
@@ -235,6 +238,44 @@ export const beerData: Product[] = generateIds([
       }
     ],
     imageUrl: eveningFluffImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Cucumber Gose",
+    style: "Vegetable Gose",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-cucumber-gose-2026/6745017",
+    og: "13.1%",
+    abv: "5.1",
+    ibu: "10",
+    description: "Огуречный гозе зеленого цвета, сваренный с гималайской солью, кориандром, цедрой и соком лимона и лайма.",
+    bottlingDate: "09.06.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "350",
+        remaining: "остаток: 11 шт."
+      }
+    ],
+    imageUrl: cucumberGoseImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Cucumber Gose (Mint Edition)",
+    style: "Vegetable Gose",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-cucumber-gose-mint-edition-2026/6745018",
+    og: "13.1%",
+    abv: "5.1",
+    ibu: "10",
+    description: "Огуречный гозе зеленого цвета, сваренный с гималайской солью, кориандром, цедрой и соком лимона и лайма и приправленный мятой.",
+    bottlingDate: "09.06.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "350",
+        remaining: "остаток: 14 шт."
+      }
+    ],
+    imageUrl: cucumberGoseMintImage
   },
 
   // 8TH BIRTHDAY
@@ -486,6 +527,22 @@ export const sauceData: Product[] = generateIds([
       }
     ],
     imageUrl: warmSlagImage
+  },
+  {
+    category: "PEPPER SAUCES",
+    name: "Pale Bite",
+    style: "Coconut Garlic Pepper Sauce",
+    spiciness: "2/10",
+    description: "Он не ступает, он плывёт. Он не кричит, он шепчет. «Pale Bite» — это призрак в белом саване, застывший на пороге. Первое прикосновение — обманчиво нежное: сливочный шёпот кокоса и холодный, почти медитативный укус чеснока. Но не верь тишине. В глубине этой белой дымки дышит жаром Хабанеро — медленный, тягучий огонь, который не обжигает, а прорастает изнутри, как память о ещё не сделанном шаге. Состав: кокосовое молоко, чеснок, уксус белый винный, соль, сахар, мед, перец Хабанеро Оранж, ксантановая камедь.",
+    bottlingDate: "10.06.2026",
+    variants: [
+      {
+        volume: "0.2л",
+        price: "600",
+        remaining: "остаток: 12 шт."
+      }
+    ],
+    imageUrl: paleBiteImage
   },
 ]);
 
