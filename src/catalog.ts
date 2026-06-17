@@ -23,6 +23,9 @@ import bootsImage from "./images/collaboration/boots.png";
 import cucumberGoseImage from "./images/season-beer/cucumber.png";
 import cucumberGoseMintImage from "./images/season-beer/cucumber_mint.png";
 import paleBiteImage from "./images/pepper-sauces/pale_bite.png";
+import smokedTomatoGoseImage from "./images/season-beer/smoked_tomato_gose.png";
+import basilOreganoImage from "./images/season-beer/basil_oregano.png";
+import basilOreganoHeImage from "./images/season-beer/basil_oregano_he.png";
 
 let globalIdCounter = 1;
 
@@ -51,7 +54,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "390",
         packaging: ["бугель"],
-        remaining: "остаток: 3 шт."
+        remaining: "остаток: 2 шт."
       }
     ],
     imageUrl: nightfallImage
@@ -98,7 +101,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.5л",
         price: "500",
-        remaining: "остаток: 20 шт."
+        remaining: "остаток: 18 шт."
       }
     ],
     imageUrl: bootsImage
@@ -120,7 +123,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 3 шт."
+        remaining: "остаток: 2 шт."
       }
     ],
     imageUrl: tripelWithHoneyImage
@@ -139,7 +142,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "280",
-        remaining: "остаток: 23 шт."
+        remaining: "остаток: 22 шт."
       }
     ],
     imageUrl: gloomBrothersImage
@@ -158,7 +161,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "300",
-        remaining: "остаток: 14 шт."
+        remaining: "остаток: 13 шт."
       }
     ],
     imageUrl: redCaseImage
@@ -177,7 +180,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "300",
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 2 шт."
       }
     ],
     imageUrl: weizenbockImage
@@ -196,7 +199,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 17 шт."
+        remaining: "остаток: 13 шт."
       }
     ],
     imageUrl: weizendoppelbockImage
@@ -215,7 +218,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "350",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: vagabondsImage
@@ -234,7 +237,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "350",
-        remaining: "остаток: 10 шт."
+        remaining: "остаток: 9 шт."
       }
     ],
     imageUrl: eveningFluffImage
@@ -276,6 +279,63 @@ export const beerData: Product[] = generateIds([
       }
     ],
     imageUrl: cucumberGoseMintImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Dangerous Astrotomato",
+    style: "Oregano and Basil Tomato Gose",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-dangerous-astrotomato/6752607",
+    og: "12.5%",
+    abv: "5.5",
+    ibu: "10",
+    description: "Томатное пиво с добавлением базилика, орегано, чеснока, оливок, гималайской соли, кориандра и копчёной паприки.",
+    bottlingDate: "15.06.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "320",
+        remaining: "остаток: 1 шт."
+      }
+    ],
+    imageUrl: basilOreganoImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Dangerous Astrotomato (Hot Edition)",
+    style: "Oregano and Basil Tomato Gose",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-dangerous-astrotomato-hot-edition-2026/6752609",
+    og: "12.5%",
+    abv: "5.5",
+    ibu: "10",
+    description: "Томатное пиво с добавлением базилика, орегано, чеснока, оливок, гималайской соли, кориандра, копчёной паприки и острого перца Скорпион Тринидад.",
+    bottlingDate: "15.06.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "320",
+        remaining: "остаток: 3 шт."
+      }
+    ],
+    imageUrl: basilOreganoHeImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Smoked Tomato Gose",
+    style: "Smoked Tomato Gose",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-smoked-tomato-gose-2026/6753496",
+    og: "12.5%",
+    abv: "5.5",
+    ibu: "10",
+    description: "Легкий томатный гозе, сваренный с добавлением копчёной паприки и жидкого дыма. Яркий копченый вкус делает это пиво прекрасным дополнением к мясу.",
+    bottlingDate: "16.06.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "320",
+        remaining: "остаток: 11 шт."
+      }
+    ],
+    imageUrl: smokedTomatoGoseImage
   },
 
   // 8TH BIRTHDAY
@@ -533,7 +593,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 10 шт."
+        remaining: "остаток: 9 шт."
       }
     ],
     imageUrl: paleBiteImage

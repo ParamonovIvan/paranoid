@@ -13,7 +13,7 @@ createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ConfigProvider theme={themeConfig}>
       <Provider store={store}>
-        <App />
+        <App/>
       </Provider>
     </ConfigProvider>
   </StrictMode>

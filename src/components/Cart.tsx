@@ -43,7 +43,7 @@ const Cart: FC<CartProps> = ({ open, onClose }) => {
     const orderLines = items.map(item => {
       let emoji = "📦";
 
-      if (item.category.includes("BEER") || item.category.includes("STRONG") || item.category.includes("BIRTHDAY")) {
+      if (item.category.includes("BEER") || item.category.includes("STRONG") || item.category.includes("BIRTHDAY") || item.category.includes("COLLABORATION")) {
         emoji = "🍺";
       } else if (item.category.includes("SAUCE")) {
         emoji = "🌶️";
