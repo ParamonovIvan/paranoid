@@ -24,7 +24,6 @@ import cucumberGoseImage from "./images/season-beer/cucumber.png";
 import cucumberGoseMintImage from "./images/season-beer/cucumber_mint.png";
 import paleBiteImage from "./images/pepper-sauces/pale_bite.png";
 import smokedTomatoGoseImage from "./images/season-beer/smoked_tomato_gose.png";
-import basilOreganoImage from "./images/season-beer/basil_oregano.png";
 import basilOreganoHeImage from "./images/season-beer/basil_oregano_he.png";
 
 let globalIdCounter = 1;
@@ -101,7 +100,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.5л",
         price: "500",
-        remaining: "остаток: 18 шт."
+        remaining: "остаток: 17 шт."
       }
     ],
     imageUrl: bootsImage
@@ -282,25 +281,6 @@ export const beerData: Product[] = generateIds([
   },
   {
     category: "SEASON BEER",
-    name: "Dangerous Astrotomato",
-    style: "Oregano and Basil Tomato Gose",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-dangerous-astrotomato/6752607",
-    og: "12.5%",
-    abv: "5.5",
-    ibu: "10",
-    description: "Томатное пиво с добавлением базилика, орегано, чеснока, оливок, гималайской соли, кориандра и копчёной паприки.",
-    bottlingDate: "15.06.2026",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "320",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: basilOreganoImage
-  },
-  {
-    category: "SEASON BEER",
     name: "Dangerous Astrotomato (Hot Edition)",
     style: "Oregano and Basil Tomato Gose",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-dangerous-astrotomato-hot-edition-2026/6752609",
@@ -313,7 +293,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 3 шт."
+        remaining: "остаток: 2 шт."
       }
     ],
     imageUrl: basilOreganoHeImage
@@ -332,7 +312,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 11 шт."
+        remaining: "остаток: 10 шт."
       }
     ],
     imageUrl: smokedTomatoGoseImage
