@@ -166,4 +166,10 @@ export const achievements: Achievement[] = [
     location: "г. Екатеринбург",
     medal: "gold"
   },
+  {
+    date: "20.06.2026",
+    event: "Lobotomy Day",
+    result: "участник",
+    location: "г. Санкт-Петербург"
+  },
 ];
