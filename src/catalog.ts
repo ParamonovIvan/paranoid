@@ -14,7 +14,6 @@ import polarisImage from "./images/strong-series-2026/polaris.png";
 import nightfallImage from "./images/strong-series-2026/nightfall.png";
 import gloomBrothersImage from "./images/strong-series-2026/gloom-brothers.png";
 import redCaseImage from "./images/strong-series-2026/red-case.png";
-import weizenbockImage from "./images/season-beer/weizenbock.png";
 import weizendoppelbockImage from "./images/season-beer/doppelbock.png";
 import eveningFluffImage from "./images/season-beer/evening_fluff.png";
 import warmSlagImage from "./images/pepper-sauces/warm-slag.png";
@@ -100,7 +99,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.5л",
         price: "500",
-        remaining: "остаток: 17 шт."
+        remaining: "остаток: 15 шт."
       }
     ],
     imageUrl: bootsImage
@@ -141,7 +140,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "280",
-        remaining: "остаток: 22 шт."
+        remaining: "остаток: 21 шт."
       }
     ],
     imageUrl: gloomBrothersImage
@@ -164,25 +163,6 @@ export const beerData: Product[] = generateIds([
       }
     ],
     imageUrl: redCaseImage
-  },
-  {
-    category: "SEASON BEER",
-    name: "Goldrush",
-    style: "Weizenbock",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-goldrush/6638614",
-    og: "18.0%",
-    abv: "7.6",
-    ibu: "20",
-    description: "Этот вайценбок — настоящее золото для ценителей плотных сортов пива. В бокале оно разливается глубоким янтарным цветом, обещая богатство вкуса под шапкой плотной, муссовой пены. Его крепость искусно скрыта за сладостью спелых бананов, пряной гвоздикой и мягкими ванильными нотами, создавая сложный и притягательный букет. Пшеничная основа дарит телу невероятную полноту и шелковистую, округлую текстуру, а легкая алкогольная теплота на финише лишь подчеркивает глубину солода.",
-    bottlingDate: "10.03.2026",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "300",
-        remaining: "остаток: 2 шт."
-      }
-    ],
-    imageUrl: weizenbockImage
   },
   {
     category: "SEASON BEER",
@@ -274,7 +254,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 11 шт."
+        remaining: "остаток: 10 шт."
       }
     ],
     imageUrl: cucumberGoseMintImage
@@ -353,7 +333,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 10 шт."
+        remaining: "остаток: 9 шт."
       },
       {
         volume: "0.75л",
