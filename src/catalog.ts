@@ -1,5 +1,4 @@
 import type { Product } from "./types/product.ts";
-import grapeAmericanBwImage from "./images/8th-birthday/grape_american_bw.png";
 import ryeWineImage from "./images/8th-birthday/rye_wine.png";
 import grapeRyeWineImage from "./images/8th-birthday/grape_rye_wine.png";
 import oatWineImage from "./images/8th-birthday/oat_wine.png";
@@ -9,21 +8,21 @@ import ddhWheatWineImage from "./images/8th-birthday/ddh_wheat_wine.png";
 import buckWheatWineImage from "./images/8th-birthday/buckwheat_wine.png";
 import buckWheatWineHoneyImage from "./images/8th-birthday/buckwheat_wine_honey.png";
 import widowsJamImage from "./images/pepper-sauces/widows_jam.png";
-import tripelWithHoneyImage from "./images/season-beer/belgian_tripel _with_honey.png";
 import polarisImage from "./images/strong-series-2026/polaris.png";
 import nightfallImage from "./images/strong-series-2026/nightfall.png";
-import gloomBrothersImage from "./images/strong-series-2026/gloom-brothers.png";
-import redCaseImage from "./images/strong-series-2026/red-case.png";
+import gloomBrothersImage from "./images/season-beer/gloom-brothers.png";
+import redCaseImage from "./images/season-beer/red-case.png";
 import weizendoppelbockImage from "./images/season-beer/doppelbock.png";
 import eveningFluffImage from "./images/season-beer/evening_fluff.png";
 import warmSlagImage from "./images/pepper-sauces/warm-slag.png";
-import vagabondsImage from "./images/season-beer/vagabonds.png";
 import bootsImage from "./images/collaboration/boots.png";
 import cucumberGoseImage from "./images/season-beer/cucumber.png";
 import cucumberGoseMintImage from "./images/season-beer/cucumber_mint.png";
 import paleBiteImage from "./images/pepper-sauces/pale_bite.png";
 import smokedTomatoGoseImage from "./images/season-beer/smoked_tomato_gose.png";
 import basilOreganoHeImage from "./images/season-beer/basil_oregano_he.png";
+import basilOreganoImage from "./images/season-beer/dangerous_astrotomato.png";
+import auratusImage from "./images/season-beer/auratus.png";
 
 let globalIdCounter = 1;
 
@@ -52,7 +51,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "390",
         packaging: ["бугель"],
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: nightfallImage
@@ -72,7 +71,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "400",
         packaging: ["бугель"],
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       },
       {
         volume: "0.75л",
@@ -99,7 +98,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.5л",
         price: "500",
-        remaining: "остаток: 15 шт."
+        remaining: "остаток: 13 шт."
       }
     ],
     imageUrl: bootsImage
@@ -107,25 +106,6 @@ export const beerData: Product[] = generateIds([
 
 
   // SEASON BEER
-  {
-    category: "SEASON BEER",
-    name: "Abbey’s Golden Verse",
-    style: "Belgian Tripel with Honey",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-abbey-s-golden-verse/6582913",
-    og: "20.5%",
-    abv: "10.5",
-    ibu: "25",
-    description: "Этот трипель — уверенная ступень выше в мире бельгийских элей. Он крепче и полнее классической версии, сохраняя при этом изящество и сложность. Под ярким эфирно-фенольным букетом (абрикос, цедра лимона, искры перца) играет едва уловимый мед, придающий лишь дополнительную округлость и глубину. Эль для вдумчивого наслаждения.",
-    bottlingDate: "28.01.2026",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "280",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: tripelWithHoneyImage
-  },
   {
     category: "SEASON BEER",
     name: "Gloom Brothers",
@@ -140,7 +120,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "280",
-        remaining: "остаток: 21 шт."
+        remaining: "остаток: 20 шт."
       }
     ],
     imageUrl: gloomBrothersImage
@@ -159,7 +139,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "300",
-        remaining: "остаток: 13 шт."
+        remaining: "остаток: 15 шт."
       }
     ],
     imageUrl: redCaseImage
@@ -178,29 +158,29 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 12 шт."
+        remaining: "остаток: 14 шт."
       }
     ],
     imageUrl: weizendoppelbockImage
   },
   {
     category: "SEASON BEER",
-    name: "Vagabonds",
-    style: "Saigan Dailya Gruit",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-vagabonds/6698836",
-    og: "18.0%",
-    abv: "8.6",
+    name: "Auratus",
+    style: "Honey Imperial Gruit",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-auratus/6655513",
+    og: "22.5%",
+    abv: "9.8",
     ibu: "50",
-    description: "Грюйт — это пиво, каким его знали до эпохи хмеля, и наш новый рецепт уводит вас далеко за пределы европейской традиции — в самое сердце Сибири. В данной версии мы используем саган-дайля — траву, продлевающую жизнь, как говорят легенды. Во вкусе терпкая пикантность тысячелистника и благородная горечь полыни сплетаются с хвойно-цитрусовой свежестью саган-дайля, а лаванда добавляет цветочный бриз. Дерзко, дико, свежо.",
-    bottlingDate: "04.05.2026",
+    description: "Auratus — это золотая тяжесть в мире пива. Здесь нет хмеля, но есть всё, чтобы выдержать характер. Полынь и тысячелистник задают тон сухой, землистой горечью. Лаванта охлаждает, шиповник добавляет ягодной кислинки и терпкости. А мёд вступает в диалог с этой мощью: он приносит плотную, почти медовую сладость, которая не конфликтует с горечью, а сплетается с ней в сложный, многослойный танец. Финал — долгий, тёплый, с травянистым шлейфом и едва уловимой цветочно-медовой нотой. ",
+    bottlingDate: "31.03.2026",
     variants: [
       {
         volume: "0.45л",
-        price: "350",
-        remaining: "остаток: 2 шт."
+        price: "320",
+        remaining: "остаток: 3 шт."
       }
     ],
-    imageUrl: vagabondsImage
+    imageUrl: auratusImage
   },
   {
     category: "SEASON BEER",
@@ -216,7 +196,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "350",
-        remaining: "остаток: 8 шт."
+        remaining: "остаток: 6 шт."
       }
     ],
     imageUrl: eveningFluffImage
@@ -254,10 +234,29 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 10 шт."
+        remaining: "остаток: 9 шт."
       }
     ],
     imageUrl: cucumberGoseMintImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Dangerous Astrotomato",
+    style: "Oregano and Basil Tomato Gose",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-dangerous-astrotomato-2026/6752607",
+    og: "12.5%",
+    abv: "5.5",
+    ibu: "10",
+    description: "Томатное пиво с добавлением базилика, орегано, чеснока, оливок, гималайской соли, кориандра и копчёной паприки.",
+    bottlingDate: "15.06.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "320",
+        remaining: "остаток: 1 шт."
+      }
+    ],
+    imageUrl: basilOreganoImage
   },
   {
     category: "SEASON BEER",
@@ -301,25 +300,6 @@ export const beerData: Product[] = generateIds([
   // 8TH BIRTHDAY
   {
     category: "8TH BIRTHDAY",
-    name: "Hybrid Giant",
-    style: "Grape American Barleywine",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-hybrid-giant/6496849",
-    og: "28.0%",
-    abv: "11.5",
-    ibu: "60",
-    description: "Этот гибридный эль бросает вызов традициям. Крепкая, сложная солодовая основа американского барливайна, сброженная винными дрожжами, получает неожиданное измерение. Насыщенная сладость и мощная засыпь американских хмелей гармонично переплетаются с яркими виноградными нотами, подчеркнутыми хмелем Nelson Sauvin с его характерными тонами белого винограда и тропических фруктов. Выдержка на дубовых палочках, вымоченных в вине, добавляет структуры, лёгкой танинности и винной сложности, завершая и без того многогранный профиль.",
-    bottlingDate: "18.09.2025",
-    variants: [
-      {
-        volume: "0.375л",
-        price: "410",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: grapeAmericanBwImage
-  },
-  {
-    category: "8TH BIRTHDAY",
     name: "The Rye Golem",
     style: "Ryewine",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-the-rye-golem/6496855",
@@ -333,7 +313,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 9 шт."
+        remaining: "остаток: 8 шт."
       },
       {
         volume: "0.75л",
@@ -358,7 +338,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: grapeRyeWineImage
@@ -377,7 +357,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.75л",
         price: "800",
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: oatWineImage
@@ -397,7 +377,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 3 шт."
+        remaining: "остаток: 2 шт."
       },
       {
         volume: "0.75л",
@@ -422,7 +402,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       },
     ],
     imageUrl: wheatWineImage
@@ -440,13 +420,13 @@ export const beerData: Product[] = generateIds([
     variants: [
       {
         volume: "0.33",
-        price: "370",
+        price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 9 шт."
+        remaining: "остаток: 8 шт."
       },
       {
         volume: "0.75л",
-        price: "840",
+        price: "800",
         remaining: "остаток: 1 шт."
       }
     ],
@@ -470,13 +450,8 @@ export const beerData: Product[] = generateIds([
         remaining: "остаток: 11 шт."
       },
       {
-        volume: "0.45",
-        price: "480",
-        remaining: "остаток: 1 шт."
-      },
-      {
         volume: "0.75л",
-        price: "820",
+        price: "800",
         remaining: "остаток: 4 шт."
       }
     ],
@@ -497,11 +472,11 @@ export const beerData: Product[] = generateIds([
         volume: "0.25",
         price: "300",
         packaging: ["воск"],
-        remaining: "остаток: 10 шт."
+        remaining: "остаток: 9 шт."
       },
       {
         volume: "0.75л",
-        price: "840",
+        price: "800",
         remaining: "остаток: 4 шт."
       }
     ],
@@ -553,7 +528,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 8 шт."
+        remaining: "остаток: 4 шт."
       }
     ],
     imageUrl: paleBiteImage
