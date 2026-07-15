@@ -8,7 +8,6 @@ import ddhWheatWineImage from "./images/8th-birthday/ddh_wheat_wine.png";
 import buckWheatWineImage from "./images/8th-birthday/buckwheat_wine.png";
 import buckWheatWineHoneyImage from "./images/8th-birthday/buckwheat_wine_honey.png";
 import widowsJamImage from "./images/pepper-sauces/widows_jam.png";
-import polarisImage from "./images/strong-series-2026/polaris.png";
 import gloomBrothersImage from "./images/season-beer/gloom-brothers.png";
 import redCaseImage from "./images/season-beer/red-case.png";
 import weizendoppelbockImage from "./images/season-beer/doppelbock.png";
@@ -39,25 +38,7 @@ const generateIds = (data: Omit<Product, "id">[]) => {
 export const beerData: Product[] = generateIds([
 
   // STRONG SERIES 2026
-  {
-    category: "STRONG SERIES 2026",
-    name: "Polaris",
-    style: "Imperial Stout",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-polaris/6622210",
-    og: "25.5%",
-    abv: "10.0",
-    ibu: "40",
-    description: "Черный, как ночь, с золотым отблеском цедры. Классический имперский стаут с чистым вкусом горького шоколада и свежего апельсина. Никакой сладости — только темная глубина какао и яркий, чуть терпкий цитрусовый акцент, который разрезает плотность и оставляет долгое, сухое послевкусие. Тело уверенное, но не тяжелое. Апельсин не маскирует — он мерцает.",
-    bottlingDate: "22.02.2026",
-    variants: [
-      {
-        volume: "0.75л",
-        price: "810",
-        remaining: "остаток: 1 шт."
-      },
-    ],
-    imageUrl: polarisImage
-  },
+
 
 
   // COLLABORATION
