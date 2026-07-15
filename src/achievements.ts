@@ -88,7 +88,7 @@ export const achievements: Achievement[] = [
   {
     date: "26.11.2022",
     event: "V слёт домашних пивоваров и малых пивоварен",
-    result: "участник, 5 место",
+    result: "участник",
     location: "г. Киров"
   },
   {

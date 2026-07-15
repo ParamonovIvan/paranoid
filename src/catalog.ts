@@ -9,20 +9,23 @@ import buckWheatWineImage from "./images/8th-birthday/buckwheat_wine.png";
 import buckWheatWineHoneyImage from "./images/8th-birthday/buckwheat_wine_honey.png";
 import widowsJamImage from "./images/pepper-sauces/widows_jam.png";
 import polarisImage from "./images/strong-series-2026/polaris.png";
-import nightfallImage from "./images/strong-series-2026/nightfall.png";
 import gloomBrothersImage from "./images/season-beer/gloom-brothers.png";
 import redCaseImage from "./images/season-beer/red-case.png";
 import weizendoppelbockImage from "./images/season-beer/doppelbock.png";
 import eveningFluffImage from "./images/season-beer/evening_fluff.png";
 import warmSlagImage from "./images/pepper-sauces/warm-slag.png";
 import bootsImage from "./images/collaboration/boots.png";
-import cucumberGoseImage from "./images/season-beer/cucumber.png";
 import cucumberGoseMintImage from "./images/season-beer/cucumber_mint.png";
 import paleBiteImage from "./images/pepper-sauces/pale_bite.png";
 import smokedTomatoGoseImage from "./images/season-beer/smoked_tomato_gose.png";
 import basilOreganoHeImage from "./images/season-beer/basil_oregano_he.png";
 import basilOreganoImage from "./images/season-beer/dangerous_astrotomato.png";
 import auratusImage from "./images/season-beer/auratus.png";
+import wheatBeerImage from "./images/season-beer/wheat_beer.png";
+import blancheImage from "./images/season-beer/blanche.png";
+import americanPaleAleImage from "./images/season-beer/american_pale_ale.png";
+import belgianPaleAleImage from "./images/season-beer/belgian_pale_ale.png";
+import orangeryImage from "./images/pepper-sauces/orangery.png";
 
 let globalIdCounter = 1;
 
@@ -38,26 +41,6 @@ export const beerData: Product[] = generateIds([
   // STRONG SERIES 2026
   {
     category: "STRONG SERIES 2026",
-    name: "Nightfall",
-    style: "Imperial Stout",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-nightfall/6622208",
-    og: "25.5%",
-    abv: "10.0",
-    ibu: "40",
-    description: "Черный, как обсидиан. Прозрачный только в том смысле, что в нем нет лишнего. Классический имперский стаут без украшательств: горький шоколад, свежеобжаренный кофе и ровная, спокойная горечь в финале. Тело достаточно плотное, чтобы чувствовать вес, но достаточно лёгкое, чтобы не утомлять. Никакой сладости, никакой ванили. Только тёмная глубина и чистота стиля.",
-    bottlingDate: "21.02.2026",
-    variants: [
-      {
-        volume: "0.33л",
-        price: "390",
-        packaging: ["бугель"],
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: nightfallImage
-  },
-  {
-    category: "STRONG SERIES 2026",
     name: "Polaris",
     style: "Imperial Stout",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-polaris/6622210",
@@ -67,12 +50,6 @@ export const beerData: Product[] = generateIds([
     description: "Черный, как ночь, с золотым отблеском цедры. Классический имперский стаут с чистым вкусом горького шоколада и свежего апельсина. Никакой сладости — только темная глубина какао и яркий, чуть терпкий цитрусовый акцент, который разрезает плотность и оставляет долгое, сухое послевкусие. Тело уверенное, но не тяжелое. Апельсин не маскирует — он мерцает.",
     bottlingDate: "22.02.2026",
     variants: [
-      {
-        volume: "0.33л",
-        price: "400",
-        packaging: ["бугель"],
-        remaining: "остаток: 1 шт."
-      },
       {
         volume: "0.75л",
         price: "810",
@@ -98,7 +75,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.5л",
         price: "500",
-        remaining: "остаток: 12 шт."
+        remaining: "остаток: 9 шт."
       }
     ],
     imageUrl: bootsImage
@@ -120,7 +97,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "280",
-        remaining: "остаток: 20 шт."
+        remaining: "остаток: 19 шт."
       }
     ],
     imageUrl: gloomBrothersImage
@@ -139,7 +116,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "300",
-        remaining: "остаток: 15 шт."
+        remaining: "остаток: 14 шт."
       }
     ],
     imageUrl: redCaseImage
@@ -158,7 +135,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 14 шт."
+        remaining: "остаток: 12 шт."
       }
     ],
     imageUrl: weizendoppelbockImage
@@ -177,7 +154,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "340",
-        remaining: "остаток: 3 шт."
+        remaining: "остаток: 2 шт."
       }
     ],
     imageUrl: auratusImage
@@ -203,25 +180,6 @@ export const beerData: Product[] = generateIds([
   },
   {
     category: "SEASON BEER",
-    name: "Cucumber Gose",
-    style: "Vegetable Gose",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-cucumber-gose-2026/6745017",
-    og: "13.1%",
-    abv: "5.1",
-    ibu: "10",
-    description: "Огуречный гозе зеленого цвета, сваренный с гималайской солью, кориандром, цедрой и соком лимона и лайма.",
-    bottlingDate: "09.06.2026",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "320",
-        remaining: "остаток: 6 шт."
-      }
-    ],
-    imageUrl: cucumberGoseImage
-  },
-  {
-    category: "SEASON BEER",
     name: "Cucumber Gose (Mint Edition)",
     style: "Vegetable Gose",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-cucumber-gose-mint-edition-2026/6745018",
@@ -234,7 +192,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 9 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: cucumberGoseMintImage
@@ -295,6 +253,82 @@ export const beerData: Product[] = generateIds([
       }
     ],
     imageUrl: smokedTomatoGoseImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Wheat Beer",
+    style: "Wheat Beer",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-wheat-beer-2026/6773202",
+    og: "13.0%",
+    abv: "5.7",
+    ibu: "10",
+    description: "Пшеничное пиво в немецком стиле, имеющее во вкусе оттенки мякиша белого хлеба. Традиционно с заметной мучнистостью, которую придает пшеничный солод. Чуть крепче обычной версии, дополнено традиционным немецким хмелем. ",
+    bottlingDate: "30.06.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "200",
+        remaining: "остаток: 19 шт."
+      }
+    ],
+    imageUrl: wheatBeerImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Post Box Orange",
+    style: "Orange Blanche",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-post-box-orange/6775839",
+    og: "13.2%",
+    abv: "5.5",
+    ibu: "10",
+    description: "Всё просто: пшеница, апельсин, кориандр. И тишина. Мы добавили не только свежую цедру, но и сок апельсина — чтобы цитрус звучал полным голосом, от яркой верхней ноты до сочной глубины. В аромате — цедра, пряный кориандр и лёгкая пшеничная мягкость. Вкус — питкий, облачный, с мягкой кислинкой и сухим, чуть пряным послевкусием.",
+    bottlingDate: "02.07.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "210",
+        remaining: "остаток: 24 шт."
+      }
+    ],
+    imageUrl: blancheImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Rust Bike",
+    style: "American Pale Ale",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-rust-bike/6784275",
+    og: "15.0",
+    abv: "6.2",
+    ibu: "20",
+    description: "Охмелённый Chinook и Centennial. Ржавый велосипед, который всё ещё на ходу. Никакой суеты — только ритм американской классики. Chinook заходит первым: смолистая хвоя, чуть землистой тяжести. Centennial подхватывает — сочной цедрой, грейпфрутовой свежестью и цветочным шлейфом. Лёгкое тело, жадно пьётся, не теряя лица.",
+    bottlingDate: "09.07.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "270",
+        remaining: "остаток: 19 шт."
+      }
+    ],
+    imageUrl: americanPaleAleImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Pale Prayer",
+    style: "Belgian Pale Ale",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-pale-prayer/6788956",
+    og: "15.0",
+    abv: "6.2",
+    ibu: "15",
+    description: "Бельгийская лёгкость на дрожжах Mangrove Jack M47. Эти дрожжи не просто бродят — они читают молитву. Пряная, чуть перечная эфирность обволакивает мягкую солодовую основу, словно ладан в часовне. Лёгкая фруктовость спелой груши и белой сливы, сухой финал с деликатной горчинкой. Пиво, которое можно пить весь вечер, открывая новые нюансы.",
+    bottlingDate: "12.07.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "250",
+        remaining: "остаток: 30 шт."
+      }
+    ],
+    imageUrl: belgianPaleAleImage
   },
 
   // 8TH BIRTHDAY
@@ -511,7 +545,7 @@ export const sauceData: Product[] = generateIds([
     variants: [
       {
         volume: "0.2л",
-        price: "700",
+        price: "600",
         remaining: "остаток: 5 шт."
       }
     ],
@@ -528,10 +562,26 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: paleBiteImage
+  },
+  {
+    category: "PEPPER SAUCES",
+    name: "Orangery",
+    style: "Tropical Charapita Pepper Sauce",
+    spiciness: "2/10",
+    description: "Откройте банку осторожно. Пахнет не едой. Пахнет заброшенным зимним садом, где под стеклом до сих пор тлеют апельсины. Первый глоток — это обман. Яркая, тропическая атака. Но почти сразу сладость провисает, как старая кожура. И из-под неё проступает другое: хвойная горечь, травянистая резкость, уксусная острота. Приятное, навязчивое, мелкое жжение, которое заставляет вас копаться в этом вкусе дальше, искать утраченную сладость, но находить только всё новые слои странного, красивого разложения. Состав: пюре манго, ананасы, перец Ахи Чарапита Оранж, помидоры черри, лук, ягоды можжевельника, масло оливковое, розмарин, апельсины, перец черный, имбирь, экстракт пихтовый, уксус виноградный, мед, соль морская, экстракт брокколи.",
+    bottlingDate: "13.07.2026",
+    variants: [
+      {
+        volume: "0.2л",
+        price: "600",
+        remaining: "остаток: 11 шт."
+      }
+    ],
+    imageUrl: orangeryImage
   },
 ]);
 
