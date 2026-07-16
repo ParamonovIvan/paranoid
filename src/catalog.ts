@@ -154,7 +154,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "350",
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 5 шт."
       }
     ],
     imageUrl: eveningFluffImage
@@ -249,7 +249,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "200",
-        remaining: "остаток: 19 шт."
+        remaining: "остаток: 17 шт."
       }
     ],
     imageUrl: wheatBeerImage
@@ -268,7 +268,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "210",
-        remaining: "остаток: 24 шт."
+        remaining: "остаток: 22 шт."
       }
     ],
     imageUrl: blancheImage
@@ -287,7 +287,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "270",
-        remaining: "остаток: 19 шт."
+        remaining: "остаток: 17 шт."
       }
     ],
     imageUrl: americanPaleAleImage
@@ -306,7 +306,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "250",
-        remaining: "остаток: 30 шт."
+        remaining: "остаток: 27 шт."
       }
     ],
     imageUrl: belgianPaleAleImage
@@ -353,7 +353,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 3 шт."
+        remaining: "остаток: 2 шт."
       }
     ],
     imageUrl: grapeRyeWineImage
@@ -388,12 +388,6 @@ export const beerData: Product[] = generateIds([
     description: "Это не просто пиво. Это точка невозврата. С первой же капли вы оказываетесь в плену у ванили — не десертно-сладкой, а тёплой, элегантной и гипнотической. Она окутывает мощное тело этого Oatwine, сотканное из шелковистой овсяной текстуры и плотного солодового каркаса. «Vanilla Oblivion» — это тот самый забытый вкус, в котором хочется исчезнуть без следа. Для тех, кто не боится потерять себя в идеальном моменте.",
     bottlingDate: "11.11.2025",
     variants: [
-      {
-        volume: "0.33",
-        price: "360",
-        packaging: ["воск"],
-        remaining: "остаток: 2 шт."
-      },
       {
         volume: "0.75л",
         price: "800",
@@ -437,7 +431,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 7 шт."
+        remaining: "остаток: 6 шт."
       },
       {
         volume: "0.75л",
@@ -462,7 +456,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25",
         price: "280",
         packaging: ["воск"],
-        remaining: "остаток: 11 шт."
+        remaining: "остаток: 10 шт."
       },
       {
         volume: "0.75л",
@@ -487,7 +481,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25",
         price: "300",
         packaging: ["воск"],
-        remaining: "остаток: 9 шт."
+        remaining: "остаток: 8 шт."
       },
       {
         volume: "0.75л",
@@ -559,7 +553,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 11 шт."
+        remaining: "остаток: 10 шт."
       }
     ],
     imageUrl: orangeryImage
