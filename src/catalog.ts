@@ -14,11 +14,8 @@ import weizendoppelbockImage from "./images/season-beer/doppelbock.png";
 import eveningFluffImage from "./images/season-beer/evening_fluff.png";
 import warmSlagImage from "./images/pepper-sauces/warm-slag.png";
 import bootsImage from "./images/collaboration/boots.png";
-import cucumberGoseMintImage from "./images/season-beer/cucumber_mint.png";
 import paleBiteImage from "./images/pepper-sauces/pale_bite.png";
 import smokedTomatoGoseImage from "./images/season-beer/smoked_tomato_gose.png";
-import basilOreganoHeImage from "./images/season-beer/basil_oregano_he.png";
-import basilOreganoImage from "./images/season-beer/dangerous_astrotomato.png";
 import auratusImage from "./images/season-beer/auratus.png";
 import blancheImage from "./images/season-beer/blanche.png";
 import americanPaleAleImage from "./images/season-beer/american_pale_ale.png";
@@ -159,63 +156,6 @@ export const beerData: Product[] = generateIds([
   },
   {
     category: "SEASON BEER",
-    name: "Cucumber Gose (Mint Edition)",
-    style: "Vegetable Gose",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-cucumber-gose-mint-edition-2026/6745018",
-    og: "13.1%",
-    abv: "5.1",
-    ibu: "10",
-    description: "Огуречный гозе зеленого цвета, сваренный с гималайской солью, кориандром, цедрой и соком лимона и лайма и приправленный мятой.",
-    bottlingDate: "09.06.2026",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "320",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: cucumberGoseMintImage
-  },
-  {
-    category: "SEASON BEER",
-    name: "Dangerous Astrotomato",
-    style: "Oregano and Basil Tomato Gose",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-dangerous-astrotomato-2026/6752607",
-    og: "12.5%",
-    abv: "5.5",
-    ibu: "10",
-    description: "Томатное пиво с добавлением базилика, орегано, чеснока, оливок, гималайской соли, кориандра и копчёной паприки.",
-    bottlingDate: "15.06.2026",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "320",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: basilOreganoImage
-  },
-  {
-    category: "SEASON BEER",
-    name: "Dangerous Astrotomato (Hot Edition)",
-    style: "Oregano and Basil Tomato Gose",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-dangerous-astrotomato-hot-edition-2026/6752609",
-    og: "12.5%",
-    abv: "5.5",
-    ibu: "10",
-    description: "Томатное пиво с добавлением базилика, орегано, чеснока, оливок, гималайской соли, кориандра, копчёной паприки и острого перца Скорпион Тринидад.",
-    bottlingDate: "15.06.2026",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "320",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: basilOreganoHeImage
-  },
-  {
-    category: "SEASON BEER",
     name: "Smoked Tomato Gose",
     style: "Smoked Tomato Gose",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-smoked-tomato-gose-2026/6753496",
@@ -228,7 +168,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 9 шт."
+        remaining: "остаток: 8 шт."
       }
     ],
     imageUrl: smokedTomatoGoseImage
@@ -247,7 +187,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "210",
-        remaining: "остаток: 22 шт."
+        remaining: "остаток: 21 шт."
       }
     ],
     imageUrl: blancheImage
@@ -266,7 +206,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "270",
-        remaining: "остаток: 17 шт."
+        remaining: "остаток: 16 шт."
       }
     ],
     imageUrl: americanPaleAleImage
@@ -288,7 +228,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 8 шт."
+        remaining: "остаток: 7 шт."
       },
       {
         volume: "0.75л",
@@ -313,7 +253,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "360",
         packaging: ["воск"],
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: grapeRyeWineImage
