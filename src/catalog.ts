@@ -20,7 +20,6 @@ import smokedTomatoGoseImage from "./images/season-beer/smoked_tomato_gose.png";
 import basilOreganoHeImage from "./images/season-beer/basil_oregano_he.png";
 import basilOreganoImage from "./images/season-beer/dangerous_astrotomato.png";
 import auratusImage from "./images/season-beer/auratus.png";
-import wheatBeerImage from "./images/season-beer/wheat_beer.png";
 import blancheImage from "./images/season-beer/blanche.png";
 import americanPaleAleImage from "./images/season-beer/american_pale_ale.png";
 import belgianPaleAleImage from "./images/season-beer/belgian_pale_ale.png";
@@ -234,25 +233,6 @@ export const beerData: Product[] = generateIds([
       }
     ],
     imageUrl: smokedTomatoGoseImage
-  },
-  {
-    category: "SEASON BEER",
-    name: "Wheat Beer",
-    style: "Wheat Beer",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-wheat-beer-2026/6773202",
-    og: "13.0%",
-    abv: "5.7",
-    ibu: "10",
-    description: "Пшеничное пиво в немецком стиле, имеющее во вкусе оттенки мякиша белого хлеба. Традиционно с заметной мучнистостью, которую придает пшеничный солод. Чуть крепче обычной версии, дополнено традиционным немецким хмелем. ",
-    bottlingDate: "30.06.2026",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "200",
-        remaining: "остаток: 17 шт."
-      }
-    ],
-    imageUrl: wheatBeerImage
   },
   {
     category: "SEASON BEER",
