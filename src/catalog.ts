@@ -22,7 +22,6 @@ import basilOreganoImage from "./images/season-beer/dangerous_astrotomato.png";
 import auratusImage from "./images/season-beer/auratus.png";
 import blancheImage from "./images/season-beer/blanche.png";
 import americanPaleAleImage from "./images/season-beer/american_pale_ale.png";
-import belgianPaleAleImage from "./images/season-beer/belgian_pale_ale.png";
 import orangeryImage from "./images/pepper-sauces/orangery.png";
 
 let globalIdCounter = 1;
@@ -271,25 +270,6 @@ export const beerData: Product[] = generateIds([
       }
     ],
     imageUrl: americanPaleAleImage
-  },
-  {
-    category: "SEASON BEER",
-    name: "Pale Prayer",
-    style: "Belgian Pale Ale",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-pale-prayer/6788956",
-    og: "15.0",
-    abv: "6.2",
-    ibu: "15",
-    description: "Бельгийская лёгкость на дрожжах Mangrove Jack M47. Эти дрожжи не просто бродят — они читают молитву. Пряная, чуть перечная эфирность обволакивает мягкую солодовую основу, словно ладан в часовне. Лёгкая фруктовость спелой груши и белой сливы, сухой финал с деликатной горчинкой. Пиво, которое можно пить весь вечер, открывая новые нюансы.",
-    bottlingDate: "12.07.2026",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "250",
-        remaining: "остаток: 27 шт."
-      }
-    ],
-    imageUrl: belgianPaleAleImage
   },
 
   // 8TH BIRTHDAY
