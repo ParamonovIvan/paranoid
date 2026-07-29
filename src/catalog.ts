@@ -17,7 +17,6 @@ import bootsImage from "./images/collaboration/boots.png";
 import paleBiteImage from "./images/pepper-sauces/pale_bite.png";
 import smokedTomatoGoseImage from "./images/season-beer/smoked_tomato_gose.png";
 import auratusImage from "./images/season-beer/auratus.png";
-import blancheImage from "./images/season-beer/blanche.png";
 import americanPaleAleImage from "./images/season-beer/american_pale_ale.png";
 import orangeryImage from "./images/pepper-sauces/orangery.png";
 
@@ -51,7 +50,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.5л",
         price: "500",
-        remaining: "остаток: 7 шт."
+        remaining: "остаток: 6 шт."
       }
     ],
     imageUrl: bootsImage
@@ -175,25 +174,6 @@ export const beerData: Product[] = generateIds([
   },
   {
     category: "SEASON BEER",
-    name: "Post Box Orange",
-    style: "Orange Blanche",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-post-box-orange/6775839",
-    og: "13.2%",
-    abv: "5.5",
-    ibu: "10",
-    description: "Всё просто: пшеница, апельсин, кориандр. И тишина. Мы добавили не только свежую цедру, но и сок апельсина — чтобы цитрус звучал полным голосом, от яркой верхней ноты до сочной глубины. В аромате — цедра, пряный кориандр и лёгкая пшеничная мягкость. Вкус — питкий, облачный, с мягкой кислинкой и сухим, чуть пряным послевкусием.",
-    bottlingDate: "02.07.2026",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "210",
-        remaining: "остаток: 13 шт."
-      }
-    ],
-    imageUrl: blancheImage
-  },
-  {
-    category: "SEASON BEER",
     name: "Rust Bike",
     style: "American Pale Ale",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-rust-bike/6784275",
@@ -206,7 +186,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "270",
-        remaining: "остаток: 7 шт."
+        remaining: "остаток: 6 шт."
       }
     ],
     imageUrl: americanPaleAleImage
