@@ -1,6 +1,5 @@
 import type { Product } from "./types/product.ts";
 import ryeWineImage from "./images/8th-birthday/rye_wine.png";
-import grapeRyeWineImage from "./images/8th-birthday/grape_rye_wine.png";
 import oatWineImage from "./images/8th-birthday/oat_wine.png";
 import vanillaOatWineImage from "./images/8th-birthday/vanilla_oat_wine.png";
 import wheatWineImage from "./images/8th-birthday/wheat_wine.png";
@@ -9,7 +8,6 @@ import buckWheatWineImage from "./images/8th-birthday/buckwheat_wine.png";
 import buckWheatWineHoneyImage from "./images/8th-birthday/buckwheat_wine_honey.png";
 import widowsJamImage from "./images/pepper-sauces/widows_jam.png";
 import gloomBrothersImage from "./images/season-beer/gloom-brothers.png";
-import redCaseImage from "./images/season-beer/red-case.png";
 import weizendoppelbockImage from "./images/season-beer/doppelbock.png";
 import eveningFluffImage from "./images/season-beer/evening_fluff.png";
 import warmSlagImage from "./images/pepper-sauces/warm-slag.png";
@@ -50,7 +48,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.5л",
         price: "500",
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 5 шт."
       }
     ],
     imageUrl: bootsImage
@@ -76,25 +74,6 @@ export const beerData: Product[] = generateIds([
       }
     ],
     imageUrl: gloomBrothersImage
-  },
-  {
-    category: "SEASON BEER",
-    name: "Red Case",
-    style: "Quadrupel with Cherry and Vanilla",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-red-case/6622215",
-    og: "24.0%",
-    abv: "12.0",
-    ibu: "20",
-    description: "Традиционная мощь бельгийского квадрюпеля переплетается с оттенками вишни и ванили. Плотная солодовая основа с нотами тёмной карамели и инжира обрамлена тонкой кислинкой благородной вишни, которая лишь слегка мерцает на заднем плане, не нарушая монастырского спокойствия. Мягкие ванильные нюансы окутывают вкус бархатистой дымкой, смягчая алкогольную теплоту и оставляя послевкусие, полное уюта и легкой фруктовой задумчивости.",
-    bottlingDate: "23.02.2026",
-    variants: [
-      {
-        volume: "0.33л",
-        price: "300",
-        remaining: "остаток: 13 шт."
-      }
-    ],
-    imageUrl: redCaseImage
   },
   {
     category: "SEASON BEER",
@@ -186,7 +165,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "270",
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: americanPaleAleImage
@@ -217,26 +196,6 @@ export const beerData: Product[] = generateIds([
       }
     ],
     imageUrl: ryeWineImage
-  },
-  {
-    category: "8TH BIRTHDAY",
-    name: "Clash of Elements",
-    style: "Grape Ryewine",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-clash-of-elements/6496856",
-    og: "26.5%",
-    abv: "10.5",
-    ibu: "25",
-    description: "Этот эль — эпическая битва двух стихий, застывшая в бокале. Из самой сердцевины зернового вихря, рождённого щедрой засыпью ржаного и ячменного солода, прорывается буйство тёмного винограда. Мощь и структура ржи встречаются с глубокими винными тонами, создавая идеально нестабильный баланс. Его финал — долгий, сложный и завораживающий, где уже невозможно отличить зерно от ягоды. Это не просто пиво, это алхимический синтез двух миров.",
-    bottlingDate: "21.10.2025",
-    variants: [
-      {
-        volume: "0.33",
-        price: "360",
-        packaging: ["воск"],
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: grapeRyeWineImage
   },
   {
     category: "8TH BIRTHDAY",
@@ -366,7 +325,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.75л",
         price: "800",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: buckWheatWineHoneyImage
