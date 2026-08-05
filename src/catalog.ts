@@ -17,6 +17,8 @@ import smokedTomatoGoseImage from "./images/season-beer/smoked_tomato_gose.png";
 import auratusImage from "./images/season-beer/auratus.png";
 import americanPaleAleImage from "./images/season-beer/american_pale_ale.png";
 import orangeryImage from "./images/pepper-sauces/orangery.png";
+import boutifulHarvestImage from "./images/season-beer/boutiful_harvest.png";
+import cranberryWheatImage from "./images/season-beer/cranberry_wheat.png";
 
 let globalIdCounter = 1;
 
@@ -169,6 +171,44 @@ export const beerData: Product[] = generateIds([
       }
     ],
     imageUrl: americanPaleAleImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Cranberry Wheat Beer",
+    style: "Wheat Beer",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-cranberry-wheat-beer-2026/6818025",
+    og: "13.0",
+    abv: "5.0",
+    ibu: "10",
+    description: "Пшеница и клюква. Ничего лишнего. Мягкое, чуть облачное тело с хлебной нежностью пшеничного солода, а сверху — северная ягода: терпкая, освежающая, с той самой кислинкой, от которой просыпаются рецепторы. Финал сухой, как клюквенный морс в жаркий полдень.",
+    bottlingDate: "04.05.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "270",
+        remaining: "остаток: 38 шт."
+      }
+    ],
+    imageUrl: cranberryWheatImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Boutiful Harvest",
+    style: "American Wheat Beer",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-boutiful-harvest-2026/6818027",
+    og: "14.0",
+    abv: "5.4",
+    ibu: "15",
+    description: "Пшеничное пиво в американском стиле, сдобренное хмелем Centennial, который придает напитку фруктовые и цветочные ноты.",
+    bottlingDate: "29.07.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "270",
+        remaining: "остаток: 31 шт."
+      }
+    ],
+    imageUrl: boutifulHarvestImage
   },
 
   // 8TH BIRTHDAY
