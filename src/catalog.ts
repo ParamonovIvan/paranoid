@@ -6,7 +6,6 @@ import wheatWineImage from "./images/8th-birthday/wheat_wine.png";
 import ddhWheatWineImage from "./images/8th-birthday/ddh_wheat_wine.png";
 import buckWheatWineImage from "./images/8th-birthday/buckwheat_wine.png";
 import buckWheatWineHoneyImage from "./images/8th-birthday/buckwheat_wine_honey.png";
-import widowsJamImage from "./images/pepper-sauces/widows_jam.png";
 import gloomBrothersImage from "./images/season-beer/gloom-brothers.png";
 import weizendoppelbockImage from "./images/season-beer/doppelbock.png";
 import eveningFluffImage from "./images/season-beer/evening_fluff.png";
@@ -14,7 +13,6 @@ import warmSlagImage from "./images/pepper-sauces/warm-slag.png";
 import bootsImage from "./images/collaboration/boots.png";
 import paleBiteImage from "./images/pepper-sauces/pale_bite.png";
 import smokedTomatoGoseImage from "./images/season-beer/smoked_tomato_gose.png";
-import auratusImage from "./images/season-beer/auratus.png";
 import americanPaleAleImage from "./images/season-beer/american_pale_ale.png";
 import orangeryImage from "./images/pepper-sauces/orangery.png";
 import boutifulHarvestImage from "./images/season-beer/boutiful_harvest.png";
@@ -50,7 +48,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.5л",
         price: "500",
-        remaining: "остаток: 5 шт."
+        remaining: "остаток: 4 шт."
       }
     ],
     imageUrl: bootsImage
@@ -91,29 +89,10 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 11 шт."
+        remaining: "остаток: 10 шт."
       }
     ],
     imageUrl: weizendoppelbockImage
-  },
-  {
-    category: "SEASON BEER",
-    name: "Auratus",
-    style: "Honey Imperial Gruit",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-auratus/6655513",
-    og: "22.5%",
-    abv: "9.8",
-    ibu: "50",
-    description: "Auratus — это золотая тяжесть в мире пива. Здесь нет хмеля, но есть всё, чтобы выдержать характер. Полынь и тысячелистник задают тон сухой, землистой горечью. Лаванта охлаждает, шиповник добавляет ягодной кислинки и терпкости. А мёд вступает в диалог с этой мощью: он приносит плотную, почти медовую сладость, которая не конфликтует с горечью, а сплетается с ней в сложный, многослойный танец. Финал — долгий, тёплый, с травянистым шлейфом и едва уловимой цветочно-медовой нотой. ",
-    bottlingDate: "31.03.2026",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "340",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: auratusImage
   },
   {
     category: "SEASON BEER",
@@ -167,7 +146,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "270",
-        remaining: "остаток: 3 шт."
+        remaining: "остаток: 2 шт."
       }
     ],
     imageUrl: americanPaleAleImage
@@ -186,7 +165,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "270",
-        remaining: "остаток: 38 шт."
+        remaining: "остаток: 37 шт."
       }
     ],
     imageUrl: cranberryWheatImage
@@ -375,22 +354,6 @@ export const beerData: Product[] = generateIds([
 export const sauceData: Product[] = generateIds([
   {
     category: "PEPPER SAUCES",
-    name: "Widow's Jam",
-    style: "Berries  Pepper Sauce",
-    spiciness: "2/10",
-    description: "Бархатная кислинка облепихи и терпкость черноплодной рябины — это лишь тихая прелюдия. В самом сердце джема пробуждается 7 Pot Gravedigger — перец, который роет могилы. Его жар не обжигает, а поднимается медленно и настойчиво, как холодный туман из-под земли, подхваченный острым дыханием имбиря и горчицы. Состав: облепиха, черноплодная рябина, перец красный болгарский, перец 7 Пот Грейв Диггер, лук, морковь, имбирь, черный перец, горчица, уксус яблочный, соль морская.",
-    bottlingDate: "14.12.2025",
-    variants: [
-      {
-        volume: "0.2л",
-        price: "600",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: widowsJamImage
-  },
-  {
-    category: "PEPPER SAUCES",
     name: "Warm Slag",
     style: "Cherry Chocolate Pepper Sauce",
     spiciness: "2/10",
@@ -400,7 +363,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 5 шт."
+        remaining: "остаток: 4 шт."
       }
     ],
     imageUrl: warmSlagImage
@@ -416,7 +379,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 3 шт."
+        remaining: "остаток: 2 шт."
       }
     ],
     imageUrl: paleBiteImage
@@ -432,7 +395,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 5 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: orangeryImage
