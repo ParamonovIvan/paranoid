@@ -17,6 +17,7 @@ import americanPaleAleImage from "./images/season-beer/american_pale_ale.png";
 import orangeryImage from "./images/pepper-sauces/orangery.png";
 import boutifulHarvestImage from "./images/season-beer/boutiful_harvest.png";
 import cranberryWheatImage from "./images/season-beer/cranberry_wheat.png";
+import spruceBloodImage from "./images/pepper-sauces/spruce_blood.png";
 
 let globalIdCounter = 1;
 
@@ -399,6 +400,22 @@ export const sauceData: Product[] = generateIds([
       }
     ],
     imageUrl: orangeryImage
+  },
+  {
+    category: "PEPPER SAUCES",
+    name: "Spruce Blood",
+    style: "lingonberries Pepper Sauce",
+    spiciness: "3/10",
+    description: "Это не джем. Это то, во что превращается джем, когда его забывают в лесу на год. Брусника и клюква дают плотную, тёмную кислинку, как у старого красного вина. Хвойные побеги — не ментол, а древесная горечь. Экстракт пихты как смола, разогретая солнцем, липкая и тягучая. Острота — без ударов. Халапеньо и Скорпион Тринидад разливаются сухим, ровным теплом, которое не отпускает. Болгарский перец добавляет мясистый объём, розмарин и корица — терпкий финиш. Это соус, который пахнет лесом, гниющими шишками и тишиной. Состав: брусника, клюква, перец красный болгарский, перец Халапеньо красный, перец Скорпион Тринидад, еловые побеги, экстракт пихты, розмарин, корица, черный перец, уксус яблочный, соль морская, сахар тростниковый.",
+    bottlingDate: "30.07.2026",
+    variants: [
+      {
+        volume: "0.2л",
+        price: "700",
+        remaining: "остаток: 2 шт."
+      }
+    ],
+    imageUrl: spruceBloodImage
   },
 ]);
 
