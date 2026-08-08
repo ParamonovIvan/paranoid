@@ -13,7 +13,6 @@ import warmSlagImage from "./images/pepper-sauces/warm-slag.png";
 import bootsImage from "./images/collaboration/boots.png";
 import paleBiteImage from "./images/pepper-sauces/pale_bite.png";
 import smokedTomatoGoseImage from "./images/season-beer/smoked_tomato_gose.png";
-import americanPaleAleImage from "./images/season-beer/american_pale_ale.png";
 import orangeryImage from "./images/pepper-sauces/orangery.png";
 import boutifulHarvestImage from "./images/season-beer/boutiful_harvest.png";
 import cranberryWheatImage from "./images/season-beer/cranberry_wheat.png";
@@ -132,25 +131,6 @@ export const beerData: Product[] = generateIds([
       }
     ],
     imageUrl: smokedTomatoGoseImage
-  },
-  {
-    category: "SEASON BEER",
-    name: "Rust Bike",
-    style: "American Pale Ale",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-rust-bike/6784275",
-    og: "15.0",
-    abv: "6.2",
-    ibu: "20",
-    description: "Охмелённый Chinook и Centennial. Ржавый велосипед, который всё ещё на ходу. Никакой суеты — только ритм американской классики. Chinook заходит первым: смолистая хвоя, чуть землистой тяжести. Centennial подхватывает — сочной цедрой, грейпфрутовой свежестью и цветочным шлейфом. Лёгкое тело, жадно пьётся, не теряя лица.",
-    bottlingDate: "09.07.2026",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "270",
-        remaining: "остаток: 2 шт."
-      }
-    ],
-    imageUrl: americanPaleAleImage
   },
   {
     category: "SEASON BEER",
