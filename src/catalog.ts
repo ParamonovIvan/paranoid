@@ -8,7 +8,6 @@ import buckWheatWineImage from "./images/8th-birthday/buckwheat_wine.png";
 import buckWheatWineHoneyImage from "./images/8th-birthday/buckwheat_wine_honey.png";
 import gloomBrothersImage from "./images/season-beer/gloom-brothers.png";
 import weizendoppelbockImage from "./images/season-beer/doppelbock.png";
-import eveningFluffImage from "./images/season-beer/evening_fluff.png";
 import warmSlagImage from "./images/pepper-sauces/warm-slag.png";
 import bootsImage from "./images/collaboration/boots.png";
 import paleBiteImage from "./images/pepper-sauces/pale_bite.png";
@@ -96,25 +95,6 @@ export const beerData: Product[] = generateIds([
   },
   {
     category: "SEASON BEER",
-    name: "Evening Fluff",
-    style: "Dandelion Gruit",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-evening-fluff/6698837",
-    og: "18.0%",
-    abv: "8.6",
-    ibu: "60",
-    description: "Грюйт — это пиво, каким его знали до эпохи хмеля. Мы собрали воедино дикие травы и коренья, чтобы создать глубокий, многогранный профиль. Во вкусе доминирует терпкая пикантность тысячелистника и горчинка одуванчика, которые сплетаются с благородной горечью полыни. Лаванда добавляет неожиданный цветочный бриз в послевкусии, унося прочь тяжесть. Идеально для тех, кто устал от IPA и ищет связь с природой.",
-    bottlingDate: "04.05.2026",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "350",
-        remaining: "остаток: 3 шт."
-      }
-    ],
-    imageUrl: eveningFluffImage
-  },
-  {
-    category: "SEASON BEER",
     name: "Smoked Tomato Gose",
     style: "Smoked Tomato Gose",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-smoked-tomato-gose-2026/6753496",
@@ -127,7 +107,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 7 шт."
+        remaining: "остаток: 4 шт."
       }
     ],
     imageUrl: smokedTomatoGoseImage
@@ -146,7 +126,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "270",
-        remaining: "остаток: 25 шт."
+        remaining: "остаток: 15 шт."
       }
     ],
     imageUrl: cranberryWheatImage
@@ -165,7 +145,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "270",
-        remaining: "остаток: 9 шт."
+        remaining: "остаток: 5 шт."
       }
     ],
     imageUrl: boutifulHarvestImage
