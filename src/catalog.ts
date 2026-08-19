@@ -2,7 +2,6 @@ import type { Product } from "./types/product.ts";
 import ryeWineImage from "./images/8th-birthday/rye_wine.png";
 import oatWineImage from "./images/8th-birthday/oat_wine.png";
 import vanillaOatWineImage from "./images/8th-birthday/vanilla_oat_wine.png";
-import wheatWineImage from "./images/8th-birthday/wheat_wine.png";
 import ddhWheatWineImage from "./images/8th-birthday/ddh_wheat_wine.png";
 import buckWheatWineImage from "./images/8th-birthday/buckwheat_wine.png";
 import buckWheatWineHoneyImage from "./images/8th-birthday/buckwheat_wine_honey.png";
@@ -69,7 +68,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "280",
-        remaining: "остаток: 16 шт."
+        remaining: "остаток: 13 шт."
       }
     ],
     imageUrl: gloomBrothersImage
@@ -164,12 +163,6 @@ export const beerData: Product[] = generateIds([
     bottlingDate: "21.10.2025",
     variants: [
       {
-        volume: "0.33",
-        price: "350",
-        packaging: ["воск"],
-        remaining: "остаток: 2 шт."
-      },
-      {
         volume: "0.75л",
         price: "800",
         remaining: "остаток: 3 шт."
@@ -217,26 +210,6 @@ export const beerData: Product[] = generateIds([
   },
   {
     category: "8TH BIRTHDAY",
-    name: "Granite Sanctum",
-    style: "Wheatwine",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-granite-sanctum/6498786",
-    og: "23.0%",
-    abv: "10.3",
-    ibu: "25",
-    description: "Если ячменные вина — это огонь и мощь, то пшеничное вино — это неприступная крепость из гранита и света. Созданное на щедрой засыпи пшеничного и ячменного солода, оно поражает не жаром, а монолитной структурой и бархатистой мягкостью. Его характер — это полнотелое тело с нотами свежеиспеченного хлеба, карамели и сухофруктов, окутанное пьянящей эфирностью. Это убежище. Нерушимый алтарь, где поклоняются чистоте пшеницы.",
-    bottlingDate: "19.11.2025",
-    variants: [
-      {
-        volume: "0.33",
-        price: "350",
-        packaging: ["воск"],
-        remaining: "остаток: 1 шт."
-      },
-    ],
-    imageUrl: wheatWineImage
-  },
-  {
-    category: "8TH BIRTHDAY",
     name: "Midnight Mill",
     style: "DDH Wheatwine",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-midnight-mill/6498787",
@@ -250,7 +223,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 3 шт."
       },
       {
         volume: "0.75л",
@@ -275,7 +248,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25",
         price: "280",
         packaging: ["воск"],
-        remaining: "остаток: 9 шт."
+        remaining: "остаток: 6 шт."
       },
       {
         volume: "0.75л",
@@ -300,7 +273,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25",
         price: "300",
         packaging: ["воск"],
-        remaining: "остаток: 7 шт."
+        remaining: "остаток: 4 шт."
       },
       {
         volume: "0.75л",
