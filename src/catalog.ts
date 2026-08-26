@@ -1,5 +1,4 @@
 import type { Product } from "./types/product.ts";
-import ryeWineImage from "./images/8th-birthday/rye_wine.png";
 import oatWineImage from "./images/8th-birthday/oat_wine.png";
 import vanillaOatWineImage from "./images/8th-birthday/vanilla_oat_wine.png";
 import ddhWheatWineImage from "./images/8th-birthday/ddh_wheat_wine.png";
@@ -151,25 +150,6 @@ export const beerData: Product[] = generateIds([
   },
 
   // 8TH BIRTHDAY
-  {
-    category: "8TH BIRTHDAY",
-    name: "The Rye Golem",
-    style: "Ryewine",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-the-rye-golem/6496855",
-    og: "25.0%",
-    abv: "10.4",
-    ibu: "40",
-    description: "Это не просто пиво, а ожившая стихия зерна, могучий солодовый монстр, рожденный из щедрой засыпи ржаного солода. Его насыщенный коричневый цвет предвещает богатство вкуса, где мощь тёмного хлеба, пряные ноты ржи и тонкие оттенки горького шоколада сплетаются в единую мощную форму. Хмелевая горчинка — это не крик, а сдержанный приказ, возвращающий к порядку и балансу. Как и страж на этикетке, чьи глаза пылают зерновым огнем, этот эль терпелив и мудр. Его подлинная сила раскрывается не спеша, оставляя долгое, согревающее послевкусие с тёплыми тонами ржаных сухарей и лёгкой пряностью.",
-    bottlingDate: "21.10.2025",
-    variants: [
-      {
-        volume: "0.75л",
-        price: "800",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: ryeWineImage
-  },
   {
     category: "8TH BIRTHDAY",
     name: "Porridge, Sir!",
