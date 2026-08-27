@@ -10,7 +10,6 @@ import warmSlagImage from "./images/pepper-sauces/warm-slag.png";
 import paleBiteImage from "./images/pepper-sauces/pale_bite.png";
 import smokedTomatoGoseImage from "./images/season-beer/smoked_tomato_gose.png";
 import orangeryImage from "./images/pepper-sauces/orangery.png";
-import boutifulHarvestImage from "./images/season-beer/boutiful_harvest.png";
 import cranberryWheatImage from "./images/season-beer/cranberry_wheat.png";
 import spruceBloodImage from "./images/pepper-sauces/spruce_blood.png";
 
@@ -108,25 +107,6 @@ export const beerData: Product[] = generateIds([
       }
     ],
     imageUrl: cranberryWheatImage
-  },
-  {
-    category: "SEASON BEER",
-    name: "Boutiful Harvest",
-    style: "American Wheat Beer",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-boutiful-harvest-2026/6818027",
-    og: "14.0",
-    abv: "5.4",
-    ibu: "15",
-    description: "Пшеничное пиво в американском стиле, сдобренное хмелем Centennial, который придает напитку фруктовые и цветочные ноты.",
-    bottlingDate: "29.07.2026",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "270",
-        remaining: "остаток: 5 шт."
-      }
-    ],
-    imageUrl: boutifulHarvestImage
   },
 
   // 8TH BIRTHDAY
