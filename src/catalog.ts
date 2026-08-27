@@ -7,7 +7,6 @@ import buckWheatWineHoneyImage from "./images/8th-birthday/buckwheat_wine_honey.
 import gloomBrothersImage from "./images/season-beer/gloom-brothers.png";
 import weizendoppelbockImage from "./images/season-beer/doppelbock.png";
 import warmSlagImage from "./images/pepper-sauces/warm-slag.png";
-import bootsImage from "./images/collaboration/boots.png";
 import paleBiteImage from "./images/pepper-sauces/pale_bite.png";
 import smokedTomatoGoseImage from "./images/season-beer/smoked_tomato_gose.png";
 import orangeryImage from "./images/pepper-sauces/orangery.png";
@@ -31,25 +30,6 @@ export const beerData: Product[] = generateIds([
 
 
   // COLLABORATION
-  {
-    category: "COLLABORATION",
-    name: "The Boots",
-    style: "Double Stout",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-the-boots/6698834",
-    og: "24.0%",
-    abv: "9.0",
-    ibu: "30",
-    description: "Темный фруктовый эль с добавлением сока малины. Обладает приятным малиновым вкусом, с легкой горчинкой. Сочетание жженого солода с сочностью малины и тонкой ягодной кислинкой придает элю неповторимый вкус и аромат. Сварено на экспериментальной пивоварне Грейнрус (Alchemist Brew Lab) в г. Москва.",
-    bottlingDate: "04.05.2026",
-    variants: [
-      {
-        volume: "0.5л",
-        price: "500",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: bootsImage
-  },
 
 
   // SEASON BEER
