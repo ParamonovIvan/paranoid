@@ -26,14 +26,8 @@ export const beerData: Product[] = generateIds([
 
   // STRONG SERIES 2026
 
-
-
-  // COLLABORATION
-
-
-  // SEASON BEER
   {
-    category: "SEASON BEER",
+    category: "STRONG SERIES 2026",
     name: "Gloom Brothers",
     style: "Quadrupel",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-gloom-brothers/6622213",
@@ -52,7 +46,7 @@ export const beerData: Product[] = generateIds([
     imageUrl: gloomBrothersImage
   },
   {
-    category: "SEASON BEER",
+    category: "STRONG SERIES 2026",
     name: "Steamhaze",
     style: "Weizendoppelbock",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-steamhaze/6638616",
@@ -70,6 +64,11 @@ export const beerData: Product[] = generateIds([
     ],
     imageUrl: weizendoppelbockImage
   },
+
+  // COLLABORATION
+
+
+  // SEASON BEER
   {
     category: "SEASON BEER",
     name: "Smoked Tomato Gose",
