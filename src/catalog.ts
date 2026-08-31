@@ -1,6 +1,5 @@
 import type { Product } from "./types/product.ts";
 import oatWineImage from "./images/8th-birthday/oat_wine.png";
-import vanillaOatWineImage from "./images/8th-birthday/vanilla_oat_wine.png";
 import ddhWheatWineImage from "./images/8th-birthday/ddh_wheat_wine.png";
 import buckWheatWineImage from "./images/8th-birthday/buckwheat_wine.png";
 import buckWheatWineHoneyImage from "./images/8th-birthday/buckwheat_wine_honey.png";
@@ -127,25 +126,6 @@ export const beerData: Product[] = generateIds([
       }
     ],
     imageUrl: oatWineImage
-  },
-  {
-    category: "8TH BIRTHDAY",
-    name: "Vanilla Oblivion",
-    style: "Vanilla Oatwine",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-vanilla-oblivion/6496858",
-    og: "23.2%",
-    abv: "10.5",
-    ibu: "20",
-    description: "Это не просто пиво. Это точка невозврата. С первой же капли вы оказываетесь в плену у ванили — не десертно-сладкой, а тёплой, элегантной и гипнотической. Она окутывает мощное тело этого Oatwine, сотканное из шелковистой овсяной текстуры и плотного солодового каркаса. «Vanilla Oblivion» — это тот самый забытый вкус, в котором хочется исчезнуть без следа. Для тех, кто не боится потерять себя в идеальном моменте.",
-    bottlingDate: "11.11.2025",
-    variants: [
-      {
-        volume: "0.75л",
-        price: "800",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: vanillaOatWineImage
   },
   {
     category: "8TH BIRTHDAY",
