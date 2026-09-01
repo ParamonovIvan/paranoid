@@ -1,10 +1,8 @@
 import type { Product } from "./types/product.ts";
-import oatWineImage from "./images/8th-birthday/oat_wine.png";
 import ddhWheatWineImage from "./images/8th-birthday/ddh_wheat_wine.png";
 import buckWheatWineImage from "./images/8th-birthday/buckwheat_wine.png";
 import buckWheatWineHoneyImage from "./images/8th-birthday/buckwheat_wine_honey.png";
 import gloomBrothersImage from "./images/strong-series-2026/gloom-brothers.png";
-import weizendoppelbockImage from "./images/strong-series-2026/doppelbock.png";
 import warmSlagImage from "./images/pepper-sauces/warm-slag.png";
 import paleBiteImage from "./images/pepper-sauces/pale_bite.png";
 import smokedTomatoGoseImage from "./images/season-beer/smoked_tomato_gose.png";
@@ -39,29 +37,10 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "280",
-        remaining: "остаток: 5 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: gloomBrothersImage
-  },
-  {
-    category: "STRONG SERIES 2026",
-    name: "Steamhaze",
-    style: "Weizendoppelbock",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-steamhaze/6638616",
-    og: "22.5%",
-    abv: "10.3",
-    ibu: "20",
-    description: "Представь раннее утро в Баварии: над золотыми полями пшеницы поднимается легкий пар, смешиваясь с утренней дымкой. Это дыхание земли, которое мы поймали и закупорили в бутылку. Вайцендоппельбок, где нет ничего лишнего. Традиционный европейский хмель, отборный пшеничный солод, благородные дрожжи и время. Тело плотное, шелковистое. Легкая алкогольная теплота в финише согревает, как первый луч солнца сквозь туман.",
-    bottlingDate: "11.03.2026",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "320",
-        remaining: "остаток: 2 шт."
-      }
-    ],
-    imageUrl: weizendoppelbockImage
   },
 
   // COLLABORATION
@@ -82,7 +61,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: smokedTomatoGoseImage
@@ -101,32 +80,13 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "270",
-        remaining: "остаток: 15 шт."
+        remaining: "остаток: 13 шт."
       }
     ],
     imageUrl: cranberryWheatImage
   },
 
   // 8TH BIRTHDAY
-  {
-    category: "8TH BIRTHDAY",
-    name: "Porridge, Sir!",
-    style: "Oatwine",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-porridge-sir/6496857",
-    og: "23.0%",
-    abv: "10.0",
-    ibu: "20",
-    description: "Просыпаться ради тарелки овсянки? Сэр, это скучно. Но засыпать овёс в пивоварню — это гениально. Этот Oatwine — гимн уюту и простоте. Овсяные хлопья дарят ему не вес, а невероятно шелковистую, пышную текстуру, дополняя солодовые ноты печенья и карамели. «Porridge, Sir!» — это мощный, но удивительно сбалансированный эль, который превращает детское «надо» во взрослое «хочу».",
-    bottlingDate: "11.11.2025",
-    variants: [
-      {
-        volume: "0.75л",
-        price: "800",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: oatWineImage
-  },
   {
     category: "8TH BIRTHDAY",
     name: "Midnight Mill",
@@ -167,7 +127,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25",
         price: "280",
         packaging: ["воск"],
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 5 шт."
       },
       {
         volume: "0.75л",
@@ -192,7 +152,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25",
         price: "300",
         packaging: ["воск"],
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       },
       {
         volume: "0.75л",
