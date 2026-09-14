@@ -3,9 +3,7 @@ import ddhWheatWineImage from "./images/8th-birthday/ddh_wheat_wine.png";
 import buckWheatWineImage from "./images/8th-birthday/buckwheat_wine.png";
 import buckWheatWineHoneyImage from "./images/8th-birthday/buckwheat_wine_honey.png";
 import warmSlagImage from "./images/pepper-sauces/warm-slag.png";
-import paleBiteImage from "./images/pepper-sauces/pale_bite.png";
 import orangeryImage from "./images/pepper-sauces/orangery.png";
-import spruceBloodImage from "./images/pepper-sauces/spruce_blood.png";
 import domraImage from "./images/9th-birthday/tale.png";
 import duskweaverImage from "./images/9th-birthday/duskweaver.png";
 import honeyPawImage from "./images/9th-birthday/honey_paw.png";
@@ -33,7 +31,6 @@ import pomegranateImage from "./images/9th-birthday/pomegranate.png";
 import pomegranateCardamonImage from "./images/9th-birthday/pomegranate_cardamon.png";
 import grapeImage from "./images/9th-birthday/grape.png";
 import grapeCinnamonImage from "./images/9th-birthday/grape_cinnamon.png";
-import ghostMapleImage from "./images/9th-birthday/ghost_maple.png";
 import monarchImage from "./images/9th-birthday/monarch.png";
 import frozenImage from "./images/9th-birthday/frozen.png";
 import stoneBearImage from "./images/9th-birthday/stone_bear.png";
@@ -72,7 +69,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "400",
-        remaining: "остаток: 19 шт."
+        remaining: "остаток: 16 шт."
       },
       {
         volume: "0.75л",
@@ -283,7 +280,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "730",
         packaging: ["воск"],
-        remaining: "остаток: 20 шт."
+        remaining: "остаток: 18 шт."
       },
     ],
     imageUrl: lingonberryImage
@@ -323,7 +320,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "750",
         packaging: ["воск"],
-        remaining: "остаток: 21 шт."
+        remaining: "остаток: 19 шт."
       },
     ],
     imageUrl: wolfberryImage
@@ -343,7 +340,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "770",
         packaging: ["воск"],
-        remaining: "остаток: 11 шт."
+        remaining: "остаток: 9 шт."
       },
     ],
     imageUrl: hedgewardenImage
@@ -423,7 +420,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "770",
         packaging: ["воск"],
-        remaining: "остаток: 14 шт."
+        remaining: "остаток: 12 шт."
       },
     ],
     imageUrl: phoenixImage
@@ -503,7 +500,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "720",
         packaging: ["воск"],
-        remaining: "остаток: 18 шт."
+        remaining: "остаток: 15 шт."
       },
     ],
     imageUrl: rosmaryoshkaImage
@@ -523,7 +520,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "700",
         packaging: ["воск"],
-        remaining: "остаток: 25 шт."
+        remaining: "остаток: 22 шт."
       },
     ],
     imageUrl: seabuckImage
@@ -604,7 +601,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "450",
         packaging: ["воск"],
-        remaining: "остаток: 23 шт."
+        remaining: "остаток: 21 шт."
       },
     ],
     imageUrl: pearImage
@@ -644,7 +641,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "450",
         packaging: ["воск"],
-        remaining: "остаток: 23 шт."
+        remaining: "остаток: 21 шт."
       },
     ],
     imageUrl: pomegranateImage
@@ -684,7 +681,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "450",
         packaging: ["воск"],
-        remaining: "остаток: 25 шт."
+        remaining: "остаток: 23 шт."
       },
     ],
     imageUrl: grapeImage
@@ -712,26 +709,6 @@ export const beerData: Product[] = generateIds([
 
   {
     category: "9TH BIRTHDAY",
-    name: "Ghost Maple",
-    style: "Imperial Barleywine",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-ghost-maple/6851886",
-    og: "28.7%",
-    abv: "17.2",
-    ibu: "50",
-    description: "Клён когда-то здесь был. Теперь — только его тень. Это не барливайн для уюта. Это барливайн для тех, кто не боится пустоты. Первый глоток — не сладость. Сухие тёмные фрукты, чернослив. Тело — тонкое, горячее, как у выдержанного вина. Вкус режет сухостью, а послевкусие — долгое, согревающее, с нотами старого хереса, орехов и лёгкой горечи.",
-    bottlingDate: "12.05.2026",
-    variants: [
-      {
-        volume: "0.25л",
-        packaging: ["воск"],
-        price: "350",
-        remaining: "остаток: 1 шт."
-      },
-    ],
-    imageUrl: ghostMapleImage
-  },
-  {
-    category: "9TH BIRTHDAY",
     name: "Monarch",
     style: "American Barleywine",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-monarch/6851884",
@@ -745,7 +722,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         packaging: ["воск"],
         price: "500",
-        remaining: "остаток: 20 шт."
+        remaining: "остаток: 17 шт."
       },
     ],
     imageUrl: monarchImage
@@ -765,7 +742,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         packaging: ["воск"],
         price: "400",
-        remaining: "остаток: 30 шт."
+        remaining: "остаток: 27 шт."
       },
     ],
     imageUrl: frozenImage
@@ -785,7 +762,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "400",
         packaging: ["воск"],
-        remaining: "остаток: 39 шт."
+        remaining: "остаток: 36 шт."
       },
       {
         volume: "0.75л",
@@ -810,7 +787,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.5л",
         price: "600",
         packaging: ["тубус"],
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 1 шт."
       },
     ],
     imageUrl: buddyImage
@@ -831,26 +808,10 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 2 шт."
       }
     ],
     imageUrl: warmSlagImage
-  },
-  {
-    category: "PEPPER SAUCES",
-    name: "Pale Bite",
-    style: "Coconut Garlic Pepper Sauce",
-    spiciness: "2/10",
-    description: "Он не ступает, он плывёт. Он не кричит, он шепчет. «Pale Bite» — это призрак в белом саване, застывший на пороге. Первое прикосновение — обманчиво нежное: сливочный шёпот кокоса и холодный, почти медитативный укус чеснока. Но не верь тишине. В глубине этой белой дымки дышит жаром Хабанеро — медленный, тягучий огонь, который не обжигает, а прорастает изнутри, как память о ещё не сделанном шаге. Состав: кокосовое молоко, чеснок, уксус белый винный, соль, сахар, мед, перец Хабанеро Оранж, ксантановая камедь.",
-    bottlingDate: "10.06.2026",
-    variants: [
-      {
-        volume: "0.2л",
-        price: "600",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: paleBiteImage
   },
   {
     category: "PEPPER SAUCES",
@@ -863,26 +824,10 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 3 шт."
-      }
-    ],
-    imageUrl: orangeryImage
-  },
-  {
-    category: "PEPPER SAUCES",
-    name: "Spruce Blood",
-    style: "lingonberries Pepper Sauce",
-    spiciness: "3/10",
-    description: "Это не джем. Это то, во что превращается джем, когда его забывают в лесу на год. Брусника и клюква дают плотную, тёмную кислинку, как у старого красного вина. Хвойные побеги — не ментол, а древесная горечь. Экстракт пихты как смола, разогретая солнцем, липкая и тягучая. Острота — без ударов. Халапеньо и Скорпион Тринидад разливаются сухим, ровным теплом, которое не отпускает. Болгарский перец добавляет мясистый объём, розмарин и корица — терпкий финиш. Это соус, который пахнет лесом, гниющими шишками и тишиной. Состав: брусника, клюква, перец красный болгарский, перец Халапеньо красный, перец Скорпион Тринидад, еловые побеги, экстракт пихты, розмарин, корица, черный перец, уксус яблочный, соль морская, сахар тростниковый.",
-    bottlingDate: "30.07.2026",
-    variants: [
-      {
-        volume: "0.2л",
-        price: "700",
         remaining: "остаток: 1 шт."
       }
     ],
-    imageUrl: spruceBloodImage
+    imageUrl: orangeryImage
   },
 ]);
 
