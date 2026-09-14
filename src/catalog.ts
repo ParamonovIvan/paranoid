@@ -182,6 +182,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.25л",
         price: "700",
+        packaging: ["воск"],
         remaining: "остаток: 21 шт."
       },
     ],
@@ -201,6 +202,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.25л",
         price: "720",
+        packaging: ["воск"],
         remaining: "остаток: 21 шт."
       },
     ],
@@ -220,6 +222,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.25л",
         price: "730",
+        packaging: ["воск"],
         remaining: "остаток: 21 шт."
       },
     ],
@@ -239,6 +242,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.25л",
         price: "750",
+        packaging: ["воск"],
         remaining: "остаток: 1 шт."
       },
     ],
@@ -258,6 +262,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.25л",
         price: "700",
+        packaging: ["воск"],
         remaining: "остаток: 9 шт."
       },
     ],
@@ -277,6 +282,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.25л",
         price: "730",
+        packaging: ["воск"],
         remaining: "остаток: 20 шт."
       },
     ],
@@ -296,6 +302,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.25л",
         price: "750",
+        packaging: ["воск"],
         remaining: "остаток: 18 шт."
       },
     ],
@@ -315,6 +322,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.25л",
         price: "750",
+        packaging: ["воск"],
         remaining: "остаток: 21 шт."
       },
     ],
@@ -334,6 +342,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.25л",
         price: "770",
+        packaging: ["воск"],
         remaining: "остаток: 11 шт."
       },
     ],
@@ -353,6 +362,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.25л",
         price: "730",
+        packaging: ["воск"],
         remaining: "остаток: 24 шт."
       },
     ],
@@ -372,6 +382,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.25л",
         price: "750",
+        packaging: ["воск"],
         remaining: "остаток: 11 шт."
       },
     ],
@@ -391,6 +402,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.25л",
         price: "750",
+        packaging: ["воск"],
         remaining: "остаток: 19 шт."
       },
     ],
@@ -410,6 +422,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.25л",
         price: "770",
+        packaging: ["воск"],
         remaining: "остаток: 14 шт."
       },
     ],
@@ -429,6 +442,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.25л",
         price: "750",
+        packaging: ["воск"],
         remaining: "остаток: 21 шт."
       },
     ],
@@ -448,6 +462,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.25л",
         price: "770",
+        packaging: ["воск"],
         remaining: "остаток: 12 шт."
       },
     ],
@@ -467,6 +482,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.25л",
         price: "700",
+        packaging: ["воск"],
         remaining: "остаток: 25 шт."
       },
     ],
@@ -486,6 +502,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.25л",
         price: "720",
+        packaging: ["воск"],
         remaining: "остаток: 18 шт."
       },
     ],
@@ -505,6 +522,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.25л",
         price: "700",
+        packaging: ["воск"],
         remaining: "остаток: 25 шт."
       },
     ],
@@ -524,6 +542,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.25л",
         price: "720",
+        packaging: ["воск"],
         remaining: "остаток: 22 шт."
       },
     ],
@@ -544,6 +563,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.25л",
         price: "450",
+        packaging: ["воск"],
         remaining: "остаток: 26 шт."
       },
     ],
@@ -563,6 +583,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.25л",
         price: "470",
+        packaging: ["воск"],
         remaining: "остаток: 20 шт."
       },
     ],
@@ -582,6 +603,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.25л",
         price: "450",
+        packaging: ["воск"],
         remaining: "остаток: 23 шт."
       },
     ],
@@ -601,6 +623,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.25л",
         price: "470",
+        packaging: ["воск"],
         remaining: "остаток: 20 шт."
       },
     ],
@@ -620,6 +643,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.25л",
         price: "450",
+        packaging: ["воск"],
         remaining: "остаток: 23 шт."
       },
     ],
@@ -639,6 +663,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.25л",
         price: "470",
+        packaging: ["воск"],
         remaining: "остаток: 17 шт."
       },
     ],
@@ -658,6 +683,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.25л",
         price: "450",
+        packaging: ["воск"],
         remaining: "остаток: 25 шт."
       },
     ],
@@ -677,6 +703,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.25л",
         price: "470",
+        packaging: ["воск"],
         remaining: "остаток: 26 шт."
       },
     ],
