@@ -879,7 +879,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "700",
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: spruceBloodImage
