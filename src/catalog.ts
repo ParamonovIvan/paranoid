@@ -34,7 +34,6 @@ import grapeCinnamonImage from "./images/9th-birthday/grape_cinnamon.png";
 import monarchImage from "./images/9th-birthday/monarch.png";
 import frozenImage from "./images/9th-birthday/frozen.png";
 import stoneBearImage from "./images/9th-birthday/stone_bear.png";
-import buddyImage from "./images/9th-birthday/dates_buddy.png";
 import bsaImage from "./images/strong-series-2026/bsa.png";
 
 
@@ -64,7 +63,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "350",
-        remaining: "остаток: 14 шт."
+        remaining: "остаток: 12 шт."
       },
       {
         volume: "0.375л",
@@ -103,7 +102,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "350",
         packaging: ["воск"],
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       },
       {
         volume: "0.75л",
@@ -128,7 +127,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "280",
         packaging: ["воск"],
-        remaining: "остаток: 3 шт."
+        remaining: "остаток: 2 шт."
       },
       {
         volume: "0.75л",
@@ -153,7 +152,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "300",
         packaging: ["воск"],
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       },
       {
         volume: "0.75л",
@@ -722,7 +721,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         packaging: ["воск"],
         price: "500",
-        remaining: "остаток: 17 шт."
+        remaining: "остаток: 16 шт."
       },
     ],
     imageUrl: monarchImage
@@ -742,7 +741,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         packaging: ["воск"],
         price: "400",
-        remaining: "остаток: 27 шт."
+        remaining: "остаток: 26 шт."
       },
     ],
     imageUrl: frozenImage
@@ -762,7 +761,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "400",
         packaging: ["воск"],
-        remaining: "остаток: 36 шт."
+        remaining: "остаток: 34 шт."
       },
       {
         volume: "0.75л",
@@ -771,26 +770,6 @@ export const beerData: Product[] = generateIds([
       }
     ],
     imageUrl: stoneBearImage
-  },
-  {
-    category: "9TH BIRTHDAY",
-    name: "Galactic Buddy",
-    style: "Imperial Stout",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-galactic-buddy/6228384",
-    og: "30.1%",
-    abv: "10.6",
-    ibu: "20",
-    description: "Крепкий, сладкий, плотный имперский стаут двойного затирания с лактозой, финиковым сиропом и дубовыми чипсами, вымоченными в виски.",
-    bottlingDate: "05.04.2025",
-    variants: [
-      {
-        volume: "0.5л",
-        price: "600",
-        packaging: ["тубус"],
-        remaining: "остаток: 1 шт."
-      },
-    ],
-    imageUrl: buddyImage
   },
 ]);
 
