@@ -7,7 +7,6 @@ import orangeryImage from "./images/pepper-sauces/orangery.png";
 import domraImage from "./images/9th-birthday/tale.png";
 import duskweaverImage from "./images/9th-birthday/duskweaver.png";
 import honeyPawImage from "./images/9th-birthday/honey_paw.png";
-import hiveImage from "./images/9th-birthday/hive.png";
 import rattleberryImage from "./images/9th-birthday/rattleberry.png";
 import lingonberryImage from "./images/9th-birthday/lingonberry.png";
 import glintwoodImage from "./images/9th-birthday/glintwood.png";
@@ -124,12 +123,6 @@ export const beerData: Product[] = generateIds([
     bottlingDate: "25.11.2025",
     variants: [
       {
-        volume: "0.25л",
-        price: "280",
-        packaging: ["воск"],
-        remaining: "остаток: 2 шт."
-      },
-      {
         volume: "0.75л",
         price: "800",
         remaining: "остаток: 3 шт."
@@ -173,7 +166,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "700",
         packaging: ["воск"],
-        remaining: "остаток: 20 шт."
+        remaining: "остаток: 19 шт."
       },
     ],
     imageUrl: domraImage
@@ -213,30 +206,10 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "730",
         packaging: ["воск"],
-        remaining: "остаток: 21 шт."
+        remaining: "остаток: 20 шт."
       },
     ],
     imageUrl: honeyPawImage
-  },
-  {
-    category: "9TH BIRTHDAY",
-    name: "Hive & Velvet",
-    style: "Cranberry & Vanilla Melomel",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-hive-and-velvet/6851921",
-    og: "50.0%",
-    abv: "15.0",
-    ibu: "5",
-    description: "Пчела знает толк в мёде. А мы знаем толк в клюкве. Северная терпкость встречается с ванильной нежностью — клюква не сдаётся, ваниль не перебивает, они звучат в унисон, как дуэт, который нашёл свой ритм. Без воды, только ягода, ваниль, мёд и время. Мягкий, согревающий, с бархатным финалом — как тёплый шарф на северном ветру.",
-    bottlingDate: "06.06.2026",
-    variants: [
-      {
-        volume: "0.25л",
-        price: "750",
-        packaging: ["воск"],
-        remaining: "остаток: 1 шт."
-      },
-    ],
-    imageUrl: hiveImage
   },
   {
     category: "9TH BIRTHDAY",
@@ -293,7 +266,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "750",
         packaging: ["воск"],
-        remaining: "остаток: 18 шт."
+        remaining: "остаток: 17 шт."
       },
     ],
     imageUrl: glintwoodImage
@@ -413,7 +386,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "770",
         packaging: ["воск"],
-        remaining: "остаток: 12 шт."
+        remaining: "остаток: 11 шт."
       },
     ],
     imageUrl: phoenixImage
@@ -513,7 +486,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "700",
         packaging: ["воск"],
-        remaining: "остаток: 22 шт."
+        remaining: "остаток: 21 шт."
       },
     ],
     imageUrl: seabuckImage
@@ -533,7 +506,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "720",
         packaging: ["воск"],
-        remaining: "остаток: 21 шт."
+        remaining: "остаток: 20 шт."
       },
     ],
     imageUrl: sunnelImage
@@ -554,7 +527,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "450",
         packaging: ["воск"],
-        remaining: "остаток: 25 шт."
+        remaining: "остаток: 23 шт."
       },
     ],
     imageUrl: appleImage
@@ -574,7 +547,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "470",
         packaging: ["воск"],
-        remaining: "остаток: 20 шт."
+        remaining: "остаток: 15 шт."
       },
     ],
     imageUrl: appleNutmegImage
@@ -594,7 +567,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "450",
         packaging: ["воск"],
-        remaining: "остаток: 21 шт."
+        remaining: "остаток: 20 шт."
       },
     ],
     imageUrl: pearImage
@@ -614,7 +587,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "470",
         packaging: ["воск"],
-        remaining: "остаток: 20 шт."
+        remaining: "остаток: 19 шт."
       },
     ],
     imageUrl: pearVanillaImage
@@ -634,7 +607,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "450",
         packaging: ["воск"],
-        remaining: "остаток: 20 шт."
+        remaining: "остаток: 19 шт."
       },
     ],
     imageUrl: pomegranateImage
@@ -654,7 +627,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "470",
         packaging: ["воск"],
-        remaining: "остаток: 17 шт."
+        remaining: "остаток: 16 шт."
       },
     ],
     imageUrl: pomegranateCardamonImage
@@ -674,7 +647,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "450",
         packaging: ["воск"],
-        remaining: "остаток: 23 шт."
+        remaining: "остаток: 22 шт."
       },
     ],
     imageUrl: grapeImage
@@ -694,7 +667,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "470",
         packaging: ["воск"],
-        remaining: "остаток: 26 шт."
+        remaining: "остаток: 25 шт."
       },
     ],
     imageUrl: grapeCinnamonImage
@@ -715,7 +688,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         packaging: ["воск"],
         price: "500",
-        remaining: "остаток: 16 шт."
+        remaining: "остаток: 15 шт."
       },
     ],
     imageUrl: monarchImage
@@ -735,7 +708,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         packaging: ["воск"],
         price: "400",
-        remaining: "остаток: 26 шт."
+        remaining: "остаток: 25 шт."
       },
     ],
     imageUrl: frozenImage
@@ -755,7 +728,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "400",
         packaging: ["воск"],
-        remaining: "остаток: 34 шт."
+        remaining: "остаток: 25 шт."
       },
       {
         volume: "0.75л",

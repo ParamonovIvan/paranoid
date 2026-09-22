@@ -426,7 +426,7 @@ const BeerCatalog = () => {
         style={{ marginBottom: 24 }}
       >
         <Paragraph style={{ color: "#000000E0", fontSize: responsive.sm ? 16 : 14, margin: 0 }}>
-          от 18/09/2026
+          от 22/09/2026
         </Paragraph>
         <Paragraph style={{
           color: "#000000E0",
