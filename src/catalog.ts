@@ -34,7 +34,7 @@ import monarchImage from "./images/9th-birthday/monarch.png";
 import frozenImage from "./images/9th-birthday/frozen.png";
 import stoneBearImage from "./images/9th-birthday/stone_bear.png";
 import bsaImage from "./images/strong-series-2026/bsa.png";
-
+import botanicalImage from "./images/pepper-sauces/botanical.png";
 
 let globalIdCounter = 1;
 
@@ -186,7 +186,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "720",
         packaging: ["воск"],
-        remaining: "остаток: 17 шт."
+        remaining: "остаток: 16 шт."
       },
     ],
     imageUrl: duskweaverImage
@@ -266,7 +266,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "750",
         packaging: ["воск"],
-        remaining: "остаток: 16 шт."
+        remaining: "остаток: 15 шт."
       },
     ],
     imageUrl: glintwoodImage
@@ -506,7 +506,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "720",
         packaging: ["воск"],
-        remaining: "остаток: 17 шт."
+        remaining: "остаток: 16 шт."
       },
     ],
     imageUrl: sunnelImage
@@ -527,7 +527,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "450",
         packaging: ["воск"],
-        remaining: "остаток: 20 шт."
+        remaining: "остаток: 19 шт."
       },
     ],
     imageUrl: appleImage
@@ -547,7 +547,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "470",
         packaging: ["воск"],
-        remaining: "остаток: 15 шт."
+        remaining: "остаток: 14 шт."
       },
     ],
     imageUrl: appleNutmegImage
@@ -567,7 +567,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "450",
         packaging: ["воск"],
-        remaining: "остаток: 17 шт."
+        remaining: "остаток: 16 шт."
       },
     ],
     imageUrl: pearImage
@@ -627,7 +627,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "470",
         packaging: ["воск"],
-        remaining: "остаток: 15 шт."
+        remaining: "остаток: 14 шт."
       },
     ],
     imageUrl: pomegranateCardamonImage
@@ -688,7 +688,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         packaging: ["воск"],
         price: "500",
-        remaining: "остаток: 12 шт."
+        remaining: "остаток: 11 шт."
       },
     ],
     imageUrl: monarchImage
@@ -774,6 +774,22 @@ export const sauceData: Product[] = generateIds([
       }
     ],
     imageUrl: orangeryImage
+  },
+  {
+    category: "PEPPER SAUCES",
+    name: "Botanical",
+    style: "Chickpeas Serrano Pepper Sauce",
+    spiciness: "3/10",
+    description: "Используйте его, когда вам нужна не «изюминка», а фундамент. Когда вы хотите, чтобы салат, суп, сэндвич или соус имели неизменную, гарантированную зелёную основу. Он не перебивает. Он стабилизирует. Он устраняет элемент случайности из кулинарии. Это вкус уверенности. Вкус того, что всё идёт по плану. Даже если план — полный апокалипсис. Состав: перец болгарский зеленый, нут, перец Серрано, перец Скорпион Тринидад, сельдерей, шпинат, кинза, лук, чеснок, имбирь, лайм, масло оливковое, порошок горчичный, экстракт брокколи, орегано, соль морская.",
+    bottlingDate: "03.10.2026",
+    variants: [
+      {
+        volume: "0.2л",
+        price: "500",
+        remaining: "остаток: 12 шт."
+      }
+    ],
+    imageUrl: botanicalImage
   },
 ]);
 
