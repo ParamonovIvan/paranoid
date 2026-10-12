@@ -3,7 +3,6 @@ import ddhWheatWineImage from "./images/8th-birthday/ddh_wheat_wine.png";
 import buckWheatWineImage from "./images/8th-birthday/buckwheat_wine.png";
 import buckWheatWineHoneyImage from "./images/8th-birthday/buckwheat_wine_honey.png";
 import warmSlagImage from "./images/pepper-sauces/warm-slag.png";
-import orangeryImage from "./images/pepper-sauces/orangery.png";
 import domraImage from "./images/9th-birthday/tale.png";
 import duskweaverImage from "./images/9th-birthday/duskweaver.png";
 import honeyPawImage from "./images/9th-birthday/honey_paw.png";
@@ -62,7 +61,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "350",
-        remaining: "остаток: 10 шт."
+        remaining: "остаток: 2 шт."
       },
       {
         volume: "0.375л",
@@ -166,7 +165,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "700",
         packaging: ["воск"],
-        remaining: "остаток: 16 шт."
+        remaining: "остаток: 15 шт."
       },
     ],
     imageUrl: domraImage
@@ -186,7 +185,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "720",
         packaging: ["воск"],
-        remaining: "остаток: 16 шт."
+        remaining: "остаток: 15 шт."
       },
     ],
     imageUrl: duskweaverImage
@@ -206,7 +205,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "730",
         packaging: ["воск"],
-        remaining: "остаток: 17 шт."
+        remaining: "остаток: 16 шт."
       },
     ],
     imageUrl: honeyPawImage
@@ -226,7 +225,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "700",
         packaging: ["воск"],
-        remaining: "остаток: 8 шт."
+        remaining: "остаток: 7 шт."
       },
     ],
     imageUrl: rattleberryImage
@@ -246,7 +245,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "730",
         packaging: ["воск"],
-        remaining: "остаток: 18 шт."
+        remaining: "остаток: 17 шт."
       },
     ],
     imageUrl: lingonberryImage
@@ -266,7 +265,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "750",
         packaging: ["воск"],
-        remaining: "остаток: 15 шт."
+        remaining: "остаток: 14 шт."
       },
     ],
     imageUrl: glintwoodImage
@@ -286,7 +285,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "750",
         packaging: ["воск"],
-        remaining: "остаток: 16 шт."
+        remaining: "остаток: 15 шт."
       },
     ],
     imageUrl: wolfberryImage
@@ -306,7 +305,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "770",
         packaging: ["воск"],
-        remaining: "остаток: 8 шт."
+        remaining: "остаток: 7 шт."
       },
     ],
     imageUrl: hedgewardenImage
@@ -326,7 +325,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "730",
         packaging: ["воск"],
-        remaining: "остаток: 21 шт."
+        remaining: "остаток: 20 шт."
       },
     ],
     imageUrl: medovisnjaImage
@@ -346,7 +345,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "750",
         packaging: ["воск"],
-        remaining: "остаток: 10 шт."
+        remaining: "остаток: 9 шт."
       },
     ],
     imageUrl: varDedImage
@@ -366,7 +365,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "750",
         packaging: ["воск"],
-        remaining: "остаток: 16 шт."
+        remaining: "остаток: 15 шт."
       },
     ],
     imageUrl: nightwatchImage
@@ -386,7 +385,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "770",
         packaging: ["воск"],
-        remaining: "остаток: 10 шт."
+        remaining: "остаток: 9 шт."
       },
     ],
     imageUrl: phoenixImage
@@ -406,7 +405,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "750",
         packaging: ["воск"],
-        remaining: "остаток: 18 шт."
+        remaining: "остаток: 17 шт."
       },
     ],
     imageUrl: solrubrumImage
@@ -426,7 +425,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "770",
         packaging: ["воск"],
-        remaining: "остаток: 12 шт."
+        remaining: "остаток: 11 шт."
       },
     ],
     imageUrl: sunrootImage
@@ -446,7 +445,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "700",
         packaging: ["воск"],
-        remaining: "остаток: 22 шт."
+        remaining: "остаток: 21 шт."
       },
     ],
     imageUrl: songberryImage
@@ -466,7 +465,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "720",
         packaging: ["воск"],
-        remaining: "остаток: 14 шт."
+        remaining: "остаток: 13 шт."
       },
     ],
     imageUrl: rosmaryoshkaImage
@@ -486,7 +485,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "700",
         packaging: ["воск"],
-        remaining: "остаток: 18 шт."
+        remaining: "остаток: 17 шт."
       },
     ],
     imageUrl: seabuckImage
@@ -506,7 +505,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "720",
         packaging: ["воск"],
-        remaining: "остаток: 16 шт."
+        remaining: "остаток: 15 шт."
       },
     ],
     imageUrl: sunnelImage
@@ -527,7 +526,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "450",
         packaging: ["воск"],
-        remaining: "остаток: 19 шт."
+        remaining: "остаток: 18 шт."
       },
     ],
     imageUrl: appleImage
@@ -547,7 +546,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "470",
         packaging: ["воск"],
-        remaining: "остаток: 14 шт."
+        remaining: "остаток: 13 шт."
       },
     ],
     imageUrl: appleNutmegImage
@@ -567,7 +566,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "450",
         packaging: ["воск"],
-        remaining: "остаток: 16 шт."
+        remaining: "остаток: 15 шт."
       },
     ],
     imageUrl: pearImage
@@ -587,7 +586,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "470",
         packaging: ["воск"],
-        remaining: "остаток: 19 шт."
+        remaining: "остаток: 18 шт."
       },
     ],
     imageUrl: pearVanillaImage
@@ -607,7 +606,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "450",
         packaging: ["воск"],
-        remaining: "остаток: 16 шт."
+        remaining: "остаток: 15 шт."
       },
     ],
     imageUrl: pomegranateImage
@@ -627,7 +626,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "470",
         packaging: ["воск"],
-        remaining: "остаток: 14 шт."
+        remaining: "остаток: 13 шт."
       },
     ],
     imageUrl: pomegranateCardamonImage
@@ -647,7 +646,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "450",
         packaging: ["воск"],
-        remaining: "остаток: 22 шт."
+        remaining: "остаток: 21 шт."
       },
     ],
     imageUrl: grapeImage
@@ -667,7 +666,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "470",
         packaging: ["воск"],
-        remaining: "остаток: 22 шт."
+        remaining: "остаток: 21 шт."
       },
     ],
     imageUrl: grapeCinnamonImage
@@ -688,7 +687,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         packaging: ["воск"],
         price: "500",
-        remaining: "остаток: 11 шт."
+        remaining: "остаток: 10 шт."
       },
     ],
     imageUrl: monarchImage
@@ -708,7 +707,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         packaging: ["воск"],
         price: "400",
-        remaining: "остаток: 22 шт."
+        remaining: "остаток: 21 шт."
       },
     ],
     imageUrl: frozenImage
@@ -728,7 +727,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "400",
         packaging: ["воск"],
-        remaining: "остаток: 21 шт."
+        remaining: "остаток: 13 шт."
       },
       {
         volume: "0.75л",
@@ -761,22 +760,6 @@ export const sauceData: Product[] = generateIds([
   },
   {
     category: "PEPPER SAUCES",
-    name: "Orangery",
-    style: "Tropical Charapita Pepper Sauce",
-    spiciness: "2/10",
-    description: "Откройте банку осторожно. Пахнет не едой. Пахнет заброшенным зимним садом, где под стеклом до сих пор тлеют апельсины. Первый глоток — это обман. Яркая, тропическая атака. Но почти сразу сладость провисает, как старая кожура. И из-под неё проступает другое: хвойная горечь, травянистая резкость, уксусная острота. Приятное, навязчивое, мелкое жжение, которое заставляет вас копаться в этом вкусе дальше, искать утраченную сладость, но находить только всё новые слои странного, красивого разложения. Состав: пюре манго, ананасы, перец Ахи Чарапита Оранж, помидоры черри, лук, ягоды можжевельника, масло оливковое, розмарин, апельсины, перец черный, имбирь, экстракт пихтовый, уксус виноградный, мед, соль морская, экстракт брокколи.",
-    bottlingDate: "13.07.2026",
-    variants: [
-      {
-        volume: "0.2л",
-        price: "600",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: orangeryImage
-  },
-  {
-    category: "PEPPER SAUCES",
     name: "Botanical",
     style: "Chickpeas Serrano Pepper Sauce",
     spiciness: "3/10",
@@ -786,7 +769,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "500",
-        remaining: "остаток: 12 шт."
+        remaining: "остаток: 11 шт."
       }
     ],
     imageUrl: botanicalImage
