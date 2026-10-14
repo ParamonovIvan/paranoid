@@ -34,6 +34,11 @@ import frozenImage from "./images/9th-birthday/frozen.png";
 import stoneBearImage from "./images/9th-birthday/stone_bear.png";
 import bsaImage from "./images/strong-series-2026/bsa.png";
 import botanicalImage from "./images/pepper-sauces/botanical.png";
+import amricanSaisonImage from "./images/season-beer/american_saison.png";
+import saisonImage from "./images/season-beer/saison.png";
+import spruceSaisonImage from "./images/season-beer/spruce_saison.png";
+import raspberrySaisonImage from "./images/season-beer/raspberry_saison.png";
+import eucalyptusSaisonImage from "./images/season-beer/eucalyptus_saison.png";
 
 let globalIdCounter = 1;
 
@@ -81,7 +86,101 @@ export const beerData: Product[] = generateIds([
 
 
   // SEASON BEER
-
+  {
+    category: "SEASON BEER",
+    name: "The Ransom of Red Chief",
+    style: "American Saison with Citrus and Pepper",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-the-ransom-of-red-chief-2026/6961863",
+    og: "12.1%",
+    abv: "6.2",
+    ibu: "20",
+    description: "«Фермерское», сильно выброженное, умеренно горькое пиво с освежающе-пряным букетом спелых фруктов, прелого сена и легкими цитрусовыми нотками. Состав: вода, солод ячменный, солод пшеничный, сок и цедра апельсина, смесь перцев (черный, розовый, белый, зеленый), хмель, дрожжи.",
+    bottlingDate: "29.09.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "300",
+        remaining: "остаток: 27 шт."
+      }
+    ],
+    imageUrl: amricanSaisonImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Totem Grain",
+    style: "Saison",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-totem-grain/7307678",
+    og: "13.0%",
+    abv: "6.3",
+    ibu: "15",
+    description: "Лось стоит на краю поля, не двигаясь. Его копыта вросли в землю, рога тянутся к небу, и в этом молчании — больше смысла, чем в любом крике. Он не ждёт рассвета. Он просто есть. Так и этот сэзон — без лишних движений, без попыток понравиться с первого глотка. Сначала хлебная сухость зерна, потом горчинка, которая приходит не сразу, а когда уже почти забыл о ней. И в самом конце — чистота, как ветер над полем, где уже ничего не растёт, но всё ещё дышит.",
+    bottlingDate: "13.10.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "280",
+        remaining: "остаток: 10 шт."
+      }
+    ],
+    imageUrl: saisonImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Totem Needle",
+    style: "Spruce Saison",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-totem-needle/6985989",
+    og: "13.0%",
+    abv: "6.3",
+    ibu: "15",
+    description: "Волк не воет — он слушает. Он знает: лес говорит только с теми, кто умеет молчать. В этом сэзоне нет места фруктовой яркости или цветочной сладости. Только хвоя, вплетённая в сухое тело ячменя, и смоляной след, который остаётся на языке как воспоминание о зимнем лесе. Глоток — и ты слышишь ветер в ветвях. Ещё один — и сам становишься частью тишины.",
+    bottlingDate: "30.09.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "290",
+        remaining: "остаток: 16 шт."
+      }
+    ],
+    imageUrl: spruceSaisonImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Totem Root",
+    style: "Raspberry & Ginger Saison",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-totem-root/7219071",
+    og: "15.0%",
+    abv: "7.2",
+    ibu: "50",
+    description: "Медведь знает, где малина, и он знает, где имбирь. Он не спешит — копает лапой землю и достаёт корни, которые пахнут теплом и огнём. Не ищи в этом сэзоне сладкую сказку. В нём есть острота, которая не бьёт, а пробуждает. Есть ягода, которая не приторна, а честна. И есть земля, которая держит всё вместе. В бокале — прозрачный розовый свет. Тело лёгкое, почти невесомое, а горечь — сухая, тонизирующая, как у хорошего биттера. Малина даёт не сладость, а ягодную искру, имбирь — тёплый укус на выдохе. Освежает, как первый глоток тоника в жаркий день.",
+    bottlingDate: "11.10.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "310",
+        remaining: "остаток: 17 шт."
+      }
+    ],
+    imageUrl: raspberrySaisonImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Totem Leaf",
+    style: "Eucalyptus Saison",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-totem-leaf/7307764",
+    og: "13.0%",
+    abv: "6.3",
+    ibu: "20",
+    description: "Филин не говорит. Он смотрит. Его крылья раскрыты над эвкалиптовой рощей, и ветер несёт холодную свежесть листьев, которые никогда не желтеют. В этом сэзоне нет суеты — есть только тишина и лист, который парит в ней. Эфирная, травянистая прохлада входит мягко, держится ровно и уходит без следа, оставляя послевкусие чистое, как ночное небо. Садись рядом. Ничего не говори. Просто пей.",
+    bottlingDate: "13.10.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "300",
+        remaining: "остаток: 16 шт."
+      }
+    ],
+    imageUrl: eucalyptusSaisonImage
+  },
 
 
   // 8TH BIRTHDAY
