@@ -100,7 +100,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "300",
-        remaining: "остаток: 25 шт."
+        remaining: "остаток: 24 шт."
       }
     ],
     imageUrl: amricanSaisonImage
@@ -119,7 +119,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "280",
-        remaining: "остаток: 9 шт."
+        remaining: "остаток: 8 шт."
       }
     ],
     imageUrl: saisonImage
@@ -138,7 +138,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "290",
-        remaining: "остаток: 15 шт."
+        remaining: "остаток: 14 шт."
       }
     ],
     imageUrl: spruceSaisonImage
@@ -157,7 +157,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "310",
-        remaining: "остаток: 16 шт."
+        remaining: "остаток: 15 шт."
       }
     ],
     imageUrl: raspberrySaisonImage
@@ -176,7 +176,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "300",
-        remaining: "остаток: 15 шт."
+        remaining: "остаток: 14 шт."
       }
     ],
     imageUrl: eucalyptusSaisonImage
@@ -195,12 +195,6 @@ export const beerData: Product[] = generateIds([
     description: "Это пшеничное вино сброжено нейтральными дрожжами, что подчеркнуть яркую хмелевую составляющую. Сухое охмеление привносит в мягкое, бархатистое тело пшеничного вина тёмную, ароматную интригу. Оживают цитрусовые и тропические аккорды, которые, как лунные блики, подсвечивают солодовую мощь, добавляя ей призрачной сложности и свежести. Ночная смена на мельнице вкуса только началась.",
     bottlingDate: "19.11.2025",
     variants: [
-      {
-        volume: "0.33л",
-        price: "350",
-        packaging: ["воск"],
-        remaining: "остаток: 1 шт."
-      },
       {
         volume: "0.75л",
         price: "800",
@@ -284,7 +278,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "720",
         packaging: ["воск"],
-        remaining: "остаток: 14 шт."
+        remaining: "остаток: 13 шт."
       },
     ],
     imageUrl: duskweaverImage
@@ -304,7 +298,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "730",
         packaging: ["воск"],
-        remaining: "остаток: 15 шт."
+        remaining: "остаток: 14 шт."
       },
     ],
     imageUrl: honeyPawImage
@@ -344,7 +338,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "730",
         packaging: ["воск"],
-        remaining: "остаток: 16 шт."
+        remaining: "остаток: 15 шт."
       },
     ],
     imageUrl: lingonberryImage
@@ -364,7 +358,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "750",
         packaging: ["воск"],
-        remaining: "остаток: 14 шт."
+        remaining: "остаток: 13 шт."
       },
     ],
     imageUrl: glintwoodImage
@@ -484,7 +478,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "770",
         packaging: ["воск"],
-        remaining: "остаток: 9 шт."
+        remaining: "остаток: 8 шт."
       },
     ],
     imageUrl: phoenixImage
@@ -564,7 +558,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "720",
         packaging: ["воск"],
-        remaining: "остаток: 13 шт."
+        remaining: "остаток: 12 шт."
       },
     ],
     imageUrl: rosmaryoshkaImage
@@ -645,7 +639,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "470",
         packaging: ["воск"],
-        remaining: "остаток: 13 шт."
+        remaining: "остаток: 12 шт."
       },
     ],
     imageUrl: appleNutmegImage
@@ -725,7 +719,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "470",
         packaging: ["воск"],
-        remaining: "остаток: 13 шт."
+        remaining: "остаток: 12 шт."
       },
     ],
     imageUrl: pomegranateCardamonImage
@@ -786,7 +780,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         packaging: ["воск"],
         price: "500",
-        remaining: "остаток: 10 шт."
+        remaining: "остаток: 8 шт."
       },
     ],
     imageUrl: monarchImage
@@ -806,7 +800,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         packaging: ["воск"],
         price: "400",
-        remaining: "остаток: 21 шт."
+        remaining: "остаток: 20 шт."
       },
     ],
     imageUrl: frozenImage
@@ -826,7 +820,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "400",
         packaging: ["воск"],
-        remaining: "остаток: 13 шт."
+        remaining: "остаток: 12 шт."
       }
     ],
     imageUrl: stoneBearImage
@@ -863,7 +857,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "500",
-        remaining: "остаток: 11 шт."
+        remaining: "остаток: 9 шт."
       }
     ],
     imageUrl: botanicalImage
