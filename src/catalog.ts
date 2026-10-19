@@ -827,11 +827,6 @@ export const beerData: Product[] = generateIds([
         price: "400",
         packaging: ["воск"],
         remaining: "остаток: 13 шт."
-      },
-      {
-        volume: "0.75л",
-        price: "900",
-        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: stoneBearImage
