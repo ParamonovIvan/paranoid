@@ -780,7 +780,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         packaging: ["воск"],
         price: "500",
-        remaining: "остаток: 8 шт."
+        remaining: "остаток: 3 шт."
       },
     ],
     imageUrl: monarchImage
