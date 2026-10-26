@@ -298,7 +298,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "730",
         packaging: ["воск"],
-        remaining: "остаток: 14 шт."
+        remaining: "остаток: 13 шт."
       },
     ],
     imageUrl: honeyPawImage
@@ -358,7 +358,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "750",
         packaging: ["воск"],
-        remaining: "остаток: 13 шт."
+        remaining: "остаток: 12 шт."
       },
     ],
     imageUrl: glintwoodImage
@@ -378,7 +378,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "750",
         packaging: ["воск"],
-        remaining: "остаток: 14 шт."
+        remaining: "остаток: 13 шт."
       },
     ],
     imageUrl: wolfberryImage
@@ -418,7 +418,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "730",
         packaging: ["воск"],
-        remaining: "остаток: 20 шт."
+        remaining: "остаток: 18 шт."
       },
     ],
     imageUrl: medovisnjaImage
@@ -438,7 +438,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "750",
         packaging: ["воск"],
-        remaining: "остаток: 9 шт."
+        remaining: "остаток: 8 шт."
       },
     ],
     imageUrl: varDedImage
@@ -458,7 +458,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "750",
         packaging: ["воск"],
-        remaining: "остаток: 15 шт."
+        remaining: "остаток: 13 шт."
       },
     ],
     imageUrl: nightwatchImage
@@ -518,7 +518,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "770",
         packaging: ["воск"],
-        remaining: "остаток: 10 шт."
+        remaining: "остаток: 9 шт."
       },
     ],
     imageUrl: sunrootImage
@@ -578,7 +578,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "700",
         packaging: ["воск"],
-        remaining: "остаток: 17 шт."
+        remaining: "остаток: 16 шт."
       },
     ],
     imageUrl: seabuckImage
