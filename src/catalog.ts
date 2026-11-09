@@ -430,7 +430,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "330",
-        remaining: "остаток: 44 шт."
+        remaining: "остаток: 38 шт."
       }
     ],
     imageUrl: squallImage
