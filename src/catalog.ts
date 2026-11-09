@@ -39,6 +39,18 @@ import saisonImage from "./images/season-beer/saison.png";
 import spruceSaisonImage from "./images/season-beer/spruce_saison.png";
 import raspberrySaisonImage from "./images/season-beer/raspberry_saison.png";
 import eucalyptusSaisonImage from "./images/season-beer/eucalyptus_saison.png";
+import firstLightImage from "./images/strong-series-2026/first-light.png";
+import warmDawnImage from "./images/strong-series-2026/warm-dawn.png";
+import orangeApiaryImage from "./images/strong-series-2026/orange-apiary.png";
+import circleImage from "./images/collaboration/circle.png";
+import sunreachImage from "./images/season-beer/sunreach.png";
+import berryfallImage from "./images/season-beer/barryfall.png";
+import dawnbreathImage from "./images/season-beer/dawnbreath.png";
+import frostrootImage from "./images/season-beer/frostroot.png";
+import scarletDriftImage from "./images/season-beer/scarlet-drift.png"
+import silverThreadImage from "./images/season-beer/silver-thread.png";
+import blackRainImage from "./images/season-beer/black-rain.png";
+import squallImage from "./images/season-beer/squall.png";
 
 let globalIdCounter = 1;
 
@@ -81,9 +93,99 @@ export const beerData: Product[] = generateIds([
     ],
     imageUrl: bsaImage
   },
+  {
+    category: "STRONG SERIES 2026",
+    name: "First Light",
+    style: "Saison Braggot",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-first-light/7639499",
+    og: "22.8%",
+    abv: "12.0",
+    ibu: "15",
+    description: "Фермер выходит в поле, когда небо только начинает светлеть. Он не спешит — сначала слушает тишину, потом проверяет ульи, потом смотрит на колосья. Этот Braggot — про то самое утро: сухое, медовое, без лишней сладости. В аромате — цветочный мёд, лёгкий солодовый хлеб и что-то свежее, почти росное. На вкус — сухой, чистый, с медовой основой, которая не липнет, а держит форму, и с долгим, тёплым финалом, в котором остаётся только свет. Пей, пока солнце не поднялось. Первый свет не ждёт.",
+    bottlingDate: "25.10.2026",
+    variants: [
+      {
+        volume: "0.33л",
+        price: "350",
+        remaining: "остаток: 25 шт."
+      },
+      {
+        volume: "0.75л",
+        price: "800",
+        remaining: "остаток: 1 шт."
+      },
+    ],
+    imageUrl: firstLightImage
+  },
+  {
+    category: "STRONG SERIES 2026",
+    name: "Warm Dawn",
+    style: "Saison Braggot with Mulled Spice",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-warm-dawn/7639500",
+    og: "22.8%",
+    abv: "12.0",
+    ibu: "15",
+    description: "Котёл стоит в поле, когда небо только начинает светлеть. Над ним поднимается пар — густой, тёплый, с запахом корицы и бадьяна. Внутри — мёд, который варится со специями для глинтвейна: корица, гвоздика, апельсиновая корка. Это Braggot для тех, кто любит, когда рассвет не просто наступает, а согревает. На вкус — сухой, медовый, с пряной теплотой, которая приходит не сразу, а разливается по телу медленно, как первый свет над полем. Пей, пока не остыло. Рассвет не ждёт.",
+    bottlingDate: "25.10.2026",
+    variants: [
+      {
+        volume: "0.33л",
+        price: "350",
+        remaining: "остаток: 30 шт."
+      },
+      {
+        volume: "0.75л",
+        price: "800",
+        remaining: "остаток: 1 шт."
+      },
+    ],
+    imageUrl: warmDawnImage
+  },
+  {
+    category: "STRONG SERIES 2026",
+    name: "Orange Apiary",
+    style: "Saison Braggot with Coriander and Citrus",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-orange-apiary/7614617",
+    og: "26.0%",
+    abv: "11.4",
+    ibu: "20",
+    description: "Пасека не всегда пахнет только мёдом. Иногда — апельсиновой цедрой, которую кто-то оставил на солнце. Иногда — кориандром, который ветер принёс с юга. А иногда — хмелем, который вырос прямо между ульями. Этот Braggot — про то, как мёд встречается с цитрусом, и они не спорят, а договариваются. В аромате — апельсиновая цедра, цветочный мёд и лёгкая пряность кориандра. На вкус — плотный, обволакивающий, с медовой сладостью, которая не липнет, и с цитрусовой свежестью, которая держит её в равновесии. 11.4% не бьют, а согревают. Пей медленно. Пасека не терпит суеты.",
+    bottlingDate: "16.10.2026",
+    variants: [
+      {
+        volume: "0.33л",
+        price: "350",
+        remaining: "остаток: 50 шт."
+      },
+      {
+        volume: "0.75л",
+        price: "800",
+        remaining: "остаток: 2 шт."
+      },
+    ],
+    imageUrl: orangeApiaryImage
+  },
 
   // COLLABORATION
-
+  {
+    category: "COLLABORATION",
+    name: "Девятый круг",
+    style: "American Barleywine",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-devyatyj-krug/6921775",
+    og: "26.0%",
+    abv: "10.5",
+    ibu: "50",
+    description: "Два пивовара. Девять лет бару. Одна варка, которую вы не забудете. Американский барливайн, сваренный 22 августа в баре «Вите надо выпить». Американские хмели дают о себе знать дважды: сначала — ярким, смолистым ароматом с цитрусом и хвоей, потом — уверенной, но не злой горечью, которая держит солодовую мощь в узде. Ваниль сглаживает, щепа Амбураны добавляет десертной глубины, а хересные палочки из американского дуба приносят древесные ноты в финал. Пей медленно. Ад не торопится. Сварено совместно с Максимом Глинских (JFF Brew).",
+    bottlingDate: "14.09.2026",
+    variants: [
+      {
+        volume: "0.33л",
+        price: "350",
+        remaining: "остаток: 11 шт."
+      },
+    ],
+    imageUrl: circleImage
+  },
 
   // SEASON BEER
   {
@@ -180,6 +282,158 @@ export const beerData: Product[] = generateIds([
       }
     ],
     imageUrl: eucalyptusSaisonImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Sunreach",
+    style: "Wild Gruit",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-sunreach/7650608",
+    og: "13.7%",
+    abv: "5.4",
+    ibu: "35",
+    description: "Лето — это когда трава выше головы, а солнце не садится до полуночи. Мы собрали всё, что цветёт в самый долгий день: золотолистник, багульник, чагу и полынь. Никакого хмеля — только то, что даёт земля. Но земля не всегда добрая: этот грюйт вышел диким. В аромате — сухая трава, смола, полынная горчинка и что-то кислое, почти лесное. На вкус — терпкий, с кислинкой, которая не режет, а бодрит, и с горьким, пряным финалом, который держится долго. Пей, пока свет не ушёл. Потом будет осень.",
+    bottlingDate: "28.10.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "320",
+        remaining: "остаток: 15 шт."
+      }
+    ],
+    imageUrl: sunreachImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Berryfall",
+    style: "Wild Gruit with Elderberry and St. John's Wort",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-berryfall/7650610",
+    og: "13.7%",
+    abv: "5.4",
+    ibu: "35",
+    description: "Бузина чернеет первой. Зверобой ещё держит жёлтые цветы, но уже чувствует холод. Это грюйт для тех, кто знает: осень — не конец, а сбор. При розливе мы добавили отвар из бузины и зверобоя — он вплёлся в дикое тело, усиливая ягоду и траву. В аромате — тёмные ягоды, полынная горчинка и что-то лесное, кислое. На вкус — терпкий, ягодный, с мягкой кислинкой и травяным финалом. Глоток — и ты слышишь, как падают ягоды.",
+    bottlingDate: "28.10.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "320",
+        remaining: "остаток: 15 шт."
+      }
+    ],
+    imageUrl: berryfallImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Dawnbreath",
+    style: "Gruit with Coltsfoot and Chamomile",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-dawnbreath/7656938",
+    og: "13.7%",
+    abv: "5.4",
+    ibu: "35",
+    description: "Мать-и-мачеха пробивается первой — там, где ещё лежит снег. Ромашка ждёт своего часа. Это грюйт о начале: лёгкий, свежий, с травяной горчинкой, которая не режет, а будит. В аромате — свежая зелень и ромашковый цвет. На вкус — мягкий, цветочный, с деликатной горчинкой и кислинкой. Первый глоток — как первый вдох после долгой зимы. Второй — как рассвет, который наконец наступил.",
+    bottlingDate: "30.10.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "320",
+        remaining: "остаток: 17 шт."
+      }
+    ],
+    imageUrl: dawnbreathImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Frostroot",
+    style: "Gruit with Licorice Root and Calendula",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-frostroot/7656940",
+    og: "13.7%",
+    abv: "5.4",
+    ibu: "35",
+    description: "Зима не убивает — она прячет. Под снегом живут корни, и мы достали их: солодка, длинная и сладкая, и календула, которая не потеряла цвет даже в сухости. Это грюйт для тишины. Для вечера, когда за окном мороз, а внутри — тепло. Пахнет сушёными цветами, корнем и лёгкой пряностью. На вкус — обволакивающий, с мягкой горечью и долгим согревающим финалом. Пей медленно. Корни никуда не спешат.",
+    bottlingDate: "30.10.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "320",
+        remaining: "остаток: 12 шт."
+      }
+    ],
+    imageUrl: frostrootImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Scarlet Drift",
+    style: "Raspberry Wild Ale",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-scarlet-drift/7656936",
+    og: "16.0%",
+    abv: "6.6",
+    ibu: "15",
+    description: "Дикий эль с бреттами, который три месяца томился с малиной. Не спешил, не суетился — просто ждал, пока ягода отдаст всё, что у неё есть. В аромате — спелая малина, лёгкая кислинка и что-то дикое, почти кожаное, от бреттов. На вкус — сухой, ягодный, с терпкой кислинкой, которая не режет, а бодрит, и с долгим, чуть пыльным финалом. Это не сладкий малиновый эль. Это малина, которая прошла через лес и вернулась другой.",
+    bottlingDate: "01.11.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "330",
+        remaining: "остаток: 39 шт."
+      }
+    ],
+    imageUrl: scarletDriftImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Silver Thread",
+    style: "Cherry Wild Ale",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-silver-thread/7657823",
+    og: "16.0%",
+    abv: "6.6",
+    ibu: "15",
+    description: "Дикий эль с бреттами и вишней. Сухой, с тонкой кислинкой, которая проходит через весь вкус, как серебряная нить. В аромате — спелая вишня, лёгкая дикость от бреттов и что-то травянистое, почти сенное. На вкус — сухой, ягодный, с терпкой кислинкой и долгим финалом. Это не сладкая вишня. Это вишня, которая прошла через лес и вернулась другой.",
+    bottlingDate: "03.11.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "330",
+        remaining: "остаток: 36 шт."
+      }
+    ],
+    imageUrl: silverThreadImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Black Rain",
+    style: "Black Currant Wild Ale",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-black-rain/7657824",
+    og: "16.0%",
+    abv: "6.6",
+    ibu: "15",
+    description: "Дикий эль с бреттами и чёрной смородиной. Тёмный, как туча, которая вот-вот прольётся. В аромате — густая смородина, сырая земля и дикость от бреттов. На вкус — сухой, ягодный, с терпкой кислинкой и долгим, чуть пыльным финалом. Это не сладкий ягодный эль. Это смородина, которая прошла через дождь и вернулась другой.",
+    bottlingDate: "03.11.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "330",
+        remaining: "остаток: 38 шт."
+      }
+    ],
+    imageUrl: blackRainImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Squall",
+    style: "Sea Buckthorn Wild Ale",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-squall/7667743",
+    og: "16.0%",
+    abv: "6.6",
+    ibu: "15",
+    description: "Дикий эль с бреттами и облепихой. Шквал — это внезапный ветер, и он чувствуется с первого глотка: яркая, солнечная кислинка облепихи, которая не режет, а бодрит. В аромате — облепиха, лёгкая дикость от бреттов и что-то травянистое, почти сенное. На вкус — сухой, ягодный, с терпкой кислинкой и долгим финалом. Это не сладкая облепиха. Это ягода, которая прошла через шторм и вернулась другой.",
+    bottlingDate: "10.11.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "330",
+        remaining: "остаток: 44 шт."
+      }
+    ],
+    imageUrl: squallImage
   },
 
 
@@ -820,7 +1074,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "400",
         packaging: ["воск"],
-        remaining: "остаток: 10 шт."
+        remaining: "остаток: 6 шт."
       }
     ],
     imageUrl: stoneBearImage
