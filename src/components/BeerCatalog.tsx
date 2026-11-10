@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import {
   Image,
   Row,
@@ -9,10 +9,18 @@ import {
   Flex,
   Badge,
   Button,
+  Input,
+  Select,
+  Empty,
   notification
 } from "antd";
 import { createStyles, useResponsive } from "antd-style";
-import { LeftOutlined, RightOutlined, ShoppingCartOutlined } from "@ant-design/icons";
+import {
+  LeftOutlined,
+  RightOutlined,
+  ShoppingCartOutlined,
+  SearchOutlined
+} from "@ant-design/icons";
 import { beerData, sauceData, accessoriesData } from "../catalog.ts";
 import { useAppDispatch, useAppSelector } from "../hooks/redux.ts";
 import { addToCart, removeFromCart, updateQuantity } from "../store/cartSlice.ts";
@@ -51,6 +59,9 @@ const BeerCatalog = () => {
   const { items } = useAppSelector((state) => state.cart);
   const [api, contextHolder] = notification.useNotification();
 
+  const [search, setSearch] = useState("");
+  const [selectedStyles, setSelectedStyles] = useState<string[]>([]);
+
   const allCategories = [
     ...new Set(beerData.map(item => item.category)),
     "PEPPER SAUCES",
@@ -59,10 +70,40 @@ const BeerCatalog = () => {
 
   const [activeCategory, setActiveCategory] = useState(allCategories[0]);
 
+  const allStyles = useMemo(
+    () => [...new Set(beerData.map(p => p.style).filter(Boolean))].sort(),
+    []
+  );
+
+  const filtersActive = search.trim().length > 0 || selectedStyles.length > 0;
+
   const getProductsByCategory = (category: string) => {
     if (category === "PEPPER SAUCES") return sauceData;
     if (category === "ACCESSORIES") return accessoriesData;
     return beerData.filter(item => item.category === category);
+  };
+
+  const filteredProducts = useMemo(() => {
+    if (!filtersActive) return [];
+
+    const q = search.trim().toLowerCase();
+
+    return beerData.filter((p) => {
+      const matchesSearch = q.length === 0
+        || p.name.toLowerCase().includes(q)
+        || p.style.toLowerCase().includes(q)
+        || p.description.toLowerCase().includes(q);
+
+      const matchesStyle = selectedStyles.length === 0
+        || selectedStyles.includes(p.style);
+
+      return matchesSearch && matchesStyle;
+    });
+  }, [search, selectedStyles, filtersActive]);
+
+  const resetFilters = () => {
+    setSearch("");
+    setSelectedStyles([]);
   };
 
   const currentIndex = allCategories.indexOf(activeCategory);
@@ -271,7 +312,7 @@ const BeerCatalog = () => {
           </Flex>
         }
         actions={[
-          <Flex vertical gap={12} key="variants" style={{ padding: "8px 0", width: "100%", cursor: "default"  }}>
+          <Flex vertical gap={12} key="variants" style={{ padding: "8px 0", width: "100%", cursor: "default" }}>
             {product.variants.map((variant, index) => {
               const remainingText = variant.remaining;
               const match = remainingText.match(/(\d+)/);
@@ -336,7 +377,7 @@ const BeerCatalog = () => {
                           }
                         }}
                       >
-                       -
+                        -
                       </Button>
 
                       <Text strong style={{ minWidth: 30, textAlign: "center" }}>
@@ -415,6 +456,117 @@ const BeerCatalog = () => {
     </Col>
   );
 
+  const renderGrid = () => {
+    if (filtersActive) {
+      if (filteredProducts.length === 0) {
+        return (
+          <Flex justify="center" style={{ padding: "48px 0" }}>
+            <Empty description="Ничего не нашлось">
+              <Button type="primary" onClick={resetFilters}>
+                Сбросить фильтры
+              </Button>
+            </Empty>
+          </Flex>
+        );
+      }
+
+      return (
+        <>
+          <Flex justify="space-between" align="center" style={{ marginBottom: 16 }}>
+            <Text type="secondary" style={{ fontSize: 14 }}>
+              Найдено: {filteredProducts.length}
+            </Text>
+          </Flex>
+          <Row gutter={responsive.md ? [16, 16] : [32, 32]} align="stretch">
+            {filteredProducts.map(renderProductCard)}
+          </Row>
+        </>
+      );
+    }
+
+    return (
+      <>
+        <Flex
+          ref={categoriesRef}
+          justify="center"
+          style={{ marginBottom: responsive.md ? 36 : 24 }}
+          wrap="wrap"
+          gap={responsive.md ? 16 : 10}
+        >
+          {allCategories.map(category => (
+            <Badge
+              key={category}
+              count={getProductsByCategory(category).length}
+              offset={responsive.md ? [1, 8] : [-1, 4]}
+              style={{ backgroundColor: "#1677FF", borderColor: "#000000E0" }}
+            >
+              <Tag
+                color={activeCategory === category ? "#1677FF" : "default"}
+                onClick={() => setActiveCategory(category)}
+                className={activeCategory === category ? undefined : styles.categoryTag}
+                style={{
+                  margin: 2,
+                  padding: responsive.md ? "4px 8px" : "3px 6px",
+                  fontSize: responsive.md ? 14 : 12
+                }}
+              >
+                {category}
+              </Tag>
+            </Badge>
+          ))}
+        </Flex>
+
+        <Row gutter={responsive.md ? [16, 16] : [32, 32]} align="stretch">
+          {getProductsByCategory(activeCategory).map(renderProductCard)}
+        </Row>
+
+        <Flex
+          justify="center"
+          gap={16}
+          style={{ marginTop: 32 }}
+          align="center"
+        >
+          <Button
+            type={hasPrevious ? "primary" : "default"}
+            icon={responsive.md ? <LeftOutlined/> : null}
+            onClick={handlePrevious}
+            disabled={!hasPrevious}
+            style={{
+              minWidth: responsive.md ? 120 : 40,
+              height: 40
+            }}
+          >
+            {responsive.md ? "Назад" : <LeftOutlined/>}
+          </Button>
+
+          <Text style={{
+            color: "#000000E0",
+            fontSize: responsive.md ? 16 : 14,
+            minWidth: responsive.md ? 200 : 150,
+            textAlign: "center"
+          }}>
+            {activeCategory} ({getProductsByCategory(activeCategory).length})
+          </Text>
+
+          <Button
+            type={hasNext ? "primary" : "default"}
+            onClick={handleNext}
+            disabled={!hasNext}
+            icon={responsive.md ? null : <RightOutlined/>}
+            style={{
+              minWidth: responsive.md ? 120 : 40,
+              height: 40,
+              gap: responsive.md ? 8 : 0
+            }}
+          >
+            {responsive.md ? "Далее" : ""}
+            {responsive.md && <RightOutlined/>}
+          </Button>
+        </Flex>
+      </>
+    );
+  };
+
   return (
     <Flex vertical style={{ marginBottom: responsive.md ? 64 : 56, marginTop: 16, cursor: "default" }}>
       {contextHolder}
@@ -439,82 +591,41 @@ const BeerCatalog = () => {
       </Flex>
 
       <Flex
-        ref={categoriesRef}
-        justify="center"
-        style={{ marginBottom: responsive.md ? 36 : 24 }}
-        wrap="wrap"
-        gap={responsive.md ? 16 : 10}
+        vertical={!responsive.md}
+        gap={responsive.md ? 12 : 8}
+        style={{ marginBottom: responsive.md ? 24 : 16 }}
+        align={responsive.md ? "center" : "stretch"}
       >
-        {allCategories.map(category => (
-          <Badge
-            key={category}
-            count={getProductsByCategory(category).length}
-            offset={responsive.md ? [1, 8] : [-1, 4]}
-            style={{ backgroundColor: "#1677FF", borderColor: "#000000E0" }}
-          >
-            <Tag
-              color={activeCategory === category ? "#1677FF" : "default"}
-              onClick={() => setActiveCategory(category)}
-              className={activeCategory === category ? undefined : styles.categoryTag}
-              style={{
-                margin: 2,
-                padding: responsive.md ? "4px 8px" : "3px 6px",
-                fontSize: responsive.md ? 14 : 12
-              }}
-            >
-              {category}
-            </Tag>
-          </Badge>
-        ))}
+        <Input
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          placeholder="Поиск по названию, стилю или описанию"
+          prefix={<SearchOutlined style={{ color: "#00000073" }}/>}
+          allowClear
+          size="middle"
+          style={{ flex: 1, minWidth: 0, maxWidth: responsive.md ? 500 : "100%" }}
+        />
+        <Flex gap={8} align="center" style={{ flex: responsive.md ? 1 : "none", minWidth: 0 }}>
+          <Select
+            mode="multiple"
+            value={selectedStyles}
+            onChange={setSelectedStyles}
+            placeholder="Стиль"
+            allowClear
+            size="middle"
+            maxTagCount="responsive"
+            options={allStyles.map(s => ({ value: s, label: s }))}
+            style={{ flex: 1, minWidth: responsive.md ? 260 : 0 }}
+          />
+          {filtersActive && (
+            <Button onClick={resetFilters} type="text">
+              Сбросить
+            </Button>
+          )}
+        </Flex>
       </Flex>
 
-      <Row gutter={ responsive.md ? [16, 16] : [32, 32 ]} align="stretch">
-        {getProductsByCategory(activeCategory).map(renderProductCard)}
-      </Row>
-
-      <Flex
-        justify="center"
-        gap={16}
-        style={{ marginTop: 32 }}
-        align="center"
-      >
-        <Button
-          type={hasPrevious ? "primary" : "default"}
-          icon={responsive.md ? <LeftOutlined/> : null}
-          onClick={handlePrevious}
-          disabled={!hasPrevious}
-          style={{
-            minWidth: responsive.md ? 120 : 40,
-            height: 40
-          }}
-        >
-          {responsive.md ? "Назад" : <LeftOutlined/>}
-        </Button>
-
-        <Text style={{
-          color: "#000000E0",
-          fontSize: responsive.md ? 16 : 14,
-          minWidth: responsive.md ? 200 : 150,
-          textAlign: "center"
-        }}>
-          {activeCategory} ({getProductsByCategory(activeCategory).length})
-        </Text>
-
-        <Button
-          type={hasNext ? "primary" : "default"}
-          onClick={handleNext}
-          disabled={!hasNext}
-          icon={responsive.md ? null : <RightOutlined/>}
-          style={{
-            minWidth: responsive.md ? 120 : 40,
-            height: 40,
-            gap: responsive.md ? 8 : 0
-          }}
-        >
-          {responsive.md ? "Далее" : ""}
-          {responsive.md && <RightOutlined/>}
-        </Button>
-      </Flex>
+      {renderGrid()}
     </Flex>
   );
 };
