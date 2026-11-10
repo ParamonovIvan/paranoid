@@ -8,6 +8,7 @@ import BreweryIntro from "./components/BreweryIntro";
 import BeerCatalog from "./components/BeerCatalog";
 import Achievements from "./components/Achievements";
 import Cart from "./components/Cart.tsx";
+import SideNav from "./components/SideNav.tsx";
 
 const {
   Content,
@@ -48,7 +49,7 @@ function App() {
           Paranoid Brewery
         </Title>
       </Header>
-
+      <SideNav/>
       <Content style={{
         padding: "clamp(12px, 3vw, 24px)",
         maxWidth: 1400,
@@ -56,9 +57,15 @@ function App() {
         width: "100%",
         boxSizing: "border-box"
       }}>
-        <BeerCatalog/>
-        <BreweryIntro/>
-        <Achievements/>
+        <Flex vertical id="catalog">
+          <BeerCatalog/>
+        </Flex>
+        <Flex vertical id="about">
+          <BreweryIntro/>
+        </Flex>
+        <Flex vertical id="achievements">
+          <Achievements/>
+        </Flex>
       </Content>
 
       <Footer style={{
