@@ -51,6 +51,7 @@ import scarletDriftImage from "./images/season-beer/scarlet-drift.png"
 import silverThreadImage from "./images/season-beer/silver-thread.png";
 import blackRainImage from "./images/season-beer/black-rain.png";
 import squallImage from "./images/season-beer/squall.png";
+import pumpkinPyreImage from "./images/pepper-sauces/pumpkin-pyre.png";
 
 let globalIdCounter = 1;
 
@@ -1115,6 +1116,22 @@ export const sauceData: Product[] = generateIds([
       }
     ],
     imageUrl: botanicalImage
+  },
+  {
+    category: "PEPPER SAUCES",
+    name: "Pumpkin Pyre",
+    style: "Pumpkin Habanero Pepper Sauce",
+    spiciness: "4/10",
+    description: "Это не соус. Это погребальный костёр для лета. Тыква здесь не сладкая — она плотная, почти мясная, и держит всё вместе. Первой идёт пряность: мускатный орех, гвоздика, корица — запах осеннего вечера. Потом апельсин и имбирь вспыхивают, как искры. И только затем — Хабанеро. Он разгорается медленно, как угли под пеплом: тепло на губах, жар в горле, долгое ровное пламя. Не пожар — но и не искра.. Состав: тыква, томатная паста, перец Хабанеро оранж, перец чили, перец Чипотле морковь, лук, чеснок, апельсин, имбирь, мускатный орех, гвоздика, корица, жидкий дым, горчичный порошок, оливковое масло, яблочный уксус, тростниковый сахар, соль морская.",
+    bottlingDate: "10.11.2026",
+    variants: [
+      {
+        volume: "0.2л",
+        price: "600",
+        remaining: "остаток: 12 шт."
+      }
+    ],
+    imageUrl: pumpkinPyreImage
   },
 ]);
 
