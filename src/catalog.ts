@@ -1123,7 +1123,7 @@ export const accessoriesData: Product[] = generateIds([
     category: "ACCESSORIES",
     name: "Значок",
     style: "⌀ 25мм",
-    description: "",
+    description: "Пряник и Луис одобряют. Крепится куда угодно, кроме кошачьих лап",
     bottlingDate: "",
     variants: [
       {

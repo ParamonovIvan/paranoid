@@ -9,6 +9,7 @@ import BeerCatalog from "./components/BeerCatalog";
 import Achievements from "./components/Achievements";
 import Cart from "./components/Cart.tsx";
 import SideNav from "./components/SideNav.tsx";
+import Collaborations from "./components/Collaborations.tsx";
 
 const {
   Content,
@@ -65,6 +66,9 @@ function App() {
         </Flex>
         <Flex vertical id="achievements">
           <Achievements/>
+        </Flex>
+        <Flex vertical id="collaborations">
+          <Collaborations/>
         </Flex>
       </Content>
 

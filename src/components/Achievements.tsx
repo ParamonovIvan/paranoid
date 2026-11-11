@@ -1,11 +1,36 @@
+import { useMemo, useState } from "react";
 import { Timeline, Typography, Tag, Flex } from "antd";
-import { useResponsive } from "antd-style";
+import { createStyles, useResponsive } from "antd-style";
 import { achievements } from "../achievements";
 
 const { Title, Text } = Typography;
 
+const useStyles = createStyles(({ token, css }) => ({
+  categoryTag: css`
+    cursor: pointer;
+    transition: all 0.2s ease;
+    &:hover {
+      background-color: ${token.colorPrimaryBg} !important;
+      border-color: ${token.colorPrimaryBorder} !important;
+      color: ${token.colorPrimary} !important;
+    }
+  `
+}));
+
+const parseDate = (date: string) => {
+  const [d, m, y] = date.split(".").map(Number);
+  return new Date(y, m - 1, d).getTime();
+};
+
 const Achievements = () => {
   const responsive = useResponsive();
+  const { styles } = useStyles();
+  const [sortOrder, setSortOrder] = useState<"newest" | "oldest">("newest");
+
+  const sortedAchievements = useMemo(() => {
+    const sorted = [...achievements].sort((a, b) => parseDate(a.date) - parseDate(b.date));
+    return sortOrder === "newest" ? sorted.reverse() : sorted;
+  }, [sortOrder]);
 
   const getMedalColor = (medal?: string) => {
     switch (medal) {
@@ -39,9 +64,32 @@ const Achievements = () => {
         Наши достижения
       </Title>
 
+      <Flex justify="center" gap={responsive.md ? 16 : 10} style={{ marginBottom: 24 }}>
+        {([
+          { value: "newest", label: "Сначала новые" },
+          { value: "oldest", label: "Сначала старые" }
+        ] as const).map((option) => (
+          <Tag
+            key={option.value}
+            color={sortOrder === option.value ? "#1677FF" : "default"}
+            onClick={() => setSortOrder(option.value)}
+            className={sortOrder === option.value ? undefined : styles.categoryTag}
+            style={{
+              cursor: "pointer",
+              margin: 2,
+              padding: responsive.md ? "4px 8px" : "3px 6px",
+              fontSize: responsive.md ? 14 : 12
+            }}
+          >
+            {option.label}
+          </Tag>
+        ))}
+      </Flex>
+
       <Timeline
         mode={responsive.md ? "alternate" : "left"}
-        items={achievements.map((achievement, index) => ({
+        style={{ marginLeft: "-8px" }}
+        items={sortedAchievements.map((achievement, index) => ({
           color: getMedalColor(achievement.medal),
           children: (
             <Flex vertical style={{ padding: 0 }}>

@@ -20,15 +20,11 @@ export interface NavItem {
   href: string;
 }
 
-const showCollaborations = false;
-
 const navItems: NavItem[] = [
   { key: "catalog", label: "Каталог", icon: AppstoreOutlined, href: "#catalog" },
   { key: "about", label: "О нас", icon: InfoCircleOutlined, href: "#about" },
   { key: "achievements", label: "Достижения", icon: TrophyOutlined, href: "#achievements" },
-  ...(showCollaborations
-    ? [{ key: "collaborations", label: "Коллаборации", icon: TeamOutlined, href: "#collaborations" }]
-    : []),
+  { key: "collaborations", label: "Коллаборации", icon: TeamOutlined, href: "#collaborations" },
 ];
 
 const ACCENT = "#1677FF";

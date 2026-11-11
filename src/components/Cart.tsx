@@ -85,7 +85,7 @@ const Cart: FC<CartProps> = ({ open, onClose }) => {
       title={
         <Flex align="center" gap={8} style={{ cursor: "default" }}>
           <ShoppingCartOutlined/>
-          <Text strong>Корзина ({itemCount})</Text>
+          <Text strong>Корзина ({itemCount} шт.)</Text>
         </Flex>
       }
       placement="right"
