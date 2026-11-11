@@ -11,8 +11,8 @@ import {
   Button,
   Input,
   Select,
-  Empty,
-  notification
+  notification,
+  theme
 } from "antd";
 import { createStyles, useResponsive } from "antd-style";
 import {
@@ -25,13 +25,15 @@ import { beerData, sauceData, accessoriesData } from "../catalog.ts";
 import { useAppDispatch, useAppSelector } from "../hooks/redux.ts";
 import { addToCart, removeFromCart, updateQuantity } from "../store/cartSlice.ts";
 import type { Product, ProductVariant } from "../types/product.ts";
+import { useTheme } from "../hooks/useTheme.ts";
 import untappdImage from "../images/untappd.png";
 import logoImage from "../images/logo.png";
 
 const {
   Link,
   Text,
-  Paragraph
+  Paragraph,
+  Title
 } = Typography;
 
 const useStyles = createStyles(({ token, css }) => ({
@@ -56,6 +58,9 @@ const BeerCatalog = () => {
   const categoriesRef = useRef<HTMLDivElement>(null);
   const { styles } = useStyles();
   const dispatch = useAppDispatch();
+  const { token } = theme.useToken();
+  const { mode } = useTheme();
+  const isDark = mode === "dark";
   const { items } = useAppSelector((state) => state.cart);
   const [api, contextHolder] = notification.useNotification();
 
@@ -204,7 +209,10 @@ const BeerCatalog = () => {
           flexDirection: "column",
           width: "100%",
           borderRadius: 8,
-          boxShadow: "0px 4px 14px 0px #00000014"
+          backgroundColor: token.colorBgContainer,
+          boxShadow: token.boxShadowSecondary,
+          border: "none",
+          overflow: "hidden"
         }}
         styles={{
           body: { flex: 1, display: "flex", flexDirection: "column", padding: responsive.md ? 16 : 12 },
@@ -216,7 +224,7 @@ const BeerCatalog = () => {
               <Flex style={{
                 width: "100%",
                 height: 278,
-                backgroundColor: "#FFF",
+                backgroundColor: isDark ? token.colorBgContainer : "#FFF",
                 justifyContent: "center",
                 alignItems: "center",
                 borderTopLeftRadius: 8,
@@ -412,7 +420,7 @@ const BeerCatalog = () => {
         ]}
       >
         <Flex vertical style={{ marginBottom: 12 }}>
-          <Text strong style={{ fontSize: 16, display: "block", textAlign: "center" }}>
+          <Text strong style={{ fontSize: 16, display: "block", textAlign: "center", color: isDark ? token.colorText : "#1f1f1f"  }}>
             {product.name}
           </Text>
           <Text style={{ color: "#1677FF", fontSize: 15, display: "block", marginTop: 4, textAlign: "center" }}>
@@ -434,7 +442,7 @@ const BeerCatalog = () => {
 
         <Flex style={{ flex: 1, marginBottom: 12 }}>
           <Paragraph style={{
-            color: "#000000E0",
+            color: isDark ? token.colorTextSecondary : "#000000E0",
             fontSize: 15,
             lineHeight: "1.4",
             display: "-webkit-box",
@@ -449,7 +457,7 @@ const BeerCatalog = () => {
           </Paragraph>
         </Flex>
 
-        <Text type="secondary" style={{ fontSize: 14, textAlign: "center", display: "block" }}>
+        <Text type="secondary" style={{ fontSize: 14, textAlign: "center", display: "block", color: isDark ? token.colorTextSecondary : "#00000073" }}>
           {product.bottlingDate && `Дата розлива: ${product.bottlingDate}`}
         </Text>
       </Card>
@@ -460,12 +468,41 @@ const BeerCatalog = () => {
     if (filtersActive) {
       if (filteredProducts.length === 0) {
         return (
-          <Flex justify="center" style={{ padding: "48px 0" }}>
-            <Empty description="Ничего не нашлось">
-              <Button type="primary" onClick={resetFilters}>
-                Сбросить фильтры
-              </Button>
-            </Empty>
+          <Flex
+            vertical
+            align="center"
+            justify="center"
+            style={{ padding: "64px 0", textAlign: "center" }}
+          >
+            <SearchOutlined style={{
+              fontSize: 64,
+              color: isDark ? token.colorTextQuaternary : "#D9D9D9",
+              marginBottom: 24
+            }}/>
+
+            <Title level={4} style={{
+              color: isDark ? token.colorText : "#1F1F1F",
+              marginBottom: 8
+            }}>
+              Ничего не нашлось
+            </Title>
+
+            <Text style={{
+              color: isDark ? token.colorTextSecondary : "#00000073",
+              marginBottom: 24,
+              fontSize: 16
+            }}>
+              Попробуйте изменить запрос или сбросить фильтры
+            </Text>
+
+            <Button
+              type="primary"
+              size="large"
+              onClick={resetFilters}
+              style={{ borderRadius: 8, padding: "0 32px" }}
+            >
+              Сбросить фильтры
+            </Button>
           </Flex>
         );
       }
@@ -540,7 +577,7 @@ const BeerCatalog = () => {
           </Button>
 
           <Text style={{
-            color: "#000000E0",
+            color: isDark ? token.colorText : "#000000E0",
             fontSize: responsive.md ? 16 : 14,
             minWidth: responsive.md ? 200 : 150,
             textAlign: "center"
@@ -568,7 +605,7 @@ const BeerCatalog = () => {
   };
 
   return (
-    <Flex vertical style={{ marginBottom: responsive.md ? 64 : 56, marginTop: 16, cursor: "default" }}>
+    <Flex vertical style={{ marginBottom: responsive.md ? 64 : 56, marginTop: 8, cursor: "default" }}>
       {contextHolder}
       <Flex
         justify="space-between"
@@ -577,11 +614,11 @@ const BeerCatalog = () => {
         gap={!responsive.md ? 16 : 0}
         style={{ marginBottom: 24 }}
       >
-        <Paragraph style={{ color: "#000000E0", fontSize: responsive.sm ? 16 : 14, margin: 0 }}>
-          от 11/11/2026
+        <Paragraph style={{ color: isDark ? token.colorTextSecondary : "#000000E0", fontSize: responsive.sm ? 16 : 14, margin: 0 }}>
+          от 12/11/2026
         </Paragraph>
         <Paragraph style={{
-          color: "#000000E0",
+          color: isDark ? token.colorTextSecondary : "#000000E0",
           fontSize: responsive.sm ? 16 : 14,
           margin: 0,
           textAlign: responsive.md ? "right" : "left"
@@ -600,7 +637,7 @@ const BeerCatalog = () => {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           placeholder="Поиск по названию, стилю или описанию"
-          prefix={<SearchOutlined style={{ color: "#00000073" }}/>}
+          prefix={<SearchOutlined style={{ color: isDark ? "rgb(79 79 79)" : "#00000073" }}/>}
           allowClear
           size="middle"
           style={{ flex: 1, minWidth: 0, maxWidth: responsive.md ? 500 : "100%" }}

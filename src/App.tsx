@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useAppSelector } from "./hooks/redux.ts";
-import { Badge, Button, Flex, Image, Layout, Typography } from "antd";
-import { useResponsive } from "antd-style";
-import { ShoppingCartOutlined } from "@ant-design/icons";
+import { Badge, Button, Flex, Image, Layout, theme, Typography } from "antd";
+import { createStyles, useResponsive } from "antd-style";
+import { useTheme } from "./hooks/useTheme";
+import { ShoppingCartOutlined, ArrowUpOutlined } from "@ant-design/icons";
 import logoImage from "./images/logo_black.png";
 import BreweryIntro from "./components/BreweryIntro";
 import BeerCatalog from "./components/BeerCatalog";
@@ -10,6 +11,7 @@ import Achievements from "./components/Achievements";
 import Cart from "./components/Cart.tsx";
 import SideNav from "./components/SideNav.tsx";
 import Collaborations from "./components/Collaborations.tsx";
+import ThemeSwitcher from "./components/ThemeSwitcher";
 
 const {
   Content,
@@ -17,20 +19,57 @@ const {
   Footer
 } = Layout;
 
+const useStyles = createStyles(({ token, css }) => ({
+  backTopBtn: css`
+    transition: all 0.2s ease;
+    &:hover {
+      background-color: ${token.colorPrimaryBg} !important;
+      border-color: ${token.colorPrimaryBorder} !important;
+    }
+    &:hover .anticon {
+      color: ${token.colorPrimaryHover} !important;
+    }
+  `
+}));
+
 const { Title } = Typography;
 
 function App() {
   const [cartOpen, setCartOpen] = useState(false);
+  const [showBackTop, setShowBackTop] = useState(false);
 
+  const { styles } = useStyles();
+  const { mode } = useTheme();
+  const { token } = theme.useToken();
   const responsive = useResponsive();
-
   const { itemCount } = useAppSelector((state) => state.cart);
 
+  const [isWide, setIsWide] = useState(window.innerWidth >= 1600);
+
+  useEffect(() => {
+    const handleResize = () => setIsWide(window.innerWidth >= 1600);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowBackTop(window.scrollY > 400);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
-    <Layout style={{ minHeight: "100vh", backgroundColor: "#F5F5F5" }}>
+    <Layout style={{ minHeight: "100vh", background: token.colorBgLayout }}>
       <Header style={{
-        backgroundColor: "#F5F5F5",
-        borderBottom: "1px solid #D5D5D5",
+        backgroundColor: token.colorBgLayout,
+        borderBottom: `1px solid ${token.colorBorder}`,
         textAlign: "center",
         padding: "16px 24px",
         height: "auto",
@@ -41,11 +80,17 @@ function App() {
           draggable={false}
           src={logoImage}
           preview={false}
-          style={{ objectFit: "contain", width: "100%", height: responsive.md ? 100 : 75 }}
+          style={{
+            objectFit: "contain",
+            width: "100%",
+            height: responsive.md ? 100 : 75,
+            filter: mode === "dark" ? "invert(1) brightness(2)" : "none",
+            opacity: mode === "dark" ? 0.85 : 1
+          }}
         />
         <Title
           level={1}
-          style={{ color: "rgb(51 49 44)", margin: 0, fontWeight: 600, fontSize: "clamp(24px, 5vw, 32px)" }}
+          style={{ color: token.colorText, margin: 0, fontWeight: 600, fontSize: "clamp(24px, 5vw, 32px)" }}
         >
           Paranoid Brewery
         </Title>
@@ -74,16 +119,54 @@ function App() {
 
       <Footer style={{
         textAlign: "center",
-        backgroundColor: "#F5F5F5",
-        color: "#000000E0",
-        borderTop: "1px solid #D5D5D5",
+        backgroundColor: token.colorBgLayout,
+        color: token.colorTextSecondary,
+        borderTop: `1px solid ${token.colorBorder}`,
         padding: "24px 24px",
         fontSize: "clamp(12px, 2vw, 14px)",
         cursor: "default"
       }}>
         Paranoid Brewery ©2017-2026 — Лаборатория жидкостей с характером
       </Footer>
-      <Flex style={{ position: "fixed", bottom: 24, right: 24, zIndex: 1000 }}>
+
+      {!isWide && (
+        <Flex
+          style={{
+            position: "fixed",
+            bottom: 24,
+            left: 24,
+            zIndex: 1000
+          }}
+        >
+          <ThemeSwitcher/>
+        </Flex>
+      )}
+
+      <Flex
+        vertical
+        gap={12}
+        style={{ position: "fixed", bottom: 24, right: 24, zIndex: 1000, alignItems: "center" }}
+      >
+        {showBackTop && (
+          <Button
+            type="default"
+            shape="circle"
+            className={styles.backTopBtn}
+            icon={<ArrowUpOutlined style={{ fontSize: 24, color: token.colorPrimary }}/>}
+            onClick={scrollToTop}
+            style={{
+              boxShadow: token.boxShadowSecondary,
+              width: 50,
+              height: 50,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              backgroundColor: token.colorBgContainer,
+              border: `1px solid ${token.colorBorderSecondary}`
+            }}
+          />
+        )}
+
         <Badge
           count={itemCount}
           showZero={false}

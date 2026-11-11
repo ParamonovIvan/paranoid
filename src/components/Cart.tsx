@@ -10,12 +10,14 @@ import {
   InputNumber,
   Divider,
   Card,
-  notification
+  notification,
+  theme
 } from "antd";
 import { DeleteOutlined, ShoppingCartOutlined, ExportOutlined, CopyOutlined } from "@ant-design/icons";
 import { createStyles, useResponsive } from "antd-style";
 import { useAppSelector, useAppDispatch } from "../hooks/redux";
 import { removeFromCart, updateQuantity, clearCart } from "../store/cartSlice";
+import { useTheme } from "../hooks/useTheme";
 import logoImage from "../images/logo.png";
 
 const { Title, Text } = Typography;
@@ -38,6 +40,9 @@ const Cart: FC<CartProps> = ({ open, onClose }) => {
   const dispatch = useAppDispatch();
   const responsive = useResponsive();
   const { styles } = useStyles();
+  const { token } = theme.useToken();
+  const { mode } = useTheme();
+  const isDark = mode === "dark";
 
   const generateOrderMessage = () => {
     const orderLines = items.map(item => {
@@ -116,8 +121,11 @@ const Cart: FC<CartProps> = ({ open, onClose }) => {
     >
       {items.length === 0 ? (
         <Flex vertical align="center" justify="center" style={{ flex: 1 }}>
-          <ShoppingCartOutlined style={{ fontSize: 48, color: "#1677ff", marginBottom: 16 }}/>
-          <Title level={4} style={{ color: "#666", textAlign: "center" }}>
+          <ShoppingCartOutlined style={{ fontSize: 48, color: token.colorPrimary, marginBottom: 16 }}/>
+          <Title level={4} style={{
+            color: isDark ? token.colorText : "#666",
+            textAlign: "center"
+          }}>
             Корзина пуста
           </Title>
           <Text type="secondary" style={{ textAlign: "center" }}>
@@ -136,18 +144,18 @@ const Cart: FC<CartProps> = ({ open, onClose }) => {
                   styles={{ body: { padding: 12 } }}
                 >
                   <Flex gap={12} align="flex-start">
-                      <Image
-                        src={item.imageUrl || logoImage}
-                        draggable={false}
-                        width={60}
-                        height={60}
-                        preview={false}
-                        style={{
-                          borderRadius: item.category === "ACCESSORIES" ? 30 : 6,
-                          objectFit: item.category === "ACCESSORIES" ? "contain" : "cover",
-                          backgroundColor: item.category === "ACCESSORIES" ? "#000" : "transparent"
-                        }}
-                      />
+                    <Image
+                      src={item.imageUrl || logoImage}
+                      draggable={false}
+                      width={60}
+                      height={60}
+                      preview={false}
+                      style={{
+                        borderRadius: item.category === "ACCESSORIES" ? 30 : 6,
+                        objectFit: item.category === "ACCESSORIES" ? "contain" : "cover",
+                        backgroundColor: item.category === "ACCESSORIES" ? "#000" : "transparent"
+                      }}
+                    />
                     <Flex vertical style={{ flex: 1, gap: 8 }}>
                       <Flex justify="space-between" align="flex-start">
                         <Flex vertical style={{ flex: 1 }}>
@@ -167,7 +175,11 @@ const Cart: FC<CartProps> = ({ open, onClose }) => {
                               </Tag>
                             ))}
                           </Flex>
-                          <Text strong style={{ color: "#00000073", fontSize: 13, marginTop: 4 }}>
+                          <Text strong style={{
+                            color: isDark ? token.colorTextSecondary : "#00000073",
+                            fontSize: 13,
+                            marginTop: 4
+                          }}>
                             {item.quantity} × {item.price}₽ = {(parseFloat(item.price) * item.quantity).toFixed(0)}₽
                           </Text>
                         </Flex>
@@ -180,7 +192,7 @@ const Cart: FC<CartProps> = ({ open, onClose }) => {
                         />
                       </Flex>
                       <Flex justify="space-between" align="center">
-                        <Text strong style={{ color: "#1677FF", fontSize: 16 }}>
+                        <Text strong style={{ color: token.colorPrimary, fontSize: 16 }}>
                           {item.price}₽
                         </Text>
                         <Flex align="center" gap={8}>
@@ -237,7 +249,7 @@ const Cart: FC<CartProps> = ({ open, onClose }) => {
           <Flex vertical gap={12}>
             <Flex justify="space-between" align="center">
               <Text strong>Итого:</Text>
-              <Title level={4} style={{ margin: 0, color: "#1677FF" }}>
+              <Title level={4} style={{ margin: 0, color: token.colorPrimary }}>
                 {total}₽
               </Title>
             </Flex>

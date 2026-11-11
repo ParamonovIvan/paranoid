@@ -8,12 +8,15 @@ import { ConfigProvider } from "antd";
 import { themeConfig } from "./theme/theme.ts";
 import { Provider } from "react-redux";
 import { store } from "./store";
+import { ThemeProvider } from "./theme/ThemeProvider";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ConfigProvider theme={themeConfig}>
       <Provider store={store}>
-        <App/>
+        <ThemeProvider>
+          <App/>
+        </ThemeProvider>
       </Provider>
     </ConfigProvider>
   </StrictMode>

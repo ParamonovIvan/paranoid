@@ -52,6 +52,10 @@ import silverThreadImage from "./images/season-beer/silver-thread.png";
 import blackRainImage from "./images/season-beer/black-rain.png";
 import squallImage from "./images/season-beer/squall.png";
 import pumpkinPyreImage from "./images/pepper-sauces/pumpkin-pyre.png";
+import curryImage from "./images/season-beer/curry.png";
+import curryHeImage from "./images/season-beer/curry-he.png";
+import tomYumImage from "./images/season-beer/tom-yum.jpg";
+import tomYumHeImage from "./images/season-beer/tom-yum-he.jpg";
 
 let globalIdCounter = 1;
 
@@ -436,7 +440,82 @@ export const beerData: Product[] = generateIds([
     ],
     imageUrl: squallImage
   },
-
+  {
+    category: "SEASON BEER",
+    name: "Curry Tomato Gose",
+    style: "Tomato Gose",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-curry-tomato-gose-2026/7669306",
+    og: "12.0%",
+    abv: "5.0",
+    ibu: "15",
+    description: "Томатный гозе, сваренный на основе блюд, распространенных на Индийском субконтиненте. В составе: томаты, листья каффир-лайма, корица, кориандр, гималайская соль, имбирь, мускатный орех, тмин, куркума, чеснок, гвоздика, перец чили, лемонграсс.",
+    bottlingDate: "09.11.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "320",
+        remaining: "остаток: 21 шт."
+      }
+    ],
+    imageUrl: curryImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Curry Tomato Gose Hot Edition",
+    style: "Tomato Gose",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-curry-tomato-gose-hot-edition-2026/7669307",
+    og: "12.0%",
+    abv: "5.0",
+    ibu: "15",
+    description: "Томатный гозе, сваренный на основе блюд, распространенных на Индийском субконтиненте. В составе: томаты, листья каффир-лайма, корица, кориандр, гималайская соль, имбирь, мускатный орех, тмин, куркума, чеснок, гвоздика, перец чили, лемонграсс, острый перец Моруга Скорпион Тринидада.",
+    bottlingDate: "09.11.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "320",
+        remaining: "остаток: 21 шт."
+      }
+    ],
+    imageUrl: curryHeImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Tom Yum Tomato Gose",
+    style: "Tomato Gose",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-tom-yum-tomato-gose-2026/7670958",
+    og: "12.0%",
+    abv: "5.0",
+    ibu: "10",
+    description: "Томатный гозе на основе тайского супа с добавлением гималайской соли, кориандра, листьев каффир-лайма, чеснока, имбиря, галангала, масла из соевых бобов, лемонграсса, кокосовых сливок, грибов вешенок томатов, острого перца Chili.",
+    bottlingDate: "11.11.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "320",
+        remaining: "остаток: 21 шт."
+      }
+    ],
+    imageUrl: tomYumImage
+  },
+  {
+    category: "SEASON BEER",
+    name: "Tom Yum Tomato Gose Hot Edition",
+    style: "Tomato Gose",
+    untappdUrl: "https://untappd.com/b/paranoid-brewery-tom-yum-tomato-gose-hot-edition-2026/7670971",
+    og: "12.0%",
+    abv: "5.0",
+    ibu: "10",
+    description: "Томатный гозе на основе тайского супа с добавлением гималайской соли, кориандра, листьев каффир-лайма, чеснока, имбиря, галангала, масла из соевых бобов, лемонграсса, кокосовых сливок, грибов вешенок, томатов, острых перцев Chili и Trinidad Scorpion Moruga.",
+    bottlingDate: "11.11.2026",
+    variants: [
+      {
+        volume: "0.45л",
+        price: "320",
+        remaining: "остаток: 21 шт."
+      }
+    ],
+    imageUrl: tomYumHeImage
+  },
 
   // 8TH BIRTHDAY
   {
@@ -1144,7 +1223,7 @@ export const accessoriesData: Product[] = generateIds([
     bottlingDate: "",
     variants: [
       {
-        volume: "шт",
+        volume: "1 шт",
         price: "50",
         remaining: "остаток: 20 шт."
       }

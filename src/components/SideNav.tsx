@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
 import type { CSSProperties } from "react";
-import { Flex, Typography } from "antd";
-import { useResponsive } from "antd-style";
+import { Flex, Typography, theme } from "antd";
+import { useResponsive, createStyles } from "antd-style";
 import {
   AppstoreOutlined,
   InfoCircleOutlined,
   TrophyOutlined,
   TeamOutlined
 } from "@ant-design/icons";
+import { useTheme } from "../hooks/useTheme";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 const { Text } = Typography;
 
@@ -30,6 +32,35 @@ const navItems: NavItem[] = [
 const ACCENT = "#1677FF";
 const INACTIVE = "#00000073";
 
+const useStyles = createStyles(({ token, css }) => ({
+  navItem: css`
+    transition: background 0.2s ease, color 0.2s ease;
+    &:hover {
+      background: ${token.colorPrimaryBg};
+      color: ${token.colorPrimary} !important;
+    }
+    &:hover .anticon, &:hover .ant-typography {
+      color: ${token.colorPrimary} !important;
+    }
+  `,
+  navItemMobile: css`
+    transition: color 0.2s ease;
+    &:hover {
+      color: ${token.colorPrimary} !important;
+    }
+    &:hover .anticon, &:hover .ant-typography {
+      color: ${token.colorPrimary} !important;
+    }
+  `,
+  active: css`
+    background: ${token.colorPrimaryBg};
+    color: ${token.colorPrimary} !important;
+    .anticon, .ant-typography {
+      color: ${token.colorPrimary} !important;
+    }
+  `
+}));
+
 const useWideScreen = (minWidth: number) => {
   const [wide, setWide] = useState(false);
 
@@ -45,9 +76,16 @@ const useWideScreen = (minWidth: number) => {
 };
 
 const SideNav = () => {
+  const [active, setActive] = useState<string>("catalog");
+
   const responsive = useResponsive();
   const wide = useWideScreen(1600);
-  const [active, setActive] = useState<string>("catalog");
+  const { styles } = useStyles();
+  const { token } = theme.useToken();
+  const { mode } = useTheme();
+  const isDark = mode === "dark";
+
+  const inactiveColor = isDark ? token.colorTextSecondary : INACTIVE;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -92,14 +130,14 @@ const SideNav = () => {
         style={{
           position: "fixed",
           left: 16,
-          top: 320,
+          top: 410,
           transform: "translateY(-50%)",
           zIndex: 999,
-          background: "#FFF",
-          border: "1px solid #E5E5E5",
+          background: token.colorBgContainer,
+          border: `1px solid ${token.colorBorderSecondary}`,
           borderRadius: 16,
           padding: "16px 8px",
-          boxShadow: "0 4px 16px rgba(0,0,0,0.08)",
+          boxShadow: token.boxShadowSecondary,
           cursor: "default"
         }}
       >
@@ -113,27 +151,26 @@ const SideNav = () => {
               align="center"
               gap={4}
               onClick={(e) => handleClick(e, item.href)}
+              className={isActive ? styles.active : styles.navItem}
               style={{
                 cursor: "pointer",
                 width: 72,
                 padding: "8px 4px",
                 borderRadius: 12,
-                background: isActive ? "#E6F4FF" : "transparent",
-                transition: "background 0.2s, color 0.2s",
                 userSelect: "none"
               }}
             >
               <Icon
                 style={{
                   fontSize: 22,
-                  color: isActive ? ACCENT : INACTIVE,
+                  color: isActive ? ACCENT : inactiveColor,
                   transition: "color 0.2s"
                 }}
               />
               <Text
                 style={{
                   fontSize: 12,
-                  color: isActive ? ACCENT : INACTIVE,
+                  color: isActive ? ACCENT : inactiveColor,
                   fontWeight: isActive ? 600 : 400,
                   textAlign: "center",
                   lineHeight: 1.2
@@ -144,6 +181,13 @@ const SideNav = () => {
             </Flex>
           );
         })}
+        <Flex justify="center" style={{
+          borderTop: `1px solid ${token.colorBorderSecondary}`,
+          paddingTop: 8,
+          marginTop: 8
+        }}>
+          <ThemeSwitcher/>
+        </Flex>
       </Flex>
     );
   }
@@ -156,8 +200,8 @@ const SideNav = () => {
         position: "sticky",
         top: 0,
         zIndex: 999,
-        background: "#F5F5F5",
-        borderBottom: "1px solid #D5D5D5",
+        background: token.colorBgLayout,
+        borderBottom: `1px solid ${token.colorBorderSecondary}`,
         padding: responsive.md ? "12px 24px" : "8px 12px",
         cursor: "default"
       }}
@@ -172,24 +216,24 @@ const SideNav = () => {
             align="center"
             gap={responsive.md ? 8 : 2}
             onClick={(e) => handleClick(e, item.href)}
+            className={styles.navItemMobile}
             style={{
               cursor: "pointer",
-              color: isActive ? ACCENT : INACTIVE,
-              transition: "color 0.2s",
+              color: isActive ? ACCENT : inactiveColor,
               userSelect: "none"
             }}
           >
             <Icon
               style={{
                 fontSize: responsive.md ? 20 : 18,
-                color: isActive ? ACCENT : INACTIVE,
+                color: isActive ? ACCENT : inactiveColor
               }}
             />
             <Text
               style={{
                 fontSize: responsive.md ? 15 : 11,
-                color: isActive ? ACCENT : INACTIVE,
-                fontWeight: isActive ? 600 : 400,
+                color: isActive ? ACCENT : inactiveColor,
+                fontWeight: isActive ? 600 : 400
               }}
             >
               {item.label}

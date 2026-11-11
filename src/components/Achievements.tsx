@@ -1,7 +1,8 @@
 import { useMemo, useState } from "react";
-import { Timeline, Typography, Tag, Flex } from "antd";
+import { Timeline, Typography, Tag, Flex, theme } from "antd";
 import { createStyles, useResponsive } from "antd-style";
 import { achievements } from "../achievements";
+import { useTheme } from "../hooks/useTheme"; // Убедись, что путь правильный
 
 const { Title, Text } = Typography;
 
@@ -25,6 +26,10 @@ const parseDate = (date: string) => {
 const Achievements = () => {
   const responsive = useResponsive();
   const { styles } = useStyles();
+  const { token } = theme.useToken();
+  const { mode } = useTheme();
+  const isDark = mode === "dark";
+
   const [sortOrder, setSortOrder] = useState<"newest" | "oldest">("newest");
 
   const sortedAchievements = useMemo(() => {
@@ -52,11 +57,16 @@ const Achievements = () => {
     }
   };
 
+  // Переменные цветов
+  const titleColor = isDark ? token.colorText : "#1F1F1F";
+  const textColor = isDark ? token.colorText : "#000000E0";
+  const secondaryColor = isDark ? token.colorTextSecondary : "#00000073";
+
   return (
     <Flex vertical style={{ marginBottom: 16, cursor: "default" }}>
       <Title style={{
         fontSize: responsive.lg ? 30 : 24,
-        color: "#1f1f1f",
+        color: titleColor,
         textAlign: "center",
         marginBottom: 30,
         textTransform: "uppercase"
@@ -71,14 +81,17 @@ const Achievements = () => {
         ] as const).map((option) => (
           <Tag
             key={option.value}
-            color={sortOrder === option.value ? "#1677FF" : "default"}
+            color={sortOrder === option.value ? token.colorPrimary : "default"}
             onClick={() => setSortOrder(option.value)}
             className={sortOrder === option.value ? undefined : styles.categoryTag}
             style={{
               cursor: "pointer",
               margin: 2,
               padding: responsive.md ? "4px 8px" : "3px 6px",
-              fontSize: responsive.md ? 14 : 12
+              fontSize: responsive.md ? 14 : 12,
+              // В темной теме у неактивного тега должен быть светлый текст
+              color: sortOrder === option.value ? "#FFFFFF" : textColor,
+              borderColor: sortOrder === option.value ? token.colorPrimary : token.colorBorder
             }}
           >
             {option.label}
@@ -104,7 +117,7 @@ const Achievements = () => {
                 }}
               >
                 <Text strong style={{
-                  color: "#000000e0",
+                  color: textColor,
                   fontSize: responsive.md ? 18 : 16
                 }}>
                   {achievement.date}
@@ -120,14 +133,14 @@ const Achievements = () => {
                 </Tag>
               </Flex>
               <Text strong style={{
-                color: "#1f1f1f",
+                color: titleColor,
                 display: "block",
                 fontSize: responsive.md ? 16 : 14
               }}>
                 {achievement.event}
               </Text>
               <Text style={{
-                color: "#000000e0",
+                color: textColor,
                 display: "block",
                 fontSize: responsive.md ? 14 : 13,
                 lineHeight: 1.4
@@ -136,7 +149,7 @@ const Achievements = () => {
               </Text>
               <Text type="secondary" style={{
                 display: "block",
-                color: "#00000073",
+                color: secondaryColor,
                 fontSize: responsive.md ? 13 : 12
               }}>
                 {achievement.location}

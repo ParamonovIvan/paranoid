@@ -2,20 +2,26 @@
     font-family: "Inter", sans-serif;
 }
 
+:root {
+    --scrollbar-track: #F5F5F5;
+    --scrollbar-thumb: #75C7F0;
+    --scrollbar-thumb-hover: #1677FF;
+}
+
 ::-webkit-scrollbar {
     width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #F5F5F5;
+    background: var(--scrollbar-track);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #75C7F0;
+    background: var(--scrollbar-thumb);
     border-radius: 3px;
     transition: background-color 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #1677FF;
+    background: var(--scrollbar-thumb-hover);
 }
