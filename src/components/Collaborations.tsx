@@ -86,7 +86,7 @@ const Collaborations = () => {
 
       <Row gutter={[16, 16]}>
         {filteredData.map((item, index) => (
-          <Col xs={24} sm={12} md={12} lg={8} key={index}>
+          <Col xs={24} sm={12} lg={8} xl={6} key={index}>
             <Card
               style={{
                 height: "100%",
