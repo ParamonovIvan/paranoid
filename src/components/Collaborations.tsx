@@ -142,6 +142,16 @@ const Collaborations = () => {
                 marginBottom: 12,
                 flex: 1
               }}>
+                {item.partner}
+              </Text>
+
+              <Text strong style={{
+                display: "block",
+                color: isDark ? token.colorText : "#1F1F1F",
+                fontSize: responsive.md ? 18 : 16,
+                marginBottom: 12,
+                flex: 1
+              }}>
                 {item.beerName}
               </Text>
 
