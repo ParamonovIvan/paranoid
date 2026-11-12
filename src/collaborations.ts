@@ -214,6 +214,15 @@ export const collaborationsData: CollaborationItem[] = [
   },
   {
     type: "collab",
+    partner: "JFF",
+    beerName: "American Barleywine",
+    volume: "30 л",
+    location: "г. Ижевск",
+    date: "22.08.2026",
+    logoSrc: jffLogo,
+  },
+  {
+    type: "collab",
     partner: "Арнульф",
     beerName: "Belgian Ale (Tripel)",
     volume: "3000 л",
