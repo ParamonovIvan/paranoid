@@ -640,7 +640,7 @@ const BeerCatalog = () => {
           prefix={<SearchOutlined style={{ color: isDark ? "rgb(79 79 79)" : "#00000073" }}/>}
           allowClear
           size="middle"
-          style={{ flex: 1, minWidth: 0, maxWidth: responsive.md ? 500 : "100%" }}
+          style={{ flex: 1, minWidth: 0, maxWidth: responsive.md ? 500 : "100%", fontSize: responsive.md ? undefined : 16 }}
         />
         <Flex gap={8} align="center" style={{ flex: responsive.md ? 1 : "none", minWidth: 0 }}>
           <Select
