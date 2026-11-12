@@ -646,7 +646,7 @@ const BeerCatalog = () => {
             maxWidth: responsive.md ? 500 : "100%",
             fontSize: responsive.md ? undefined : 16,
             height: 36
-        }}
+          }}
         />
         <Flex gap={8} align="center" style={{ flex: responsive.md ? 1 : "none", minWidth: 0 }}>
           <Select
