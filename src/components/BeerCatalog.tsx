@@ -640,7 +640,13 @@ const BeerCatalog = () => {
           prefix={<SearchOutlined style={{ color: isDark ? "rgb(79 79 79)" : "#00000073" }}/>}
           allowClear
           size="middle"
-          style={{ flex: 1, minWidth: 0, maxWidth: responsive.md ? 500 : "100%", fontSize: responsive.md ? undefined : 16 }}
+          style={{
+            flex: 1,
+            minWidth: 0,
+            maxWidth: responsive.md ? 500 : "100%",
+            fontSize: responsive.md ? undefined : 16,
+            height: 36
+        }}
         />
         <Flex gap={8} align="center" style={{ flex: responsive.md ? 1 : "none", minWidth: 0 }}>
           <Select
@@ -652,7 +658,7 @@ const BeerCatalog = () => {
             size="middle"
             maxTagCount="responsive"
             options={allStyles.map(s => ({ value: s, label: s }))}
-            style={{ flex: 1, minWidth: responsive.md ? 260 : 0 }}
+            style={{ flex: 1, minWidth: responsive.md ? 260 : 0, height: 36 }}
           />
           {filtersActive && (
             <Button onClick={resetFilters} type="text">
