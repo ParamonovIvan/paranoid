@@ -34,14 +34,12 @@ import stoneBearImage from "./images/9th-birthday/stone_bear.png";
 import bsaImage from "./images/strong-series-2026/bsa.png";
 import botanicalImage from "./images/pepper-sauces/botanical.png";
 import amricanSaisonImage from "./images/season-beer/american_saison.png";
-import saisonImage from "./images/season-beer/saison.png";
 import spruceSaisonImage from "./images/season-beer/spruce_saison.png";
 import raspberrySaisonImage from "./images/season-beer/raspberry_saison.png";
 import eucalyptusSaisonImage from "./images/season-beer/eucalyptus_saison.png";
 import firstLightImage from "./images/strong-series-2026/first-light.png";
 import warmDawnImage from "./images/strong-series-2026/warm-dawn.png";
 import orangeApiaryImage from "./images/strong-series-2026/orange-apiary.png";
-import circleImage from "./images/collaboration/circle.png";
 import sunreachImage from "./images/season-beer/sunreach.png";
 import berryfallImage from "./images/season-beer/barryfall.png";
 import dawnbreathImage from "./images/season-beer/dawnbreath.png";
@@ -106,7 +104,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "350",
-        remaining: "остаток: 12 шт."
+        remaining: "остаток: 11 шт."
       }
     ],
     imageUrl: firstLightImage
@@ -125,7 +123,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "350",
-        remaining: "остаток: 15 шт."
+        remaining: "остаток: 14 шт."
       }
     ],
     imageUrl: warmDawnImage
@@ -144,7 +142,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "350",
-        remaining: "остаток: 33 шт."
+        remaining: "остаток: 32 шт."
       },
       {
         volume: "0.75л",
@@ -156,25 +154,7 @@ export const beerData: Product[] = generateIds([
   },
 
   // COLLABORATION
-  {
-    category: "COLLABORATION",
-    name: "Девятый круг",
-    style: "American Barleywine",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-devyatyj-krug/6921775",
-    og: "26.0%",
-    abv: "10.5",
-    ibu: "50",
-    description: "Два пивовара. Девять лет бару. Одна варка, которую вы не забудете. Американский барливайн, сваренный 22 августа в баре «Вите надо выпить». Американские хмели дают о себе знать дважды: сначала — ярким, смолистым ароматом с цитрусом и хвоей, потом — уверенной, но не злой горечью, которая держит солодовую мощь в узде. Ваниль сглаживает, щепа Амбураны добавляет десертной глубины, а хересные палочки из американского дуба приносят древесные ноты в финал. Пей медленно. Ад не торопится. Сварено совместно с Максимом Глинских (JFF Brew).",
-    bottlingDate: "14.09.2026",
-    variants: [
-      {
-        volume: "0.33л",
-        price: "350",
-        remaining: "остаток: 2 шт."
-      },
-    ],
-    imageUrl: circleImage
-  },
+
 
   // SEASON BEER
   {
@@ -191,29 +171,10 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "300",
-        remaining: "остаток: 22 шт."
+        remaining: "остаток: 21 шт."
       }
     ],
     imageUrl: amricanSaisonImage
-  },
-  {
-    category: "SEASON BEER",
-    name: "Totem Grain",
-    style: "Saison",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-totem-grain/7307678",
-    og: "13.0%",
-    abv: "6.3",
-    ibu: "15",
-    description: "Лось стоит на краю поля, не двигаясь. Его копыта вросли в землю, рога тянутся к небу, и в этом молчании — больше смысла, чем в любом крике. Он не ждёт рассвета. Он просто есть. Так и этот сэзон — без лишних движений, без попыток понравиться с первого глотка. Сначала хлебная сухость зерна, потом горчинка, которая приходит не сразу, а когда уже почти забыл о ней. И в самом конце — чистота, как ветер над полем, где уже ничего не растёт, но всё ещё дышит.",
-    bottlingDate: "13.10.2026",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "280",
-        remaining: "остаток: 3 шт."
-      }
-    ],
-    imageUrl: saisonImage
   },
   {
     category: "SEASON BEER",
@@ -229,7 +190,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "290",
-        remaining: "остаток: 9 шт."
+        remaining: "остаток: 8 шт."
       }
     ],
     imageUrl: spruceSaisonImage
@@ -248,7 +209,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "310",
-        remaining: "остаток: 10 шт."
+        remaining: "остаток: 9 шт."
       }
     ],
     imageUrl: raspberrySaisonImage
@@ -267,7 +228,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "300",
-        remaining: "остаток: 7 шт."
+        remaining: "остаток: 6 шт."
       }
     ],
     imageUrl: eucalyptusSaisonImage
@@ -286,7 +247,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 7 шт."
+        remaining: "остаток: 6 шт."
       }
     ],
     imageUrl: sunreachImage
@@ -305,7 +266,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 8 шт."
+        remaining: "остаток: 7 шт."
       }
     ],
     imageUrl: berryfallImage
@@ -324,7 +285,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 10 шт."
+        remaining: "остаток: 9 шт."
       }
     ],
     imageUrl: dawnbreathImage
@@ -343,7 +304,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 5 шт."
       }
     ],
     imageUrl: frostrootImage
@@ -362,7 +323,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "330",
-        remaining: "остаток: 32 шт."
+        remaining: "остаток: 30 шт."
       }
     ],
     imageUrl: scarletDriftImage
@@ -381,7 +342,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "330",
-        remaining: "остаток: 28 шт."
+        remaining: "остаток: 26 шт."
       }
     ],
     imageUrl: silverThreadImage
@@ -400,7 +361,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "330",
-        remaining: "остаток: 31 шт."
+        remaining: "остаток: 29 шт."
       }
     ],
     imageUrl: blackRainImage
@@ -419,7 +380,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "330",
-        remaining: "остаток: 32 шт."
+        remaining: "остаток: 31 шт."
       }
     ],
     imageUrl: squallImage
@@ -1118,7 +1079,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.33л",
         price: "400",
         packaging: ["воск"],
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: stoneBearImage
