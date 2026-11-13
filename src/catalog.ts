@@ -30,7 +30,6 @@ import pomegranateCardamonImage from "./images/9th-birthday/pomegranate_cardamon
 import grapeImage from "./images/9th-birthday/grape.png";
 import grapeCinnamonImage from "./images/9th-birthday/grape_cinnamon.png";
 import frozenImage from "./images/9th-birthday/frozen.png";
-import stoneBearImage from "./images/9th-birthday/stone_bear.png";
 import bsaImage from "./images/strong-series-2026/bsa.png";
 import botanicalImage from "./images/pepper-sauces/botanical.png";
 import amricanSaisonImage from "./images/season-beer/american_saison.png";
@@ -104,7 +103,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "350",
-        remaining: "остаток: 11 шт."
+        remaining: "остаток: 9 шт."
       }
     ],
     imageUrl: firstLightImage
@@ -142,7 +141,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "350",
-        remaining: "остаток: 32 шт."
+        remaining: "остаток: 31 шт."
       },
       {
         volume: "0.75л",
@@ -247,7 +246,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 5 шт."
       }
     ],
     imageUrl: sunreachImage
@@ -304,7 +303,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 5 шт."
+        remaining: "остаток: 4 шт."
       }
     ],
     imageUrl: frostrootImage
@@ -677,7 +676,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "770",
         packaging: ["воск"],
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 5 шт."
       },
     ],
     imageUrl: hedgewardenImage
@@ -1059,31 +1058,11 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         packaging: ["воск"],
         price: "400",
-        remaining: "остаток: 19 шт."
+        remaining: "остаток: 17 шт."
       },
     ],
     imageUrl: frozenImage
-  },
-  {
-    category: "9TH BIRTHDAY",
-    name: "Stone Bear",
-    style: "Imperial Stout",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-stone-bear/6851882",
-    og: "28.5%",
-    abv: "12.5",
-    ibu: "40",
-    description: "Каменный медведь спал тысячу лет. Тёплое дыхание ванили растопило лёд в его груди, а дуб вернул память о древних лесах. Солодовая мощь, шоколад, тёмная карамель. Ваниль здесь не сладкая и не приторная — тёплая и элегантная. А в глубине просыпается дуб: структура, лёгкая танинность, древесная пряность. Эхо древнего леса, где медведь когда-то бродил.",
-    bottlingDate: "22.04.2026",
-    variants: [
-      {
-        volume: "0.33л",
-        price: "400",
-        packaging: ["воск"],
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: stoneBearImage
-  },
+  }
 ]);
 
 
