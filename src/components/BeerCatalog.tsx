@@ -256,16 +256,34 @@ const BeerCatalog = () => {
                 draggable={false}
                 src={product.imageUrl}
                 preview={false}
-                style={{ objectFit: "cover", width: "100%", borderTopLeftRadius: 8, borderTopRightRadius: 8 }}
+                style={{
+                  objectFit: "cover",
+                  width: "100%",
+                  minHeight: 278,
+                  borderTopLeftRadius: 8,
+                  borderTopRightRadius: 8
+                }}
                 placeholder={
-                  <Skeleton.Image
-                    active
+                  <Flex
+                    align="center"
+                    justify="center"
                     style={{
                       width: "100%",
                       height: 278,
-                      borderRadius: 0
+                      backgroundColor: token.colorFillSecondary,
+                      borderTopLeftRadius: 8,
+                      borderTopRightRadius: 8
                     }}
-                  />
+                  >
+                    <Skeleton.Image
+                      active
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        borderRadius: 0
+                      }}
+                    />
+                  </Flex>
                 }
               />
             )}
