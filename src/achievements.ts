@@ -172,4 +172,10 @@ export const achievements: Achievement[] = [
     result: "участник",
     location: "г. Санкт-Петербург"
   },
+  {
+    date: "14.11.2026",
+    event: "VII общенациональный конкурс домашних пивоваров Brewcom",
+    result: "участник",
+    location: "г. Санкт-Петербург"
+  },
 ];
