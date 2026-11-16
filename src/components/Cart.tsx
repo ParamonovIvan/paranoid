@@ -11,7 +11,7 @@ import {
   Divider,
   Card,
   notification,
-  theme
+  theme, Popconfirm
 } from "antd";
 import { DeleteOutlined, ShoppingCartOutlined, ExportOutlined, CopyOutlined } from "@ant-design/icons";
 import { createStyles, useResponsive } from "antd-style";
@@ -108,14 +108,17 @@ const Cart: FC<CartProps> = ({ open, onClose }) => {
       }}
       extra={
         items.length > 0 && (
-          <Button
-            type="link"
-            danger
-            size="small"
-            onClick={() => dispatch(clearCart())}
+          <Popconfirm
+            title="Очистить корзину?"
+            description="Все товары будут удалены."
+            onConfirm={() => dispatch(clearCart())}
+            okText="Да, очистить"
+            cancelText="Отмена"
           >
-            Очистить
-          </Button>
+            <Button type="link" danger size="small">
+              Очистить
+            </Button>
+          </Popconfirm>
         )
       }
     >

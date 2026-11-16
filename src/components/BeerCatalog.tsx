@@ -20,7 +20,7 @@ import {
   LeftOutlined,
   RightOutlined,
   ShoppingCartOutlined,
-  SearchOutlined
+  SearchOutlined, LoadingOutlined
 } from "@ant-design/icons";
 import { beerData, sauceData, accessoriesData } from "../catalog.ts";
 import { useAppDispatch, useAppSelector } from "../hooks/redux.ts";
@@ -258,15 +258,28 @@ const BeerCatalog = () => {
                 preview={false}
                 style={{ objectFit: "cover", width: "100%", borderTopLeftRadius: 8, borderTopRightRadius: 8 }}
                 placeholder={
-                  <Skeleton.Image
-                    active
+                  <Flex
+                    align="center"
+                    justify="center"
                     style={{
                       width: "100%",
                       height: 278,
+                      backgroundColor: token.colorFillTertiary,
                       borderTopLeftRadius: 8,
                       borderTopRightRadius: 8,
                     }}
-                  />
+                  >
+                    <Skeleton.Node
+                      active
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        borderRadius: 0,
+                      }}
+                    >
+                      <LoadingOutlined style={{ fontSize: 32, color: token.colorTextDisabled }}/>
+                    </Skeleton.Node>
+                  </Flex>
                 }
               />
             )}
