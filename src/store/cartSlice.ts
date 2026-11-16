@@ -96,6 +96,13 @@ const cartSlice = createSlice({
       state.itemCount = 0;
       localStorage.removeItem("paranoid-brewery-cart");
     },
+
+    syncCart: (state, action: PayloadAction<CartItem[]>) => {
+      state.items = action.payload;
+      state.total = state.items.reduce((sum, item) => sum + (parseFloat(item.price) * item.quantity), 0);
+      state.itemCount = state.items.reduce((count, item) => count + item.quantity, 0);
+      saveCartToStorage(state);
+    },
   },
 });
 
@@ -103,6 +110,7 @@ export const {
   addToCart,
   removeFromCart,
   updateQuantity,
-  clearCart
+  clearCart,
+  syncCart
 } = cartSlice.actions;
 export default cartSlice.reducer;

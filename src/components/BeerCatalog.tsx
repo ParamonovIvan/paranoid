@@ -12,7 +12,8 @@ import {
   Input,
   Select,
   notification,
-  theme
+  theme,
+  Skeleton
 } from "antd";
 import { createStyles, useResponsive } from "antd-style";
 import {
@@ -257,17 +258,13 @@ const BeerCatalog = () => {
                 preview={false}
                 style={{ objectFit: "cover", width: "100%", borderTopLeftRadius: 8, borderTopRightRadius: 8 }}
                 placeholder={
-                  <Image
-                    preview={false}
-                    draggable={false}
-                    src={product.imageUrl}
+                  <Skeleton.Image
+                    active
                     style={{
-                      objectFit: "cover",
                       width: "100%",
+                      height: 278,
                       borderTopLeftRadius: 8,
                       borderTopRightRadius: 8,
-                      filter: "blur(20px)",
-                      transform: "scale(1.1)"
                     }}
                   />
                 }

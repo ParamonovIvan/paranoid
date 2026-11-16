@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { useAppSelector } from "./hooks/redux.ts";
-import { Badge, Button, Flex, Image, Layout, theme, Typography } from "antd";
+import { useAppDispatch, useAppSelector } from "./hooks/redux.ts";
+import { Badge, Button, Flex, Image, Layout, notification, theme, Typography } from "antd";
 import { createStyles, useResponsive } from "antd-style";
 import { useTheme } from "./hooks/useTheme";
 import { ShoppingCartOutlined, ArrowUpOutlined } from "@ant-design/icons";
@@ -12,6 +12,8 @@ import Cart from "./components/Cart.tsx";
 import SideNav from "./components/SideNav.tsx";
 import Collaborations from "./components/Collaborations.tsx";
 import ThemeSwitcher from "./components/ThemeSwitcher";
+import { syncCart } from "./store/cartSlice.ts";
+import { accessoriesData, beerData, sauceData } from "./catalog.ts";
 
 const {
   Content,
@@ -41,10 +43,34 @@ function App() {
   const { styles } = useStyles();
   const { mode } = useTheme();
   const { token } = theme.useToken();
+  const dispatch = useAppDispatch();
   const responsive = useResponsive();
-  const { itemCount } = useAppSelector((state) => state.cart);
+  const { items, itemCount } = useAppSelector((state) => state.cart);
 
   const [isWide, setIsWide] = useState(window.innerWidth >= 1600);
+
+  useEffect(() => {
+    const allProducts = [...beerData, ...sauceData, ...accessoriesData];
+
+    const validItems = items.filter(item => {
+      const product = allProducts.find(p => p.id === item.productId);
+      if (!product) return false;
+
+      return product.variants.some(v => v.volume === item.volume);
+    });
+
+    if (validItems.length !== items.length) {
+      dispatch(syncCart(validItems));
+
+      notification.warning({
+        key: "cart-sync",
+        message: "Корзина обновлена",
+        description: "Некоторые товары больше не доступны и были удалены из корзины.",
+        placement: "topRight",
+        duration: 4
+      });
+    }
+  }, []);
 
   useEffect(() => {
     const handleResize = () => setIsWide(window.innerWidth >= 1600);
