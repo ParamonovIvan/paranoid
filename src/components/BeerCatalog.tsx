@@ -251,7 +251,11 @@ const BeerCatalog = () => {
                 </Flex>
               </Flex>
             ) : (
-              <ProductImage src={product.imageUrl} alt={product.name}/>
+              <ProductImage
+                src={product.imageUrl}
+                alt={product.name}
+                isSquare={product.category === "PEPPER SAUCES" || product.category === "ACCESSORIES"}
+              />
             )}
             <Flex style={{
               position: "absolute",

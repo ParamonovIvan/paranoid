@@ -4,12 +4,14 @@ import { Image, Skeleton, Flex, theme } from "antd";
 interface ProductImageProps {
   src?: string;
   alt: string;
-  height?: number;
+  isSquare?: boolean;
 }
 
-const ProductImage = ({ src, alt, height = 278 }: ProductImageProps) => {
+const ProductImage = ({ src, alt, isSquare = false }: ProductImageProps) => {
   const [isLoading, setIsLoading] = useState(true);
   const { token } = theme.useToken();
+
+  const height = isSquare ? 200 : 278;
 
   return (
     <Flex
@@ -54,9 +56,9 @@ const ProductImage = ({ src, alt, height = 278 }: ProductImageProps) => {
           style={{
             width: "100%",
             height: "100%",
-            objectFit: "cover",
+            objectFit: isSquare ? "contain" : "cover",
             opacity: isLoading ? 0 : 1,
-            transition: "opacity 0.3s ease",
+            transition: "opacity 0.3s ease"
           }}
         />
       )}
