@@ -10,6 +10,7 @@ import {
 } from "@ant-design/icons";
 import { useTheme } from "../hooks/useTheme";
 import ThemeSwitcher from "./ThemeSwitcher";
+import { useWideScreen } from "../hooks/useWideScreen.ts";
 
 const { Text } = Typography;
 
@@ -60,20 +61,6 @@ const useStyles = createStyles(({ token, css }) => ({
     }
   `
 }));
-
-const useWideScreen = (minWidth: number) => {
-  const [wide, setWide] = useState(false);
-
-  useEffect(() => {
-    const mq = window.matchMedia(`(min-width: ${minWidth}px)`);
-    const onChange = () => setWide(mq.matches);
-    onChange();
-    mq.addEventListener("change", onChange);
-    return () => mq.removeEventListener("change", onChange);
-  }, [minWidth]);
-
-  return wide;
-};
 
 const SideNav = () => {
   const [active, setActive] = useState<string>("catalog");

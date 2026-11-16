@@ -14,6 +14,7 @@ import Collaborations from "./components/Collaborations.tsx";
 import ThemeSwitcher from "./components/ThemeSwitcher";
 import { syncCart } from "./store/cartSlice.ts";
 import { accessoriesData, beerData, sauceData } from "./catalog.ts";
+import { useWideScreen } from "./hooks/useWideScreen.ts";
 
 const {
   Content,
@@ -46,8 +47,7 @@ function App() {
   const dispatch = useAppDispatch();
   const responsive = useResponsive();
   const { items, itemCount } = useAppSelector((state) => state.cart);
-
-  const [isWide, setIsWide] = useState(window.innerWidth >= 1600);
+  const isWide = useWideScreen(1600);
 
   useEffect(() => {
     const allProducts = [...beerData, ...sauceData, ...accessoriesData];
@@ -70,12 +70,6 @@ function App() {
         duration: 4
       });
     }
-  }, []);
-
-  useEffect(() => {
-    const handleResize = () => setIsWide(window.innerWidth >= 1600);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   useEffect(() => {
