@@ -12,7 +12,8 @@ import {
   Input,
   Select,
   notification,
-  theme
+  theme,
+  Skeleton
 } from "antd";
 import { createStyles, useResponsive } from "antd-style";
 import {
@@ -28,7 +29,6 @@ import type { Product, ProductVariant } from "../types/product.ts";
 import { useTheme } from "../hooks/useTheme.ts";
 import untappdImage from "../images/untappd.png";
 import logoImage from "../images/logo.png";
-import ProductImage from "./ProductImage.tsx";
 
 const {
   Link,
@@ -251,10 +251,40 @@ const BeerCatalog = () => {
                 </Flex>
               </Flex>
             ) : (
-              <ProductImage
+              <Image
+                loading="lazy"
+                draggable={false}
                 src={product.imageUrl}
-                alt={product.name}
-                isSquare={product.category === "PEPPER SAUCES" || product.category === "ACCESSORIES"}
+                preview={false}
+                style={{
+                  objectFit: "cover",
+                  width: "100%",
+                  minHeight: 278,
+                  borderTopLeftRadius: 8,
+                  borderTopRightRadius: 8
+                }}
+                placeholder={
+                  <Flex
+                    align="center"
+                    justify="center"
+                    style={{
+                      width: "100%",
+                      height: 278,
+                      backgroundColor: token.colorFillSecondary,
+                      borderTopLeftRadius: 8,
+                      borderTopRightRadius: 8
+                    }}
+                  >
+                    <Skeleton.Image
+                      active
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        borderRadius: 0
+                      }}
+                    />
+                  </Flex>
+                }
               />
             )}
             <Flex style={{
