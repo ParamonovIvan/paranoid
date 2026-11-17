@@ -1,7 +1,7 @@
 import { useState, useMemo } from "react";
 import { Typography, Flex, Row, Col, Card, Tag, Image, theme } from "antd";
 import { createStyles, useResponsive } from "antd-style";
-import { archiveData, type ArchiveSeries } from "../archive";
+import { archiveData, type ArchiveSeries } from "../data/archive";
 import { useTheme } from "../hooks/useTheme";
 import { HistoryOutlined, StarOutlined, FireOutlined } from "@ant-design/icons";
 

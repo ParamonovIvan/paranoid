@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Typography, Flex, Row, Col, Card, Tag, Empty, Image, theme } from "antd";
 import { createStyles, useResponsive } from "antd-style";
-import { collaborationsData } from "../collaborations";
+import { collaborationsData } from "../data/collaborations";
 import { useTheme } from "../hooks/useTheme";
 
 const { Title, Paragraph, Text } = Typography;

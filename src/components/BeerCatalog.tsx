@@ -21,7 +21,7 @@ import {
   ShoppingCartOutlined,
   SearchOutlined,
 } from "@ant-design/icons";
-import { beerData, sauceData, accessoriesData } from "../catalog.ts";
+import { beerData, sauceData, accessoriesData } from "../data/catalog.ts";
 import { useAppDispatch, useAppSelector } from "../hooks/redux.ts";
 import { addToCart, removeFromCart, updateQuantity } from "../store/cartSlice.ts";
 import type { Product, ProductVariant } from "../types/product.ts";

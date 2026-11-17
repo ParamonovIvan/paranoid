@@ -13,9 +13,10 @@ import SideNav from "./components/SideNav.tsx";
 import Collaborations from "./components/Collaborations.tsx";
 import ThemeSwitcher from "./components/ThemeSwitcher";
 import { syncCart } from "./store/cartSlice.ts";
-import { accessoriesData, beerData, sauceData } from "./catalog.ts";
+
 import { useWideScreen } from "./hooks/useWideScreen.ts";
 import Archive from "./components/Archive.tsx";
+import { accessoriesData, beerData, sauceData } from "./data/catalog.ts";
 
 const {
   Content,

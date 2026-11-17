@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { Timeline, Typography, Tag, Flex, theme } from "antd";
 import { createStyles, useResponsive } from "antd-style";
-import { achievements } from "../achievements";
+import { achievements } from "../data/achievements";
 import { useTheme } from "../hooks/useTheme"; // Убедись, что путь правильный
 
 const { Title, Text } = Typography;
