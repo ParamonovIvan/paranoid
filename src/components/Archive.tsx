@@ -133,7 +133,7 @@ const Archive = () => {
                 {item.name}
               </Text>
 
-              <Text style={{ display: "block", fontSize: responsive.md ? 13 : 15, color: token.colorPrimary, marginBottom: 8 }}>
+              <Text style={{ display: "block", fontSize: 15, color: token.colorPrimary, marginBottom: 8 }}>
                 {item.style}
               </Text>
 
@@ -141,10 +141,10 @@ const Archive = () => {
                 <Text
                   style={{
                     display: "-webkit-box",
-                    WebkitLineClamp: 3,
+
                     WebkitBoxOrient: "vertical",
                     overflow: "hidden",
-                    fontSize: responsive.md ? 12 : 14,
+                    fontSize: 14,
                     color: textColor,
                     lineHeight: 1.4,
                     marginBottom: 8,
@@ -157,15 +157,15 @@ const Archive = () => {
               )}
 
               {item.series === "sauces" ? (
-                <Tag color="red" style={{ margin: 0, fontSize: responsive.md ? 11 : 12 }}>
+                <Tag color="red" style={{ margin: 0, fontSize: 12 }}>
                   Острота: {item.spiciness}
                 </Tag>
               ) : (
                 <>
-                  <Tag color={isDark ? "blue" : "default"} style={{ margin: 0, fontSize: responsive.md ? 11 : 12 }}>
+                  <Tag color={isDark ? "blue" : "default"} style={{ margin: 0, fontSize: 12, marginRight: 8 }}>
                     ABV: {item.abv}
                   </Tag>
-                  <Tag color={isDark ? "blue" : "default"} style={{ margin: 0, fontSize: responsive.md ? 11 : 12 }}>
+                  <Tag color={isDark ? "blue" : "default"} style={{ margin: 0, fontSize: 12 }}>
                     IBU: {item.ibu}
                   </Tag>
                 </>
