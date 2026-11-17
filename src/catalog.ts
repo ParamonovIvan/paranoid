@@ -1,5 +1,4 @@
 import type { Product } from "./types/product.ts";
-import ddhWheatWineImage from "./images/8th-birthday/ddh_wheat_wine.webp";
 import buckWheatWineImage from "./images/8th-birthday/buckwheat_wine.webp";
 import buckWheatWineHoneyImage from "./images/8th-birthday/buckwheat_wine_honey.webp";
 import warmSlagImage from "./images/pepper-sauces/warm-slag.webp";
@@ -42,7 +41,6 @@ import orangeApiaryImage from "./images/strong-series-2026/orange-apiary.webp";
 import sunreachImage from "./images/season-beer/sunreach.webp";
 import berryfallImage from "./images/season-beer/barryfall.webp";
 import dawnbreathImage from "./images/season-beer/dawnbreath.webp";
-import frostrootImage from "./images/season-beer/frostroot.webp";
 import scarletDriftImage from "./images/season-beer/scarlet-drift.webp"
 import silverThreadImage from "./images/season-beer/silver-thread.webp";
 import blackRainImage from "./images/season-beer/black-rain.webp";
@@ -79,7 +77,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.375л",
         price: "400",
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 5 шт."
       },
       {
         volume: "0.75л",
@@ -103,7 +101,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "350",
-        remaining: "остаток: 7 шт."
+        remaining: "остаток: 6 шт."
       }
     ],
     imageUrl: firstLightImage
@@ -122,7 +120,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "350",
-        remaining: "остаток: 12 шт."
+        remaining: "остаток: 10 шт."
       }
     ],
     imageUrl: warmDawnImage
@@ -141,7 +139,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "350",
-        remaining: "остаток: 29 шт."
+        remaining: "остаток: 28 шт."
       },
       {
         volume: "0.75л",
@@ -170,7 +168,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "300",
-        remaining: "остаток: 21 шт."
+        remaining: "остаток: 20 шт."
       }
     ],
     imageUrl: amricanSaisonImage
@@ -288,25 +286,6 @@ export const beerData: Product[] = generateIds([
       }
     ],
     imageUrl: dawnbreathImage
-  },
-  {
-    category: "SEASON BEER",
-    name: "Frostroot",
-    style: "Gruit with Licorice Root and Calendula",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-frostroot/7656940",
-    og: "13.7%",
-    abv: "5.4",
-    ibu: "35",
-    description: "Зима не убивает — она прячет. Под снегом живут корни, и мы достали их: солодка, длинная и сладкая, и календула, которая не потеряла цвет даже в сухости. Это грюйт для тишины. Для вечера, когда за окном мороз, а внутри — тепло. Пахнет сушёными цветами, корнем и лёгкой пряностью. На вкус — обволакивающий, с мягкой горечью и долгим согревающим финалом. Пей медленно. Корни никуда не спешат.",
-    bottlingDate: "30.10.2026",
-    variants: [
-      {
-        volume: "0.45л",
-        price: "320",
-        remaining: "остаток: 2 шт."
-      }
-    ],
-    imageUrl: frostrootImage
   },
   {
     category: "SEASON BEER",
@@ -464,25 +443,6 @@ export const beerData: Product[] = generateIds([
   // 8TH BIRTHDAY
   {
     category: "8TH BIRTHDAY",
-    name: "Midnight Mill",
-    style: "DDH Wheatwine",
-    untappdUrl: "https://untappd.com/b/paranoid-brewery-midnight-mill/6498787",
-    og: "23.0%",
-    abv: "10.0",
-    ibu: "40",
-    description: "Это пшеничное вино сброжено нейтральными дрожжами, что подчеркнуть яркую хмелевую составляющую. Сухое охмеление привносит в мягкое, бархатистое тело пшеничного вина тёмную, ароматную интригу. Оживают цитрусовые и тропические аккорды, которые, как лунные блики, подсвечивают солодовую мощь, добавляя ей призрачной сложности и свежести. Ночная смена на мельнице вкуса только началась.",
-    bottlingDate: "19.11.2025",
-    variants: [
-      {
-        volume: "0.75л",
-        price: "800",
-        remaining: "остаток: 1 шт."
-      }
-    ],
-    imageUrl: ddhWheatWineImage
-  },
-  {
-    category: "8TH BIRTHDAY",
     name: "The Singularity",
     style: "Buckwheat Strong Ale",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-the-singularity/6506391",
@@ -514,7 +474,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.75л",
         price: "800",
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 1 шт."
       }
     ],
     imageUrl: buckWheatWineHoneyImage
@@ -796,7 +756,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "770",
         packaging: ["воск"],
-        remaining: "остаток: 9 шт."
+        remaining: "остаток: 8 шт."
       },
     ],
     imageUrl: sunrootImage
@@ -897,7 +857,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "450",
         packaging: ["воск"],
-        remaining: "остаток: 18 шт."
+        remaining: "остаток: 17 шт."
       },
     ],
     imageUrl: appleImage
@@ -937,7 +897,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         price: "450",
         packaging: ["воск"],
-        remaining: "остаток: 15 шт."
+        remaining: "остаток: 14 шт."
       },
     ],
     imageUrl: pearImage
@@ -1058,7 +1018,7 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         packaging: ["воск"],
         price: "400",
-        remaining: "остаток: 16 шт."
+        remaining: "остаток: 13 шт."
       },
     ],
     imageUrl: frozenImage

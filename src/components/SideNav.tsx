@@ -6,7 +6,8 @@ import {
   AppstoreOutlined,
   InfoCircleOutlined,
   TrophyOutlined,
-  TeamOutlined
+  TeamOutlined,
+  HistoryOutlined
 } from "@ant-design/icons";
 import { useTheme } from "../hooks/useTheme";
 import ThemeSwitcher from "./ThemeSwitcher";
@@ -28,6 +29,7 @@ const navItems: NavItem[] = [
   { key: "about", label: "О нас", icon: InfoCircleOutlined, href: "#about" },
   { key: "achievements", label: "Достижения", icon: TrophyOutlined, href: "#achievements" },
   { key: "collaborations", label: "Коллаборации", icon: TeamOutlined, href: "#collaborations" },
+  { key: "archive", label: "Архив", icon: HistoryOutlined, href: "#archive" }
 ];
 
 const ACCENT = "#1677FF";
@@ -182,7 +184,7 @@ const SideNav = () => {
   return (
     <Flex
       justify="center"
-      gap={responsive.md ? 48 : responsive.sm ? 24 : 16}
+      gap={responsive.md ? 32 : responsive.sm ? 20 : 12} // <--- Уменьшили gap, чтобы 5 пунктов влезли
       style={{
         position: "sticky",
         top: 0,

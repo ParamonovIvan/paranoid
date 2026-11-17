@@ -15,6 +15,7 @@ import ThemeSwitcher from "./components/ThemeSwitcher";
 import { syncCart } from "./store/cartSlice.ts";
 import { accessoriesData, beerData, sauceData } from "./catalog.ts";
 import { useWideScreen } from "./hooks/useWideScreen.ts";
+import Archive from "./components/Archive.tsx";
 
 const {
   Content,
@@ -134,6 +135,9 @@ function App() {
         </Flex>
         <Flex vertical id="collaborations">
           <Collaborations/>
+        </Flex>
+        <Flex vertical id="archive">
+          <Archive/>
         </Flex>
       </Content>
 
