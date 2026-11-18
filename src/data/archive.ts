@@ -87,16 +87,16 @@ export interface ArchiveItem {
 export const archiveData: ArchiveItem[] = [
   // --- СЕРИЯ 2020 ---
   { id: 1, name: "0,5 дома", style: "Dark Christmas Saison", year: "2020", series: "2020", abv: "7.3%", ibu: "25", note: "Пряно-фруктовый профиль с апельсиновой цедрой и тимьяном", imageUrl: darkChristmasSaison },
-  { id: 2, name: "600 грамм", style: "New England IPA", year: "2020", series: "2020", abv: "6%", ibu: "35", note: "Тропический профиль с мощным сухим охмелением", imageUrl: neipa },
-  { id: 3, name: "Dangerous Astrotomato", style: "Tomato Gose", year: "2020", series: "2020", abv: "6.7%", ibu: "19", note: "С копчёным солодом и дубовыми кубиками", imageUrl: dangerousAstrotomato },
-  { id: 4, name: "Dangerous Astrotomato (Hot)", style: "Tomato Gose", year: "2020", series: "2020", abv: "6.7%", ibu: "19", note: "Острая версия с перцем Хабанеро", imageUrl: dangerousAstrotomatoHot },
-  { id: 5, name: "Double Impact", style: "Grapefruit DIPA", year: "2020", series: "2020", abv: "8.9%", ibu: "111", note: "Коллаборация с The Ded & Paddle", imageUrl: doubleImpact },
-  { id: 6, name: "Freeday. Fuck Work", style: "Pumpkin Porter", year: "2020", series: "2020", abv: "5%", ibu: "25", note: "Тыква, специи, кофе и ваниль", imageUrl: freeday },
-  { id: 7, name: "Горькая правда", style: "DIPA", year: "2020", series: "2020", abv: "7.7%", ibu: "100", note: "Тропики и цитрус поверх карамельной основы", imageUrl: gorkayaPravda },
+  { id: 2, name: "Горькая правда", style: "DIPA", year: "2020", series: "2020", abv: "7.7%", ibu: "100", note: "Тропики и цитрус поверх карамельной основы", imageUrl: gorkayaPravda },
+  { id: 3, name: "600 грамм", style: "New England IPA", year: "2020", series: "2020", abv: "6%", ibu: "35", note: "Тропический профиль с мощным сухим охмелением", imageUrl: neipa },
+  { id: 4, name: "Dangerous Astrotomato", style: "Tomato Gose", year: "2020", series: "2020", abv: "6.7%", ibu: "19", note: "С копчёным солодом и дубовыми кубиками", imageUrl: dangerousAstrotomato },
+  { id: 5, name: "Dangerous Astrotomato (Hot)", style: "Tomato Gose", year: "2020", series: "2020", abv: "6.7%", ibu: "19", note: "Острая версия с перцем Хабанеро", imageUrl: dangerousAstrotomatoHot },
+  { id: 6, name: "Double Impact", style: "Grapefruit DIPA", year: "2020", series: "2020", abv: "8.9%", ibu: "111", note: "Коллаборация с The Ded & Paddle", imageUrl: doubleImpact },
+  { id: 7, name: "Freeday. Fuck Work", style: "Pumpkin Porter", year: "2020", series: "2020", abv: "5%", ibu: "25", note: "Тыква, специи, кофе и ваниль", imageUrl: freeday },
   { id: 8, name: "Monday Sucks", style: "Black DIPA", year: "2020", series: "2020", abv: "8%", ibu: "50", note: "Хмели Chinook, Centennial и Cascade", imageUrl: mondaySucks },
-  { id: 9, name: "Not Quite Saint Grigory", style: "Belgian Dubbel", year: "2020", series: "2020", abv: "7.5%", ibu: "20", note: "Изюм, чернослив и благородная пряность", imageUrl: saintGrigory },
-  { id: 10, name: "Session Candy Orange IPA", style: "Session IPA", year: "2020", series: "2020", abv: "4.6%", ibu: "30", note: "Лёгкое летнее пиво с цитрусовой горчинкой", imageUrl: sessionCandy },
-  { id: 11, name: "Shit Happens", style: "New Zealand Pale Ale", year: "2020", series: "2020", abv: "5.7%", ibu: "20", note: "Хмель Motueka: лайм и тропические фрукты", imageUrl: shitHappens },
+  { id: 9, name: "Shit Happens", style: "New Zealand Pale Ale", year: "2020", series: "2020", abv: "5.7%", ibu: "20", note: "Хмель Motueka: лайм и тропические фрукты", imageUrl: shitHappens },
+  { id: 10, name: "Not Quite Saint Grigory", style: "Belgian Dubbel", year: "2020", series: "2020", abv: "7.5%", ibu: "20", note: "Изюм, чернослив и благородная пряность", imageUrl: saintGrigory },
+  { id: 11, name: "Session Candy Orange IPA", style: "Session IPA", year: "2020", series: "2020", abv: "4.6%", ibu: "30", note: "Лёгкое летнее пиво с цитрусовой горчинкой", imageUrl: sessionCandy },
 
   // --- СЕРИЯ 2021 ---
   { id: 12, name: "Beet Buckwheat Ale", style: "Specialty Grain", year: "2021", series: "2021", abv: "2%", ibu: "10", note: "Безглютеновое, на гречишном солоде и свёкле", imageUrl: beetBuckwheat },
