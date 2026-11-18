@@ -25,6 +25,7 @@ import smoothieCherry from "../images/archive/pasrty-smoothie-ale-cherry-raspber
 import smoothieMango from "../images/archive/pasrty-smoothie-ale-mango-banana.webp";
 import tomYum from "../images/archive/tom-yum-tomato-gose.webp";
 import tomYumHot from "../images/archive/tom-yum-tomato-gose-he.webp";
+import smoothieTropical from "../images/archive/tropical_smoothie-ale.webp";
 
 import barnayaOdisseya from "../images/archive/baranaya-odisseya.webp";
 import buynyMolokos from "../images/archive/buinii-molokosos.webp";
@@ -114,22 +115,23 @@ export const archiveData: ArchiveItem[] = [
   { id: 23, name: "Strong Smoothie Ale (Mango)", style: "Smoothie Sour Ale", year: "2022", series: "2022", abv: "7.5%", ibu: "15", note: "Более 30% манго и банана", imageUrl: smoothieMango },
   { id: 24, name: "Tom Yum Tomato Gose", style: "Tomato Gose", year: "2022", series: "2022", abv: "5.8%", ibu: "10", note: "Тайский суп: лемонграсс, кокос, вешенки", imageUrl: tomYum },
   { id: 25, name: "Tom Yum Tomato Gose (Hot)", style: "Tomato Gose", year: "2022", series: "2022", abv: "5.8%", ibu: "10", note: "С перцами Chili и Carolina Reaper", imageUrl: tomYumHot },
+  { id: 26, name: "Tropical Smoothie Ale", style: "Smoothie Sour Ale", year: "2022", series: "2022", abv: "6.2%", ibu: "20", note: "Густой эль с кокосом, манго, ананасом и бананом (30% фруктов)", imageUrl: smoothieTropical },
 
   // --- СЕРИЯ DEFO ---
-  { id: 26, name: "Барная Одиссея", style: "New Zealand Pale Ale", year: "2023", series: "defo", abv: "6%", ibu: "40", note: "Хмель Green Bullet: цитрус и цветы", imageUrl: barnayaOdisseya },
-  { id: 27, name: "Буйный Молокос", style: "Milkshake DIPA", year: "2023", series: "defo", abv: "7.8%", ibu: "10", note: "Хвоя, цитрус и тропические фрукты", imageUrl: buynyMolokos },
-  { id: 28, name: "Лжец", style: "New Zealand Pale Ale", year: "2023", series: "defo", abv: "6.8%", ibu: "35", note: "Хмели Nelson Sauvin, Rakau, Green Bullet", imageUrl: lzhets },
-  { id: 29, name: "Одинокий марсианин", style: "Red IPA", year: "2023", series: "defo", abv: "6.8%", ibu: "40", note: "Смолистый, с Citra, Mosaic, Simcoe", imageUrl: odinokiyMarsianin },
-  { id: 30, name: "Отличная история", style: "Imperial Brown Ale", year: "2023", series: "defo", abv: "8.3%", ibu: "40", note: "Кофейный аромат и шоколад", imageUrl: otlichnayaIstoriya },
-  { id: 31, name: "Под кроной пней", style: "White IPA", year: "2023", series: "defo", abv: "7%", ibu: "40", note: "50% пшеничного солода, хмель Motueka", imageUrl: podKronoyPney },
-  { id: 32, name: "Робин Бобин", style: "English IPA", year: "2023", series: "defo", abv: "8%", ibu: "70", note: "Английские хмели, солодовая основа", imageUrl: robinBobin },
-  { id: 33, name: "Тактика Стивена", style: "APA", year: "2023", series: "defo", abv: "5.6%", ibu: "40", note: "Грейпфрут, апельсин и маракуйя", imageUrl: taktikaStivena },
-  { id: 34, name: "Твой пьяный батя", style: "Winter Ale", year: "2023", series: "defo", abv: "6%", ibu: "32", note: "Тыква, мандарины и рождественские специи", imageUrl: tvoyPyanyBatea },
-  { id: 35, name: "Хмельная исповедь", style: "Rye IPA", year: "2023", series: "defo", abv: "6.6%", ibu: "58", note: "Ржаной IPA с хвоей и цитрусом", imageUrl: hmelnayaIspoved },
-  { id: 36, name: "Хулиган", style: "Oatmeal Stout", year: "2023", series: "defo", abv: "7.1%", ibu: "30", note: "Кофейный, полнотелый, овсяный", imageUrl: huligan },
-  { id: 37, name: "Кислосмертие", style: "Wild Ale with Red Currant", year: "2023", series: "defo", abv: "5.2%", ibu: "8", note: "4 месяца с красной смородиной и Brett", imageUrl: kislosmerie },
-  { id: 38, name: "Малина язычника", style: "Wild Ale with Raspberry", year: "2023", series: "defo", abv: "7%", ibu: "10", note: "Полгода в дубовой бочке с малиной", imageUrl: malinaYazychnika },
-  { id: 39, name: "Удавленный вишней", style: "Wild Ale with Cherry", year: "2023", series: "defo", abv: "5.8%", ibu: "10", note: "Бочка из-под Jack Daniels и вишня", imageUrl: udavlennyVishney },
+  { id: 27, name: "Барная Одиссея", style: "New Zealand Pale Ale", year: "2023", series: "defo", abv: "6%", ibu: "40", note: "Хмель Green Bullet: цитрус и цветы", imageUrl: barnayaOdisseya },
+  { id: 28, name: "Буйный Молокос", style: "Milkshake DIPA", year: "2023", series: "defo", abv: "7.8%", ibu: "10", note: "Хвоя, цитрус и тропические фрукты", imageUrl: buynyMolokos },
+  { id: 29, name: "Лжец", style: "New Zealand Pale Ale", year: "2023", series: "defo", abv: "6.8%", ibu: "35", note: "Хмели Nelson Sauvin, Rakau, Green Bullet", imageUrl: lzhets },
+  { id: 30, name: "Одинокий марсианин", style: "Red IPA", year: "2023", series: "defo", abv: "6.8%", ibu: "40", note: "Смолистый, с Citra, Mosaic, Simcoe", imageUrl: odinokiyMarsianin },
+  { id: 31, name: "Отличная история", style: "Imperial Brown Ale", year: "2023", series: "defo", abv: "8.3%", ibu: "40", note: "Кофейный аромат и шоколад", imageUrl: otlichnayaIstoriya },
+  { id: 32, name: "Под кроной пней", style: "White IPA", year: "2023", series: "defo", abv: "7%", ibu: "40", note: "50% пшеничного солода, хмель Motueka", imageUrl: podKronoyPney },
+  { id: 33, name: "Робин Бобин", style: "English IPA", year: "2023", series: "defo", abv: "8%", ibu: "70", note: "Английские хмели, солодовая основа", imageUrl: robinBobin },
+  { id: 34, name: "Тактика Стивена", style: "APA", year: "2023", series: "defo", abv: "5.6%", ibu: "40", note: "Грейпфрут, апельсин и маракуйя", imageUrl: taktikaStivena },
+  { id: 35, name: "Твой пьяный батя", style: "Winter Ale", year: "2023", series: "defo", abv: "6%", ibu: "32", note: "Тыква, мандарины и рождественские специи", imageUrl: tvoyPyanyBatea },
+  { id: 36, name: "Хмельная исповедь", style: "Rye IPA", year: "2023", series: "defo", abv: "6.6%", ibu: "58", note: "Ржаной IPA с хвоей и цитрусом", imageUrl: hmelnayaIspoved },
+  { id: 37, name: "Хулиган", style: "Oatmeal Stout", year: "2023", series: "defo", abv: "7.1%", ibu: "30", note: "Кофейный, полнотелый, овсяный", imageUrl: huligan },
+  { id: 38, name: "Кислосмертие", style: "Wild Ale with Red Currant", year: "2023", series: "defo", abv: "5.2%", ibu: "8", note: "4 месяца с красной смородиной и Brett", imageUrl: kislosmerie },
+  { id: 39, name: "Малина язычника", style: "Wild Ale with Raspberry", year: "2023", series: "defo", abv: "7%", ibu: "10", note: "Полгода в дубовой бочке с малиной", imageUrl: malinaYazychnika },
+  { id: 40, name: "Удавленный вишней", style: "Wild Ale with Cherry", year: "2023", series: "defo", abv: "5.8%", ibu: "10", note: "Бочка из-под Jack Daniels и вишня", imageUrl: udavlennyVishney },
 
   // --- СОУСЫ (в хронологическом порядке по дате розлива) ---
   { id: 100, name: "Low Toxicity", style: "Cayenne Pepper Sauce", year: "2025", series: "sauces", spiciness: "2/10", note: "Состав: перец болгарский, Чили Птичий глаз, Кайенский, лук, морковь, чеснок, паприка, лайм, сахар, уксус, соль.", imageUrl: lowToxicity },
