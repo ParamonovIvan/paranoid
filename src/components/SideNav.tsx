@@ -61,6 +61,27 @@ const useStyles = createStyles(({ token, css }) => ({
     .anticon, .ant-typography {
       color: ${token.colorPrimary} !important;
     }
+  `,
+  hideTextOnTiny: css`
+    --nav-gap: 12px;
+    
+    @media (min-width: 576px) {
+      --nav-gap: 20px;
+    }
+    @media (min-width: 768px) {
+      --nav-gap: 32px;
+    }
+    
+    @media (max-width: 350px) {
+      --nav-gap: 32px;
+
+      .ant-typography {
+        display: none !important;
+      }
+      .anticon {
+        font-size: 22px !important;
+      }
+    }
   `
 }));
 
@@ -184,8 +205,9 @@ const SideNav = () => {
   return (
     <Flex
       justify="center"
-      gap={responsive.md ? 32 : responsive.sm ? 20 : 12} // <--- Уменьшили gap, чтобы 5 пунктов влезли
+      className={styles.hideTextOnTiny}
       style={{
+        gap: "var(--nav-gap)",
         position: "sticky",
         top: 0,
         zIndex: 999,
