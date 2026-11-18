@@ -23,6 +23,8 @@ const seriesConfig = {
   "2020": { label: "2020", icon: <HistoryOutlined/> },
   "2021": { label: "2021", icon: <HistoryOutlined/> },
   "2022": { label: "2022", icon: <HistoryOutlined/> },
+  "2023": { label: "2023", icon: <HistoryOutlined/> },
+  "2024": { label: "2024", icon: <HistoryOutlined/> },
   defo: { label: "Defo", icon: <StarOutlined/> },
   sauces: { label: "Соусы", icon: <FireOutlined/> }
 };
