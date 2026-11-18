@@ -1055,7 +1055,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "500",
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 5 шт."
       }
     ],
     imageUrl: botanicalImage
@@ -1071,7 +1071,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "600",
-        remaining: "остаток: 9 шт."
+        remaining: "остаток: 8 шт."
       }
     ],
     imageUrl: pumpkinPyreImage
