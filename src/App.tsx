@@ -17,6 +17,7 @@ import { syncCart } from "./store/cartSlice.ts";
 import { useWideScreen } from "./hooks/useWideScreen.ts";
 import Archive from "./components/Archive.tsx";
 import { accessoriesData, beerData, sauceData } from "./data/catalog.ts";
+import Contacts from "./components/Contacts.tsx";
 
 const {
   Content,
@@ -151,6 +152,7 @@ function App() {
         fontSize: "clamp(12px, 2vw, 14px)",
         cursor: "default"
       }}>
+        <Contacts/>
         Paranoid Brewery ©2017-2026 — Лаборатория жидкостей с характером
       </Footer>
 
