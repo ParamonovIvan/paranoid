@@ -121,6 +121,7 @@ const Archive = () => {
                   src={item.imageUrl}
                   alt={item.name}
                   preview={false}
+                  loading="lazy"
                   style={{
                     width: "100%",
                     height: "100%",
