@@ -62,6 +62,13 @@ const useStyles = createStyles(({ token, css }) => ({
       color: ${token.colorPrimary} !important;
     }
   `,
+  activeDark: css`
+    background: ${token.colorPrimary};
+    color: #FFFFFF !important;
+    .anticon, .ant-typography {
+      color: #FFFFFF !important;
+    }
+  `,
   hideTextOnTiny: css`
     --nav-gap: 12px;
     
@@ -161,7 +168,7 @@ const SideNav = () => {
               align="center"
               gap={4}
               onClick={(e) => handleClick(e, item.href)}
-              className={isActive ? styles.active : styles.navItem}
+              className={isActive ? (isDark ? styles.activeDark : styles.active) : styles.navItem}
               style={{
                 cursor: "pointer",
                 width: 72,
@@ -208,8 +215,10 @@ const SideNav = () => {
       className={styles.hideTextOnTiny}
       style={{
         gap: "var(--nav-gap)",
-        position: "sticky",
-        top: 0,
+        position: "fixed",
+        bottom: 0,
+        left: 0,
+        right: 0,
         zIndex: 999,
         background: token.colorBgLayout,
         borderBottom: `1px solid ${token.colorBorderSecondary}`,

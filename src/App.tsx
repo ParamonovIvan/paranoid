@@ -89,7 +89,7 @@ function App() {
   };
 
   return (
-    <Layout style={{ minHeight: "100vh", background: token.colorBgLayout }}>
+    <Layout style={{ minHeight: "100vh", overflowX: "hidden", background: token.colorBgLayout }}>
       <Header style={{
         backgroundColor: token.colorBgLayout,
         borderBottom: `1px solid ${token.colorBorder}`,
@@ -149,6 +149,7 @@ function App() {
         color: token.colorTextSecondary,
         borderTop: `1px solid ${token.colorBorder}`,
         padding: "24px 24px",
+        marginBottom: isWide ? 0 : 48,
         fontSize: "clamp(12px, 2vw, 14px)",
         cursor: "default"
       }}>
@@ -157,14 +158,7 @@ function App() {
       </Footer>
 
       {!isWide && (
-        <Flex
-          style={{
-            position: "fixed",
-            bottom: 24,
-            left: 24,
-            zIndex: 1000
-          }}
-        >
+        <Flex style={{ position: "fixed", bottom: isWide ? 24 : 60, left: isWide ? 24 : 16, zIndex: 1000 }}>
           <ThemeSwitcher/>
         </Flex>
       )}
@@ -172,7 +166,7 @@ function App() {
       <Flex
         vertical
         gap={12}
-        style={{ position: "fixed", bottom: 24, right: 24, zIndex: 1000, alignItems: "center" }}
+        style={{ position: "fixed", bottom: isWide ? 24 : 60, right: isWide ? 24 : 16, zIndex: 1000, alignItems: "center" }}
       >
         {showBackTop && (
           <Button
@@ -183,8 +177,8 @@ function App() {
             onClick={scrollToTop}
             style={{
               boxShadow: token.boxShadowSecondary,
-              width: 50,
-              height: 50,
+              width: responsive.md ? 50 : 40,
+              height: responsive.md ? 50 : 40,
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
@@ -208,8 +202,8 @@ function App() {
             style={{
               boxShadow: "0 4px 12px rgba(0, 0, 0, 0.3)",
               borderRadius: "50%",
-              width: 50,
-              height: 50,
+              width: responsive.md ? 50 : 40,
+              height: responsive.md ? 50 : 40,
               display: "flex",
               alignItems: "center",
               justifyContent: "center"

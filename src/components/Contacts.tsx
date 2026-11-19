@@ -21,7 +21,7 @@ const contactsItem: ContactsItem[] = [
   { key: "instagram", href: "https://instagram.com/paranoid_brewery/", icon: FaInstagram, isExternal: true },
   { key: "vk", href: "https://vk.ru/paranoid_brewery", icon: FaVk, isExternal: true },
   { key: "tel", href: "tel:+79226800484", icon: PhoneOutlined },
-  { key: "mail", href: "mailto:par-ivan@mail.ru", icon: MailOutlined },
+  { key: "mail", href: "mailto:par-ivan@mail.ru", icon: MailOutlined }
 ];
 
 const useStyles = createStyles(({ token, css }) => ({
@@ -45,7 +45,7 @@ const Contacts = () => {
   const isDark = mode === "dark";
 
   const iconStyle = {
-    fontSize: responsive.md ? 28 : 20,
+    fontSize: 28,
     color: isDark ? token.colorTextSecondary : "#00000073",
     transition: "color 0.2s ease"
   };
@@ -54,7 +54,7 @@ const Contacts = () => {
     <Flex
       justify="center"
       align="center"
-      gap={responsive.md ? 24 : 16}
+      gap={responsive.md ? 24 : 20}
       wrap="wrap"
       style={{ marginBottom: 16 }}
     >
@@ -68,7 +68,7 @@ const Contacts = () => {
             rel={item.isExternal ? "noopener noreferrer" : undefined}
             className={styles.contactLink}
           >
-            <Icon style={iconStyle} />
+            <Icon style={iconStyle}/>
           </Link>
         );
       })}

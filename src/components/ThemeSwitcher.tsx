@@ -18,8 +18,8 @@ const ThemeSwitcher = () => {
       style={{
         fontSize: 20,
         color: "#1677FF",
-        width: 50,
-        height: 50,
+        width: responsive.md ? 50 : 40,
+        height: responsive.md ? 50 : 40,
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
