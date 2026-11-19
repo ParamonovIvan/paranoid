@@ -171,7 +171,7 @@ export const beerData: Product[] = generateIds([
   {
     category: "SEASON BEER",
     name: "Totem Needle",
-    style: "Spruce Saison",
+    style: "Saison with Spruce",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-totem-needle/6985989",
     og: "13.0%",
     abv: "6.3",
@@ -190,7 +190,7 @@ export const beerData: Product[] = generateIds([
   {
     category: "SEASON BEER",
     name: "Totem Root",
-    style: "Raspberry & Ginger Saison",
+    style: "Saison with Raspberry and Ginger",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-totem-root/7219071",
     og: "15.0%",
     abv: "7.2",
@@ -209,7 +209,7 @@ export const beerData: Product[] = generateIds([
   {
     category: "SEASON BEER",
     name: "Totem Leaf",
-    style: "Eucalyptus Saison",
+    style: "Saison with Eucalyptus",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-totem-leaf/7307764",
     og: "13.0%",
     abv: "6.3",
@@ -479,7 +479,7 @@ export const beerData: Product[] = generateIds([
   {
     category: "9TH BIRTHDAY",
     name: "The Domra's Tale",
-    style: "Blueberry Melomel",
+    style: "Melomel with Blueberry",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-the-domra-s-tale/6851924",
     og: "50.0%",
     abv: "15.0",
@@ -499,7 +499,7 @@ export const beerData: Product[] = generateIds([
   {
     category: "9TH BIRTHDAY",
     name: "Duskweaver",
-    style: "Blueberry & Elderberry Melomel",
+    style: "Melomel with Blueberry and Elderberry",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-duskweaver/6851923",
     og: "50.0%",
     abv: "15.0",
@@ -519,7 +519,7 @@ export const beerData: Product[] = generateIds([
   {
     category: "9TH BIRTHDAY",
     name: "Honey-Paw",
-    style: "Cranberry Melomel",
+    style: "Melomel with Cranberry",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-honey-paw/6851922",
     og: "50.0%",
     abv: "15.0",
@@ -539,7 +539,7 @@ export const beerData: Product[] = generateIds([
   {
     category: "9TH BIRTHDAY",
     name: "Rattleberry",
-    style: "Smoothie Cranberry Melomel",
+    style: "Smoothie Melomel with Cranberry",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-rattleberry/6851920",
     og: "50.0%",
     abv: "15.0",
@@ -559,7 +559,7 @@ export const beerData: Product[] = generateIds([
   {
     category: "9TH BIRTHDAY",
     name: "Northern Seal",
-    style: "Lingonberry Melomel",
+    style: "Melomel with Lingonberry",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-northern-seal/6851919",
     og: "50.0%",
     abv: "15.0",
@@ -579,7 +579,7 @@ export const beerData: Product[] = generateIds([
   {
     category: "9TH BIRTHDAY",
     name: "Glintwood",
-    style: "Lingonberry & Mulled Spiced Melomel",
+    style: "Melomel with Lingonberry and Mulled Spiced",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-glintwood/6851917",
     og: "50.0%",
     abv: "15.0",
@@ -599,7 +599,7 @@ export const beerData: Product[] = generateIds([
   {
     category: "9TH BIRTHDAY",
     name: "Wolfberry",
-    style: "Blackberry Melomel",
+    style: "Melomel with Blackberry",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-wolfberry/6851915",
     og: "50.0%",
     abv: "15.0",
@@ -619,7 +619,7 @@ export const beerData: Product[] = generateIds([
   {
     category: "9TH BIRTHDAY",
     name: "Hedgewarden",
-    style: "Blackberry & Thyme Melomel",
+    style: "Melomel wiht Blackberry and Thyme",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-hedgewarden/6851914",
     og: "50.0%",
     abv: "15.0",
@@ -639,7 +639,7 @@ export const beerData: Product[] = generateIds([
   {
     category: "9TH BIRTHDAY",
     name: "Medovisnja",
-    style: "Cherry Melomel",
+    style: "Melomel with Cherry",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-medovisnja/6851913",
     og: "50.0%",
     abv: "15.0",
@@ -659,7 +659,7 @@ export const beerData: Product[] = generateIds([
   {
     category: "9TH BIRTHDAY",
     name: "Var-Ded",
-    style: "Cherry & Cinnamon Melomel",
+    style: "Melomel with Cherry and Cinnamon",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-var-ded/6851912",
     og: "50.0%",
     abv: "15.0",
@@ -679,7 +679,7 @@ export const beerData: Product[] = generateIds([
   {
     category: "9TH BIRTHDAY",
     name: "Nightwatch",
-    style: "Black Currant Melomel",
+    style: "Melomel with Black Currant",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-nightwatch/6851910",
     og: "50.0%",
     abv: "15.0",
@@ -699,7 +699,7 @@ export const beerData: Product[] = generateIds([
   {
     category: "9TH BIRTHDAY",
     name: "Phoenix Zest",
-    style: "Black Currant & Orange Zest Melomel",
+    style: "Melomel with Black Currant and Orange Zest",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-black-currant-and-orange-zest-melomel/6851909?edit=success",
     og: "50.0%",
     abv: "15.0",
@@ -719,7 +719,7 @@ export const beerData: Product[] = generateIds([
   {
     category: "9TH BIRTHDAY",
     name: "Solrubrum",
-    style: "Red Currant Melomel",
+    style: "Melomel with Red Currant",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-solrubrum/6851906",
     og: "50.0%",
     abv: "15.0",
@@ -739,7 +739,7 @@ export const beerData: Product[] = generateIds([
   {
     category: "9TH BIRTHDAY",
     name: "Sunroot Melody",
-    style: "Red Currant & Ginger Melomel",
+    style: "Melomel wiht Red Currant and Ginger",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-sunroot-melody/6851905",
     og: "50.0%",
     abv: "15.0",
@@ -759,7 +759,7 @@ export const beerData: Product[] = generateIds([
   {
     category: "9TH BIRTHDAY",
     name: "Songberry",
-    style: "Raspberry Melomel",
+    style: "Melomel with Raspberry",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-songberry/6851904",
     og: "50.0%",
     abv: "15.0",
@@ -779,7 +779,7 @@ export const beerData: Product[] = generateIds([
   {
     category: "9TH BIRTHDAY",
     name: "Rosmaryoshka",
-    style: "Raspberry & Rosemary Melomel",
+    style: "Melomel with Raspberry and Rosemary",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-rosmaryoshka/6851903",
     og: "50.0%",
     abv: "15.0",
@@ -799,7 +799,7 @@ export const beerData: Product[] = generateIds([
   {
     category: "9TH BIRTHDAY",
     name: "Seabuck",
-    style: "Sea Buckthorn Melomel",
+    style: "Melomel with Sea Buckthorn",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-seabuck/6851900",
     og: "50.0%",
     abv: "15.0",
@@ -819,7 +819,7 @@ export const beerData: Product[] = generateIds([
   {
     category: "9TH BIRTHDAY",
     name: "Sunnel",
-    style: "Sea Buckthorn & Fennel Melomel",
+    style: "Melomel with Sea Buckthorn and Fennel",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-sunnel/6851899",
     og: "50.0%",
     abv: "15.0",
@@ -840,7 +840,7 @@ export const beerData: Product[] = generateIds([
   {
     category: "9TH BIRTHDAY",
     name: "Strong Apple Graff",
-    style: "Apple Graff",
+    style: "Strong Graff",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-strong-apple-graff-2026/6851898",
     og: "36.0%",
     abv: "15.0",
@@ -860,7 +860,7 @@ export const beerData: Product[] = generateIds([
   {
     category: "9TH BIRTHDAY",
     name: "Strong Apple Graff with Nutmeg",
-    style: "Apple Graff",
+    style: "Strong Graff",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-strong-apple-graff-with-nutmeg-2026/6851897",
     og: "36.0%",
     abv: "15.0",
@@ -880,7 +880,7 @@ export const beerData: Product[] = generateIds([
   {
     category: "9TH BIRTHDAY",
     name: "Strong Pear Graff",
-    style: "Pear Graff",
+    style: "Strong Graff",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-strong-pear-graff-2026/6851895",
     og: "36.0%",
     abv: "15.0",
@@ -900,7 +900,7 @@ export const beerData: Product[] = generateIds([
   {
     category: "9TH BIRTHDAY",
     name: "Strong Pear Graff with Vanilla",
-    style: "Pear Graff",
+    style: "Strong Graff",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-strong-pear-graff-with-vanilla-2026/6851894",
     og: "36.0%",
     abv: "15.0",
@@ -920,7 +920,7 @@ export const beerData: Product[] = generateIds([
   {
     category: "9TH BIRTHDAY",
     name: "Strong Pomegranate Graff",
-    style: "Pomegranate Graff",
+    style: "Strong Graff",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-strong-pomegranate-graff/6851893",
     og: "36.0%",
     abv: "15.0",
@@ -940,7 +940,7 @@ export const beerData: Product[] = generateIds([
   {
     category: "9TH BIRTHDAY",
     name: "Strong Pomegranate Graff with Cardamom",
-    style: "Pomegranate Graff",
+    style: "Strong Graff",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-strong-pomegranate-graff-with-cardamom/6851892",
     og: "36.0%",
     abv: "15.0",
@@ -960,7 +960,7 @@ export const beerData: Product[] = generateIds([
   {
     category: "9TH BIRTHDAY",
     name: "Strong Grape Graff",
-    style: "Grape Graff",
+    style: "Strong Graff",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-strong-grape-graff-2026/6851890",
     og: "36.0%",
     abv: "15.0",
@@ -980,7 +980,7 @@ export const beerData: Product[] = generateIds([
   {
     category: "9TH BIRTHDAY",
     name: "Strong Grape Graff with Cinnamon",
-    style: "Grape Graff",
+    style: "Strong Graff",
     untappdUrl: "https://untappd.com/b/paranoid-brewery-strong-grape-graff-with-cinnamon-2026/6851889",
     og: "36.0%",
     abv: "15.0",
