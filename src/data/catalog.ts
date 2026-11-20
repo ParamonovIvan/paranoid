@@ -120,7 +120,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.33л",
         price: "350",
-        remaining: "остаток: 9 шт."
+        remaining: "остаток: 11 шт."
       }
     ],
     imageUrl: warmDawnImage
@@ -182,7 +182,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "290",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 9 шт."
       }
     ],
     imageUrl: spruceSaisonImage
@@ -201,7 +201,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "310",
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 4 шт."
       }
     ],
     imageUrl: raspberrySaisonImage
@@ -220,7 +220,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "300",
-        remaining: "остаток: 2 шт."
+        remaining: "остаток: 4 шт."
       }
     ],
     imageUrl: eucalyptusSaisonImage
@@ -258,7 +258,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: berryfallImage
@@ -277,7 +277,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 6 шт."
+        remaining: "остаток: 5 шт."
       }
     ],
     imageUrl: dawnbreathImage
@@ -1013,13 +1013,12 @@ export const beerData: Product[] = generateIds([
         volume: "0.25л",
         packaging: ["воск"],
         price: "400",
-        remaining: "остаток: 10 шт."
+        remaining: "остаток: 5 шт."
       },
     ],
     imageUrl: frozenImage
   }
 ]);
-
 
 
 export const sauceData: Product[] = generateIds([
