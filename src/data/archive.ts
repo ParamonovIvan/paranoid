@@ -42,12 +42,6 @@ import kislosmerie from "../images/archive/kislosmertie.webp";
 import malinaYazychnika from "../images/archive/malina-yazichnika.webp";
 import udavlennyVishney from "../images/archive/udavlennii-vishnei.webp";
 
-import paleAle from "../images/archive/pale-ale.webp";
-import irishDryStout from "../images/archive/stout.webp";
-import wheatBeer from "../images/archive/wheat.webp";
-
-import flugenkaput from "../images/archive/flugenkaput.webp";
-
 import lowToxicity from "../images/archive/low-toxicity.webp";
 import chlorophyllZ from "../images/archive/chlorophyll-z.webp";
 import harvestSerum from "../images/archive/harvest-serum.webp";
@@ -75,7 +69,7 @@ import coreSample from "../images/archive/core-sample.webp";
 import orangery from "../images/archive/orangery.webp";
 import paleBite from "../images/archive/pale-bite.webp";
 
-export type ArchiveSeries = "2020" | "2021" | "2022" | "2023" | "2024" | "defo" | "sauces";
+export type ArchiveSeries = "2020" | "2021" | "2022" | "defo" | "sauces";
 
 export interface ArchiveItem {
   id: number;
@@ -138,14 +132,6 @@ export const archiveData: ArchiveItem[] = [
   { id: 38, name: "Кислосмертие", style: "Wild Ale with Red Currant", year: "2023", series: "defo", abv: "5.2%", ibu: "8", note: "4 месяца с красной смородиной и Brett", imageUrl: kislosmerie },
   { id: 39, name: "Малина язычника", style: "Wild Ale with Raspberry", year: "2023", series: "defo", abv: "7%", ibu: "10", note: "Полгода в дубовой бочке с малиной", imageUrl: malinaYazychnika },
   { id: 40, name: "Удавленный вишней", style: "Wild Ale with Cherry", year: "2023", series: "defo", abv: "5.8%", ibu: "10", note: "Бочка из-под Jack Daniels и вишня", imageUrl: udavlennyVishney },
-
-  // --- СЕРИЯ 2023 ---
-  { id: 41, name: "Pale Ale", style: "Pale Ale", year: "2023", series: "2023", abv: "5.2%", ibu: "23", note: "Светлый освежающий эль с хмелем Chinook", imageUrl: paleAle },
-  { id: 42, name: "Irish Dry Stout", style: "Irish Dry Stout", year: "2023", series: "2023", abv: "5.5%", ibu: "35", note: "Полнотелое черное пиво с кофе и шоколадом", imageUrl: irishDryStout },
-  { id: 43, name: "Wheat Beer", style: "Wheat Beer", year: "2023", series: "2023", abv: "5%", ibu: "10", note: "Белое мягкое пшеничное пиво в немецком стиле", imageUrl: wheatBeer },
-
-  // --- СЕРИЯ 2024 ---
-  { id: 44, name: "Flugenkaput", style: "Quadrupel", year: "2024", series: "2024", abv: "10%", ibu: "25", note: "Фламандский коричневый эль с дубовой таннинностью", imageUrl: flugenkaput },
 
   // --- СОУСЫ (в хронологическом порядке по дате розлива) ---
   { id: 100, name: "Low Toxicity", style: "Cayenne Pepper Sauce", year: "2025", series: "sauces", spiciness: "2/10", note: "Состав: перец болгарский, Чили Птичий глаз, Кайенский, лук, морковь, чеснок, паприка, лайм, сахар, уксус, соль.", imageUrl: lowToxicity },
