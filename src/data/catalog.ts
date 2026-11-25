@@ -1082,7 +1082,7 @@ export const sauceData: Product[] = generateIds([
       {
         volume: "0.2л",
         price: "500",
-        remaining: "остаток: 18 шт."
+        remaining: "остаток: 17 шт."
       }
     ],
     imageUrl: gildedStingImage
