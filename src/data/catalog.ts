@@ -182,7 +182,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "290",
-        remaining: "остаток: 9 шт."
+        remaining: "остаток: 8 шт."
       }
     ],
     imageUrl: spruceSaisonImage
@@ -277,7 +277,7 @@ export const beerData: Product[] = generateIds([
       {
         volume: "0.45л",
         price: "320",
-        remaining: "остаток: 4 шт."
+        remaining: "остаток: 3 шт."
       }
     ],
     imageUrl: dawnbreathImage
