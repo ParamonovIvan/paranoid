@@ -50,6 +50,7 @@ import curryImage from "../images/season-beer/curry.webp";
 import curryHeImage from "../images/season-beer/curry-he.webp";
 import tomYumImage from "../images/season-beer/tom-yum.webp";
 import tomYumHeImage from "../images/season-beer/tom-yum-he.webp";
+import gildedStingImage from "../images/pepper-sauces/golden-sting.webp";
 
 let globalIdCounter = 1;
 
@@ -1069,6 +1070,22 @@ export const sauceData: Product[] = generateIds([
       }
     ],
     imageUrl: pumpkinPyreImage
+  },
+  {
+    category: "PEPPER SAUCES",
+    name: "Gilded Sting",
+    style: "Golden Trinidad Scorpion Sauce",
+    spiciness: "6/10",
+    description: "Золото, которое жалит — но сначала обволакивает. Батат и курага дают крахмалистую, чуть сладковатую плотность, банан смягчает, апельсин добавляет цитрусовой искры. А потом просыпается Скорпион Тринидад Бутч-Т — и здесь он работает в полную силу: медленно разгоняется от тепла на губах до жара в горле, долго не отпускает. Куркума и копчёная паприка — землистая глубина. Сладость держит оборону, но перец всё равно прорывается. Состав: батат, курага, бананы, лук, чеснок, апельсины, перец Скорпион Тринидад Бутч-Т, вода, уксус яблочный, куркума, паприка копченая, соль морская, сахар тростниковый.",
+    bottlingDate: "10.11.2026",
+    variants: [
+      {
+        volume: "0.2л",
+        price: "500",
+        remaining: "остаток: 18 шт."
+      }
+    ],
+    imageUrl: gildedStingImage
   },
 ]);
 
