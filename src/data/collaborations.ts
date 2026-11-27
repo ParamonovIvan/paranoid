@@ -224,7 +224,7 @@ export const collaborationsData: CollaborationItem[] = [
   {
     type: "collab",
     partner: "Арнульф",
-    beerName: "Belgian Ale (Tripel)",
+    beerName: "Belgian Ale",
     volume: "3000 л",
     location: "г. Ижевск",
     date: "23.10.2026",
